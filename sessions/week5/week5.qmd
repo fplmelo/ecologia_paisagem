@@ -50,6 +50,68 @@ editor:
 
 # Part 1 - Research Methods
 
+## What is a replicate
+
+**Replication** involves repeating blocks of treatments across a field, typically four to six times. Its purpose is to gather more data from a broader area, which helps to increase confidence in the study's results, such as yield differences. However, replication on its own does not resolve issues with field variability; for example, if one treatment is consistently placed in a more productive part of the field, it may still be favoured
+
+**Repeats** are measurements are multiple observations taken at the same levels of experimental factors. They are collected during a single experimental session
+
+**Contrast with Replication**: While both repeats and replicates involve multiple observations at the same experimental factor levels, their key difference lies in when they are collected. As we've discussed, replication involves repeating blocks of treatments across a field, commonly four to six times, to provide more data from a broader area and increase confidence in results by accounting for variability. In contrast, repeat measurements are confined to a single experimental session
+
+## Example
+
+To plan an experiment to test the efficiency of a **new fertilizer** for growing plants
+
+:::callout-tip
+•Replication addresses field variability and provides confidence that observed differences are due to the treatments rather than uncontrolled factors. It accounts for variation among items and treatments across a broader area.
+
+• Repeats focus on the precision of measurements and the internal consistency of observations made on the same experimental unit or within a single experimental session. They help quantify measurement error.
+
+:::
+
+![](/img/plant_exp.png){width="500"}
+
+### Experimental Design for Testing Fertilizer Efficiency
+
+Let's design an experiment for a new fertilizer using these principles:
+
+1. Define Treatments:
+
+You will have at least two treatments: (1) the new fertilizer and (2) a control (e.g., no fertilizer, or a standard, currently used fertilizer).
+
+2. Establish Blocks:
+
+To account for field variability (e.g., differences in soil type, sunlight, drainage across your experimental area), you should divide your growing area into multiple, distinct blocks.
+
+Each block should be as uniform as possible internally, but conditions can vary between blocks.
+
+3. Implement Randomization within Blocks:
+
+Within each block, you will randomly assign the placement of each treatment. This is crucial to eliminate bias and prevent unintended benefits to any specific treatment due to the block design (e.g., one fertilizer always being in a more productive part of the block). For instance, you could use a coin flip or a random number generator to decide which plot within a block receives the new fertilizer and which receives the control.
+
+4. Perform Replication:
+
+Replication involves repeating these blocks of treatments. For a typical field study, four to six replications (i.e., four to six blocks) are commonly used.
+
+Each block will contain one plot for the new fertilizer and one for the control, with their positions randomized within that block.
+
+By replicating, you gather more data from a broader area, which increases your confidence that any observed differences in plant growth or yield are genuinely due to the fertilizer treatments and not just random variations in the field. For example, if one block happens to have richer soil, both treatments benefit, but replication across many blocks ensures that this doesn't systematically favour one treatment.
+
+5. Incorporate Repeats for Precision:
+
+ Within each individual treatment plot (experimental unit), you can perform repeat measurements to assess the precision of your data collection and quantify observational error.
+
+:::callout-tip
+For example:
+
+**Plant Height**: Instead of measuring just one plant per plot, you might measure five randomly selected plants within that same plot multiple times during a single measurement session. This would give you repeated measurements for plant height within that specific plot.
+
+**Yield (Biomass)**: After harvesting, if you collect samples from a single plot, you might sub-sample and weigh them multiple times to ensure the accuracy and consistency of your weighing scale and technique.
+:::
+
+These repeat measurements help identify how much of the variation in your data is due to your measurement process itself, rather than the fertilizer or field conditions.
+
+
 # Part 2 - Data Analyses
 
 ## Introduction to Categorical Data Analysis

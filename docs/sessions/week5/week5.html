@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Felipe Melo">
-<meta name="dcterms.date" content="2025-05-23">
+<meta name="dcterms.date" content="2025-06-04">
 
 <title>Week 5 - Analysing Categorical Data - Frequency Tests and Contingency Tables</title>
 <style>
@@ -252,7 +252,14 @@ window.Quarto = {
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
   </ul></li>
   <li><a href="#lesson" id="toc-lesson" class="nav-link" data-scroll-target="#lesson">Lesson</a></li>
-  <li><a href="#part-1---research-methods" id="toc-part-1---research-methods" class="nav-link" data-scroll-target="#part-1---research-methods">Part 1 - Research Methods</a></li>
+  <li><a href="#part-1---research-methods" id="toc-part-1---research-methods" class="nav-link" data-scroll-target="#part-1---research-methods">Part 1 - Research Methods</a>
+  <ul class="collapse">
+  <li><a href="#what-is-a-replicate" id="toc-what-is-a-replicate" class="nav-link" data-scroll-target="#what-is-a-replicate">What is a replicate</a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a>
+  <ul class="collapse">
+  <li><a href="#experimental-design-for-testing-fertilizer-efficiency" id="toc-experimental-design-for-testing-fertilizer-efficiency" class="nav-link" data-scroll-target="#experimental-design-for-testing-fertilizer-efficiency">Experimental Design for Testing Fertilizer Efficiency</a></li>
+  </ul></li>
+  </ul></li>
   <li><a href="#part-2---data-analyses" id="toc-part-2---data-analyses" class="nav-link" data-scroll-target="#part-2---data-analyses">Part 2 - Data Analyses</a>
   <ul class="collapse">
   <li><a href="#introduction-to-categorical-data-analysis" id="toc-introduction-to-categorical-data-analysis" class="nav-link" data-scroll-target="#introduction-to-categorical-data-analysis">Introduction to Categorical Data Analysis</a></li>
@@ -296,7 +303,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 23, 2025</p>
+      <p class="date">June 4, 2025</p>
     </div>
   </div>
   
@@ -361,6 +368,74 @@ window.Quarto = {
 </section>
 <section id="part-1---research-methods" class="level1">
 <h1>Part 1 - Research Methods</h1>
+<section id="what-is-a-replicate" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-replicate">What is a replicate</h2>
+<p><strong>Replication</strong> involves repeating blocks of treatments across a field, typically four to six times. Its purpose is to gather more data from a broader area, which helps to increase confidence in the study’s results, such as yield differences. However, replication on its own does not resolve issues with field variability; for example, if one treatment is consistently placed in a more productive part of the field, it may still be favoured</p>
+<p><strong>Repeats</strong> are measurements are multiple observations taken at the same levels of experimental factors. They are collected during a single experimental session</p>
+<p><strong>Contrast with Replication</strong>: While both repeats and replicates involve multiple observations at the same experimental factor levels, their key difference lies in when they are collected. As we’ve discussed, replication involves repeating blocks of treatments across a field, commonly four to six times, to provide more data from a broader area and increase confidence in results by accounting for variability. In contrast, repeat measurements are confined to a single experimental session</p>
+</section>
+<section id="example" class="level2">
+<h2 class="anchored" data-anchor-id="example">Example</h2>
+<p>To plan an experiment to test the efficiency of a <strong>new fertilizer</strong> for growing plants</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>•Replication addresses field variability and provides confidence that observed differences are due to the treatments rather than uncontrolled factors. It accounts for variation among items and treatments across a broader area.</p>
+<p>• Repeats focus on the precision of measurements and the internal consistency of observations made on the same experimental unit or within a single experimental session. They help quantify measurement error.</p>
+</div>
+</div>
+<p><img src="../../img/plant_exp.png" class="img-fluid" width="500"></p>
+<section id="experimental-design-for-testing-fertilizer-efficiency" class="level3">
+<h3 class="anchored" data-anchor-id="experimental-design-for-testing-fertilizer-efficiency">Experimental Design for Testing Fertilizer Efficiency</h3>
+<p>Let’s design an experiment for a new fertilizer using these principles:</p>
+<ol type="1">
+<li>Define Treatments:</li>
+</ol>
+<p>You will have at least two treatments: (1) the new fertilizer and (2) a control (e.g., no fertilizer, or a standard, currently used fertilizer).</p>
+<ol start="2" type="1">
+<li>Establish Blocks:</li>
+</ol>
+<p>To account for field variability (e.g., differences in soil type, sunlight, drainage across your experimental area), you should divide your growing area into multiple, distinct blocks.</p>
+<p>Each block should be as uniform as possible internally, but conditions can vary between blocks.</p>
+<ol start="3" type="1">
+<li>Implement Randomization within Blocks:</li>
+</ol>
+<p>Within each block, you will randomly assign the placement of each treatment. This is crucial to eliminate bias and prevent unintended benefits to any specific treatment due to the block design (e.g., one fertilizer always being in a more productive part of the block). For instance, you could use a coin flip or a random number generator to decide which plot within a block receives the new fertilizer and which receives the control.</p>
+<ol start="4" type="1">
+<li>Perform Replication:</li>
+</ol>
+<p>Replication involves repeating these blocks of treatments. For a typical field study, four to six replications (i.e., four to six blocks) are commonly used.</p>
+<p>Each block will contain one plot for the new fertilizer and one for the control, with their positions randomized within that block.</p>
+<p>By replicating, you gather more data from a broader area, which increases your confidence that any observed differences in plant growth or yield are genuinely due to the fertilizer treatments and not just random variations in the field. For example, if one block happens to have richer soil, both treatments benefit, but replication across many blocks ensures that this doesn’t systematically favour one treatment.</p>
+<ol start="5" type="1">
+<li>Incorporate Repeats for Precision:</li>
+</ol>
+<p>Within each individual treatment plot (experimental unit), you can perform repeat measurements to assess the precision of your data collection and quantify observational error.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For example:</p>
+<p><strong>Plant Height</strong>: Instead of measuring just one plant per plot, you might measure five randomly selected plants within that same plot multiple times during a single measurement session. This would give you repeated measurements for plant height within that specific plot.</p>
+<p><strong>Yield (Biomass)</strong>: After harvesting, if you collect samples from a single plot, you might sub-sample and weigh them multiple times to ensure the accuracy and consistency of your weighing scale and technique.</p>
+</div>
+</div>
+<p>These repeat measurements help identify how much of the variation in your data is due to your measurement process itself, rather than the fertilizer or field conditions.</p>
+</section>
+</section>
 </section>
 <section id="part-2---data-analyses" class="level1">
 <h1>Part 2 - Data Analyses</h1>

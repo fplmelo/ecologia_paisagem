@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Felipe Melo">
-<meta name="dcterms.date" content="2025-06-02">
+<meta name="dcterms.date" content="2025-06-04">
 
 <title>Week 6 - Mean Tests and Design of Experiments</title>
 <style>
@@ -252,7 +252,13 @@ window.Quarto = {
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
   </ul></li>
   <li><a href="#lesson" id="toc-lesson" class="nav-link" data-scroll-target="#lesson">Lesson</a></li>
-  <li><a href="#part-1---research-methods" id="toc-part-1---research-methods" class="nav-link" data-scroll-target="#part-1---research-methods">Part 1 - Research Methods</a></li>
+  <li><a href="#part-1---research-methods" id="toc-part-1---research-methods" class="nav-link" data-scroll-target="#part-1---research-methods">Part 1 - Research Methods</a>
+  <ul class="collapse">
+  <li><a href="#types-of-experimental-desing" id="toc-types-of-experimental-desing" class="nav-link" data-scroll-target="#types-of-experimental-desing">Types of experimental desing</a>
+  <ul class="collapse">
+  <li><a href="#single-factor-experiments" id="toc-single-factor-experiments" class="nav-link" data-scroll-target="#single-factor-experiments">Single-Factor Experiments</a></li>
+  </ul></li>
+  </ul></li>
   <li><a href="#part-2---data-analyses" id="toc-part-2---data-analyses" class="nav-link" data-scroll-target="#part-2---data-analyses">Part 2 - Data Analyses</a>
   <ul class="collapse">
   <li><a href="#introduction-to-categorical-data-analysis" id="toc-introduction-to-categorical-data-analysis" class="nav-link" data-scroll-target="#introduction-to-categorical-data-analysis">Introduction to Categorical Data Analysis</a></li>
@@ -296,7 +302,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 2, 2025</p>
+      <p class="date">June 4, 2025</p>
     </div>
   </div>
   
@@ -353,6 +359,7 @@ window.Quarto = {
 <li><p><i class="fa-solid fa-video" aria-label="video"></i> <a href="https://youtu.be/oFz8iOx96mw">Degrees of Freeedom</a></p></li>
 <li><p><i class="fa-solid fa-video" aria-label="video"></i> <a href="https://youtu.be/sk5ttlX2i5I">About statistical power and replicates in experimental design</a></p></li>
 <li><p><i class="fa-solid fa-video" aria-label="video"></i> <a href="https://youtu.be/Mufk0ZJVqQY">Understanding Replication and Randomization</a></p></li>
+<li><p><i class="fa-solid fa-video" aria-label="video"></i> <a href="https://youtu.be/DavsDxgYQo4">Types of experiments</a></p></li>
 </ul>
 </section>
 </section>
@@ -361,6 +368,61 @@ window.Quarto = {
 </section>
 <section id="part-1---research-methods" class="level1">
 <h1>Part 1 - Research Methods</h1>
+<section id="types-of-experimental-desing" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-experimental-desing">Types of experimental desing</h2>
+<p>Experimental design is a crucial process for ensuring that studies are statistically sound and that conclusions drawn from them are reliable. It involves carefully planning how data will be collected to answer a specific question. Experimental designs are broadly classified into two main categories:</p>
+<p><strong>Single-Factor Experiments</strong> and <strong>Multi-Factor Experiments</strong>.</p>
+<section id="single-factor-experiments" class="level3">
+<h3 class="anchored" data-anchor-id="single-factor-experiments">Single-Factor Experiments</h3>
+<p>These experiments involve varying only a single factor or treatment, while all other factors are kept constant or applied uniformly to all plots.</p>
+<p><strong>1. Completely Randomized Design (CRD)</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../img/crd.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div>
+<p>In a CRD, treatments are assigned completely at random to experimental units, ensuring each unit has an equal chance of receiving any one treatment.</p>
+<p>Homogeneity Requirement: CRD is applicable primarily when the experimental material is homogenous. It is generally used in lab experimental conditions where environmental factors can be easily controlled. Due to the typical heterogeneity of soil in fields, CRD is often not the preferred method for field experiments.</p>
+<p>Local Control: The principle of ‘Local-control’ is not used in CRD.</p>
+<p>Advantages: CRD is easy to understand, allows for a varying number of replications per treatment, offers high flexibility in the number of treatments used, requires simple statistical analysis, and provides the maximum number of degrees of freedom.</p>
+<p>Disadvantages: It can only be applied to homogenous experiments and does not incorporate the principle of ‘Local-control’.</p>
+<p><strong>2. Randomized Block Design (RBD)</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../img/rbd.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div>
+<p>RBD is the most commonly used experimental design in agriculture. It incorporates ‘local-control’ by grouping experimental material into homogenous subgroups called blocks. Each block then contains the entire set of treatments, making a block equivalent to a replication.</p>
+<p>Key Principles: RBD effectively utilizes all three core principles of experimental design: replication, randomization, and local-control.</p>
+<p>Replication: In RBD, blocks are repeated across the field, often four to six times, to gather more data from a broader area and increase confidence in the results, such as yield differences.</p>
+<p>Randomization: To eliminate bias and avoid unintended benefits from field variability (e.g., a field becoming more productive from east to west), the placement of each treatment within a block is assigned by chance, such as by flipping a coin. This ensures that any observed yield differences are genuinely due to the treatments and not other uncontrolled factors.</p>
+<p>Advantages: RBD is generally more efficient and accurate than CRD, has a lower chance of error, offers high flexibility in the number of treatments and replications, and allows for relatively simple statistical analysis, even if a single value is missing. Errors related to any treatment can be isolated.</p>
+<p>Disadvantages: RBD is not recommended for a very large number of treatments because this can increase the size of each block, potentially leading to heterogeneity within blocks and higher experimental errors.</p>
+<p><strong>Other Noteworthy Experimental Designs</strong></p>
+<p>• Randomized Two-Treatment Experiment: Involves randomly assigning individuals to one of two groups, typically an experimental condition (where the hypothesized cause is present) and a control condition (where it’s absent or a placebo is given). Random assignment aims to ensure groups are similar in all respects, including pre-existing conditions.</p>
+<p>•Rigorously Controlled Design: This design involves carefully assigning subjects to treatment groups to ensure they are similar in important ways. However, it is hard to implement due to the difficulty in identifying all relevant differentiations and should generally be avoided.</p>
+<p>• Matched Pairs Design: Treatments are administered to two groups that are matched in certain ways. Examples include measuring the same individual’s right arm versus left arm, or conducting before-and-after experiments (e.g., weight before and after a diet).</p>
+<p>• Repeated Measures Design: In this design, all participants are exposed to all levels of the independent variable, meaning they experience all conditions. Random assignment occurs for the order in which these conditions are experienced, rather than assigning participants to specific conditions.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../img/plant_exp.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All true experiments, regardless of their specific type, emphasize random assignment to conditions, which is crucial for maximizing internal validity. Replication, the repetition of an experiment on more than one subject, is also vital to ensure the sample is large enough to differentiate true effects from random ones and to allow others to duplicate results.</p>
+</div>
+</div>
+</section>
+</section>
 </section>
 <section id="part-2---data-analyses" class="level1">
 <h1>Part 2 - Data Analyses</h1>

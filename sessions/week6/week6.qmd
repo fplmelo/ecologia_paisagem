@@ -46,9 +46,71 @@ editor:
 
 -   {{< fa video >}} [Understanding Replication and Randomization](https://youtu.be/Mufk0ZJVqQY)
 
+-   {{< fa video >}} [Types of experiments](https://youtu.be/DavsDxgYQo4)
+
 # Lesson
 
 # Part 1 - Research Methods
+
+## Types of experimental desing
+
+Experimental design is a crucial process for ensuring that studies are statistically sound and that conclusions drawn from them are reliable. It involves carefully planning how data will be collected to answer a specific question.  Experimental designs are broadly classified into two main categories: 
+
+**Single-Factor Experiments** and **Multi-Factor Experiments**.
+
+### Single-Factor Experiments
+These experiments involve varying only a single factor or treatment, while all other factors are kept constant or applied uniformly to all plots.
+
+**1. Completely Randomized Design (CRD)**
+
+![](/img/crd.png){fig-align=center width="300"}
+
+In a CRD, treatments are assigned completely at random to experimental units, ensuring each unit has an equal chance of receiving any one treatment.
+
+Homogeneity Requirement: CRD is applicable primarily when the experimental material is homogenous. It is generally used in lab experimental conditions where environmental factors can be easily controlled. Due to the typical heterogeneity of soil in fields, CRD is often not the preferred method for field experiments.
+
+Local Control: The principle of 'Local-control' is not used in CRD.
+
+Advantages: CRD is easy to understand, allows for a varying number of replications per treatment, offers high flexibility in the number of treatments used, requires simple statistical analysis, and provides the maximum number of degrees of freedom.
+
+
+Disadvantages: It can only be applied to homogenous experiments and does not incorporate the principle of 'Local-control'.
+
+
+**2. Randomized Block Design (RBD)**
+
+![](/img/rbd.png){fig-align=center width="300"}
+
+
+RBD is the most commonly used experimental design in agriculture. It incorporates 'local-control' by grouping experimental material into homogenous subgroups called blocks. Each block then contains the entire set of treatments, making a block equivalent to a replication.
+
+
+Key Principles: RBD effectively utilizes all three core principles of experimental design: replication, randomization, and local-control.
+
+Replication: In RBD, blocks are repeated across the field, often four to six times, to gather more data from a broader area and increase confidence in the results, such as yield differences.
+
+Randomization: To eliminate bias and avoid unintended benefits from field variability (e.g., a field becoming more productive from east to west), the placement of each treatment within a block is assigned by chance, such as by flipping a coin. This ensures that any observed yield differences are genuinely due to the treatments and not other uncontrolled factors.
+
+Advantages: RBD is generally more efficient and accurate than CRD, has a lower chance of error, offers high flexibility in the number of treatments and replications, and allows for relatively simple statistical analysis, even if a single value is missing. Errors related to any treatment can be isolated.
+
+Disadvantages: RBD is not recommended for a very large number of treatments because this can increase the size of each block, potentially leading to heterogeneity within blocks and higher experimental errors.
+
+**Other Noteworthy Experimental Designs**
+
+• Randomized Two-Treatment Experiment: Involves randomly assigning individuals to one of two groups, typically an experimental condition (where the hypothesized cause is present) and a control condition (where it's absent or a placebo is given). Random assignment aims to ensure groups are similar in all respects, including pre-existing conditions.
+
+•Rigorously Controlled Design: This design involves carefully assigning subjects to treatment groups to ensure they are similar in important ways. However, it is hard to implement due to the difficulty in identifying all relevant differentiations and should generally be avoided.
+
+• Matched Pairs Design: Treatments are administered to two groups that are matched in certain ways. Examples include measuring the same individual's right arm versus left arm, or conducting before-and-after experiments (e.g., weight before and after a diet).
+
+• Repeated Measures Design: In this design, all participants are exposed to all levels of the independent variable, meaning they experience all conditions. Random assignment occurs for the order in which these conditions are experienced, rather than assigning participants to specific conditions.
+
+![](/img/plant_exp.png){fig-align=center width="300"}
+
+
+:::callout-tip
+All true experiments, regardless of their specific type, emphasize random assignment to conditions, which is crucial for maximizing internal validity. Replication, the repetition of an experiment on more than one subject, is also vital to ensure the sample is large enough to differentiate true effects from random ones and to allow others to duplicate results.
+:::
 
 # Part 2 - Data Analyses
 
