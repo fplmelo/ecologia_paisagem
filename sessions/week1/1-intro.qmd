@@ -1,11 +1,18 @@
 ---
 title: "Week 1 - Introduction to RMDA"
+subtitle: "RMDA ARES40011"
 author: "Felipe Melo"
-date: "04-06-2025"
+date: "last-modified"
 date-format: "long"
+filters:
+  - naquiz
 format:
   html:
     toc: true
+    toc-expanded: 3
+editor: 
+  markdown: 
+    wrap: sentence
 ---
 
 # Module workflow
@@ -17,12 +24,12 @@ Today you are going to understand how this modules works.
 
 # Preparation
 
-First, this is a asynchronous module delivered in using the concept of [FLEXI modules](https://www.ntu.ac.uk/about-us/teaching/academic-development-and-quality/course-design/design-for-online-learning) held by NTU. The idea of having an assynchronous module for teaching stats and research methods makes sense because you'll need time to read and train both before and after the each main session and tutorials.
+First, this is a asynchronous module delivered in using the concept of [FLEX modules](https://www.ntu.ac.uk/about-us/teaching/academic-development-and-quality/course-design/design-for-online-learning) held by NTU. The idea of having an asynchronous module for teaching stats and research methods makes sense because you'll need time to read and train both before and after the each main session and tutorials.
 
 
 # Lessons
 
-These comprise the slides and videos recorded by the tutor and intriduce the oibjectives, learnign outcomes and some demonstrations.
+These comprise the slides and videos recorded by the tutor and introduce the objectives, learning outcomes and some demonstrations.
 
 ## Slides
 
@@ -214,14 +221,14 @@ To get started, review the documentation for using one of the following publishi
 
 | Destination                            | Description                                                                                                                                                                                     |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Quarto Pub](/docs/publishing/quarto-pub.qmd)           | Publishing service for Quarto documents, websites, and books. Use Quarto Pub when you want a free, easy to use service for publicly available content.                                          |
-| [GitHub Pages](/docs/publishing/github-pages.qmd)       | Publish content based on source code managed within a GitHub repository. Use GitHub Pages when the source code for your document or site is hosted on GitHub.                                   |     
-| [Posit Connect](/docs/publishing/rstudio-connect.qmd) | Publishing platform for secure sharing of data products within an organization. Use Posit Connect when you want to publish content within an organization rather than on the public internet. |
-| [Posit Cloud](/docs/publishing/posit-cloud.qmd)       | Create data projects and publish results from your web browser. Use Posit Cloud when you want to organize all your static documents and interactive applications in one place.                  |
-| [Netlify](/docs/publishing/netlify.qmd)                 | Professional web publishing platform. Use Netlify when you want support for custom domains, authentication, previewing branches, and other more advanced capabilities.                          | 
-| [Confluence](/docs/publishing/confluence.qmd)         | Publishing platform for supporting team collaboration. Use Confluence to share documents in team Spaces.                                                            |
-| [Hugging Face Spaces](/docs/publishing/hugging-face.qmd)       | Publishing platform specializing in learning models and datasets. Use Hugging Face Spaces when you want to share Quarto documents together with associated machine learning models and/or datasets.                      |
-| [Other Services](/docs/publishing/other.qmd)            | Content rendered with Quarto uses standard formats (HTML, PDFs, MS Word, etc.) that can be published anywhere. Use this if none of the methods above meets your requirements.               |
+| [Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html)           | Publishing service for Quarto documents, websites, and books. Use Quarto Pub when you want a free, easy to use service for publicly available content.                                          |
+| [GitHub Pages](https://quarto.org/docs/publishing/github-pages.html)       | Publish content based on source code managed within a GitHub repository. Use GitHub Pages when the source code for your document or site is hosted on GitHub.                                   |     
+| [Posit Connect](https://quarto.org/docs/publishing/rstudio-connect.html) | Publishing platform for secure sharing of data products within an organization. Use Posit Connect when you want to publish content within an organization rather than on the public internet. |
+| [Posit Cloud](https://quarto.org/docs/publishing/netlify.html)       | Create data projects and publish results from your web browser. Use Posit Cloud when you want to organize all your static documents and interactive applications in one place.                  |
+| [Netlify](https://quarto.org/docs/publishing/netlify.html)                 | Professional web publishing platform. Use Netlify when you want support for custom domains, authentication, previewing branches, and other more advanced capabilities.                          | 
+| [Confluence](https://quarto.org/docs/publishing/confluence.html)         | Publishing platform for supporting team collaboration. Use Confluence to share documents in team Spaces.                                                            |
+| [Hugging Face Spaces](https://quarto.org/docs/publishing/hugging-face.html)       | Publishing platform specializing in learning models and datasets. Use Hugging Face Spaces when you want to share Quarto documents together with associated machine learning models and/or datasets.                      |
+| [Other Services](https://quarto.org/docs/publishing/other.html)            | Content rendered with Quarto uses standard formats (HTML, PDFs, MS Word, etc.) that can be published anywhere. Use this if none of the methods above meets your requirements.               |
 
 : {tbl-colwidths="\[30,70\]"}
 

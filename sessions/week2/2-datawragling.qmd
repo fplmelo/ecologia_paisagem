@@ -27,11 +27,11 @@ format:
 
 Before you begin, ensure you have the following installed:
 
--   **R**: You can download the latest version from the official R website. Instructions for different operating systems (Windows, Mac OS, UNIX/Linux) are available \[8\]. **R must be installed before installing RStudio** \[9\].
+-   **R**: You can download the latest version from the official R website. Instructions for different operating systems (Windows, Mac OS, UNIX/Linux) are available. **R must be installed before installing RStudio**.
 
--   **RStudio**: Download and install RStudio Desktop from <https://www.rstudio.com/> \[10\]. To open RStudio, locate it in your applications and launch it \[11\].
+-   **RStudio**: Download and install RStudio Desktop from <https://www.rstudio.com/>. To open RStudio, locate it in your applications and launch it.
 
--   **tidyverse package**: Install the **tidyverse** package within R. Open RStudio and in the **Console** pane, type and run the following command \[12\]:
+-   **tidyverse package**: Install the **tidyverse** package within R. Open RStudio and in the **Console** pane, type and run the following command:
 
 ``` {r}
 install.packages("tidyverse")
@@ -130,48 +130,48 @@ Tibbles can be created directly using the `tibble()` function or data frames can
 
 ## Introduction: The Logic of Scientific Inquiry
 
-In science, the pursuit of knowledge often begins with a question about the world around us [1-3]. A well-defined research question acts as the **cornerstone of the scientific process**, guiding investigation and shaping findings [4-6]. The logic underpinning scientific inquiry frequently involves **hypothetico-deductive reasoning**. This approach involves formulating a hypothesis (a testable explanation), and then deducing specific, observable predictions from that hypothesis. The research question, therefore, needs to be framed in a way that allows for the development of such testable hypotheses [7]. It should pinpoint exactly what you want to find out and give your work a clear purpose and focus [6].
+In science, the pursuit of knowledge often begins with a question about the world around us. A well-defined research question acts as the **cornerstone of the scientific process**, guiding investigation and shaping findings. The logic underpinning scientific inquiry frequently involves **hypothetico-deductive reasoning**. This approach involves formulating a hypothesis (a testable explanation), and then deducing specific, observable predictions from that hypothesis. The research question, therefore, needs to be framed in a way that allows for the development of such testable hypotheses. It should pinpoint exactly what you want to find out and give your work a clear purpose and focus.
 
 ## What Makes a "Sounding" Research Question?
 
-A "sounding" or **strong research question** is one that is carefully constructed to be effective and answerable through systematic investigation [4]. Key characteristics include:
+A "sounding" or **strong research question** is one that is carefully constructed to be effective and answerable through systematic investigation. Key characteristics include:
 
-*   **Focused:** It should address a single problem or issue, ensuring that your research remains within a feasible scope [8-10].
-*   **Clear:** The question should be unambiguous and easily understood by your target audience, specifying all necessary details and context [8, 10].
-*   **Specific:** It clearly defines the variables, participants, and context involved, leaving no room for vagueness [8, 10, 11].
-*   **Researchable:** The question must be answerable by collecting empirical data or through existing literature [12, 13].
-*   **Feasible:** The research needed to answer the question should be achievable within the constraints of time, resources, and ethical considerations [2, 8, 13].
-*   **Interesting:** The topic should be engaging to you, and ideally to others in your field [2, 12].
-*   **Novel:** The question should aim to establish new facts or find a new aspect of already established facts, addressing gaps in current knowledge [2, 10, 12, 14].
-*   **Ethical:** The research should not cause harm and should be approved by relevant bodies if necessary [2, 12].
-*   **Relevant:** The answer to the question should be wanted and desired in your field or contribute to society [2, 12, 15].
-*   **Complex:** The question should require analysis and interpretation, rather than a simple yes/no answer or easily found facts [7, 10, 11].
-*   **Arguable:** The question should not be answerable with simple repetition of facts and should allow for different potential answers or perspectives [10].
+*   **Focused:** It should address a single problem or issue, ensuring that your research remains within a feasible scope.
+*   **Clear:** The question should be unambiguous and easily understood by your target audience, specifying all necessary details and context.
+*   **Specific:** It clearly defines the variables, participants, and context involved, leaving no room for vagueness.
+*   **Researchable:** The question must be answerable by collecting empirical data or through existing literature.
+*   **Feasible:** The research needed to answer the question should be achievable within the constraints of time, resources, and ethical considerations.
+*   **Interesting:** The topic should be engaging to you, and ideally to others in your field.
+*   **Novel:** The question should aim to establish new facts or find a new aspect of already established facts, addressing gaps in current knowledge.
+*   **Ethical:** The research should not cause harm and should be approved by relevant bodies if necessary.
+*   **Relevant:** The answer to the question should be wanted and desired in your field or contribute to society.
+*   **Complex:** The question should require analysis and interpretation, rather than a simple yes/no answer or easily found facts.
+*   **Arguable:** The question should not be answerable with simple repetition of facts and should allow for different potential answers or perspectives.
 *   **Objective:** The question should avoid subjective judgments and focus on measurable or observable aspects [10].
-*   **Appropriate:** The question should align well with the data and methods that can be used to answer it [10].
+*   **Appropriate:** The question should align well with the data and methods that can be used to answer it.
 
 ## Steps to Develop Your Research Question
 
-Developing a strong research question is often an iterative process [14, 16, 17]. Here's a step-by-step guide based on the sources:
+Developing a strong research question is often an iterative process. Here's a step-by-step guide based on the sources:
 
-1.  **Choose a broad topic of interest:** Select a subject that you are passionate about and that is relevant to your field [6, 12, 18].
-2.  **Conduct preliminary research:** Gather background information through a literature review to understand what has already been researched and to identify potential gaps [12, 14, 18, 19]. Pay attention to what questions existing research raises and what authors haven't addressed [1, 20].
-3.  **Narrow down your focus:** Based on your initial research, refine your broad topic to a more specific area that is manageable for your research project [19, 21, 22].
-4.  **Identify a research problem or gap:** Determine what specific issue or unanswered question exists within your narrowed focus [12, 14, 21, 22]. Ask yourself what still needs to be known [21].
-5.  **Formulate initial research questions:** Based on the identified problem or gap, start drafting open-ended "how" and "why" questions about your specific topic [1, 12, 14, 22].
-6.  **Evaluate and refine your question:** Assess your drafted questions using the criteria for a strong research question outlined earlier [2, 7-14]. Is it focused, clear, specific, researchable, feasible, interesting, novel, ethical, relevant, complex, arguable, objective, and appropriate? Refine the wording to improve clarity and precision [14].
-7.  **Consider the type of research:** Determine whether your question is best suited for exploratory, descriptive, comparative, experimental, qualitative, or quantitative research, as this will influence the phrasing and focus [9, 23-25].
+1.  **Choose a broad topic of interest:** Select a subject that you are passionate about and that is relevant to your field.
+2.  **Conduct preliminary research:** Gather background information through a literature review to understand what has already been researched and to identify potential gaps. Pay attention to what questions existing research raises and what authors haven't addressed.
+3.  **Narrow down your focus:** Based on your initial research, refine your broad topic to a more specific area that is manageable for your research project.
+4.  **Identify a research problem or gap:** Determine what specific issue or unanswered question exists within your narrowed focus. Ask yourself what still needs to be known.
+5.  **Formulate initial research questions:** Based on the identified problem or gap, start drafting open-ended "how" and "why" questions about your specific topic.
+6.  **Evaluate and refine your question:** Assess your drafted questions using the criteria for a strong research question outlined earlier. Is it focused, clear, specific, researchable, feasible, interesting, novel, ethical, relevant, complex, arguable, objective, and appropriate? Refine the wording to improve clarity and precision.
+7.  **Consider the type of research:** Determine whether your question is best suited for exploratory, descriptive, comparative, experimental, qualitative, or quantitative research, as this will influence the phrasing and focus.
 
 ## Examples
 
 Here are a few examples of "sounding" research questions:
 
 *   Instead of: "Are social media bad?"
-    Try: "What are the correlations between the frequency of social media use and self-reported levels of anxiety in young adults aged 18-25?" [25, 26].
+    Try: "What are the correlations between the frequency of social media use and self-reported levels of anxiety in young adults aged 18-25?".
 *   Instead of: "What about climate change?"
-    Try: "How has the melting rate of glaciers in the Antarctic Peninsula changed over the past decade, and what are the potential impacts on local penguin populations?" [26, 27].
+    Try: "How has the melting rate of glaciers in the Antarctic Peninsula changed over the past decade, and what are the potential impacts on local penguin populations?"
 *   Instead of: "Is online learning effective?"
-    Try: "How does student engagement differ between undergraduate students enrolled in fully online courses compared to those in traditional face-to-face courses in higher education?" [24].
+    Try: "How does student engagement differ between undergraduate students enrolled in fully online courses compared to those in traditional face-to-face courses in higher education?"
 
 
 
