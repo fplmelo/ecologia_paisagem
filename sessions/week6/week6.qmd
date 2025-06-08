@@ -313,7 +313,7 @@ Let's try to determine if there is a statistically significant difference in the
 
 - Continuous Dependent Variable: bill_length_mm
 
-State the Hypotheses
+## State the Hypotheses
 
 - Null Hypothesis (H0): The mean bill length is the same across all penguin species (μ_Adelie = μ_Chinstrap = μ_Gentoo)
 - Alternative Hypothesis (Ha): At least one penguin species has a different mean bill length from the others. (Not all means are equal)
@@ -323,9 +323,10 @@ anova_result <- aov(bill_length_mm ~ species, data = penguins)
 summary(anova_result)
 ```
 
-Visualise the data
+**Visualise the data**
 
 ```{r}
+#| warning: false
 penguins %>% 
   ggplot(aes(species, bill_length_mm, color=species, fill=species))+
   geom_jitter() +
@@ -333,7 +334,41 @@ penguins %>%
 
 ```
 
+We can see visually that Adelie penguins have shorter bills, but how do we get a statistic confirmation on who differs from whom?
+
+**Post-hoc pairwise comparisons**
+
+In this case, let's apply one of the most common tests, the `Tukey Test` for pairwise comparisons.
+
+```{r}
+TukeyHSD(anova_result)
+```
 
 
+Easy to see now, that actually, all species differ in their bill length and there were hidden differences that a simple visual inspection is not able to grasp.
+
+## Summary of Statistical Tests for Mean Differences
+
+: **Table 1: Summary of Comparisons of Statistical Tests for Analysing Mean Differences** {#tbl-statistical-tests}
+
+| Feature                   | T-test (Parametric)                                                                                                                  | ANOVA (Parametric)                                                                                                                        | Wilcoxon Test (Non-parametric)                                                                                                              | Kruskal-Wallis Test (Non-parametric)                                                                                                  |
+| :------------------------ | :----------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------ |
+| **Number of Groups**      | **Two groups**, or **one sample vs. a known value**.                                                 | **Three or more groups**.                                                                                           | **Two groups**, or **one sample vs. a known value**.                                                              | **Three or more groups**. When only two samples are used, results are identical to Wilcoxon rank sum test. |
+| **Dependent/Independent** | Both **independent** and **paired** variants exist.                         | Typically **independent groups**.                                                                                                  | Both **independent** (rank sum) and **paired** (signed-rank) variants exist.                          | **Independent groups**.                                                                                                         |
+| **Key Assumption**        | **Normality of data** (or differences for paired) and **homogeneity of variance** (for Student's). No significant outliers. Independence of observations for independent samples. | **Normality of data** and **homogeneity of variance**. Data independence.                                         | **No specific distribution assumption** (non-parametric).                                                                       | **No specific distribution assumption** (non-parametric).                                                                       |
+| **What it Compares**      | **Means**.                                                                                              | **Means**.                                                                                                                 | **Medians or distributions**.                                                                                                 | **Medians or distributions**.                                                                                           |
+| **R Functions (Base)**    | `t.test()`.                                                                            | `aov()`.                                                                                                                       | `wilcox.test()`.                                                                                                               | `kruskal.test()`.                                                                                                        |
+| **R Packages (Others)**   | `rstatix::t_test()`, `gtsummary::add_p()`, `report::report()`.                                                        | `gtsummary::add_p()`, `report::report()`.                                                                                  | `rstatix::wilcox_test()`, `gtsummary::add_p()`.                                                                       | `rstatix::kruskal_test()`, `gtsummary::add_p()`.                                                                |
+| **Post-hoc Test Needed?** | No (compares only two groups).                                                                                                  | Yes, if omnibus test is significant (`pairwise.t.test()` or `TukeyHSD()`).                            | No (compares only two groups).                                                                                                       | Yes, if significant (`pairwise.wilcox.test()`).                                                                       |
+| **Robustness**            | **Welch's is robust to unequal variances**. Generally robust to normality violations.             | Less robust to unequal variances with unbalanced sample sizes.                                                                     | Generally **more robust to assumption violations**.                                                                                 | Generally **more robust to assumption violations**. Can be unstable with heteroscedasticity.                           |
+| **Relationship**          | Special case of ANOVA when comparing two groups with equal variances. Subsumed under the General Linear Model.           | Generalisation of the t-test; related to linear regression. Subsumed under the General Linear Model.                 | Non-parametric alternative to t-test.                                                                                      | Non-parametric alternative to one-way ANOVA; extension of Wilcoxon.                                                     |
+
+
+
+## Exercises
+
+### Experimental Desing
+
+1- 
 
 
