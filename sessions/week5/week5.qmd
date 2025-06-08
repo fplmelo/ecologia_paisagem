@@ -449,7 +449,7 @@ Let's investigate the relationship between the number of cylinders (cyl) and the
 1. Load the mtcars dataset.
 2. Create a contingency table showing the frequencies of cyl by am.
 3. Examine the expected counts for a Chi-Square test.
-Are the assumptions met (all expected values \> 5)?
+Are the assumptions met (all expected values > 5)?
 4. Perform the appropriate hypothesis test (Chi-Square if assumptions met, otherwise Fisher's exact test) to determine if there is a significant association between the number of cylinders and transmission type.
 5. Interpret the results of the test, including the p-value and conclusion regarding the null hypothesis.
 6. Based on the observed counts or residuals/contributions, describe the nature of any significant association found.

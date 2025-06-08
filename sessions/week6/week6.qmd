@@ -195,6 +195,7 @@ Let's check the mean values of bill length
 #| warning: false
 library(tidyverse)
 library(palmerpenguins)
+
 penguins %>% 
   group_by(species) %>% 
   drop_na() %>% 
