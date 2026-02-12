@@ -14,7 +14,7 @@ format:
 ---
 
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Contrasts_-_fire.jpg/1920px-Contrasts_-_fire.jpg)
+![](/img/wildfire.jpg)
 
 
 ## Slides desta aula
