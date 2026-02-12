@@ -1,0 +1,295 @@
+---
+title: "Dinâmica de Perturbação na Ecologia da Paisagem"
+subtitle: "Implicações para Conservação e Ecologia Política"
+author: "Felipe Melo - UFPE"
+format: 
+  revealjs:
+    theme: default
+    transition: slide
+    slide-number: true
+    self-contained: true
+lang: pt
+---
+
+## O Conceito de Distúrbio
+
+::: {.columns}
+::: {.column width="50%"}
+*   Evento discreto que causa modificação de um sistema
+*   Altera a disponibilidade de **recursos** 
+*   Pode ser um evento natural ou de origem antrópica 
+:::
+
+::: {.column width="50%"}
+
+![](https://static.todamateria.com.br/upload/de/sm/desmatamentoamazonia-cke.jpg)
+:::
+:::
+
+## O Paradigma Padrão-Processo
+
+::: {.columns}
+::: {.column width="50%"}
+*   O distúrbio é o motor que gera a heterogeneidade espacial
+*   Afeta a estrutura da paisagem spacio-temporalmente
+*   Padrões resultantes do distúrbio determinam as funções futuras do ecossistema
+:::
+
+::: {.column width="50%"}
+![](/img/frag_hist.png)
+:::
+:::
+
+## Fontes "neutras" de perturbação
+
+::: {.columns}
+::: {.column width="50%"}
+*   Eventos geofísicos: fogo, tornados e deslizamentos 
+*   Dinâmicas climáticas: enchentes, tempestades e geadas 
+*   Ações bióticas: pragas e desequilíbrios populacionais 
+:::
+
+::: {.column width="50%"}
+
+![Pantanal Inundado](https://projetocolabora.com.br/wp-content/uploads/2024/07/pantanal-14-scaled-e1720094773109.jpg)
+
+:::
+:::
+
+## Slide 4: Perturbações Antrópicas Contemporâneas
+
+::: {.columns}
+::: {.column width="50%"}
+*   Ação humana em escala sem precedentes históricos [10].
+*   Mudança no uso do solo: agricultura e urbanização [11-13].
+*   Infraestrutura linear: estradas e redes de transmissão [13-15].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Imagem de satélite de desmatamento ou expansão urbana -->
+:::
+:::
+
+## Slide 5: Escalas Temporais do Distúrbio
+
+::: {.columns}
+::: {.column width="50%"}
+*   Padrões podem ser efêmeros ou permanecer por tempos geológicos [1, 16].
+*   A "memória" do distúrbio é frequentemente retida no solo por longo tempo [17, 18].
+*   Importância dos ciclos de mudanças e sucessão biológica [6, 19].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Gráfico de escalas temporais vs espaciais de distúrbios -->
+:::
+:::
+
+## Slide 6: Legados e Rugosidades
+
+::: {.columns}
+::: {.column width="50%"}
+*   "Rugosidades" (Milton Santos): formas antigas que restam de processos passados [18].
+*   Paisagens atuais não são estáticas; carregam história embutida [10, 20].
+*   Mesmo áreas "intocadas" são fruto de decisões humanas históricas [20].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Foto de floresta secundária com vestígios de uso agrícola passado -->
+:::
+:::
+
+## Slide 7: Fragmentação como Perturbação
+
+::: {.columns}
+::: {.column width="50%"}
+*   Divisão de habitats contínuos em manchas menores e isoladas [21-23].
+*   Causa perda de conectividade funcional e aumento do isolamento [24, 25].
+*   Inserção de matrizes antrópicas no mosaico original [26, 27].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Mapa de fragmentação florestal clássico -->
+:::
+:::
+
+## Slide 8: O Efeito de Borda
+
+::: {.columns}
+::: {.column width="50%"}
+*   Interface entre manchas perturbadas e remanescentes naturais [13, 24, 28].
+*   Alterações microclimáticas: maior entrada de luz e vento [24, 29].
+*   Impacta a estabilidade do interior dos fragmentos [24, 30].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Diagrama ilustrando penetração de luz e vento em bordas -->
+:::
+:::
+
+## Slide 9: Distúrbios Compostos e Resiliência
+
+::: {.columns}
+::: {.column width="50%"}
+*   Interação entre múltiplos distúrbios (ex: seca seguida de fogo) [31, 32].
+*   Pode levar a sistemas a estados alternativos de degradação [32].
+*   Desestabilização da capacidade de regeneração natural [32].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Gráfico de resiliência e limiares de distúrbio -->
+:::
+:::
+
+## Slide 10: Limiares Críticos de Extinção
+
+::: {.columns}
+::: {.column width="50%"}
+*   A "regra dos 30%": a configuração importa mais quando resta pouco habitat [33, 34].
+*   Abaixo desse limiar, a conectividade desaparece abruptamente [35].
+*   Perda total de probabilidade de ocorrência para espécies sensíveis [36].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Gráfico mostrando o declínio da biodiversidade em relação à porcentagem de habitat -->
+:::
+:::
+
+## Slide 11: Ecologia Política - Populações Causadoras
+
+::: {.columns}
+::: {.column width="50%"}
+*   Grandes empreendimentos: mineração, usinas e infraestrutura [37, 38].
+*   Expansão agrícola voltada para demandas globais (Telecoupling) [39, 40].
+*   Conflitos de poder e decisão sobre o uso do território [41, 42].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Foto de grande monocultura ou barragem hidrelétrica -->
+:::
+:::
+
+## Slide 12: Ecologia Política - Populações Vulneráveis
+
+::: {.columns}
+::: {.column width="50%"}
+*   Comunidades locais que dependem de ecossistemas estáveis [43, 44].
+*   Insegurança alimentar e escassez hídrica pós-distúrbio [40, 43].
+*   Populações excluídas dos benefícios da exploração de recursos [40].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Foto de comunidade tradicional ou extrativista em área degradada -->
+:::
+:::
+
+## Slide 13: O Papel da "Noosfera"
+
+::: {.columns}
+::: {.column width="50%"}
+*   Consciência humana e tecnologia moldando a estrutura espacial [41, 42].
+*   Toda técnica utilizada é "história embutida" na paisagem [20].
+*   A paisagem como síntese de sistemas naturais e culturais [45, 46].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Representação artística da integração homem-natureza-tecnologia -->
+:::
+:::
+
+## Slide 14: Ecologia de Estradas e Perturbação
+
+::: {.columns}
+::: {.column width="50%"}
+*   Estradas agem como vetores de espécies invasoras e doenças [47, 48].
+*   Causa fragmentação física e mortalidade por atropelamento [12, 49, 50].
+*   Aumenta a capilaridade da interferência humana no território [15].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Mapa de densidade de estradas em área de conservação -->
+:::
+:::
+
+## Slide 15: Percepção do Distúrbio pelas Espécies
+
+::: {.columns}
+::: {.column width="50%"}
+*   Diferentes organismos percebem a perturbação em escalas distintas [51-53].
+*   Espécies especialistas são as mais impactadas pela mudança estrutural [54, 55].
+*   O que é matriz hostil para uma espécie pode ser habitat para outra [56, 57].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Comparação visual da escala de percepção entre onça e anfíbio -->
+:::
+:::
+
+## Slide 16: Gestão Integrada de Paisagens (GIP)
+
+::: {.columns}
+::: {.column width="50%"}
+*   Abordagem para conciliar objetivos sociais, econômicos e ambientais [58, 59].
+*   Alianças de Paisagem (AP) para ação colaborativa [60, 61].
+*   Visão geracional de longo prazo (>20 anos) [58].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Organograma dos 5 elementos da Gestão Integrada -->
+:::
+:::
+
+## Slide 17: Restauração em Nível de Paisagem
+
+::: {.columns}
+::: {.column width="50%"}
+*   Utiliza o regime de distúrbio como base para recuperação [62].
+*   Abordagem de "4 Retornos": natural, social, financeiro e inspiracional [41, 63, 64].
+*   Restauração da conectividade funcional através de corredores [65, 66].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Exemplo de área antes e depois da restauração florestal -->
+:::
+:::
+
+## Slide 18: Conservação e Terras Privadas
+
+::: {.columns}
+::: {.column width="50%"}
+*   A maior parte das terras e remanescentes está em mãos privadas no Brasil [67, 68].
+*   Impossível atingir metas (ex: 30x30) sem engajar proprietários rurais [67, 69, 70].
+*   Necessidade de mecanismos legais e estímulos para conservação [71].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Gráfico de distribuição de terras públicas vs privadas -->
+:::
+:::
+
+## Slide 19: Crise da Biodiversidade e o Antropoceno
+
+::: {.columns}
+::: {.column width="50%"}
+*   Interferência humana atingindo escala de força geológica [72].
+*   Declínio drástico (70%) de populações de vertebrados desde 1970 [50, 72].
+*   Ecologia de paisagem como resposta científica a essa crise [73, 74].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Relatório Planeta Vivo ou curva de extinção do Holoceno -->
+:::
+:::
+
+## Slide 20: Conclusão: Planejar para a Ação
+
+::: {.columns}
+::: {.column width="50%"}
+*   A escala da paisagem é a escala de ação do homem no seu meio [44, 75].
+*   Mudar o paradigma: o homem é parte integrante do sistema, não perturbador externo [75, 76].
+*   Planejar a paisagem como um todo para garantir sustentabilidade [44].
+:::
+
+::: {.column width="50%"}
+<!-- INSERIR FIGURA ILUSTRATIVA: Foto panorâmica de uma paisagem sustentável integrada -->
+:::
+:::

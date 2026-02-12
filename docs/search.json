@@ -2558,8 +2558,8 @@
     "objectID": "slides/aula1_apresentacao.html#objetivos-do-curso",
     "href": "slides/aula1_apresentacao.html#objetivos-do-curso",
     "title": "Estrutura do Curso & Origens da Ecologia da Paisagem",
-    "section": "Objetivos do Curso",
-    "text": "Objetivos do Curso\n\nCompreender a ecologia da paisagem como o estudo da heterogeneidade espacial e suas causas e consequências biológicas\nAnalisar as inter-relações entre o homem e seu espaço de vida, abordando aspectos naturais e culturais\nCapacitar o aluno no uso de métodos quantitativos e ferramentas de SIG para análise espacial\nAplicar conceitos de conectividade e dinâmica de manchas para a conservação da biodiversidade\nDesenvolver habilidades profissionais em comunicação científica e elaboração de projetos independentes"
+    "section": "",
+    "text": "Compreender a ecologia da paisagem como o estudo da heterogeneidade espacial e suas causas e consequências biológicas\nAnalisar as inter-relações entre o homem e seu espaço de vida, abordando aspectos naturais e culturais\nCapacitar o aluno no uso de métodos quantitativos e ferramentas de SIG para análise espacial\nAplicar conceitos de conectividade e dinâmica de manchas para a conservação da biodiversidade\nDesenvolver habilidades profissionais em comunicação científica e elaboração de projetos independentes"
   },
   {
     "objectID": "slides/aula1_apresentacao.html#módulos-1-a-4-fundamentos-e-métricas",
@@ -3936,9 +3936,9 @@
   {
     "objectID": "sessions/index.html",
     "href": "sessions/index.html",
-    "title": "Content",
+    "title": "Conteúdo",
     "section": "",
-    "text": "Semana 1: Origens e Conceitos de Escala\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\n\n\n\n\n\nSemana 2: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade\n\n\n\n\n\n\nFelipe Melo\n\n\nJan 23, 2026\n\n\n\n\n\n\n\n\n\n\n\nWeek 3 - Data Visualisation & Scientific Hypotheses\n\n\n\n\n\n\nFelipe Melo\n\n\nJan 22, 2026\n\n\n\n\n\n\n\n\n\n\n\nWeek 4 - Choosing the right analyses & Hypothetical-Deductive reasoning\n\n\n\n\n\n\nFelipe Melo\n\n\nJan 22, 2026\n\n\n\n\n\n\n\n\n\n\n\nWeek 5 - Analysing Categorical Data - Frequency Tests and Contingency Tables\n\n\n\n\n\n\nFelipe Melo\n\n\nJan 22, 2026\n\n\n\n\n\n\n\n\n\n\n\nWeek 6 - Mean Tests and Design of Experiments\n\n\n\n\n\n\nFelipe Melo\n\n\nJan 22, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Semana 1: Origens e Conceitos de Escala\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\n\n\n\n\n\nSemana 2: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade\n\n\n\n\n\n\nFelipe Melo\n\n\nJan 26, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 3: Dinâmica de Perturbação\n\n\n\n\n\n\nFelipe Melo\n\n\nFeb 12, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "sessions/week1/1-intro.html",
@@ -3985,7 +3985,7 @@
   {
     "objectID": "slides/aula1_apresentacao.html",
     "href": "slides/aula1_apresentacao.html",
-    "title": "Estrutura do Curso: Ecologia da Paisagem",
+    "title": "Estrutura do Curso & Origens da Ecologia da Paisagem",
     "section": "",
     "text": "Compreender a ecologia da paisagem como o estudo da heterogeneidade espacial e suas causas e consequências biológicas\nAnalisar as inter-relações entre o homem e seu espaço de vida, abordando aspectos naturais e culturais\nCapacitar o aluno no uso de métodos quantitativos e ferramentas de SIG para análise espacial\nAplicar conceitos de conectividade e dinâmica de manchas para a conservação da biodiversidade\nDesenvolver habilidades profissionais em comunicação científica e elaboração de projetos independentes"
   },
@@ -4092,7 +4092,7 @@
     "href": "slides/aula1_apresentacao.html#escala-do-efeito",
     "title": "Estrutura do Curso & Origens da Ecologia da Paisagem",
     "section": "Escala do “efeito”",
-    "text": "Escala do “efeito”\n\nMoraga et al (2019)"
+    "text": "Escala do “efeito”\n\n\n\n\n\nMoraga et al (2019)"
   },
   {
     "objectID": "slides/aula1_apresentacao.html#o-que-devemos-saber-hoje",
@@ -4140,8 +4140,8 @@
     "objectID": "slides/aula2_modelo.html#objetivos-da-aula",
     "href": "slides/aula2_modelo.html#objetivos-da-aula",
     "title": "O Modelo Mancha-Corredor-Matriz e a Heterogeneidade",
-    "section": "Objetivos da Aula",
-    "text": "Objetivos da Aula\n\nDefinir a paisagem sob a ótica funcional da ecologia.\nCompreender os elementos fundamentais do modelo: Mancha, Corredor e Matriz.\nAnalisar as fontes de heterogeneidade espacial e suas consequências biológicas.\nDiferenciar conectividade estrutural de funcional no mosaico."
+    "section": "",
+    "text": "Definir a paisagem sob a ótica funcional da ecologia.\nCompreender os elementos fundamentais do modelo: Mancha, Corredor e Matriz.\nAnalisar as fontes de heterogeneidade espacial e suas consequências biológicas.\nDiferenciar conectividade estrutural de funcional no mosaico."
   },
   {
     "objectID": "slides/aula2_modelo.html#o-que-é-uma-paisagem",
@@ -4282,5 +4282,215 @@
     "title": "Semana 2: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade",
     "section": "Referências Bibliográficas",
     "text": "Referências Bibliográficas\n 1. Metzger, J. P. (2001). O que é ecologia de paisagens? Biota Neotropica.\n 2. Rocha, C. H., et al. (1997). Ecologia da paisagem e manejo sustentável dos recursos naturais. Geografia."
+  },
+  {
+    "objectID": "sessions/week3/aula3_perturbacoes.html",
+    "href": "sessions/week3/aula3_perturbacoes.html",
+    "title": "Semana 3: Dinâmica de Perturbação",
+    "section": "",
+    "text": "## Introdução ao Conceito de Distúrbio\nNa ecologia da paisagem, um distúrbio (ou perturbação) é definido como um evento discreto, natural ou antrópico, que causa uma modificação significativa no padrão normal de um sistema ecológico, como um ecossistema ou uma paisagem . Esses eventos produzem modificações estruturais que estabelecem novos padrões espaciais, os quais podem permanecer por curtos períodos ou até por tempos geológicos .\nA paisagem é, portanto, o resultado da interação entre regimes de distúrbio e processos de sucessão que ocorrem ao longo do tempo ."
+  },
+  {
+    "objectID": "sessions/week3/aula3_perturbacoes.html#introdução-ao-conceito-de-distúrbio",
+    "href": "sessions/week3/aula3_perturbacoes.html#introdução-ao-conceito-de-distúrbio",
+    "title": "Semana 3: Dinâmica de Perturbação",
+    "section": "Introdução ao Conceito de Distúrbio",
+    "text": "Introdução ao Conceito de Distúrbio\nNa ecologia da paisagem, um distúrbio (ou perturbação) é definido como um evento discreto, natural ou antrópico, que causa uma modificação significativa na estrutura de um sistema ecológico, como um ecossistema ou uma paisagem 1. Esses eventos produzem modificações estruturais que estabelecem novos padrões espaciais, os quais podem permanecer por curtos períodos ou até por tempos geológicos 1.\nA paisagem é, portanto, o resultado da interação entre regimes de distúrbio e processos de sucessão que ocorrem ao longo do tempo 2."
+  },
+  {
+    "objectID": "sessions/week3/aula3_perturbacoes.html#fontes-de-heterogeneidade-o-papel-dos-distúrbios",
+    "href": "sessions/week3/aula3_perturbacoes.html#fontes-de-heterogeneidade-o-papel-dos-distúrbios",
+    "title": "Semana 3: Dinâmica de Perturbação",
+    "section": "Fontes de Heterogeneidade: O Papel dos Distúrbios",
+    "text": "Fontes de Heterogeneidade: O Papel dos Distúrbios\nA heterogeneidade espacial, propriedade básica da paisagem, é alimentada por diferentes fontes de perturbação 3:\n\n1. Perturbações Naturais\nSão eventos intrínsecos à dinâmica da Terra que “quebram” a homogeneidade da vegetação, criando nichos e mantendo a diversidade 2, . Exemplos incluem: * Fogo e raios: Comuns em biomas como o Cerrado 4.\n\nEventos climáticos: Tornados, enchentes, geadas e tempestades 3, 4.\nDinâmica Geomorfológica: Deslizamentos de terra e quedas de árvores (gaps) 3, 4.\n\n\n\n2. Perturbações Antrópicas\nAtualmente, o ser humano é a principal força moldadora do mosaico, frequentemente operando em escalas sem precedentes 2. Exemplos incluem: * Desmatamento e Fragmentação: Divisão de habitats contínuos em manchas menores 2, 3.\n\nInfraestrutura: Construção de estradas, reservatórios e barragens de rios 4.\nMudança no Uso do Solo: Conversão de florestas em áreas agrícolas ou urbanas 2, 3."
+  },
+  {
+    "objectID": "sessions/week3/aula3_perturbacoes.html#legados-e-rugosidades-a-memória-da-paisagem",
+    "href": "sessions/week3/aula3_perturbacoes.html#legados-e-rugosidades-a-memória-da-paisagem",
+    "title": "Semana 3: Dinâmica de Perturbação",
+    "section": "Legados e Rugosidades: A Memória da Paisagem",
+    "text": "Legados e Rugosidades: A Memória da Paisagem\nAs paisagens contemporâneas não são estáticas; elas carregam legados do passado 2. Mesmo áreas que hoje parecem “naturais” podem ser sistemas manejados por séculos por populações passadas 2.\nO geógrafo Milton Santos denomina essas marcas de rugosidades: formas antigas do espaço que restaram de processos de acumulação e superposição do passado 2. Esses legados podem controlar o funcionamento atual dos ecossistemas, influenciando a composição de espécies e a ciclagem de nutrientes por centenas de anos 2. O solo é frequentemente o componente com a “memória” mais longa desses distúrbios 2."
+  },
+  {
+    "objectID": "sessions/week3/aula3_perturbacoes.html#importância-para-a-conservação",
+    "href": "sessions/week3/aula3_perturbacoes.html#importância-para-a-conservação",
+    "title": "Semana 3: Dinâmica de Perturbação",
+    "section": "Importância para a Conservação",
+    "text": "Importância para a Conservação\nEntender a dinâmica de perturbação é vital para o manejo sustentável, pois permite: 1. Identificar Limiares: Compreender quando a perda de habitat atinge níveis críticos (como o limiar de 30%) que comprometem a integridade da paisagem 3.\n\nRestauração Funcional: Planejar a recuperação de áreas degradadas considerando as trajetórias históricas da paisagem 2.\nGestão de Mosaicos: Integrar a dimensão humana como parte da solução, e não apenas como um perturbador externo 3."
+  },
+  {
+    "objectID": "sessions/week3/aula3_perturbacoes.html#referências-bibliográficas",
+    "href": "sessions/week3/aula3_perturbacoes.html#referências-bibliográficas",
+    "title": "Semana 3: Dinâmica de Perturbação",
+    "section": "Referências Bibliográficas",
+    "text": "Referências Bibliográficas\n 1. Rocha, C. H., et al. (1997). Ecologia da paisagem e manejo sustentável dos recursos naturais. Geografia.\n 2. Oliveira, R. R. & Montezuma, R. C. M. (2010). História ambiental e ecologia da paisagem. Mercator.\n 3. Metzger, J. P. (2001). O que é ecologia de paisagens? Biota Neotropica.\n 4. MMA (2026). Módulo 1: Fontes de Heterogeneidade na Paisagem. Ministério do Meio Ambiente."
+  },
+  {
+    "objectID": "slides/aula2_modelo.html",
+    "href": "slides/aula2_modelo.html",
+    "title": "O Modelo Mancha-Corredor-Matriz e a Heterogeneidade",
+    "section": "",
+    "text": "Definir a paisagem sob a ótica funcional da ecologia.\nCompreender os elementos fundamentais do modelo: Mancha, Corredor e Matriz.\nAnalisar as fontes de heterogeneidade espacial e suas consequências biológicas.\nDiferenciar conectividade estrutural de funcional no mosaico."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-1-o-conceito-de-distúrbio",
+    "href": "slides/aula3_perturb.html#slide-1-o-conceito-de-distúrbio",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 1: O Conceito de Distúrbio",
+    "text": "Slide 1: O Conceito de Distúrbio\n\n\n\nDefinido como um evento discreto que causa modificação significativa no padrão normal de um sistema [1, 2].\nAltera a estrutura de ecossistemas e paisagens através de mudanças na disponibilidade de recursos [1, 3].\nPode ser um evento natural ou de origem antrópica [1, 4]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-2-o-paradigma-padrão-processo",
+    "href": "slides/aula3_perturb.html#slide-2-o-paradigma-padrão-processo",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 2: O Paradigma Padrão-Processo",
+    "text": "Slide 2: O Paradigma Padrão-Processo\n\n\n\nO distúrbio é o motor que gera a heterogeneidade espacial [4, 5].\nMolda a composição da paisagem ao longo do tempo [6].\nPadrões resultantes do distúrbio determinam as funções futuras do ecossistema [6, 7]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-3-fontes-de-perturbação-natural",
+    "href": "slides/aula3_perturb.html#slide-3-fontes-de-perturbação-natural",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 3: Fontes de Perturbação Natural",
+    "text": "Slide 3: Fontes de Perturbação Natural\n\n\n\nEventos geofísicos: fogo, tornados e deslizamentos [4, 8].\nDinâmicas climáticas: enchentes, tempestades e geadas [2, 8].\nAções bióticas: pragas e desequilíbrios populacionais [8, 9]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-4-perturbações-antrópicas-contemporâneas",
+    "href": "slides/aula3_perturb.html#slide-4-perturbações-antrópicas-contemporâneas",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 4: Perturbações Antrópicas Contemporâneas",
+    "text": "Slide 4: Perturbações Antrópicas Contemporâneas\n\n\n\nAção humana em escala sem precedentes históricos [10].\nMudança no uso do solo: agricultura e urbanização [11-13].\nInfraestrutura linear: estradas e redes de transmissão [13-15]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-5-escalas-temporais-do-distúrbio",
+    "href": "slides/aula3_perturb.html#slide-5-escalas-temporais-do-distúrbio",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 5: Escalas Temporais do Distúrbio",
+    "text": "Slide 5: Escalas Temporais do Distúrbio\n\n\n\nPadrões podem ser efêmeros ou permanecer por tempos geológicos [1, 16].\nA “memória” do distúrbio é frequentemente retida no solo por longo tempo [17, 18].\nImportância dos ciclos de mudanças e sucessão biológica [6, 19]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-6-legados-e-rugosidades",
+    "href": "slides/aula3_perturb.html#slide-6-legados-e-rugosidades",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 6: Legados e Rugosidades",
+    "text": "Slide 6: Legados e Rugosidades\n\n\n\n“Rugosidades” (Milton Santos): formas antigas que restam de processos passados [18].\nPaisagens atuais não são estáticas; carregam história embutida [10, 20].\nMesmo áreas “intocadas” são fruto de decisões humanas históricas [20]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-7-fragmentação-como-perturbação",
+    "href": "slides/aula3_perturb.html#slide-7-fragmentação-como-perturbação",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 7: Fragmentação como Perturbação",
+    "text": "Slide 7: Fragmentação como Perturbação\n\n\n\nDivisão de habitats contínuos em manchas menores e isoladas [21-23].\nCausa perda de conectividade funcional e aumento do isolamento [24, 25].\nInserção de matrizes antrópicas no mosaico original [26, 27]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-8-o-efeito-de-borda",
+    "href": "slides/aula3_perturb.html#slide-8-o-efeito-de-borda",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 8: O Efeito de Borda",
+    "text": "Slide 8: O Efeito de Borda\n\n\n\nInterface entre manchas perturbadas e remanescentes naturais [13, 24, 28].\nAlterações microclimáticas: maior entrada de luz e vento [24, 29].\nImpacta a estabilidade do interior dos fragmentos [24, 30]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-9-distúrbios-compostos-e-resiliência",
+    "href": "slides/aula3_perturb.html#slide-9-distúrbios-compostos-e-resiliência",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 9: Distúrbios Compostos e Resiliência",
+    "text": "Slide 9: Distúrbios Compostos e Resiliência\n\n\n\nInteração entre múltiplos distúrbios (ex: seca seguida de fogo) [31, 32].\nPode levar a sistemas a estados alternativos de degradação [32].\nDesestabilização da capacidade de regeneração natural [32]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-10-limiares-críticos-de-extinção",
+    "href": "slides/aula3_perturb.html#slide-10-limiares-críticos-de-extinção",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 10: Limiares Críticos de Extinção",
+    "text": "Slide 10: Limiares Críticos de Extinção\n\n\n\nA “regra dos 30%”: a configuração importa mais quando resta pouco habitat [33, 34].\nAbaixo desse limiar, a conectividade desaparece abruptamente [35].\nPerda total de probabilidade de ocorrência para espécies sensíveis [36]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-11-ecologia-política---populações-causadoras",
+    "href": "slides/aula3_perturb.html#slide-11-ecologia-política---populações-causadoras",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 11: Ecologia Política - Populações Causadoras",
+    "text": "Slide 11: Ecologia Política - Populações Causadoras\n\n\n\nGrandes empreendimentos: mineração, usinas e infraestrutura [37, 38].\nExpansão agrícola voltada para demandas globais (Telecoupling) [39, 40].\nConflitos de poder e decisão sobre o uso do território [41, 42]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-12-ecologia-política---populações-vulneráveis",
+    "href": "slides/aula3_perturb.html#slide-12-ecologia-política---populações-vulneráveis",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 12: Ecologia Política - Populações Vulneráveis",
+    "text": "Slide 12: Ecologia Política - Populações Vulneráveis\n\n\n\nComunidades locais que dependem de ecossistemas estáveis [43, 44].\nInsegurança alimentar e escassez hídrica pós-distúrbio [40, 43].\nPopulações excluídas dos benefícios da exploração de recursos [40]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-13-o-papel-da-noosfera",
+    "href": "slides/aula3_perturb.html#slide-13-o-papel-da-noosfera",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 13: O Papel da “Noosfera”",
+    "text": "Slide 13: O Papel da “Noosfera”\n\n\n\nConsciência humana e tecnologia moldando a estrutura espacial [41, 42].\nToda técnica utilizada é “história embutida” na paisagem [20].\nA paisagem como síntese de sistemas naturais e culturais [45, 46]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-14-ecologia-de-estradas-e-perturbação",
+    "href": "slides/aula3_perturb.html#slide-14-ecologia-de-estradas-e-perturbação",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 14: Ecologia de Estradas e Perturbação",
+    "text": "Slide 14: Ecologia de Estradas e Perturbação\n\n\n\nEstradas agem como vetores de espécies invasoras e doenças [47, 48].\nCausa fragmentação física e mortalidade por atropelamento [12, 49, 50].\nAumenta a capilaridade da interferência humana no território [15]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-15-percepção-do-distúrbio-pelas-espécies",
+    "href": "slides/aula3_perturb.html#slide-15-percepção-do-distúrbio-pelas-espécies",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 15: Percepção do Distúrbio pelas Espécies",
+    "text": "Slide 15: Percepção do Distúrbio pelas Espécies\n\n\n\nDiferentes organismos percebem a perturbação em escalas distintas [51-53].\nEspécies especialistas são as mais impactadas pela mudança estrutural [54, 55].\nO que é matriz hostil para uma espécie pode ser habitat para outra [56, 57]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-16-gestão-integrada-de-paisagens-gip",
+    "href": "slides/aula3_perturb.html#slide-16-gestão-integrada-de-paisagens-gip",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 16: Gestão Integrada de Paisagens (GIP)",
+    "text": "Slide 16: Gestão Integrada de Paisagens (GIP)\n\n\n\nAbordagem para conciliar objetivos sociais, econômicos e ambientais [58, 59].\nAlianças de Paisagem (AP) para ação colaborativa [60, 61].\nVisão geracional de longo prazo (&gt;20 anos) [58]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-17-restauração-em-nível-de-paisagem",
+    "href": "slides/aula3_perturb.html#slide-17-restauração-em-nível-de-paisagem",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 17: Restauração em Nível de Paisagem",
+    "text": "Slide 17: Restauração em Nível de Paisagem\n\n\n\nUtiliza o regime de distúrbio como base para recuperação [62].\nAbordagem de “4 Retornos”: natural, social, financeiro e inspiracional [41, 63, 64].\nRestauração da conectividade funcional através de corredores [65, 66]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-18-conservação-e-terras-privadas",
+    "href": "slides/aula3_perturb.html#slide-18-conservação-e-terras-privadas",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 18: Conservação e Terras Privadas",
+    "text": "Slide 18: Conservação e Terras Privadas\n\n\n\nA maior parte das terras e remanescentes está em mãos privadas no Brasil [67, 68].\nImpossível atingir metas (ex: 30x30) sem engajar proprietários rurais [67, 69, 70].\nNecessidade de mecanismos legais e estímulos para conservação [71]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-19-crise-da-biodiversidade-e-o-antropoceno",
+    "href": "slides/aula3_perturb.html#slide-19-crise-da-biodiversidade-e-o-antropoceno",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 19: Crise da Biodiversidade e o Antropoceno",
+    "text": "Slide 19: Crise da Biodiversidade e o Antropoceno\n\n\n\nInterferência humana atingindo escala de força geológica [72].\nDeclínio drástico (70%) de populações de vertebrados desde 1970 [50, 72].\nEcologia de paisagem como resposta científica a essa crise [73, 74]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-20-conclusão-planejar-para-a-ação",
+    "href": "slides/aula3_perturb.html#slide-20-conclusão-planejar-para-a-ação",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 20: Conclusão: Planejar para a Ação",
+    "text": "Slide 20: Conclusão: Planejar para a Ação\n\n\n\nA escala da paisagem é a escala de ação do homem no seu meio [44, 75].\nMudar o paradigma: o homem é parte integrante do sistema, não perturbador externo [75, 76].\nPlanejar a paisagem como um todo para garantir sustentabilidade [44]."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#o-conceito-de-distúrbio",
+    "href": "slides/aula3_perturb.html#o-conceito-de-distúrbio",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "O Conceito de Distúrbio",
+    "text": "O Conceito de Distúrbio\n\n\n\nEvento discreto que causa modificação de um sistema\nAltera a disponibilidade de recursos\nPode ser um evento natural ou de origem antrópica"
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#o-paradigma-padrão-processo",
+    "href": "slides/aula3_perturb.html#o-paradigma-padrão-processo",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "O Paradigma Padrão-Processo",
+    "text": "O Paradigma Padrão-Processo\n\n\n\nO distúrbio é o motor que gera a heterogeneidade espacial\nAfeta a estrutura da paisagem spacio-temporalmente\nPadrões resultantes do distúrbio determinam as funções futuras do ecossistema"
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#fontes-neutras-de-perturbação",
+    "href": "slides/aula3_perturb.html#fontes-neutras-de-perturbação",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Fontes “neutras” de perturbação",
+    "text": "Fontes “neutras” de perturbação\n\n\n\nEventos geofísicos: fogo, tornados e deslizamentos\nDinâmicas climáticas: enchentes, tempestades e geadas\nAções bióticas: pragas e desequilíbrios populacionais\n\n\n\n\n\nPantanal Inundado"
   }
 ]
