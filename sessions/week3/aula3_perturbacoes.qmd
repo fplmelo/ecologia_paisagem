@@ -16,6 +16,13 @@ format:
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Contrasts_-_fire.jpg/1920px-Contrasts_-_fire.jpg)
 
+
+## Slides desta aula
+
+Tela cheia [CLIQUE AQUI](https://fplmelo.github.io/ecologia_paisagem/slides/aula2_perturb.html#/title-slide) e depois pressione 'f'
+
+<iframe class="slide-deck" src="https://fplmelo.github.io/ecologia_paisagem/slides/aula2_perturb.html#/title-slide" width="700px" height="500px"></iframe>
+
 ## Introdução ao Conceito de Distúrbio
 
 Na ecologia da paisagem, um **distúrbio (ou perturbação)** é definido como um evento discreto, natural ou antrópico, que causa uma modificação significativa na estrutura de um sistema ecológico, como um ecossistema ou uma paisagem [1](#ref1). Esses eventos produzem modificações estruturais que estabelecem novos padrões espaciais, os quais podem permanecer por curtos períodos ou até por tempos geológicos [1](#ref1).
