@@ -19,9 +19,9 @@ format:
 
 ## Slides desta aula
 
-Tela cheia [CLIQUE AQUI](https://fplmelo.github.io/ecologia_paisagem/slides/aula2_perturb.html#/title-slide) e depois pressione 'f'
+Tela cheia [CLIQUE AQUI](https://fplmelo.github.io/ecologia_paisagem/slides/aula3_perturb.html#/title-slide) e depois pressione 'f'
 
-<iframe class="slide-deck" src="https://fplmelo.github.io/ecologia_paisagem/slides/aula2_perturb.html#/title-slide" width="700px" height="500px"></iframe>
+<iframe class="slide-deck" src="https://fplmelo.github.io/ecologia_paisagem/slides/aula3_perturb.html#/title-slide" width="700px" height="500px"></iframe>
 
 ## Introdução ao Conceito de Distúrbio
 
