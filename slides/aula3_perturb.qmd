@@ -56,101 +56,105 @@ lang: pt
 :::
 :::
 
-## Slide 4: Perturbações Antrópicas Contemporâneas
+## Perturbações antrópicas contemporâneas
+
+*   Ação humana em escala sem precedentes históricos 
+*   Mudança no uso do solo: agricultura e urbanização 
+*   Infraestrutura linear: estradas e redes de transmissão 
+
+
+##
+
+![](/img/antroma.png){fig-align=center width=150%}
+
+
+## Escalas temporais do distúrbio
 
 ::: {.columns}
 ::: {.column width="50%"}
-*   Ação humana em escala sem precedentes históricos [10].
-*   Mudança no uso do solo: agricultura e urbanização [11-13].
-*   Infraestrutura linear: estradas e redes de transmissão [13-15].
+
+*   Padrões podem ser efêmeros ou permanecer por tempos geológicos
+*   A "memória" do distúrbio é frequentemente retida na paisagem
+
 :::
 
 ::: {.column width="50%"}
-<!-- INSERIR FIGURA ILUSTRATIVA: Imagem de satélite de desmatamento ou expansão urbana -->
+
+![](/img/defauna.png)
 :::
 :::
 
-## Slide 5: Escalas Temporais do Distúrbio
+## Legados e rugosidades
 
 ::: {.columns}
 ::: {.column width="50%"}
-*   Padrões podem ser efêmeros ou permanecer por tempos geológicos [1, 16].
-*   A "memória" do distúrbio é frequentemente retida no solo por longo tempo [17, 18].
-*   Importância dos ciclos de mudanças e sucessão biológica [6, 19].
+*   "Rugosidades": formas antigas que restam de processos passados
+*   Paisagens atuais não são estáticas; carregam história embutida 
+*   Mesmo áreas "intocadas" são fruto de decisões humanas históricas
 :::
 
 ::: {.column width="50%"}
-<!-- INSERIR FIGURA ILUSTRATIVA: Gráfico de escalas temporais vs espaciais de distúrbios -->
+![](/img/rugosity.png)
 :::
 :::
 
-## Slide 6: Legados e Rugosidades
+## Fragmentação como perturbação
 
 ::: {.columns}
 ::: {.column width="50%"}
-*   "Rugosidades" (Milton Santos): formas antigas que restam de processos passados [18].
-*   Paisagens atuais não são estáticas; carregam história embutida [10, 20].
-*   Mesmo áreas "intocadas" são fruto de decisões humanas históricas [20].
+*   Divisão de habitats contínuos em manchas menores e isoladas
+*   Causa perda de conectividade funcional e aumento do isolamento
+*   Inserção de matrizes antrópicas no mosaico original
+
 :::
 
 ::: {.column width="50%"}
-<!-- INSERIR FIGURA ILUSTRATIVA: Foto de floresta secundária com vestígios de uso agrícola passado -->
+
+![](https://ccte.ca/resources/images/Fig5.1.png)
 :::
 :::
 
-## Slide 7: Fragmentação como Perturbação
+## O Efeito de Borda
 
 ::: {.columns}
 ::: {.column width="50%"}
-*   Divisão de habitats contínuos em manchas menores e isoladas [21-23].
-*   Causa perda de conectividade funcional e aumento do isolamento [24, 25].
-*   Inserção de matrizes antrópicas no mosaico original [26, 27].
+*   **Ecótono** entre manchas perturbadas e remanescentes naturais 
+*   Alterações microclimáticas: maior entrada de luz e vento 
+*   Impacta a estabilidade do interior dos fragmentos 
 :::
 
 ::: {.column width="50%"}
-<!-- INSERIR FIGURA ILUSTRATIVA: Mapa de fragmentação florestal clássico -->
+![](https://wildflowerturf.co.uk/wp-content/uploads/2011/11/principles8-12n4vvp.jpg)
 :::
 :::
 
-## Slide 8: O Efeito de Borda
+## Distúrbios compostos e resiliência
 
 ::: {.columns}
 ::: {.column width="50%"}
-*   Interface entre manchas perturbadas e remanescentes naturais [13, 24, 28].
-*   Alterações microclimáticas: maior entrada de luz e vento [24, 29].
-*   Impacta a estabilidade do interior dos fragmentos [24, 30].
+*   Interação entre múltiplos distúrbios (ex: seca seguida de fogo) 
+*   Pode levar a sistemas a estados alternativos de degradação 
+*   Desestabilização da capacidade de regeneração natural
 :::
 
 ::: {.column width="50%"}
-<!-- INSERIR FIGURA ILUSTRATIVA: Diagrama ilustrando penetração de luz e vento em bordas -->
+
+![](https://ensia.com/wp-content/uploads/2020/06/Explainer_TippingPoints_vectorgraphic-920x604.jpg)
 :::
 :::
 
-## Slide 9: Distúrbios Compostos e Resiliência
+## Limiares críticos de extinção
 
 ::: {.columns}
 ::: {.column width="50%"}
-*   Interação entre múltiplos distúrbios (ex: seca seguida de fogo) [31, 32].
-*   Pode levar a sistemas a estados alternativos de degradação [32].
-*   Desestabilização da capacidade de regeneração natural [32].
+*   A "regra dos 30%": a configuração importa mais quando resta pouco habitat 
+*   Perda de conectividade 
+*   Perda de espécies sensíveis 
 :::
 
 ::: {.column width="50%"}
-<!-- INSERIR FIGURA ILUSTRATIVA: Gráfico de resiliência e limiares de distúrbio -->
-:::
-:::
 
-## Slide 10: Limiares Críticos de Extinção
-
-::: {.columns}
-::: {.column width="50%"}
-*   A "regra dos 30%": a configuração importa mais quando resta pouco habitat [33, 34].
-*   Abaixo desse limiar, a conectividade desaparece abruptamente [35].
-*   Perda total de probabilidade de ocorrência para espécies sensíveis [36].
-:::
-
-::: {.column width="50%"}
-<!-- INSERIR FIGURA ILUSTRATIVA: Gráfico mostrando o declínio da biodiversidade em relação à porcentagem de habitat -->
+![](/img/threshold.png)
 :::
 :::
 
