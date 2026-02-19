@@ -1258,5 +1258,82 @@
     "title": "Funções em R",
     "section": "Exercício",
     "text": "Exercício\nCrie uma função chamada mean_diff que: - Receba dois vetores numéricos - Retorne a diferença entre suas médias\n\nmean_diff &lt;- function(x, y) {\n  mean(x) - mean(y)\n}\n\nmean_diff(c(1, 2, 3), c(4, 5, 6))\n\n[1] -3\n\n\n\nEste material foi desenvolvido por membros da equipe de ensino do\nHarvard Chan Bioinformatics Core (HBC).\nLicença Creative Commons Attribution 4.0.\nOs materiais utilizados nesta lição são adaptados de trabalhos da\nData Carpentry, também sob licença CC BY 4.0."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#ecologia-política---causas-da-perturbação",
+    "href": "slides/aula3_perturb.html#ecologia-política---causas-da-perturbação",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Ecologia Política - Causas da perturbação",
+    "text": "Ecologia Política - Causas da perturbação\n\n\n\nGrandes empreendimentos: mineração, usinas e infraestrutura\nExpansão agrícola voltada para demandas globais\nConflitos de poder e decisão sobre o uso do território"
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#ecologia-política---populações-vulneráveis",
+    "href": "slides/aula3_perturb.html#ecologia-política---populações-vulneráveis",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Ecologia Política - Populações vulneráveis",
+    "text": "Ecologia Política - Populações vulneráveis\n\n\n\nComunidades locais que dependem de ecossistemas estáveis * Insegurança alimentar e escassez hídrica pós-distúrbio\nPopulações excluídas dos benefícios da exploração de recursos\n\n\n\n\n\nOs últimos Piripkura"
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#ecologia-de-estradas-e-perturbação",
+    "href": "slides/aula3_perturb.html#ecologia-de-estradas-e-perturbação",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Ecologia de estradas e perturbação",
+    "text": "Ecologia de estradas e perturbação\n\n\n\nEstradas agem como vetores de espécies invasoras e doenças\nCausa fragmentação física e mortalidade por atropelamento\nAumenta a capilaridade da interferência humana no território"
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#slide-15-percepção-do-distúrbio",
+    "href": "slides/aula3_perturb.html#slide-15-percepção-do-distúrbio",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Slide 15: Percepção do distúrbio",
+    "text": "Slide 15: Percepção do distúrbio\n\n\n\nDiferentes organismos percebem a perturbação em escalas distintas\nEspécies especialistas são as mais impactadas pela mudança estrutural\nO que é matriz hostil para uma espécie pode ser habitat para outra"
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#percepção-do-distúrbio",
+    "href": "slides/aula3_perturb.html#percepção-do-distúrbio",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Percepção do distúrbio",
+    "text": "Percepção do distúrbio\n\n\n\nDiferentes organismos percebem a perturbação em escalas distintas\nEspécies especialistas são as mais impactadas pela mudança estrutural\nO que é matriz hostil para uma espécie pode ser habitat para outra"
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#gestão-integrada-de-paisagens-gip",
+    "href": "slides/aula3_perturb.html#gestão-integrada-de-paisagens-gip",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Gestão Integrada de Paisagens (GIP)",
+    "text": "Gestão Integrada de Paisagens (GIP)\n\n\n\nConciliar objetivos sociais, econômicos e ambientais\nConceito de Socio-ecossistemas\nVisão de longo prazo"
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#restauração-no-nível-da-paisagem",
+    "href": "slides/aula3_perturb.html#restauração-no-nível-da-paisagem",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Restauração no nível da paisagem",
+    "text": "Restauração no nível da paisagem\n\n\n\nUtiliza o regime de distúrbio como base para recuperação\nAbordagem de “4 Retornos”: natural, social, financeiro e inspiracional\nRestauração da conectividade funcional através de corredores"
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#conservação-e-terras-privadas",
+    "href": "slides/aula3_perturb.html#conservação-e-terras-privadas",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Conservação e terras privadas",
+    "text": "Conservação e terras privadas\n\n\n\nA maior parte das terras e remanescentes está em mãos privadas no Brasil\nImpossível atingir metas (ex: 30x30) sem engajar proprietários rurais\nNecessidade de mecanismos legais e estímulos para conservação\n\n\n\n\n\nPropriedade “legal” segundo o código florestal"
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#crise-da-biodiversidade-e-o-antropoceno",
+    "href": "slides/aula3_perturb.html#crise-da-biodiversidade-e-o-antropoceno",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Crise da biodiversidade e o antropoceno",
+    "text": "Crise da biodiversidade e o antropoceno\n\n\n\nInterferência humana atingindo escala de força geológica\nDeclínio drástico (70%) de populações de vertebrados desde 1970\nEcologia de paisagem como resposta científica a essa crise"
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#conclusão-planejar-para-a-ação",
+    "href": "slides/aula3_perturb.html#conclusão-planejar-para-a-ação",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "Conclusão: planejar para a ação",
+    "text": "Conclusão: planejar para a ação\n\nA escala da paisagem é a escala de ação do homem no seu meio\nMudar o paradigma: o homem é parte integrante do sistema, não perturbador externo\nPlanejar a paisagem como um todo para garantir sustentabilidade"
+  },
+  {
+    "objectID": "slides/aula3_perturb.html#fim",
+    "href": "slides/aula3_perturb.html#fim",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "FIM",
+    "text": "FIM"
   }
 ]
