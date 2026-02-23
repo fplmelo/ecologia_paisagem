@@ -660,16 +660,16 @@
   {
     "objectID": "resources/index.html",
     "href": "resources/index.html",
-    "title": "Helpful resources",
+    "title": "Lista de sites úteis",
     "section": "",
-    "text": "I have included a bunch of extra resources and guides related to graphic design, visualization, R, data, and other relevant topics. Enjoy!\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nNice & Free R Courses\n\n\nFelipe Melo\n\n\n\n\n\n\nUsing Quarto\n\n\nAndrew Heiss\n\n\n\n\n\n\nNo matching items"
+    "text": "Inclui abaixo uma lista de sites e materiais online como: cursos, apresentações e video-aulas. Aproveitem!\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nCursos de R Excelentes e Gratuitos\n\n\nFelipe Melo\n\n\n\n\n\n\nUsando Quarto\n\n\nAndrew Heiss\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "resources/quarto.html",
     "href": "resources/quarto.html",
-    "title": "Using Quarto",
+    "title": "Usando Quarto",
     "section": "",
-    "text": "Quarto Markdown is regular Markdown with R code and output sprinkled in. You can do everything you can with regular Markdown, but you can incorporate graphs, tables, and other code output directly in your document. You can create HTML, PDF, and Word documents, PowerPoint and HTML presentations, websites, books, and even interactive dashboards with Quarto. This whole course website is created with Quarto.\nQuarto’s predecessor was called R Markdown and worked exclusively with R (though there are ways to use other languages in document). Quarto is essentially “R Markdown 2.0,” but it is designed to be language agnostic. You can use R, Python, Julia, Observable JS, and even Stata code all in the same document. It is magical.\nHere are the most important things you’ll need to know about Quarto in this class:"
+    "text": "Quarto Markdown é o Markdown comum com código R e resultados intercalados. Você pode fazer tudo o que faz com o Markdown comum, mas pode incorporar gráficos, tabelas e outros resultados de código diretamente no seu documento. Você pode criar documentos em HTML, PDF e Word, apresentações em PowerPoint e HTML, sites, livros e até dashboards interativos com o Quarto. Todo este site do curso foi criado com o Quarto.\nQuarto é essencialmente um “R Markdown 2.0”, projetado para ser agnóstico em relação à linguagem. Você pode usar código R, Python, Julia, Observable JS e até Stata no mesmo documento. É mágico."
   },
   {
     "objectID": "resources/quarto.html#key-terms",
@@ -765,9 +765,9 @@
   {
     "objectID": "resources/r.html",
     "href": "resources/r.html",
-    "title": "Nice & Free R Courses",
+    "title": "Cursos de R Excelentes e Gratuitos",
     "section": "",
-    "text": "Here is a list of websites and YouTube channels offering free tutorials and resources for learning R, RStudio, and statistics, now with direct links:"
+    "text": "Aqui está uma lista de sites e canais do YouTube que oferecem tutoriais e recursos gratuitos para aprender R, RStudio e estatística, agora com links diretos:"
   },
   {
     "objectID": "resources/r.html#free-r-and-rstudio-tutorials-and-statistics-resources",
@@ -1040,14 +1040,14 @@
     "href": "sessions/index.html",
     "title": "Conteúdo",
     "section": "",
-    "text": "Semana 1: Origens e Conceitos de Escala\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\n\n\n\n\n\nSemana 2: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade\n\n\n\n\n\n\nFelipe Melo\n\n\nJan 26, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 3: Dinâmica de Perturbação\n\n\n\n\n\n\nFelipe Melo\n\n\nFeb 12, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 4: Teoria de Biogeografia de Ilhas e Fragmentação\n\n\n\n\n\n\nFelipe Melo\n\n\nFeb 20, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Semana 1: Origens e Conceitos de Escala\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\n\n\n\n\n\nSemana 2: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade\n\n\n\n\n\n\nFelipe Melo\n\n\nFeb 23, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 3: Dinâmica de Perturbação\n\n\n\n\n\n\nFelipe Melo\n\n\nFeb 23, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 4: Teoria de Biogeografia de Ilhas e Fragmentação\n\n\n\n\n\n\nFelipe Melo\n\n\nFeb 23, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "assessment.html",
     "href": "assessment.html",
-    "title": "Assessment Brief 2025-26",
+    "title": "Avaliação da Disciplina e Projeto Final",
     "section": "",
-    "text": "This Module covers the following courses:\n\nMSc/MRes Applied Ecology & Geospatial Techniques\nMSc/MRes Biodiversity Conservation\nMSc/MRes Endangered Species Recovery & Conservation\nMSc/MRes Equine Performance, Health & Welfare MSc/MRes Smart Agriculture"
+    "text": "A avaliação dos alunos nesta disciplina será processual e culminará em um Projeto Final de aplicação prática. O objetivo é transpor o conhecimento teórico sobre a estrutura, função e mudança das paisagens para um cenário real.\n\n\nO projeto consiste na elaboração de um diagnóstico técnico de uma paisagem local à escolha do aluno. O trabalho deve seguir as seguintes etapas:\n\nDelimitação e Caracterização: Identificar os elementos estruturais do mosaico utilizando o modelo Mancha-Corredor-Matriz.\nAnálise Quantitativa: Aplicar métricas de composição e configuração espacial. Para isso, os alunos utilizarão ferramentas de geoprocessamento como o QGIS/ArcGIS (plugin Patch Analyst) e a linguagem R (pacote landscapemetrics).\nInterpretação Ecológica: Avaliar a conectividade funcional e identificar possíveis limiares críticos que afetem a biodiversidade local .\nProposta de Intervenção: Sugerir medidas de manejo, como restauração de corredores ou gestão integrada, baseadas no diagnóstico realizado\n\nAs apresentações finais adotarão o formato de Inspire Session (Ignite), com palestras rápidas de 20 slides, incentivando a síntese e a comunicação científica de alto nível."
   },
   {
     "objectID": "assessment.html#summative-assessment-brief",
@@ -1748,5 +1748,138 @@
     "title": "Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação",
     "section": "",
     "text": "Tela cheia CLIQUE AQUI e depois pressione ‘f’"
+  },
+  {
+    "objectID": "assessment.html#metodologia-de-avaliação",
+    "href": "assessment.html#metodologia-de-avaliação",
+    "title": "Avaliação da Disciplina e Projeto Final",
+    "section": "",
+    "text": "A avaliação dos alunos nesta disciplina será processual e culminará em um Projeto Final de aplicação prática. O objetivo é transpor o conhecimento teórico sobre a estrutura, função e mudança das paisagens para um cenário real.\n\n\nO projeto consiste na elaboração de um diagnóstico técnico de uma paisagem local à escolha do aluno. O trabalho deve seguir as seguintes etapas:\n\nDelimitação e Caracterização: Identificar os elementos estruturais do mosaico utilizando o modelo Mancha-Corredor-Matriz.\nAnálise Quantitativa: Aplicar métricas de composição e configuração espacial. Para isso, os alunos utilizarão ferramentas de geoprocessamento como o QGIS/ArcGIS (plugin Patch Analyst) e a linguagem R (pacote landscapemetrics).\nInterpretação Ecológica: Avaliar a conectividade funcional e identificar possíveis limiares críticos que afetem a biodiversidade local .\nProposta de Intervenção: Sugerir medidas de manejo, como restauração de corredores ou gestão integrada, baseadas no diagnóstico realizado\n\nAs apresentações finais adotarão o formato de Inspire Session (Ignite), com palestras rápidas de 20 slides, incentivando a síntese e a comunicação científica de alto nível."
+  },
+  {
+    "objectID": "assessment.html#matriz-de-competências",
+    "href": "assessment.html#matriz-de-competências",
+    "title": "Avaliação da Disciplina e Projeto Final",
+    "section": "Matriz de Competências",
+    "text": "Matriz de Competências\nO desempenho dos alunos será avaliado conforme quatro eixos fundamentais de competência:\n\n\n\n\n\n\n\nCompetência\nDescrição da Avaliação\n\n\n\n\nDomínio de Conceitos\nCompreensão do paradigma padrão-processo e das bases teóricas da Ecologia de Paisagens\n\n\nCapacidade Crítica\nHabilidade de interpretar a estrutura espacial sob a ótica da escala de percepção das espécies\n\n\nDomínio de Ferramentas\nProficiência técnica no uso de SIG e R para análise de dados espaciais e cálculo de métricas\n\n\nAplicação\nEficácia em sugerir intervenções práticas e viáveis para a conservação e gestão do território"
+  },
+  {
+    "objectID": "assessment.html#escala-de-avaliação",
+    "href": "assessment.html#escala-de-avaliação",
+    "title": "Avaliação da Disciplina e Projeto Final",
+    "section": "Escala de Avaliação",
+    "text": "Escala de Avaliação\nA pontuação final seguirá uma escala categórica de desempenho:\n\nExcelente (8-10): Integra magistralmente dados quantitativos com teoria ecológica, apresentando propostas inovadoras e alta capacidade crítica.\nBoa (7-8): Demonstra bom domínio técnico e conceitual, com diagnóstico e plano de manejo coerentes.\nRazoável (6-7): Executa o diagnóstico técnico, mas falha na interpretação crítica ou na conexão entre dados e intervenções.\nInsuficiente (0-5): Não atinge os requisitos mínimos de compreensão teórica ou aplicação das ferramentas técnicas obrigatórias."
+  },
+  {
+    "objectID": "resources/quarto.html#termos-chave",
+    "href": "resources/quarto.html#termos-chave",
+    "title": "Usando Quarto",
+    "section": "Termos-chave",
+    "text": "Termos-chave\n\nDocumento: Um arquivo Markdown onde você digita o conteúdo.\nChunk: Um pedaço de código R incluído no seu documento. Ele se parece com isto:\n\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "resources/quarto.html#adicionar-chunks",
+    "href": "resources/quarto.html#adicionar-chunks",
+    "title": "Usando Quarto",
+    "section": "Adicionar chunks",
+    "text": "Adicionar chunks\nExistem três maneiras de inserir chunks:\n\nPressione Ctrl + Alt + I no Windows ou Cmd + Option + I no macOS.\nClique no botão Insert no topo da janela do editor.\nDigite manualmente as crases (não recomendado)."
+  },
+  {
+    "objectID": "resources/quarto.html#opções-de-chunk",
+    "href": "resources/quarto.html#opções-de-chunk",
+    "title": "Usando Quarto",
+    "section": "Opções de chunk",
+    "text": "Opções de chunk\nConfigure as opções seguindo o prefixo #| no topo do chunk:\n\n\n\n\n\n\n\n\nFigure 1: Legenda do gráfico\n\n\n\n\n\nOpções comuns:\n\necho: false: O código não aparece, mas o resultado sim.\nwarning: false: Omite avisos.\nmessage: false: Omite mensagens de carregamento."
+  },
+  {
+    "objectID": "resources/quarto.html#chunks-inline",
+    "href": "resources/quarto.html#chunks-inline",
+    "title": "Usando Quarto",
+    "section": "Chunks inline",
+    "text": "Chunks inline\nPara incluir resultados no texto, use a sintaxe de uma crase seguida de r. Por exemplo:\nA média é 20.1."
+  },
+  {
+    "objectID": "resources/quarto.html#formatos-de-saída",
+    "href": "resources/quarto.html#formatos-de-saída",
+    "title": "Usando Quarto",
+    "section": "Formatos de saída",
+    "text": "Formatos de saída\nDefina no YAML:\nformat:\n  html: default\n  pdf: default\n  docx: default\n\nPágina traduzida de: Andrew Heiss"
+  },
+  {
+    "objectID": "resources/r.html#tutoriais-gratuitos-de-r-e-rstudio-e-recursos-de-estatística",
+    "href": "resources/r.html#tutoriais-gratuitos-de-r-e-rstudio-e-recursos-de-estatística",
+    "title": "Cursos de R Excelentes e Gratuitos",
+    "section": "",
+    "text": "Aqui está uma lista de sites e canais do YouTube que oferecem tutoriais e recursos gratuitos para aprender R, RStudio e estatística, agora com links diretos:"
+  },
+  {
+    "objectID": "resources/r.html#sites",
+    "href": "resources/r.html#sites",
+    "title": "Cursos de R Excelentes e Gratuitos",
+    "section": "Sites:",
+    "text": "Sites:\n\nR-Project.org: O site oficial da linguagem de programação R. Contém documentação abrangente, manuais e links para diversos recursos. Embora não seja estruturado como um tutorial, é uma referência inestimável.\nRStudio Education (Posit Education): A página oficial de educação da RStudio (agora Posit). Eles oferecem uma infinidade de recursos gratuitos, incluindo webinars, guias e links para outros materiais de aprendizado.\nDicas de Quarto: Muitas dicas para ajustar seu site e caderno de exercícios em Quarto."
+  },
+  {
+    "objectID": "resources/r.html#livros",
+    "href": "resources/r.html#livros",
+    "title": "Cursos de R Excelentes e Gratuitos",
+    "section": "Livros",
+    "text": "Livros\n\nR for Data Science (r4ds.had.co.nz): Um livro online gratuito e abrangente de Hadley Wickham e Garrett Grolemund, focado no uso do R para tarefas de ciência de dados.\nAdvanced R (adv-r.hadley.nz): Outro excelente livro online gratuito de Hadley Wickham, aprofundando-se em aspectos mais avançados da programação em R."
+  },
+  {
+    "objectID": "resources/r.html#cursos-de-r-online-gratuitos",
+    "href": "resources/r.html#cursos-de-r-online-gratuitos",
+    "title": "Cursos de R Excelentes e Gratuitos",
+    "section": "Cursos de R online gratuitos",
+    "text": "Cursos de R online gratuitos\n\nR and the Tidyverse for working with data: O básico de R e Tidyverse, incluindo ggplot e manipulação de dados (data wrangling);\nIntroduction to R: Outro curso de R online simples e direto.\nSTAT 545: Manipulação, exploração e análise de dados com R."
+  },
+  {
+    "objectID": "resources/r.html#fóruns",
+    "href": "resources/r.html#fóruns",
+    "title": "Cursos de R Excelentes e Gratuitos",
+    "section": "Fóruns",
+    "text": "Fóruns\n\nStack Overflow: Um site de perguntas e respostas onde você pode encontrar soluções para problemas específicos relacionados a R e estatística.\nCross Validated (stats.stackexchange.com): Um site do Stack Exchange dedicado exclusivamente a questões de estatística."
+  },
+  {
+    "objectID": "resources/r.html#canais-no-youtube",
+    "href": "resources/r.html#canais-no-youtube",
+    "title": "Cursos de R Excelentes e Gratuitos",
+    "section": "Canais no YouTube:",
+    "text": "Canais no YouTube:\n\nPosit PBC: Site oficial da empresa Posit (RStudio, Quarto e Tidyverse).\nStatQuest com Josh Starmer: Embora não seja focado exclusivamente em R, este canal oferece explicações excelentes e intuitivas sobre conceitos estatísticos.\nEquitable Equations: Oferece uma ampla gama de tutoriais de estatística, muitos demonstrando a implementação em R.\nRichardOnData: Fornece tutoriais e explicações sobre vários tópicos de ciência de dados, incluindo programação em R e análise estatística.\n\nPor favor, note que a disponibilidade de conteúdo gratuito nessas plataformas pode mudar com o tempo. Sempre verifique o site ou canal específico para ver as ofertas atuais."
+  },
+  {
+    "objectID": "resources/eco_pais.html",
+    "href": "resources/eco_pais.html",
+    "title": "Cursos de Ecologia de Paisagem",
+    "section": "",
+    "text": "Aqui está uma lista de sites e canais do YouTube que oferecem tutoriais em ecologia de paisagem"
+  },
+  {
+    "objectID": "resources/eco_pais.html#tutoriais-gratuitos-de-r-e-rstudio-e-recursos-de-estatística",
+    "href": "resources/eco_pais.html#tutoriais-gratuitos-de-r-e-rstudio-e-recursos-de-estatística",
+    "title": "Cursos de Ecologia de Paisagem",
+    "section": "",
+    "text": "Aqui está uma lista de sites e canais do YouTube que oferecem tutoriais em ecologia de paisagem"
+  },
+  {
+    "objectID": "resources/eco_pais.html#cursos-online-grátis-em-português",
+    "href": "resources/eco_pais.html#cursos-online-grátis-em-português",
+    "title": "Cursos de Ecologia de Paisagem",
+    "section": "Cursos online grátis em Português:",
+    "text": "Cursos online grátis em Português:\n\nNEEDS - UFSCAR: curso online sobre Ecologia de Paisagens, feito durante a pandemia do Coronavirus, de forma a auxiliar o Ensino Não-Presencial Emergencial (ENPE) - Graduação em Ciências Biológicas - campus Lagoa do Sino. Aqui você encontrará as informações básicas para acompanhar o nosso curso. Este material está em preparação! Dicas e sugestões são bem-vindas!"
+  },
+  {
+    "objectID": "resources/eco_pais.html#cursos-grátis-em-inglês",
+    "href": "resources/eco_pais.html#cursos-grátis-em-inglês",
+    "title": "Cursos de Ecologia de Paisagem",
+    "section": "Cursos grátis em Inglês",
+    "text": "Cursos grátis em Inglês\n\nETHx: Landscape Ecology - This is the first MOOC to teach Landscape Ecology. Participants learn theory, methods and tools to understand the landscapes we live in and to solve landscape-related environmental problems."
+  },
+  {
+    "objectID": "resources/eco_pais.html#códigos-em-r-para-ep",
+    "href": "resources/eco_pais.html#códigos-em-r-para-ep",
+    "title": "Cursos de Ecologia de Paisagem",
+    "section": "Códigos em R para EP",
+    "text": "Códigos em R para EP\nOpen-source Tools in R for Landscape Ecology\nIntroduction to landscape ecology with R\nMétricas de paisagem no R - O curso tem o intuito de oferecer uma introdução teórica e prática sobre o cálculo de métricas de paisagem categóricas (composição e configuração), utilizando a linguagem R através do pacote landscapemetrics. Primeiramente são apresentados os principais conceitos de ecologia da paisagem, métricas de paisagem, geoprocessamento, dados geoespaciais, linguagem R e detalhes do pacote landscapmetrics."
   }
 ]

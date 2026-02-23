@@ -1,101 +1,51 @@
 ---
-title: "Assessment Brief 2025-26"
-subtitle: "How you'll be evaluated?"
-description: ""
-title-block-banner: "#9e043d"
-format:
+title: "Avaliação da Disciplina e Projeto Final"
+subtitle: "Ecologia da Paisagem - Bacharelado em Ciências Biológicas (UFPE)"
+author: "Felipe Melo"
+format: 
   html:
     toc: true
-  pdf:
-    toc: true
+    self-contained: false
+lang: pt
 ---
 
-## Summative Assessment Brief
+## Metodologia de Avaliação
 
-This Module covers the following courses:
+A avaliação dos alunos nesta disciplina será processual e culminará em um **Projeto Final** de aplicação prática. O objetivo é transpor o conhecimento teórico sobre a estrutura, função e mudança das paisagens para um cenário real.
 
--   MSc/MRes Applied Ecology & Geospatial Techniques
--   MSc/MRes Biodiversity Conservation
--   MSc/MRes Endangered Species Recovery & Conservation
--   MSc/MRes Equine Performance, Health & Welfare MSc/MRes Smart Agriculture
+### O Projeto Final: Diagnóstico e Manejo
 
-## Formative Assessments
+O projeto consiste na elaboração de um **diagnóstico técnico de uma paisagem local** à escolha do aluno. O trabalho deve seguir as seguintes etapas:
 
-Your formative opportunities are related to the development of your workbook and sharing of this development with module leader and colleagues.
+1.  **Delimitação e Caracterização:** Identificar os elementos estruturais do mosaico utilizando o modelo **Mancha-Corredor-Matriz**.
 
-::: callout-note
-## Share your Workbook
+2.  **Análise Quantitativa:** Aplicar métricas de **composição** e **configuração** espacial. Para isso, os alunos utilizarão ferramentas de geoprocessamento como o **QGIS/ArcGIS** (plugin *Patch Analyst*) e a linguagem **R** (pacote *landscapemetrics*).
 
-You must not be shy or embarrassed to share your workbook. Nobody will judge you. We are all learning!
-:::
+3.  **Interpretação Ecológica:** Avaliar a **conectividade funcional** e identificar possíveis limiares críticos que afetem a biodiversidade local [](#ref6).
+4.  **Proposta de Intervenção:** Sugerir medidas de manejo, como restauração de corredores ou gestão integrada, baseadas no diagnóstico realizado
 
-## Type of Assessment
+As apresentações finais adotarão o formato de **Inspire Session** (Ignite), com palestras rápidas de 20 slides, incentivando a síntese e a comunicação científica de alto nível.
 
-**Your Summative** is to produce an dynamic document (i.e. a simple Quarto document) containing an analytical workflow for a given dataset where critically interpret the results and draw your conclusions.
+---
 
-### Step 1 - Context
+## Matriz de Competências
 
-You will be given a context of a scientific problem. This context will introduce you to a real-world problem that is going to be used as a background for the data that you are going to analyse.
+O desempenho dos alunos será avaliado conforme quatro eixos fundamentais de competência:
 
-### Step 2 - The dataset
+| Competência | Descrição da Avaliação |
+| :--- | :--- |
+| **Domínio de Conceitos** | Compreensão do paradigma padrão-processo e das bases teóricas da Ecologia de Paisagens |
+| **Capacidade Crítica** | Habilidade de interpretar a estrutura espacial sob a ótica da **escala de percepção** das espécies  |
+| **Domínio de Ferramentas** | Proficiência técnica no uso de **SIG** e **R** para análise de dados espaciais e cálculo de métricas  |
+| **Aplicação** | Eficácia em sugerir intervenções práticas e viáveis para a conservação e gestão do território |
 
-You will have access to a pre-built dataset in a `.csv` format that will contain all the data and metadata needed for your analyses. The data is the same for everyone and I am not providing data on your specific subject of studies.
+---
 
-### Step 3 - Your Workbook
+## Escala de Avaliação
 
-You are going to work on the assessment using your **Quarto workbook** constructed over the course of the whole module. This is going to be your submission. I'll collect your exams using a NOW Dropbox where you can paste the link to your published workbook.
+A pontuação final seguirá uma escala categórica de desempenho:
 
-::: callout-note
-## 
-
-The **dataset** and **context description** for the Summative exam will be shared by the end of the module sessions (probably in the last week of classes).
-:::
-
-## Transferable skills developed in this assessment
-
-### Analytical workflow
-
--   Create and attach to an analytical workflow that is reproducible
--   Generate good quality graphs and tables
--   Comment and understand R code
--   Identify core results within a set of exploratory analyses.
--   Interpret and generate conclusions based on data analysed
-
-## Specific tasks
-
--   Design an experimental design
--   Describe methods for reproducibility
--   Create a analytical workflow
--   Comment on the R codes in your **workbook**
-
-## Assessment Guidance
-
--   Analytical workflow (15%)
--   R code commented (15%)
--   Exploratory analysis (20%)
--   Quality graphs and tables (25%)
--   Interpretation of results (25%)
-
-## Further information
-
--   [Extenuating circumstances](https://www.ntu.ac.uk/studenthub/my-course/student-handbook/consideration-personal-circumstances)
-
-## Grading Matrix
-
-+---------------------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| Criteria                  | Fail                                                                  | Marginal Fail                                                                                                        | Pass                                                                                                                                                                                     | Commendation                                                                                     | Distinction                                                                                                                               | Distinction                                                                                                                          |
-|                           |                                                                       |                                                                                                                      |                                                                                                                                                                                          |                                                                                                  |                                                                                                                                           |                                                                                                                                      |
-|                           | ###### Low \| Mid                                                     |                                                                                                                      | ###### Low \| Mid \| High                                                                                                                                                                | ###### Low \| Mid \| High                                                                        | ###### Low \| Mid \|High                                                                                                                  | ###### Exceptional                                                                                                                   |
-+===========================+=======================================================================+======================================================================================================================+==========================================================================================================================================================================================+==================================================================================================+===========================================================================================================================================+======================================================================================================================================+
-| Analytical workflow       | No clear analytical workflow                                          | Workflow not easy to find; mixed analytical approach in search for any significant p-value                           | Workflow relatively reasonable but with excess of flaw analyses and lack of a logic sequence that goes from 1) preparation; 2) data wrangling; 3) Exploratory analyses; 4) Core analyses | Clear workflow but hard to reproduce because crucial steps were either omitted or non commented. | Very good workflow with clear guidance for reproducibility                                                                                | High quality workflow, fully reproducible and extensively commented                                                                  |
-+---------------------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| R code commented          | Little to no comments on coding                                       | Comments provided but non meaningful for crucial steps                                                               | Codes mostly commented but crucial steps are not udnerstood                                                                                                                              | Codes mostly commented and helping reproducibility.                                              | Codes fully commented but not excessively, avoiding visual pollution                                                                      | Codes fully commented and not affecting visual inspection of the script and allows full reproducibility and explanation in key steps |
-+---------------------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| Exploratory analysis      | No exploratory analyses done                                          | Insufficient exploratory analyses                                                                                    | Enough exploratory analyses but not commented or justified                                                                                                                               | Good exploratory analyses but poorly commented and little justified                              | Very good exploratory analyses, commented and justified                                                                                   | World-class and fully justified exploratory approach to data                                                                         |
-+---------------------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| Quality graphs and tables | Poor graphs, lacking crucial elements such as axis title and captions | Poor graphs and tables with some elements present but poorly explained while other elements are missig               | Graphs and tables present with most elements, but some missing components preclude full understanding of the info presented                                                              | Graphs and tables of acceptable quality with all elements present but not clearly descripted     | Good quality graphs and tables that could be accepted for publication in any serious scientific journal                                   | Outstading graphs and tables with graphical abstracts and schematic figures. All elements present and fully explained.               |
-+---------------------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| Interpretation of results | Poor or inexistant critical interpretation of the results found       | Deficient interpretation of the results and misuse of statistical concepts and wrong translation of tests and graphs | Results are just reported with no critical interpretation or further discussion                                                                                                          | Results correctly reported and critically interpreted but excessive speculation is present       | Results are fully reported in a correct manner with string attachment to the proposed workflow and are discussed without much speculation | Excellent interpretation, creative and fully connected with scientific hypotheses                                                    |
-+---------------------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-|                           |                                                                       |                                                                                                                      |                                                                                                                                                                                          |                                                                                                  |                                                                                                                                           |                                                                                                                                      |
-+---------------------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+*   **Excelente (8-10):** Integra magistralmente dados quantitativos com teoria ecológica, apresentando propostas inovadoras e alta capacidade crítica.
+*   **Boa (7-8):** Demonstra bom domínio técnico e conceitual, com diagnóstico e plano de manejo coerentes.
+*   **Razoável (6-7):** Executa o diagnóstico técnico, mas falha na interpretação crítica ou na conexão entre dados e intervenções.
+*   **Insuficiente (0-5):** Não atinge os requisitos mínimos de compreensão teórica ou aplicação das ferramentas técnicas obrigatórias.

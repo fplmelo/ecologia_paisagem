@@ -1,7 +1,8 @@
 ---
-title: Helpful resources
+title: Lista de sites úteis
 listing:
   type: table
 ---
 
-I have included a bunch of extra resources and guides related to graphic design, visualization, R, data, and other relevant topics. Enjoy!
+Inclui abaixo uma lista de sites e materiais online como: cursos, apresentações e video-aulas. Aproveitem!
+
