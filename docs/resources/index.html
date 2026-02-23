@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,15 +34,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-d4b0c6867662daffec38d31234abbead.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-869250abd7d97a07d35276006b228bbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -116,7 +115,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -142,8 +141,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../img/logo_branco_ufpe.png" alt="UFPE logo" class="navbar-logo light-content">
-    <img src="../img/logo_branco_ufpe.png" alt="UFPE logo" class="navbar-logo dark-content">
+    <img src="../img/logo_branco_ufpe.png" alt="UFPE logo" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -286,7 +284,7 @@ window.Quarto = {
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-file-modified-sort="1768910751948" data-listing-reading-time-sort="2" data-listing-word-count-sort="306" data-listing-title-sort="Nice &amp; Free R Courses" data-listing-filename-sort="r.qmd">
+<tr data-index="0" data-listing-file-modified-sort="1771848573090" data-listing-reading-time-sort="2" data-listing-word-count-sort="306" data-listing-title-sort="Nice &amp; Free R Courses" data-listing-filename-sort="r.qmd">
 <td>
 <a href="../resources/r.html" class="title listing-title">Nice &amp; Free R Courses</a>
 </td>
@@ -296,7 +294,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="1" data-listing-file-modified-sort="1768910751948" data-listing-reading-time-sort="6" data-listing-word-count-sort="1190" data-listing-title-sort="Using Quarto" data-listing-filename-sort="quarto.qmd">
+<tr data-index="1" data-listing-file-modified-sort="1771848573090" data-listing-reading-time-sort="6" data-listing-word-count-sort="1190" data-listing-title-sort="Using Quarto" data-listing-filename-sort="quarto.qmd">
 <td>
 <a href="../resources/quarto.html" class="title listing-title">Using Quarto</a>
 </td>
@@ -361,14 +359,13 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
