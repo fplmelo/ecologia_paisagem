@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Felipe Melo">
+<meta name="dcterms.date" content="2026-02-20">
 
-<title>Conteúdo</title>
+<title>Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,28 +25,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-d4b0c6867662daffec38d31234abbead.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-d4b0c6867662daffec38d31234abbead.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/alpine-3.12/buttons.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,84 +73,20 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-<style>
-
-      .quarto-title-block .quarto-title-banner {
-        background: #990000;
-      }
-</style>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../img/logo_branco_ufpe.png" alt="UFPE logo" class="navbar-logo light-content">
-    <img src="../img/logo_branco_ufpe.png" alt="UFPE logo" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/logo_branco_ufpe.png" alt="UFPE logo" class="navbar-logo light-content">
+    <img src="../../img/logo_branco_ufpe.png" alt="UFPE logo" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -159,15 +96,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Início</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../syllabus.html"> 
+    <a class="nav-link" href="../../syllabus.html"> 
 <span class="menu-text">Objetivos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../schedule.html"> 
+    <a class="nav-link" href="../../schedule.html"> 
 <span class="menu-text">Cronograma</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -176,42 +113,42 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-comece-aqui">    
         <li>
-    <a class="dropdown-item" href="../get-started/1-install.html"><i class="bi bi-emoji-sunglasses-fill" role="img">
+    <a class="dropdown-item" href="../../get-started/1-install.html"><i class="bi bi-emoji-sunglasses-fill" role="img">
 </i> 
  <span class="dropdown-text">1 - Instalar R &amp; Rstudio</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../get-started/2-basic-intro.html"><i class="bi bi-tools" role="img">
+    <a class="dropdown-item" href="../../get-started/2-basic-intro.html"><i class="bi bi-tools" role="img">
 </i> 
  <span class="dropdown-text">2 - Introdução Básica ao R e Rstudio</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../get-started/3-syntax.html"><i class="bi bi-tools" role="img">
+    <a class="dropdown-item" href="../../get-started/3-syntax.html"><i class="bi bi-tools" role="img">
 </i> 
  <span class="dropdown-text">3 - Sintaxe &amp; Estrutura de Dados</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../get-started/4-functions.html"><i class="bi bi-tools" role="img">
+    <a class="dropdown-item" href="../../get-started/4-functions.html"><i class="bi bi-tools" role="img">
 </i> 
  <span class="dropdown-text">4 - Funções e Comandos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../get-started/5-data.html"><i class="bi bi-tools" role="img">
+    <a class="dropdown-item" href="../../get-started/5-data.html"><i class="bi bi-tools" role="img">
 </i> 
  <span class="dropdown-text">5 - Dados em R</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="../sessions/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../sessions/index.html"> 
 <span class="menu-text">Todas as Aulas</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/index.html"> 
+    <a class="nav-link" href="../../resources/index.html"> 
 <span class="menu-text">Recursos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../assessment.html"> 
+    <a class="nav-link" href="../../assessment.html"> 
 <span class="menu-text">Tipo de Avaliação</span></a>
   </li>  
 </ul>
@@ -225,127 +162,109 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Conteúdo</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#origens-e-o-modelo-de-equilíbrio" id="toc-origens-e-o-modelo-de-equilíbrio" class="nav-link active" data-scroll-target="#origens-e-o-modelo-de-equilíbrio">1. Origens e o Modelo de Equilíbrio</a>
+  <ul class="collapse">
+  <li><a href="#os-dois-pilares-da-tbi" id="toc-os-dois-pilares-da-tbi" class="nav-link" data-scroll-target="#os-dois-pilares-da-tbi">Os Dois Pilares da TBI:</a></li>
+  </ul></li>
+  <li><a href="#a-versão-terrestre-aplicação-em-paisagens-fragmentadas" id="toc-a-versão-terrestre-aplicação-em-paisagens-fragmentadas" class="nav-link" data-scroll-target="#a-versão-terrestre-aplicação-em-paisagens-fragmentadas">2. A “Versão Terrestre”: Aplicação em Paisagens Fragmentadas</a></li>
+  <li><a href="#limitações-e-críticas-ao-modelo" id="toc-limitações-e-críticas-ao-modelo" class="nav-link" data-scroll-target="#limitações-e-críticas-ao-modelo">3. Limitações e Críticas ao Modelo</a></li>
+  <li><a href="#evolução-para-a-teoria-de-metapopulações" id="toc-evolução-para-a-teoria-de-metapopulações" class="nav-link" data-scroll-target="#evolução-para-a-teoria-de-metapopulações">4. Evolução para a Teoria de Metapopulações</a></li>
+  <li><a href="#sugestões-de-leitura" id="toc-sugestões-de-leitura" class="nav-link" data-scroll-target="#sugestões-de-leitura">Sugestões de Leitura</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação</h1>
+<p class="subtitle lead">Ecologia da Paisagem - Bacharelado em Ciências Biológicas (UFPE)</p>
+</div>
 
 
 
+<div class="quarto-title-meta column-page-left">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Felipe Melo </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 20, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
+</header>
 
 
+<section id="origens-e-o-modelo-de-equilíbrio" class="level2">
+<h2 class="anchored" data-anchor-id="origens-e-o-modelo-de-equilíbrio">1. Origens e o Modelo de Equilíbrio</h2>
+<p>A <strong>Teoria de Biogeografia de Ilhas (TBI)</strong> foi proposta em 1967 pelos ecólogos <strong>Robert MacArthur e Edward Wilson</strong>. O modelo baseia-se na ideia de que a riqueza de espécies em uma ilha é determinada por um equilíbrio dinâmico entre dois processos opostos: a <strong>imigração</strong> (colonização) de novas espécies e a <strong>extinção</strong> de espécies já presentes.</p>
+<section id="os-dois-pilares-da-tbi" class="level3">
+<h3 class="anchored" data-anchor-id="os-dois-pilares-da-tbi">Os Dois Pilares da TBI:</h3>
+<ol type="1">
+<li><strong>Efeito da Área:</strong> Ilhas maiores tendem a sustentar populações maiores, o que reduz as taxas de extinção por estocasticidade. Além disso, áreas maiores geralmente possuem maior diversidade de habitats.</li>
+<li><strong>Efeito do Isolamento:</strong> Ilhas mais próximas do continente (fonte de propágulos) apresentam taxas de imigração mais elevadas em comparação com ilhas distantes.</li>
+</ol>
+<blockquote class="blockquote">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../img/biogeo.png" class="img-fluid figure-img"></p>
+<figcaption>Gráfico do Modelo de Equilíbrio de MacArthur-Wilson, mostrando as curvas de imigração e extinção e como o ponto de equilíbrio (S) muda com o tamanho e a distância da ilha</figcaption>
+</figure>
+</div>
+</blockquote>
+</section>
+</section>
+<section id="a-versão-terrestre-aplicação-em-paisagens-fragmentadas" class="level2">
+<h2 class="anchored" data-anchor-id="a-versão-terrestre-aplicação-em-paisagens-fragmentadas">2. A “Versão Terrestre”: Aplicação em Paisagens Fragmentadas</h2>
+<p>A partir da década de 1980, a TBI tornou-se o principal arcabouço teórico para o planejamento de reservas naturais em ambientes continentais [6]. Nesse contexto, os <strong>fragmentos de vegetação nativa</strong> são tratados como “ilhas” imersas em um “mar” de matrizes antrópicas (como pastagens ou áreas urbanas).</p>
+<p>A aplicação da TBI em terra permitiu prever que: * <strong>Fragmentos grandes e próximos</strong> tendem a manter maior riqueza biológica do que fragmentos pequenos e isolados. * A configuração espacial da paisagem torna-se um fator-chave para determinar os riscos de extinção local e as possibilidades de recolonização.</p>
+</section>
+<section id="limitações-e-críticas-ao-modelo" class="level2">
+<h2 class="anchored" data-anchor-id="limitações-e-críticas-ao-modelo">3. Limitações e Críticas ao Modelo</h2>
+<p>Embora revolucionária, a TBI apresenta limitações quando aplicada a sistemas terrestres: * <strong>A Matriz não é um “Mar” Estéril:</strong> Diferente do oceano, a matriz terrestre possui diferentes graus de <strong>permeabilidade</strong>. Uma matriz de eucalipto pode facilitar o movimento de certas aves mais do que uma pastagem aberta. * <strong>O Limiar de 30%:</strong> Estudos sugerem que o efeito da configuração espacial (isolamento e forma) torna-se crítico apenas quando o habitat remanescente cobre menos de <strong>30% da paisagem</strong>; acima disso, a quantidade total de área é o fator dominante.</p>
+<blockquote class="blockquote">
+<p><strong>[INSERIR FIGURA 2: Comparação visual entre uma paisagem “variegada” (com transições graduais) e uma paisagem “fragmentada” (com alto contraste mancha-matriz), ilustrando onde a TBI é mais aplicável].</strong></p>
+</blockquote>
+</section>
+<section id="evolução-para-a-teoria-de-metapopulações" class="level2">
+<h2 class="anchored" data-anchor-id="evolução-para-a-teoria-de-metapopulações">4. Evolução para a Teoria de Metapopulações</h2>
+<p>A TBI forneceu a base para a <strong>Teoria de Metapopulações</strong>, que será abordada no Módulo II. Enquanto a TBI foca na riqueza de espécies (comunidade), a metapopulação foca na persistência de uma única espécie através da dinâmica de colonização e extinção em um conjunto de manchas conectadas.</p>
+<hr>
+</section>
+<section id="sugestões-de-leitura" class="level2">
+<h2 class="anchored" data-anchor-id="sugestões-de-leitura">Sugestões de Leitura</h2>
+<ul>
+<li><a href="http://www.biotaneotropica.org.br/v1n12/pt/abstract?thematic-review+BN00701122001"><strong>Metzger, J. P. (2001). O que é ecologia de paisagens?</strong></a> - Um artigo fundamental em português que explica a influência da TBI na ecologia espacial brasileira.</li>
+<li><a href="https://doi.org/10.1007/978-1-4939-2794-4"><strong>Turner, M. G. &amp; Gardner, R. H. (2015). Landscape Ecology in Theory and Practice.</strong></a> - Capítulo sobre a base teórica da ecologia de paisagens (disponível via SpringerLink).</li>
+<li><a href="https://www.annualreviews.org/doi/abs/10.1146/annurev.ecolsys.34.011802.132419"><strong>Fahrig, L. (2003). Effects of habitat fragmentation on biodiversity.</strong></a> - Uma revisão clássica sobre como o isolamento e o tamanho das manchas impactam a vida silvestre.</li>
+<li><a href="https://doi.org/10.1126/sciadv.1500052"><strong>Haddad et al.&nbsp;(2015). Habitat fragmentation and its lasting impact on Earth’s ecosystems.</strong></a> - Estudo que utiliza princípios da TBI para analisar experimentos de fragmentação em escala global.</li>
+</ul>
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1769422517764" data-listing-reading-time-sort="3" data-listing-word-count-sort="500">
-<a href="../sessions/week1/1-intro.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="../img/paisagem.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Semana 1: Origens e Conceitos de Escala
-</h5>
-<div class="card-text listing-description delink">
-Foto: Paisagem fragmentada na Usina Serra Grande, Ibateguara, Alagoas.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Felipe Melo
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1769422517000" data-listing-file-modified-sort="1769422517764" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="731">
-<a href="../sessions/week2/02_mcm.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="../img/corredor.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Semana 2: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade
-</h5>
-<div class="card-text listing-description delink">
-<strong>Objetivo Central:</strong> Capacitar o aluno a identificar e descrever a estrutura da paisagem através dos elementos do modelo clássico (PCM) e compreender as origens e consequências…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Felipe Melo
-</div>
-<div class="listing-date">
-Jan 26, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1770924365000" data-listing-file-modified-sort="1770924365604" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="482">
-<a href="../sessions/week3/aula3_perturbacoes.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="../img/wildfire.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Semana 3: Dinâmica de Perturbação
-</h5>
-<div class="card-text listing-description delink">
-Tela cheia CLIQUE AQUI e depois pressione ‘f’
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Felipe Melo
-</div>
-<div class="listing-date">
-Feb 12, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1771595336000" data-listing-file-modified-sort="1771595336508" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="537">
-<a href="../sessions/week4/aula4_tbi.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="../img/biogeo.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação
-</h5>
-<div class="card-text listing-description delink">
-A <strong>Teoria de Biogeografia de Ilhas (TBI)</strong> foi proposta em 1967 pelos ecólogos <strong>Robert MacArthur e Edward Wilson</strong>. O modelo baseia-se na ideia de que a riqueza de espécies em uma…<strong></strong><strong></strong>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Felipe Melo
-</div>
-<div class="listing-date">
-Feb 20, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -764,4 +683,5 @@ Feb 20, 2026
 
 
 
+<script src="../../site_libs/quarto-contrib/alpine-3.12/alpine@3.12.min.js"></script>
 </body></html>

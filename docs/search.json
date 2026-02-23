@@ -1040,7 +1040,7 @@
     "href": "sessions/index.html",
     "title": "Conteúdo",
     "section": "",
-    "text": "Semana 1: Origens e Conceitos de Escala\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\n\n\n\n\n\nSemana 2: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade\n\n\n\n\n\n\nFelipe Melo\n\n\nJan 26, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 3: Dinâmica de Perturbação\n\n\n\n\n\n\nFelipe Melo\n\n\nFeb 12, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Semana 1: Origens e Conceitos de Escala\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\n\n\n\n\n\nSemana 2: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade\n\n\n\n\n\n\nFelipe Melo\n\n\nJan 26, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 3: Dinâmica de Perturbação\n\n\n\n\n\n\nFelipe Melo\n\n\nFeb 12, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 4: Teoria de Biogeografia de Ilhas e Fragmentação\n\n\n\n\n\n\nFelipe Melo\n\n\nFeb 20, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "assessment.html",
@@ -1335,5 +1335,376 @@
     "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
     "section": "FIM",
     "text": "FIM"
+  },
+  {
+    "objectID": "sessions/week4/Untitled.html",
+    "href": "sessions/week4/Untitled.html",
+    "title": "Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação",
+    "section": "",
+    "text": "A Teoria de Biogeografia de Ilhas (TBI) foi proposta em 1967 pelos ecólogos Robert MacArthur e Edward Wilson. O modelo baseia-se na ideia de que a riqueza de espécies em uma ilha é determinada por um equilíbrio dinâmico entre dois processos opostos: a imigração (colonização) de novas espécies e a extinção de espécies já presentes.\n\n\n\nEfeito da Área: Ilhas maiores tendem a sustentar populações maiores, o que reduz as taxas de extinção por estocasticidade. Além disso, áreas maiores geralmente possuem maior diversidade de habitats.\nEfeito do Isolamento: Ilhas mais próximas do continente (fonte de propágulos) apresentam taxas de imigração mais elevadas em comparação com ilhas distantes.\n\n\n\n\n\nGráfico do Modelo de Equilíbrio de MacArthur-Wilson, mostrando as curvas de imigração e extinção e como o ponto de equilíbrio (S) muda com o tamanho e a distância da ilha"
+  },
+  {
+    "objectID": "sessions/week4/Untitled.html#origens-e-o-modelo-de-equilíbrio",
+    "href": "sessions/week4/Untitled.html#origens-e-o-modelo-de-equilíbrio",
+    "title": "Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação",
+    "section": "",
+    "text": "A Teoria de Biogeografia de Ilhas (TBI) foi proposta em 1967 pelos ecólogos Robert MacArthur e Edward Wilson. O modelo baseia-se na ideia de que a riqueza de espécies em uma ilha é determinada por um equilíbrio dinâmico entre dois processos opostos: a imigração (colonização) de novas espécies e a extinção de espécies já presentes.\n\n\n\nEfeito da Área: Ilhas maiores tendem a sustentar populações maiores, o que reduz as taxas de extinção por estocasticidade. Além disso, áreas maiores geralmente possuem maior diversidade de habitats.\nEfeito do Isolamento: Ilhas mais próximas do continente (fonte de propágulos) apresentam taxas de imigração mais elevadas em comparação com ilhas distantes.\n\n\n\n\n\nGráfico do Modelo de Equilíbrio de MacArthur-Wilson, mostrando as curvas de imigração e extinção e como o ponto de equilíbrio (S) muda com o tamanho e a distância da ilha"
+  },
+  {
+    "objectID": "sessions/week4/Untitled.html#a-versão-terrestre-aplicação-em-paisagens-fragmentadas",
+    "href": "sessions/week4/Untitled.html#a-versão-terrestre-aplicação-em-paisagens-fragmentadas",
+    "title": "Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação",
+    "section": "2. A “Versão Terrestre”: Aplicação em Paisagens Fragmentadas",
+    "text": "2. A “Versão Terrestre”: Aplicação em Paisagens Fragmentadas\nA partir da década de 1980, a TBI tornou-se o principal arcabouço teórico para o planejamento de reservas naturais em ambientes continentais [6]. Nesse contexto, os fragmentos de vegetação nativa são tratados como “ilhas” imersas em um “mar” de matrizes antrópicas (como pastagens ou áreas urbanas).\nA aplicação da TBI em terra permitiu prever que: * Fragmentos grandes e próximos tendem a manter maior riqueza biológica do que fragmentos pequenos e isolados. * A configuração espacial da paisagem torna-se um fator-chave para determinar os riscos de extinção local e as possibilidades de recolonização."
+  },
+  {
+    "objectID": "sessions/week4/Untitled.html#limitações-e-críticas-ao-modelo",
+    "href": "sessions/week4/Untitled.html#limitações-e-críticas-ao-modelo",
+    "title": "Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação",
+    "section": "3. Limitações e Críticas ao Modelo",
+    "text": "3. Limitações e Críticas ao Modelo\nEmbora revolucionária, a TBI apresenta limitações quando aplicada a sistemas terrestres: * A Matriz não é um “Mar” Estéril: Diferente do oceano, a matriz terrestre possui diferentes graus de permeabilidade. Uma matriz de eucalipto pode facilitar o movimento de certas aves mais do que uma pastagem aberta. * O Limiar de 30%: Estudos sugerem que o efeito da configuração espacial (isolamento e forma) torna-se crítico apenas quando o habitat remanescente cobre menos de 30% da paisagem; acima disso, a quantidade total de área é o fator dominante.\n\n[INSERIR FIGURA 2: Comparação visual entre uma paisagem “variegada” (com transições graduais) e uma paisagem “fragmentada” (com alto contraste mancha-matriz), ilustrando onde a TBI é mais aplicável]."
+  },
+  {
+    "objectID": "sessions/week4/Untitled.html#evolução-para-a-teoria-de-metapopulações",
+    "href": "sessions/week4/Untitled.html#evolução-para-a-teoria-de-metapopulações",
+    "title": "Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação",
+    "section": "4. Evolução para a Teoria de Metapopulações",
+    "text": "4. Evolução para a Teoria de Metapopulações\nA TBI forneceu a base para a Teoria de Metapopulações, que será abordada no Módulo II. Enquanto a TBI foca na riqueza de espécies (comunidade), a metapopulação foca na persistência de uma única espécie através da dinâmica de colonização e extinção em um conjunto de manchas conectadas."
+  },
+  {
+    "objectID": "sessions/week4/Untitled.html#sugestões-de-leitura",
+    "href": "sessions/week4/Untitled.html#sugestões-de-leitura",
+    "title": "Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação",
+    "section": "Sugestões de Leitura",
+    "text": "Sugestões de Leitura\n\nMetzger, J. P. (2001). O que é ecologia de paisagens? - Um artigo fundamental em português que explica a influência da TBI na ecologia espacial brasileira.\nTurner, M. G. & Gardner, R. H. (2015). Landscape Ecology in Theory and Practice. - Capítulo sobre a base teórica da ecologia de paisagens (disponível via SpringerLink).\nFahrig, L. (2003). Effects of habitat fragmentation on biodiversity. - Uma revisão clássica sobre como o isolamento e o tamanho das manchas impactam a vida silvestre.\nHaddad et al. (2015). Habitat fragmentation and its lasting impact on Earth’s ecosystems. - Estudo que utiliza princípios da TBI para analisar experimentos de fragmentação em escala global."
+  },
+  {
+    "objectID": "sessions/week4/aula4_tbi.html",
+    "href": "sessions/week4/aula4_tbi.html",
+    "title": "Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação",
+    "section": "",
+    "text": "A Teoria de Biogeografia de Ilhas (TBI) foi proposta em 1967 pelos ecólogos Robert MacArthur e Edward Wilson. O modelo baseia-se na ideia de que a riqueza de espécies em uma ilha é determinada por um equilíbrio dinâmico entre dois processos opostos: a imigração (colonização) de novas espécies e a extinção de espécies já presentes.\n\n\n\nEfeito da Área: Ilhas maiores tendem a sustentar populações maiores, o que reduz as taxas de extinção por estocasticidade. Além disso, áreas maiores geralmente possuem maior diversidade de habitats.\nEfeito do Isolamento: Ilhas mais próximas do continente (fonte de propágulos) apresentam taxas de imigração mais elevadas em comparação com ilhas distantes.\n\n\n\n\n\nGráfico do Modelo de Equilíbrio de MacArthur-Wilson, mostrando as curvas de imigração e extinção e como o ponto de equilíbrio (S) muda com o tamanho e a distância da ilha"
+  },
+  {
+    "objectID": "sessions/week4/aula4_tbi.html#origens-e-o-modelo-de-equilíbrio",
+    "href": "sessions/week4/aula4_tbi.html#origens-e-o-modelo-de-equilíbrio",
+    "title": "Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação",
+    "section": "",
+    "text": "A Teoria de Biogeografia de Ilhas (TBI) foi proposta em 1967 pelos ecólogos Robert MacArthur e Edward Wilson. O modelo baseia-se na ideia de que a riqueza de espécies em uma ilha é determinada por um equilíbrio dinâmico entre dois processos opostos: a imigração (colonização) de novas espécies e a extinção de espécies já presentes.\n\n\n\nEfeito da Área: Ilhas maiores tendem a sustentar populações maiores, o que reduz as taxas de extinção por estocasticidade. Além disso, áreas maiores geralmente possuem maior diversidade de habitats.\nEfeito do Isolamento: Ilhas mais próximas do continente (fonte de propágulos) apresentam taxas de imigração mais elevadas em comparação com ilhas distantes.\n\n\n\n\n\nGráfico do Modelo de Equilíbrio de MacArthur-Wilson, mostrando as curvas de imigração e extinção e como o ponto de equilíbrio (S) muda com o tamanho e a distância da ilha"
+  },
+  {
+    "objectID": "sessions/week4/aula4_tbi.html#a-versão-terrestre-aplicação-em-paisagens-fragmentadas",
+    "href": "sessions/week4/aula4_tbi.html#a-versão-terrestre-aplicação-em-paisagens-fragmentadas",
+    "title": "Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação",
+    "section": "2. A “Versão Terrestre”: Aplicação em Paisagens Fragmentadas",
+    "text": "2. A “Versão Terrestre”: Aplicação em Paisagens Fragmentadas\nA partir da década de 1980, a TBI tornou-se o principal arcabouço teórico para o planejamento de reservas naturais em ambientes continentais [6]. Nesse contexto, os fragmentos de vegetação nativa são tratados como “ilhas” imersas em um “mar” de matrizes antrópicas (como pastagens ou áreas urbanas).\nA aplicação da TBI em terra permitiu prever que: * Fragmentos grandes e próximos tendem a manter maior riqueza biológica do que fragmentos pequenos e isolados. * A configuração espacial da paisagem torna-se um fator-chave para determinar os riscos de extinção local e as possibilidades de recolonização."
+  },
+  {
+    "objectID": "sessions/week4/aula4_tbi.html#limitações-e-críticas-ao-modelo",
+    "href": "sessions/week4/aula4_tbi.html#limitações-e-críticas-ao-modelo",
+    "title": "Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação",
+    "section": "3. Limitações e Críticas ao Modelo",
+    "text": "3. Limitações e Críticas ao Modelo\nEmbora revolucionária, a TBI apresenta limitações quando aplicada a sistemas terrestres: * A Matriz não é um “Mar” Estéril: Diferente do oceano, a matriz terrestre possui diferentes graus de permeabilidade. Uma matriz de eucalipto pode facilitar o movimento de certas aves mais do que uma pastagem aberta. * O Limiar de 30%: Estudos sugerem que o efeito da configuração espacial (isolamento e forma) torna-se crítico apenas quando o habitat remanescente cobre menos de 30% da paisagem; acima disso, a quantidade total de área é o fator dominante.\n\n\n\n\nComparação visual entre uma paisagem “variegada” (com transições graduais, à esquerda) e uma paisagem “fragmentada” (com alto contraste mancha-matriz, à direita), ilustrando onde a TBI é mais aplicável"
+  },
+  {
+    "objectID": "sessions/week4/aula4_tbi.html#evolução-para-a-teoria-de-metapopulações",
+    "href": "sessions/week4/aula4_tbi.html#evolução-para-a-teoria-de-metapopulações",
+    "title": "Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação",
+    "section": "4. Evolução para a Teoria de Metapopulações",
+    "text": "4. Evolução para a Teoria de Metapopulações\nA TBI forneceu a base para a Teoria de Metapopulações, que será abordada no Módulo II. Enquanto a TBI foca na riqueza de espécies (comunidade), a metapopulação foca na persistência de uma única espécie através da dinâmica de colonização e extinção em um conjunto de manchas conectadas."
+  },
+  {
+    "objectID": "sessions/week4/aula4_tbi.html#sugestões-de-leitura",
+    "href": "sessions/week4/aula4_tbi.html#sugestões-de-leitura",
+    "title": "Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação",
+    "section": "Sugestões de Leitura",
+    "text": "Sugestões de Leitura\n\nMetzger, J. P. (2001). O que é ecologia de paisagens? - Um artigo fundamental em português que explica a influência da TBI na ecologia espacial brasileira.\nTurner, M. G. & Gardner, R. H. (2015). Landscape Ecology in Theory and Practice. - Capítulo sobre a base teórica da ecologia de paisagens (disponível via SpringerLink).\nFahrig, L. (2003). Effects of habitat fragmentation on biodiversity. - Uma revisão clássica sobre como o isolamento e o tamanho das manchas impactam a vida silvestre.\nHaddad et al. (2015). Habitat fragmentation and its lasting impact on Earth’s ecosystems. - Estudo que utiliza princípios da TBI para analisar experimentos de fragmentação em escala global."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-1-introdução-à-teoria-tbi",
+    "href": "slides/aula4_tbi_slides.html#slide-1-introdução-à-teoria-tbi",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 1: Introdução à Teoria (TBI)",
+    "text": "Slide 1: Introdução à Teoria (TBI)\n\n\n\nProposta em 1967 por Robert MacArthur e Edward Wilson .\nModelo seminal para entender padrões de riqueza de espécies.\nBase para a vertente ecológica da disciplina surgida nos anos 80 ."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-2-contexto-histórico-e-científico",
+    "href": "slides/aula4_tbi_slides.html#slide-2-contexto-histórico-e-científico",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 2: Contexto Histórico e Científico",
+    "text": "Slide 2: Contexto Histórico e Científico\n\n\n\nSurgiu como resposta à observação de padrões biológicos em ilhas oceânicas .\nBusca explicar por que ilhas diferentes possuem números distintos de espécies.\nIntegrada à Ecologia da Paisagem para planejar reservas em ambientes continentais ."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-3-o-modelo-de-equilíbrio-dinâmico",
+    "href": "slides/aula4_tbi_slides.html#slide-3-o-modelo-de-equilíbrio-dinâmico",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 3: O Modelo de Equilíbrio Dinâmico",
+    "text": "Slide 3: O Modelo de Equilíbrio Dinâmico\n\n\n\nA riqueza de espécies (S) é o equilíbrio entre imigração e extinção .\nImigração: Chegada de novos propágulos vindos de uma “fonte” (continente).\nExtinção: Perda de espécies já estabelecidas na ilha.\n\n\n\n\n\nFigura 1: Gráfico clássico de interseção das curvas de imigração e extinção"
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-4-o-efeito-da-área",
+    "href": "slides/aula4_tbi_slides.html#slide-4-o-efeito-da-área",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 4: O Efeito da Área",
+    "text": "Slide 4: O Efeito da Área\n\n\n\nIlhas maiores sustentam populações maiores , .\nMenor probabilidade de extinção estocástica (aleatória).\nGeralmente oferecem maior diversidade de habitats e nichos ."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-5-o-efeito-do-isolamento",
+    "href": "slides/aula4_tbi_slides.html#slide-5-o-efeito-do-isolamento",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 5: O Efeito do Isolamento",
+    "text": "Slide 5: O Efeito do Isolamento\n\n\n\nA distância da “fonte” determina a taxa de imigração , .\nIlhas mais próximas recebem mais colonizadores do que ilhas distantes.\nO isolamento reduz a chance de recolonização após extinções locais."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-6-síntese-o-equilíbrio-espacial",
+    "href": "slides/aula4_tbi_slides.html#slide-6-síntese-o-equilíbrio-espacial",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 6: Síntese: O Equilíbrio Espacial",
+    "text": "Slide 6: Síntese: O Equilíbrio Espacial\n\n\n\n\n\nFigura 2: Comparação de equilíbrio para ilhas Grandes vs Pequenas e Próximas vs Distantes\n\n\n\n\nIlhas grandes e próximas = Maior riqueza de espécies .\nIlhas pequenas e distantes = Menor riqueza de espécies .\nModelo preditivo e quantitativo para a biodiversidade."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-7-a-versão-terrena-da-tbi",
+    "href": "slides/aula4_tbi_slides.html#slide-7-a-versão-terrena-da-tbi",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 7: A “Versão Terrena” da TBI",
+    "text": "Slide 7: A “Versão Terrena” da TBI\n\n\n\nAplicação em fragmentos de vegetação nativa em terra firme .\nO fragmento é a “ilha”; a matriz antrópica (pasto, cidade) é o “mar” .\nMudança de paradigma: o espaço e a configuração importam ."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-8-fragmentação-como-ilhamento",
+    "href": "slides/aula4_tbi_slides.html#slide-8-fragmentação-como-ilhamento",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 8: Fragmentação como Ilhamento",
+    "text": "Slide 8: Fragmentação como Ilhamento\n\n\n\nProcesso onde áreas contínuas são subdivididas em manchas menores .\nGera perda de habitat e aumento do isolamento geográfico , .\nCausa declínio consistente das populações silvestres ."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-9-tbi-e-o-planejamento-de-reservas",
+    "href": "slides/aula4_tbi_slides.html#slide-9-tbi-e-o-planejamento-de-reservas",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 9: TBI e o Planejamento de Reservas",
+    "text": "Slide 9: TBI e o Planejamento de Reservas\n\n\n\nUtilizada para definir o tamanho e a forma de unidades de conservação , .\nDefesa de grandes fragmentos conectados para evitar extinções .\nA configuração espacial dita a persistência da fauna a longo prazo .\n\n\n\n\n\nFigura 3: Representação de mosaicos com diferentes tamanhos de mancha"
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-10-métricas-derivadas-da-tbi",
+    "href": "slides/aula4_tbi_slides.html#slide-10-métricas-derivadas-da-tbi",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 10: Métricas Derivadas da TBI",
+    "text": "Slide 10: Métricas Derivadas da TBI\n\n\n\nÁrea da Mancha (Patch Area): Determinante da viabilidade populacional .\nDistância ao Vizinho mais Próximo (ENN): Proxy para o isolamento .\nDensidade de Manchas: Quantificação da subdivisão do mosaico."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-11-o-limiar-de-30",
+    "href": "slides/aula4_tbi_slides.html#slide-11-o-limiar-de-30",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 11: O Limiar de 30%",
+    "text": "Slide 11: O Limiar de 30%\n\n\n\nAbaixo de 30% de cobertura, a configuração (isolamento) torna-se crítica .\nAcima desse limite, a quantidade total de habitat é o fator principal.\nIdentificar esse limiar é vital para a legislação (ex: Código Florestal) ."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-12-críticas-e-evolução-do-modelo",
+    "href": "slides/aula4_tbi_slides.html#slide-12-críticas-e-evolução-do-modelo",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 12: Críticas e Evolução do Modelo",
+    "text": "Slide 12: Críticas e Evolução do Modelo\n\n\n\n\n\nFigura 4: Comparação entre matriz hostil (mar) e matriz permeável (floresta plantada)\n\n\n\n\nA matriz terrestre não é estéril como o oceano , .\nEspécies percebem a matriz de formas diferentes (permeabilidade) , .\nSurgimento da necessidade de modelos de conectividade funcional."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-13-conectividade-estrutural-vs-funcional",
+    "href": "slides/aula4_tbi_slides.html#slide-13-conectividade-estrutural-vs-funcional",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 13: Conectividade Estrutural vs Funcional",
+    "text": "Slide 13: Conectividade Estrutural vs Funcional\n\n\n\nEstrutural: Disposição física dos fragmentos no espaço .\nFuncional: Capacidade real de movimento do organismo pelo mosaico .\nDepende da percepção biológica da espécie focal ."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-14-escala-de-percepção",
+    "href": "slides/aula4_tbi_slides.html#slide-14-escala-de-percepção",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 14: Escala de Percepção",
+    "text": "Slide 14: Escala de Percepção\n\n\n\nO que é “ilha” para uma espécie pode não ser para outra .\nExemplo: Um gafanhoto percebe a paisagem em metros; uma onça, em quilômetros .\nO manejo deve considerar o organismo de interesse ."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-15-implicações-na-mata-atlântica",
+    "href": "slides/aula4_tbi_slides.html#slide-15-implicações-na-mata-atlântica",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 15: Implicações na Mata Atlântica",
+    "text": "Slide 15: Implicações na Mata Atlântica\n\n\n\nBioma altamente fragmentado com remanescentes pequenos e isolados .\nUso da TBI para identificar fragmentos prioritários para conexão .\nMuitas espécies dependem de corredores para persistir .\n\n\n\n\n\nFigura 5: Mapa de fragmentação real da Mata Atlântica"
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-16-tbi-e-o-efeito-de-borda",
+    "href": "slides/aula4_tbi_slides.html#slide-16-tbi-e-o-efeito-de-borda",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 16: TBI e o Efeito de Borda",
+    "text": "Slide 16: TBI e o Efeito de Borda\n\n\n\nO isolamento de fragmentos aumenta a proporção de bordas .\nMudanças microclimáticas impactam a estabilidade do interior .\nEspécies de interior são as mais vulneráveis à redução da área."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-17-resposta-à-crise-da-biodiversidade",
+    "href": "slides/aula4_tbi_slides.html#slide-17-resposta-à-crise-da-biodiversidade",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 17: Resposta à Crise da Biodiversidade",
+    "text": "Slide 17: Resposta à Crise da Biodiversidade\n\n\n\nA TBI ajuda a prever o número de extinções após o desmatamento .\nAção humana atua como força geológica (Antropoceno) .\n70% das populações de vertebrados declinaram desde 1970 ."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-18-tbi-em-terras-privadas-no-brasil",
+    "href": "slides/aula4_tbi_slides.html#slide-18-tbi-em-terras-privadas-no-brasil",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 18: TBI em Terras Privadas no Brasil",
+    "text": "Slide 18: TBI em Terras Privadas no Brasil\n\n\n\n\n\nFigura 6: Distribuição de fragmentos em propriedades rurais\n\n\n\n\nMaioria dos remanescentes e “ilhas” está em fazendas particulares .\nEnvolver proprietários é essencial para cumprir a meta 30x30 .\nCriação de RPPNs como “ilhas” de proteção permanente ."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-19-transição-para-metapopulações",
+    "href": "slides/aula4_tbi_slides.html#slide-19-transição-para-metapopulações",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 19: Transição para Metapopulações",
+    "text": "Slide 19: Transição para Metapopulações\n\n\n\nA TBI foca na riqueza (número) de espécies da comunidade.\nA Teoria de Metapopulações foca na persistência de uma única espécie.\nAmbas utilizam a estrutura espacial como variável chave ."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#slide-20-conclusão",
+    "href": "slides/aula4_tbi_slides.html#slide-20-conclusão",
+    "title": "Teoria de Biogeografia de Ilhas e sua aplicação",
+    "section": "Slide 20: Conclusão",
+    "text": "Slide 20: Conclusão\n\n\n\nA TBI revolucionou o entendimento da heterogeneidade espacial .\nO desenho de paisagens sustentáveis depende de bases teóricas sólidas.\nPlanejar a paisagem como um todo, integrando o homem e a natureza ."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#introdução-à-teoria-tbi",
+    "href": "slides/aula4_tbi_slides.html#introdução-à-teoria-tbi",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "Introdução à Teoria (TBI)",
+    "text": "Introdução à Teoria (TBI)\n\n\n\nProposta originalmente em 1967 por MacArthur e Wilson.\nPadrões de riqueza de espécies em sistemas isolados.\nBase fundamental para a Ecologia de Paisagens."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#contexto-histórico-e-científico",
+    "href": "slides/aula4_tbi_slides.html#contexto-histórico-e-científico",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "Contexto histórico e científico",
+    "text": "Contexto histórico e científico\n\n\n\nSurgiu da observação de padrões biológicos em arquipélagos oceânicos.\nBusca explicar por que ilhas diferentes possuem números distintos de espécies.\ntrouxe as “primeiras” evidências da relação espécie~área"
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#o-modelo-de-equilíbrio-dinâmico",
+    "href": "slides/aula4_tbi_slides.html#o-modelo-de-equilíbrio-dinâmico",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "O Modelo de Equilíbrio Dinâmico",
+    "text": "O Modelo de Equilíbrio Dinâmico\n\n\n\nA riqueza de espécies (S) é o resultado do equilíbrio entre imigração e extinção.\nImigração: Chegada de novos propágulos vindos de uma fonte continental.\nExtinção: Perda de espécies já estabelecidas no isolamento.\n\n\n\n\n\nFigura: Curvas de interseção de MacArthur-Wilson"
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#o-efeito-da-área",
+    "href": "slides/aula4_tbi_slides.html#o-efeito-da-área",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "O Efeito da Área",
+    "text": "O Efeito da Área\n\n\n\nÁreas maiores sustentam populações maiores e mais estáveis.\nMenor probabilidade de extinção por eventos estocásticos (aleatórios).\nOferecem maior diversidade de nichos e recursos."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#o-efeito-do-isolamento",
+    "href": "slides/aula4_tbi_slides.html#o-efeito-do-isolamento",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "O Efeito do Isolamento",
+    "text": "O Efeito do Isolamento\n\n\n\nA distância da fonte determina a taxa de chegada de novos colonizadores.\nIlhas próximas recebem mais imigração do que ilhas distantes.\nO isolamento dificulta a recolonização após extinções locais."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#síntese-o-equilíbrio-espacial",
+    "href": "slides/aula4_tbi_slides.html#síntese-o-equilíbrio-espacial",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "Síntese: O Equilíbrio Espacial",
+    "text": "Síntese: O Equilíbrio Espacial\n\n\n\n\n\nFigura: Geometria da biodiversidade (Tamanho x Distância)\n\n\n\n\nGrandes e próximas = Máxima riqueza biológica.\nPequenas e distantes = Mínima riqueza biológica.\nModelo permite previsões quantitativas para conservação."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#a-transposição-para-o-continente",
+    "href": "slides/aula4_tbi_slides.html#a-transposição-para-o-continente",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "A Transposição para o Continente",
+    "text": "A Transposição para o Continente\n\n\n\nFragmentos de vegetação nativa são tratados analogamente a ilhas.\nA matriz antrópica (pasto, agricultura) é comparada ao “mar” hostil.\nConsolida o foco no arranjo espacial dos remanescentes."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#fragmentação-como-ilhamento",
+    "href": "slides/aula4_tbi_slides.html#fragmentação-como-ilhamento",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "Fragmentação como “Ilhamento”",
+    "text": "Fragmentação como “Ilhamento”\n\n\n\nProcesso de subdivisão de habitats contínuos em manchas menores.\nResulta em perda de habitat e aumento do isolamento geográfico.\nCausa o declínio consistente de populações especialistas de interior."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#tbi-e-o-planejamento-de-reservas",
+    "href": "slides/aula4_tbi_slides.html#tbi-e-o-planejamento-de-reservas",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "TBI e o Planejamento de Reservas",
+    "text": "TBI e o Planejamento de Reservas\n\n\n\nFundamentou o debate SLOSS (Single Large or Several Small).\nDefesa de grandes áreas conectadas para garantir a persistência.\nA configuração espacial dita a viabilidade da fauna a longo prazo.\n\n\n\n\n\nFigura: Modelos de desenho de reservas (melhor vs. pior)"
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#métricas-derivadas-da-teoria",
+    "href": "slides/aula4_tbi_slides.html#métricas-derivadas-da-teoria",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "Métricas Derivadas da Teoria",
+    "text": "Métricas Derivadas da Teoria\n\n\n\nÁrea da Mancha (Patch Area): Determinante da viabilidade populacional local.\nDistância ao Vizinho Próximo (ENN): Proxy para o grau de isolamento.\nDensidade de Manchas: Medida da fragmentação total do mosaico."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#o-limiar-de-30-de-cobertura",
+    "href": "slides/aula4_tbi_slides.html#o-limiar-de-30-de-cobertura",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "O Limiar de 30% de Cobertura",
+    "text": "O Limiar de 30% de Cobertura\n\n\n\nAbaixo de 30%, a configuração (isolamento) torna-se o fator crítico.\nAcima desse limite, a quantidade total de habitat domina a resposta biológica.\nConceito vital para a aplicação do Código Florestal Brasileiro."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#críticas-e-evolução-a-matriz-terrestre",
+    "href": "slides/aula4_tbi_slides.html#críticas-e-evolução-a-matriz-terrestre",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "Críticas e Evolução: A Matriz Terrestre",
+    "text": "Críticas e Evolução: A Matriz Terrestre\n\n\n\n\n\nFigura: Matriz permeável (agrofloresta) vs. Hostil (pasto)\n\n\n\n\nDiferente do oceano, a matriz terrestre pode ser permeável.\nEspécies percebem e utilizam a matriz de formas variadas.\nNecessidade de evoluir para modelos de conectividade funcional."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#conectividade-estrutural-vs.-funcional",
+    "href": "slides/aula4_tbi_slides.html#conectividade-estrutural-vs.-funcional",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "Conectividade Estrutural vs. Funcional",
+    "text": "Conectividade Estrutural vs. Funcional\n\n\n\nEstrutural: Disposição física e proximidade entre os fragmentos.\nFuncional: Capacidade real do organismo se mover pelo mosaico.\nA conectividade depende da interação espécie-paisagem."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#escala-de-percepção-biológica",
+    "href": "slides/aula4_tbi_slides.html#escala-de-percepção-biológica",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "Escala de Percepção Biológica",
+    "text": "Escala de Percepção Biológica\n\n\n\nA paisagem não é definida por critérios humanos, mas pelo organismo.\nGafanhotos percebem manchas em metros; onças, em quilômetros.\nO manejo deve considerar a “lente” da espécie de interesse."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#contexto-regional-mata-atlântica",
+    "href": "slides/aula4_tbi_slides.html#contexto-regional-mata-atlântica",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "Contexto Regional: Mata Atlântica",
+    "text": "Contexto Regional: Mata Atlântica\n\n\n\nBioma ultra-fragmentado com a maioria dos fragmentos &lt; 50 ha.\nAplicação da TBI para identificar áreas prioritárias para conexão.\nUso de corredores ecológicos para mitigar o isolamento severo.\n\n\n\n\n\nFigura: Mapa de fragmentação da Mata Atlântica brasileira"
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#tbi-e-o-efeito-de-borda",
+    "href": "slides/aula4_tbi_slides.html#tbi-e-o-efeito-de-borda",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "TBI e o Efeito de Borda",
+    "text": "TBI e o Efeito de Borda\n\n\n\nA redução da área aumenta a proporção de bordas nos fragmentos.\nBordas alteram o microclima e a estabilidade das comunidades de interior.\nIsolamento e bordas agem sinergicamente na perda de espécies."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#crise-da-biodiversidade-no-antropoceno",
+    "href": "slides/aula4_tbi_slides.html#crise-da-biodiversidade-no-antropoceno",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "Crise da Biodiversidade no Antropoceno",
+    "text": "Crise da Biodiversidade no Antropoceno\n\n\n\nA TBI ajuda a prever o número de extinções futuras pós-desmatamento.\nAção humana atua como força geológica transformadora.\n70% das populações de vertebrados declinaram desde 1970 mundialmente."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#conservação-em-terras-privadas",
+    "href": "slides/aula4_tbi_slides.html#conservação-em-terras-privadas",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "Conservação em Terras Privadas",
+    "text": "Conservação em Terras Privadas\n\n\n\n\n\nFigura: Distribuição de remanescentes em fazendas particulares\n\n\n\n\nNo Brasil, a maioria das “ilhas” de habitat está em mãos privadas.\nCompromisso da meta 30x30 exige o engajamento de proprietários rurais.\nInstrumentos como RPPNs e Reservas Legais são essenciais."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#transição-para-a-teoria-de-metapopulações",
+    "href": "slides/aula4_tbi_slides.html#transição-para-a-teoria-de-metapopulações",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "Transição para a Teoria de Metapopulações",
+    "text": "Transição para a Teoria de Metapopulações\n\n\n\nTBI foca na riqueza (comunidade) de uma ilha ou mancha.\nMetapopulação foca na persistência de uma espécie em várias manchas.\nAmbas utilizam a estrutura espacial como variável chave para o manejo."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#conclusão-e-visão-integrada",
+    "href": "slides/aula4_tbi_slides.html#conclusão-e-visão-integrada",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "Conclusão e Visão Integrada",
+    "text": "Conclusão e Visão Integrada\n\n\n\nA TBI revolucionou o entendimento da heterogeneidade espacial.\nPaisagens sustentáveis exigem planejamento em múltiplas escalas.\nIntegrar o homem e a natureza no desenho de mosaicos funcionais."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html#introdução-à-tbi",
+    "href": "slides/aula4_tbi_slides.html#introdução-à-tbi",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "Introdução à TBI",
+    "text": "Introdução à TBI\n\n\n\nProposta originalmente em 1967 por MacArthur e Wilson.\nPadrões de riqueza de espécies em sistemas isolados.\nBase fundamental para a Ecologia de Paisagens."
   }
 ]
