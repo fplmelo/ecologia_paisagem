@@ -19,7 +19,7 @@ website:
         href: syllabus.qmd
       - text: "Cronograma"
         href: schedule.qmd
-      - text: "Comece aqui"
+      - text: "R Intro"
         menu:
           - text: "1 - Instalar R & Rstudio"
             icon: "emoji-sunglasses-fill"
