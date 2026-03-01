@@ -36,6 +36,9 @@ website:
           - text: "5 - Dados em R"
             icon: "tools"
             href: get-started/5-data.qmd
+          - text: "6 - Seu próprio site"
+            icon: "tools"
+            href: workbook.qmd
       - text: "Todas as Aulas"
         href: sessions/index.qmd
       - text: "Recursos"

@@ -4,5 +4,5 @@ listing:
   type: table
 ---
 
-Inclui abaixo uma lista de sites e materiais online como: cursos, apresentações e video-aulas. Aproveitem!
+Incluí abaixo uma lista de sites e materiais online como: cursos, apresentações e video-aulas. Aproveitem!
 

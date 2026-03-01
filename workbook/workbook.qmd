@@ -1,113 +1,122 @@
 ---
-title: "Tutorial: Getting Started with a Quarto Webpage "
-subtitle: "Basic set-up"
-description: ""
+title: "Tutorial: Começando com uma página Web em Quarto"
+subtitle: "Configuração básica e Publicação"
+description: "Aprenda a criar seu caderno de estudos dinâmico e publicá-lo online."
 title-block-banner: "#9e043d"
+author: "Felipe Melo"
+date: "2026-03-01"
+lang: pt
 toc: true
+format:
+  html:
+    code-copy: true
+    code-fold: show
 ---
 
-## Why a Quarto webpage?
+## Por que uma página em Quarto?
 
-This tutorial provides an introduction to creating a basic webpage using **Quarto** within **RStudio**. Quarto, the next-generation version of R Markdown, allows you to author dynamic content and can render to various formats, including websites.
+Este tutorial oferece uma introdução à criação de uma página web básica usando o **Quarto** dentro do **RStudio**. O Quarto, a versão de próxima geração do R Markdown, permite criar conteúdo dinâmico e pode renderizar para vários formatos, incluindo websites.
 
-## Your workbook
+## Seu livro de exercícios (Workbook)
 
-While learning *stats* and coding, you'll also learn how to build and publish **simple websites** using R and RStudio. This website is vital for you learning during this module. This is going to be your live coursebook. 
+Enquanto aprende *estatística* e programação, você também aprenderá a construir e publicar **sites simples** usando R e RStudio. Este site é vital para o seu aprendizado durante este módulo. Ele será o seu livro de curso "vivo". 
 
-See some examples how NTU students used this for the summative last year:
+Veja alguns exemplos de como os alunos da NTU usaram isso para a avaliação somativa no ano passado:
 
-- [Example 1](https://rpubs.com/katieprange/1265088)
-
-- [Example 2](https://rpubs.com/Tbowne911/1226661)
+* [Exemplo 1](https://rpubs.com/katieprange/1265088)
+* [Exemplo 2](https://rpubs.com/Tbowne911/1226661)
 
 ::: {.callout-tip}
-## Invest on your worbook
-
-Your workbook is going to be your "best friend" during this module. There you can experiment, create personal notes and gather bibliography. It works like a paper notebook, but it is a website. 
+## Invista no seu livro de exercícios
+Seu "workbook" será seu "melhor amigo" durante este módulo. Nele, você pode experimentar, criar notas pessoais e reunir bibliografia. Funciona como um caderno de papel, mas é um website.
 :::
 
+---
 
-## Prerequisites
+## Pré-requisitos
 
-Before you begin, ensure you have the following:
+Antes de começar, certifique-se de ter o seguinte:
 
-*   **R** installed on your computer.
-*   **RStudio** installed on your computer.
-*   The **`quarto` package** may need to be installed if you intend to render from the R console:
+* **R** instalado no seu computador.
+* **RStudio** instalado no seu computador.
+* O **pacote `quarto`** instalado (caso queira renderizar via console):
 
-```{r}
-#| warning: false
+```r
+#| eval: false
+#| echo: true
 install.packages("quarto")
-
 ```
 
+---
 
-## Creating a Quarto Project (Recommended for Websites)
+## Criando um Projeto Quarto (Recomendado)
 
-While not explicitly detailed in these short excerpts, for creating a webpage (which often involves multiple pages and assets), it is generally recommended to start with a **Quarto project**. This helps organise your website files.
+Para criar uma página web organizada, o ideal é começar com um **Projeto Quarto**:
 
-1.  In RStudio, go to **File > New Project...**.
-2.  Choose **New Directory**.
-3.  Select **Quarto Project**.
-4.  Choose a name for your project and a location to save it.
-5.  Click **Create Project**.
+1. No RStudio, vá em **File > New Project...**.
+2. Escolha **New Directory**.
+3. Selecione **Quarto Project**.
+4. Dê um nome ao projeto e um local para salvá-lo.
+5. Clique em **Create Project**.
 
-This will create a basic Quarto project structure.
+Isso criará uma estrutura básica de pastas para o seu site.
 
-<iframe width="611" height="343" src="https://www.youtube.com/embed/_f3latmOhew" title="Get started with Quarto | Mine Çetinkaya-Rundel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+---
 
-## Creating Your Webpage Content
+## Criando o Conteúdo da sua Página
 
-Webpages in a Quarto website are typically created as **`.qmd` files**, similar to standard Quarto documents.
+As páginas em um site Quarto são arquivos **`.qmd`**. Elas utilizam três componentes principais:
 
-1.  Within your Quarto project, go to **File > New File > Quarto Document...**.
-2.  Choose your desired default format (this might be less critical for individual content pages within a website structure, as the website configuration will largely dictate the final output). Click **Create**.
-3.  This will open a new `.qmd` file where you can write your webpage content using a combination of:
-    *   **YAML Header**: Each page can have an optional YAML header (demarcated by `---` at the start and end) to specify metadata like the title.
+1. **Cabeçalho YAML**: Delimitado por `---`, define metadados como título e autor.
+2. **Texto Markdown**: Use sintaxe padrão para títulos (`##`), negrito (`**`) e listas.
+3. **Blocos de Código (Chunks)**: Onde você insere código R.
 
-        ```yaml
-        ---
-        title: "My Webpage"
-        ---
-        ```
-    *   **Markdown Text**: Use standard Markdown syntax to format your text, headings, lists, links, images, etc.. RStudio's **Visual editor** can be helpful for this, offering a WYSIWYM experience [1]. You can switch between **Visual** and **Source** modes using the toolbar or the shortcut **⌘⇧ F4** (macOS) or **Ctrl+Shift+F4** (Windows/Linux) [1].
-    *   **Code Chunks**: You can embed and execute code (primarily R in this context, indicated by ````{r}`) within your webpage to create dynamic content [2, 3]. You can **run individual code chunks interactively** in RStudio by clicking the **Run** icon or using the keyboard shortcut (**⇧⌘⏎** on macOS or **Ctrl+Shift+Enter** on Windows/Linux).
+### Exemplo de Bloco de Código:
 
-## Configuring Your Quarto Website
+```r
+#| echo: true
+summary(mtcars)
+```
 
-Creating a multi-page website with Quarto involves a configuration file, typically named `_quarto.yml`, in the root of your project. This file defines the navigation, theme, and other website-level settings.
+### Atalhos Úteis no RStudio:
+* **Alternar Editor Visual/Source**: `Ctrl+Shift+F4` (Win) ou `⌘⇧ F4` (Mac).
+* **Executar Bloco de Código**: `Ctrl+Shift+Enter` (Win) ou `⇧⌘⏎` (Mac).
 
-**Note:** The provided sources do not contain specific details on the structure and content of the `_quarto.yml` file. However, based on Quarto's nature as a next-generation version of R Markdown [4], it leverages YAML for configuration. You would typically define your website's navigation links to your different `.qmd` content pages within this file.
+---
 
-## Rendering Your Quarto Webpage(s)
+## Configuração e Renderização
 
-Once you have your content pages (`.qmd` files`) and your website configuration (`_quarto.yml`), you can render your website.
+Para transformar seu código em uma página web (HTML), você precisa **Renderizar**:
 
-1.  In RStudio, with your Quarto project open, you can typically use the **Build** pane. Look for a **Render Website** option. Clicking this will process your project files according to your `_quarto.yml` configuration and generate your website.
-2.  Alternatively, you might be able to render the entire website from the R console within your project directory using the `quarto` package, though the specific command for a website render isn't detailed in the excerpts. It would likely be related to the `quarto::quarto_render()` function but applied at the project level.
+1. No topo do editor do RStudio, clique no botão **Render** (ícone de seta azul).
+2. O RStudio processará o código e abrirá uma prévia na aba **Viewer** no painel inferior direito.
 
-## Previewing Your Webpage
+---
 
-After rendering, Quarto will generate the necessary HTML and other files for your website. You can usually preview your webpage by looking a the **Viewer** tab in bottom-right panel of your Rstudio window.
+## Como publicar no RPubs
 
-## Further Steps
+O **RPubs** é a forma mais simples e gratuita de hospedar seus documentos R online.
 
-This tutorial provides a basic introduction. Creating a full-fledged website with Quarto involves learning more about:
+### Passo a Passo para Publicação:
 
-*   The **`_quarto.yml` configuration file** to control navigation, theme, and other website settings.
-*   Organising your content into multiple `.qmd` pages.
-*   Using **themes** to style your website.
-*   Including **assets** like images and CSS files.
+1. **Crie sua conta**: Acesse [rpubs.com](https://rpubs.com) e registre-se.
+2. **Gere o HTML**: Clique em **Render** no seu arquivo `.qmd`.
+3. **Publique**:
+    * Na janela de visualização (**Viewer**), clique no ícone azul de publicação (um círculo azul ou botão **Publish**).
+    * Selecione **RPubs** na lista de opções.
+    * O RStudio pode solicitar a instalação do pacote `rsconnect`; clique em **Sim**.
+4. **Finalize no Navegador**: Uma aba do seu navegador abrirá. Faça login no RPubs, dê um título ao seu documento e clique em **Continue**.
 
-This is a starting point to introduce Quarto as a tool capable of creating websites and its reliance on `.qmd` files and YAML. You would need to consult further Quarto documentation for detailed instructions on website creation.
+> **Dica Pro:** Se você fizer alterações no arquivo, basta clicar em **Render** e depois em **Publish** novamente. O sistema perguntará se você deseja atualizar o documento existente.
 
-By following these initial steps, you can begin to explore the possibilities of creating webpages with Quarto in RStudio. 
+---
 
-## Publish your workbook
+## Próximos Passos
 
-There are many ways to publish your workbook and you might chose simple or more advanced ways.
-
-### Simple Rpubs page
+Agora que você já sabe o básico, tente personalizar seu arquivo:
+* Altere o `theme` no cabeçalho YAML para opções como `flatly`, `darkly` ou `slate`.
+* Adicione gráficos usando o pacote `ggplot2`.
+* Crie um arquivo `_quarto.yml` para adicionar uma barra de navegação superior caso tenha várias páginas.
 
 
 
