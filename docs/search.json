@@ -542,8 +542,8 @@
     "objectID": "slides/aula3_perturb.html#o-conceito-de-distúrbio",
     "href": "slides/aula3_perturb.html#o-conceito-de-distúrbio",
     "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
-    "section": "O Conceito de Distúrbio",
-    "text": "O Conceito de Distúrbio\n\n\n\nEvento discreto que causa modificação de um sistema\nAltera a disponibilidade de recursos\nPode ser um evento natural ou de origem antrópica"
+    "section": "",
+    "text": "Evento discreto que causa modificação de um sistema\nAltera a disponibilidade de recursos\nPode ser um evento natural ou de origem antrópica"
   },
   {
     "objectID": "slides/aula3_perturb.html#o-paradigma-padrão-processo",
@@ -717,8 +717,8 @@
     "objectID": "slides/aula4_tbi_slides.html#introdução-à-tbi",
     "href": "slides/aula4_tbi_slides.html#introdução-à-tbi",
     "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
-    "section": "Introdução à TBI",
-    "text": "Introdução à TBI\n\n\n\nProposta originalmente em 1967 por MacArthur e Wilson.\nPadrões de riqueza de espécies em sistemas isolados.\nBase fundamental para a Ecologia de Paisagens."
+    "section": "",
+    "text": "Proposta originalmente em 1967 por MacArthur e Wilson.\nPadrões de riqueza de espécies em sistemas isolados.\nBase fundamental para a Ecologia de Paisagens."
   },
   {
     "objectID": "slides/aula4_tbi_slides.html#contexto-histórico-e-científico",
@@ -977,7 +977,7 @@
     "href": "sessions/index.html",
     "title": "Conteúdo",
     "section": "",
-    "text": "Semana 1: Origens e Conceitos de Escala\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\n\n\n\n\n\nSemana 2: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade\n\n\n\n\n\n\nFelipe Melo\n\n\nFeb 23, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 3: Dinâmica de Perturbação\n\n\n\n\n\n\nFelipe Melo\n\n\nFeb 23, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 4: Teoria de Biogeografia de Ilhas e Fragmentação\n\n\n\n\n\n\nFelipe Melo\n\n\nFeb 23, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Semana 1: Origens e Conceitos de Escala\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\n\n\n\n\n\nSemana 2: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade\n\n\n\n\n\n\nFelipe Melo\n\n\nJan 23, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 3: Dinâmica de Perturbação\n\n\n\n\n\n\nFelipe Melo\n\n\nMar 3, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 4: Teoria de Biogeografia de Ilhas e Fragmentação\n\n\n\n\n\n\nFelipe Melo\n\n\nMar 3, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 5: Efeito de Borda\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "get-started/2-basic-intro.html",
@@ -1257,7 +1257,7 @@
     "href": "workbook/workbook.html#seu-livro-de-exercícios-workbook",
     "title": "Tutorial: Começando com uma página Web em Quarto",
     "section": "Seu livro de exercícios (Workbook)",
-    "text": "Seu livro de exercícios (Workbook)\nEnquanto aprende estatística e programação, você também aprenderá a construir e publicar sites simples usando R e RStudio. Este site é vital para o seu aprendizado durante este módulo. Ele será o seu livro de curso “vivo”.\nVeja alguns exemplos de como os alunos da NTU usaram isso para a avaliação somativa no ano passado:\n\nExemplo 1\nExemplo 2\n\n\n\n\n\n\n\nInvista no seu livro de exercícios\n\n\n\nSeu “workbook” será seu “melhor amigo” durante este módulo. Nele, você pode experimentar, criar notas pessoais e reunir bibliografia. Funciona como um caderno de papel, mas é um website."
+    "text": "Seu livro de exercícios (Workbook)\nEnquanto aprende estatística e programação, você também aprenderá a construir e publicar sites simples usando R e RStudio. Este site é vital para o seu aprendizado durante este módulo. Ele será o seu livro de curso “vivo”.\nVeja alguns exemplos de como os alunos da NTU usaram isso para a avaliação somativa no ano passado:\n\nExemplo 1\nExemplo 2\n\n\n\n\n\n\n\nDicaInvista no seu livro de exercícios\n\n\n\nSeu “workbook” será seu “melhor amigo” durante este módulo. Nele, você pode experimentar, criar notas pessoais e reunir bibliografia. Funciona como um caderno de papel, mas é um website."
   },
   {
     "objectID": "workbook/workbook.html#pré-requisitos",
@@ -1426,5 +1426,194 @@
     "title": "Usando Quarto",
     "section": "Formatos de saída",
     "text": "Formatos de saída\nDefina no YAML:\nformat:\n  html: default\n  pdf: default\n  docx: default\n\nPágina traduzida de: Andrew Heiss"
+  },
+  {
+    "objectID": "sessions/week5/aula5.html",
+    "href": "sessions/week5/aula5.html",
+    "title": "Semana 5: Efeito de Borda",
+    "section": "",
+    "text": "Tela cheia CLIQUE AQUI e depois pressione ‘f’"
+  },
+  {
+    "objectID": "sessions/week5/aula5.html#introdução-o-que-é-a-borda",
+    "href": "sessions/week5/aula5.html#introdução-o-que-é-a-borda",
+    "title": "Semana 5: Efeito de Borda",
+    "section": "Introdução: O que é a Borda?",
+    "text": "Introdução: O que é a Borda?\nNa ecologia de paisagens, a borda é definida como a área de transição entre duas unidades distintas da paisagem. Quando um habitat contínuo é subdividido em fragmentos, cria-se uma interface direta com a matriz (áreas agrícolas, urbanas ou pastagens), gerando uma zona de choque onde as condições do entorno penetram no interior do remanescente.\nO efeito de borda é um dos impactos mais severos da fragmentação, pois reduz a área efetiva de “habitat de interior”, mesmo que a mancha pareça grande visualmente.\n\n\n\n\nFIGURA 1: Ilustração esquemática mostrando a diferença entre a área total de um fragmento e sua área de interior útil após descontar a faixa de borda\n\n\n\nFonte: MapBiomas"
+  },
+  {
+    "objectID": "sessions/week5/aula5.html#mudanças-abióticas-microclima",
+    "href": "sessions/week5/aula5.html#mudanças-abióticas-microclima",
+    "title": "Semana 5: Efeito de Borda",
+    "section": "Mudanças Abióticas (Microclima)",
+    "text": "Mudanças Abióticas (Microclima)\nA interface entre a floresta e a matriz aberta provoca alterações físicas imediatas. As bordas sofrem com: * Maior incidência luminosa: Aumenta a temperatura e a dessecação do solo. * Alteração do regime de ventos: O vento penetra com mais força, aumentando a queda de árvores e alterando a umidade relativa. * Mudança no ciclo hidrológico: Há maior perda de água por evapotranspiração nas zonas periféricas."
+  },
+  {
+    "objectID": "sessions/week5/aula5.html#mudanças-bióticas-e-respostas-da-biodiversidade",
+    "href": "sessions/week5/aula5.html#mudanças-bióticas-e-respostas-da-biodiversidade",
+    "title": "Semana 5: Efeito de Borda",
+    "section": "Mudanças Bióticas e Respostas da Biodiversidade",
+    "text": "Mudanças Bióticas e Respostas da Biodiversidade\nAs alterações microclimáticas desencadeiam uma cascata de efeitos biológicos. Espécies especialistas de interior costumam ser substituídas por espécies generalistas ou colonizadoras.\n\nVegetação: Aumento da mortalidade de árvores de madeira densa e crescimento acelerado de lianas e espécies pioneiras.\nFauna de Interior: Aves de sub-bosque e pequenos mamíferos sensíveis perdem estabilidade e podem ser extintos localmente devido à predação ou falta de recursos específicos.\nInvasão Biológica: As estradas e bordas agem como vetores para espécies invasoras (como capins exóticos) que competem com a flora nativa.\n\n\n\n\n\nFIGURA 2: Gráfico comparativo mostrando a abundância de espécies de interior versus espécies de borda em relação à distância da interface\n\n\n\nfonte: Laurance et al (2017)"
+  },
+  {
+    "objectID": "sessions/week5/aula5.html#fatores-determinantes-forma-e-matriz",
+    "href": "sessions/week5/aula5.html#fatores-determinantes-forma-e-matriz",
+    "title": "Semana 5: Efeito de Borda",
+    "section": "Fatores Determinantes: Forma e Matriz",
+    "text": "Fatores Determinantes: Forma e Matriz\nO impacto da borda não é uniforme em todas as paisagens. Ele depende de: * Geometria da Mancha: Fragmentos irregulares e alongados possuem uma proporção de borda muito maior que fragmentos circulares do mesmo tamanho. * Permeabilidade da Matriz: Uma matriz de silvicultura (eucalipto) pode “suavizar” o efeito de borda para algumas espécies em comparação com uma matriz de pastagem aberta, pois oferece mais sombra e proteção contra o vento. * Efeito Inverso: Recentemente, estuda-se o papel do fragmento sobre a matriz, como a capacidade de fornecer sementes para a regeneração natural em áreas adjacentes."
+  },
+  {
+    "objectID": "sessions/week5/aula5.html#sugestões-de-leitura",
+    "href": "sessions/week5/aula5.html#sugestões-de-leitura",
+    "title": "Semana 5: Efeito de Borda",
+    "section": "Sugestões de Leitura",
+    "text": "Sugestões de Leitura\n\nEfeito de Borda Wikipedia - Wikipedia é sempre um bom começo.\nAs engrenagens da Floresta - Texto muito bom na Revista Pesquisa Fapesp\nSaunders et al. (1991). Biological consequences of ecosystem fragmentation. - Artigo clássico sobre as mudanças nas interfaces.\nFahrig (2003). Effects of habitat fragmentation on biodiversity. - Revisão sobre perda de habitat e configuração."
+  },
+  {
+    "objectID": "slides/aula4_tbi_slides.html",
+    "href": "slides/aula4_tbi_slides.html",
+    "title": "Teoria de Biogeografia de Ilhas e sua Aplicação",
+    "section": "",
+    "text": "Proposta originalmente em 1967 por MacArthur e Wilson.\nPadrões de riqueza de espécies em sistemas isolados.\nBase fundamental para a Ecologia de Paisagens."
+  },
+  {
+    "objectID": "slides/aula3_perturb.html",
+    "href": "slides/aula3_perturb.html",
+    "title": "Dinâmica de Perturbação na Ecologia da Paisagem",
+    "section": "",
+    "text": "Evento discreto que causa modificação de um sistema\nAltera a disponibilidade de recursos\nPode ser um evento natural ou de origem antrópica"
+  },
+  {
+    "objectID": "slides/aula5_borda.html#interface-e-transição",
+    "href": "slides/aula5_borda.html#interface-e-transição",
+    "title": "Efeito de Borda",
+    "section": "Interface e Transição",
+    "text": "Interface e Transição\n\n\n\nA borda é a zona de contato entre duas unidades de paisagem.\nResulta (com frequência) da fragmentação de habitats contínuos.\nRepresenta uma quebra na homogeneidade ecológica."
+  },
+  {
+    "objectID": "slides/aula5_borda.html#componentes-abióticos",
+    "href": "slides/aula5_borda.html#componentes-abióticos",
+    "title": "Efeito de Borda",
+    "section": "Componentes Abióticos",
+    "text": "Componentes Abióticos\n\n\n\n\n\nMudanças microclimáticas drásticas.\nAumento da temperatura e luminosidade.\nRedução da umidade relativa do ar."
+  },
+  {
+    "objectID": "slides/aula5_borda.html#dinâmica-dos-ventos",
+    "href": "slides/aula5_borda.html#dinâmica-dos-ventos",
+    "title": "Efeito de Borda",
+    "section": "Dinâmica dos Ventos",
+    "text": "Dinâmica dos Ventos\n\n\n\nVentos penetram lateralmente nos fragmentos.\nProvocam a “derrubada por vento” (windthrow) de árvores.\nAlteram a estrutura física da vegetação."
+  },
+  {
+    "objectID": "slides/aula5_borda.html#resposta-da-flora",
+    "href": "slides/aula5_borda.html#resposta-da-flora",
+    "title": "Efeito de Borda",
+    "section": "Resposta da Flora",
+    "text": "Resposta da Flora\n\n\n\n\n\nAumento de espécies pioneiras e colonizadoras.\nProliferação de lianas e trepadeiras nas margens.\nMortalidade de árvores de dossel sensíveis."
+  },
+  {
+    "objectID": "slides/aula5_borda.html#impacto-na-fauna",
+    "href": "slides/aula5_borda.html#impacto-na-fauna",
+    "title": "Efeito de Borda",
+    "section": "Impacto na Fauna",
+    "text": "Impacto na Fauna\n\n\n\nPerda de habitat para espécies de interior\nAumento de riscos de predação por espécies da matriz\nEspécies sensíveis evitam áreas a menos de 100m da borda\n\n\n\nFonte Pfeifer et al (2017)"
+  },
+  {
+    "objectID": "slides/aula5_borda.html#exemplo-lobo-guará",
+    "href": "slides/aula5_borda.html#exemplo-lobo-guará",
+    "title": "Efeito de Borda",
+    "section": "Exemplo: Lobo-guará",
+    "text": "Exemplo: Lobo-guará\n\n\n\n\n\nO lobo-guará é uma espécie associada a bordas\nSua ocorrência aumenta conforme a quantidade de interface aumenta\nContraste com o macaco-aranha, que depende do núcleo florestal"
+  },
+  {
+    "objectID": "slides/aula5_borda.html#geometria-e-proporção",
+    "href": "slides/aula5_borda.html#geometria-e-proporção",
+    "title": "Efeito de Borda",
+    "section": "Geometria e Proporção",
+    "text": "Geometria e Proporção\n\n\n\nO efeito de borda depende da forma do fragmento\nFormas alongadas ~ 100% de área sob efeito de borda\nFormas circulares minimizam a influência externa"
+  },
+  {
+    "objectID": "slides/aula5_borda.html#fragmento-vs.-interior",
+    "href": "slides/aula5_borda.html#fragmento-vs.-interior",
+    "title": "Efeito de Borda",
+    "section": "Fragmento vs. Interior",
+    "text": "Fragmento vs. Interior\n\n\n\n\n\nA área funcional é menor que a área total\nFragmentos muito pequenos podem ser “toda borda”\nEssencial para o cálculo de viabilidade populacional"
+  },
+  {
+    "objectID": "slides/aula5_borda.html#o-papel-da-matriz",
+    "href": "slides/aula5_borda.html#o-papel-da-matriz",
+    "title": "Efeito de Borda",
+    "section": "O Papel da Matriz",
+    "text": "O Papel da Matriz\n\n\n\nContraste físico\n\nChoques estruturais e microclimáticos\nA permeabilidade da matriz dita a severidade da borda"
+  },
+  {
+    "objectID": "slides/aula5_borda.html#estradas-como-bordas-lineares",
+    "href": "slides/aula5_borda.html#estradas-como-bordas-lineares",
+    "title": "Efeito de Borda",
+    "section": "Estradas como Bordas Lineares",
+    "text": "Estradas como Bordas Lineares\n\n\n\n\n\nEstradas criam bordas internas em áreas protegidas\nVetores de espécies invasoras e fogo\nFragmentam populações sem suprimir área total"
+  },
+  {
+    "objectID": "slides/aula5_borda.html#sinergia-de-impactos",
+    "href": "slides/aula5_borda.html#sinergia-de-impactos",
+    "title": "Efeito de Borda",
+    "section": "Sinergia de Impactos",
+    "text": "Sinergia de Impactos"
+  },
+  {
+    "objectID": "slides/aula5_borda.html#zonas-de-amortecimento",
+    "href": "slides/aula5_borda.html#zonas-de-amortecimento",
+    "title": "Efeito de Borda",
+    "section": "Zonas de Amortecimento",
+    "text": "Zonas de Amortecimento\n\n\n\n\n\nÁreas de transição manejadas para reduzir impactos\nUso de vegetação secundária para “selar” a borda\nEssencial no planejamento de Unidades de Conservação"
+  },
+  {
+    "objectID": "slides/aula5_borda.html#efeito-inverso-de-borda",
+    "href": "slides/aula5_borda.html#efeito-inverso-de-borda",
+    "title": "Efeito de Borda",
+    "section": "Efeito Inverso de Borda",
+    "text": "Efeito Inverso de Borda\n\n\n\nO fragmento influencia a matriz vizinha\nFornece polinizadores e dispersores de sementes.\nDefine o potencial de regeneração da matriz degradada"
+  },
+  {
+    "objectID": "slides/aula5_borda.html#gestão-de-bordas",
+    "href": "slides/aula5_borda.html#gestão-de-bordas",
+    "title": "Efeito de Borda",
+    "section": "Gestão de Bordas",
+    "text": "Gestão de Bordas\n\n\n\n\n\nEnvolver proprietários rurais no manejo de cercas e aceiros\nRestauração focada na conectividade funcional\nMelhorar a estrutura da matriz para mitigar choques"
+  },
+  {
+    "objectID": "slides/aula5_borda.html#conclusão",
+    "href": "slides/aula5_borda.html#conclusão",
+    "title": "Efeito de Borda",
+    "section": "Conclusão",
+    "text": "Conclusão\n\n\n\nA borda altera a “assinatura” ecológica do fragmento\nPlanejar para o interior é planejar para a resiliência\nInterfaces são locais de conflito e oportunidade de manejo"
+  },
+  {
+    "objectID": "slides/aula5_borda.html#impacto-sobre-a-fauna",
+    "href": "slides/aula5_borda.html#impacto-sobre-a-fauna",
+    "title": "Efeito de Borda",
+    "section": "Impacto sobre a Fauna",
+    "text": "Impacto sobre a Fauna\n\n\n\nPerda de habitat para espécies de interior\nAumento de riscos de predação por espécies da matriz\nEspécies sensíveis evitam áreas a menos de 100m da borda\n\n\n\nFonte Pfeifer et al (2017)"
+  },
+  {
+    "objectID": "slides/aula5_borda.html#exemplo-macaco-aranha",
+    "href": "slides/aula5_borda.html#exemplo-macaco-aranha",
+    "title": "Efeito de Borda",
+    "section": "Exemplo: Macaco-aranha",
+    "text": "Exemplo: Macaco-aranha\n\n\n\n\n\nA maioria dos primatas frugívoos depende de boas florestas\nBordas são habitats de baixa qualidade\nIsolamento de populações"
+  },
+  {
+    "objectID": "slides/aula5_borda.html#fim",
+    "href": "slides/aula5_borda.html#fim",
+    "title": "Efeito de Borda",
+    "section": "FIM",
+    "text": "FIM"
+  },
+  {
+    "objectID": "sessions/week5/aula5.html#slides-desta-aula",
+    "href": "sessions/week5/aula5.html#slides-desta-aula",
+    "title": "Semana 5: Efeito de Borda",
+    "section": "",
+    "text": "Tela cheia CLIQUE AQUI e depois pressione ‘f’"
   }
 ]

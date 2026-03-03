@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Felipe Melo">
 
-<title>Conteúdo</title>
+<title>Semana 5: Efeito de Borda</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,28 +24,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c53b967fd35b7266222f39950ae6bd4b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-424b1723428eadbee8dd0cdbec43c665.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -59,115 +58,51 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-<style>
-
-      .quarto-title-block .quarto-title-banner {
-        background: #990000;
-      }
-</style>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../img/logo_branco_ufpe.png" alt="UFPE logo" class="navbar-logo light-content">
-    <img src="../img/logo_branco_ufpe.png" alt="UFPE logo" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/logo_branco_ufpe.png" alt="UFPE logo" class="navbar-logo light-content">
+    <img src="../../img/logo_branco_ufpe.png" alt="UFPE logo" class="navbar-logo dark-content">
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Início</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../syllabus.html"> 
+    <a class="nav-link" href="../../syllabus.html"> 
 <span class="menu-text">Objetivos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../schedule.html"> 
+    <a class="nav-link" href="../../schedule.html"> 
 <span class="menu-text">Cronograma</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -176,47 +111,47 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-r-intro">    
         <li>
-    <a class="dropdown-item" href="../get-started/1-install.html"><i class="bi bi-emoji-sunglasses-fill" role="img">
+    <a class="dropdown-item" href="../../get-started/1-install.html"><i class="bi bi-emoji-sunglasses-fill" role="img">
 </i> 
  <span class="dropdown-text">1 - Instalar R &amp; Rstudio</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../get-started/2-basic-intro.html"><i class="bi bi-tools" role="img">
+    <a class="dropdown-item" href="../../get-started/2-basic-intro.html"><i class="bi bi-tools" role="img">
 </i> 
  <span class="dropdown-text">2 - Introdução Básica ao R e Rstudio</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../get-started/3-syntax.html"><i class="bi bi-tools" role="img">
+    <a class="dropdown-item" href="../../get-started/3-syntax.html"><i class="bi bi-tools" role="img">
 </i> 
  <span class="dropdown-text">3 - Sintaxe &amp; Estrutura de Dados</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../get-started/4-functions.html"><i class="bi bi-tools" role="img">
+    <a class="dropdown-item" href="../../get-started/4-functions.html"><i class="bi bi-tools" role="img">
 </i> 
  <span class="dropdown-text">4 - Funções e Comandos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../get-started/5-data.html"><i class="bi bi-tools" role="img">
+    <a class="dropdown-item" href="../../get-started/5-data.html"><i class="bi bi-tools" role="img">
 </i> 
  <span class="dropdown-text">5 - Dados em R</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../workbook.qmd"><i class="bi bi-tools" role="img">
+    <a class="dropdown-item" href="../../workbook.qmd"><i class="bi bi-tools" role="img">
 </i> 
  <span class="dropdown-text">6 - Seu próprio site</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="../sessions/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../sessions/index.html"> 
 <span class="menu-text">Todas as Aulas</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/index.html"> 
+    <a class="nav-link" href="../../resources/index.html"> 
 <span class="menu-text">Recursos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../assessment.html"> 
+    <a class="nav-link" href="../../assessment.html"> 
 <span class="menu-text">Tipo de Avaliação</span></a>
   </li>  
 </ul>
@@ -230,146 +165,112 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Conteúdo</h1>
-                      </div>
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#slides-desta-aula" id="toc-slides-desta-aula" class="nav-link active" data-scroll-target="#slides-desta-aula">Slides desta aula</a></li>
+  <li><a href="#introdução-o-que-é-a-borda" id="toc-introdução-o-que-é-a-borda" class="nav-link" data-scroll-target="#introdução-o-que-é-a-borda">Introdução: O que é a Borda?</a></li>
+  <li><a href="#mudanças-abióticas-microclima" id="toc-mudanças-abióticas-microclima" class="nav-link" data-scroll-target="#mudanças-abióticas-microclima">Mudanças Abióticas (Microclima)</a></li>
+  <li><a href="#mudanças-bióticas-e-respostas-da-biodiversidade" id="toc-mudanças-bióticas-e-respostas-da-biodiversidade" class="nav-link" data-scroll-target="#mudanças-bióticas-e-respostas-da-biodiversidade">Mudanças Bióticas e Respostas da Biodiversidade</a></li>
+  <li><a href="#fatores-determinantes-forma-e-matriz" id="toc-fatores-determinantes-forma-e-matriz" class="nav-link" data-scroll-target="#fatores-determinantes-forma-e-matriz">Fatores Determinantes: Forma e Matriz</a></li>
+  <li><a href="#sugestões-de-leitura" id="toc-sugestões-de-leitura" class="nav-link" data-scroll-target="#sugestões-de-leitura">Sugestões de Leitura</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Semana 5: Efeito de Borda</h1>
+<p class="subtitle lead">Mudanças bióticas e abióticas nas interfaces da paisagem</p>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-left">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Felipe Melo </p>
+          </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page">
-
-      
     
-      
-    </div>
-    
+  </div>
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    
-<!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
+</header>
 
 
+<section id="slides-desta-aula" class="level2">
+<h2 class="anchored" data-anchor-id="slides-desta-aula">Slides desta aula</h2>
+<p>Tela cheia <a href="https://fplmelo.github.io/ecologia_paisagem/slides/aula5_borda.html#/title-slide">CLIQUE AQUI</a> e depois pressione ‘f’</p>
+<iframe class="slide-deck" src="https://fplmelo.github.io/ecologia_paisagem/slides/aula5_borda.html#/title-slide" width="700px" height="500px">
+</iframe>
+</section>
+<section id="introdução-o-que-é-a-borda" class="level2">
+<h2 class="anchored" data-anchor-id="introdução-o-que-é-a-borda">Introdução: O que é a Borda?</h2>
+<p>Na ecologia de paisagens, a <strong>borda</strong> é definida como a área de transição entre duas unidades distintas da paisagem. Quando um habitat contínuo é subdividido em fragmentos, cria-se uma interface direta com a <strong>matriz</strong> (áreas agrícolas, urbanas ou pastagens), gerando uma zona de choque onde as condições do entorno penetram no interior do remanescente.</p>
+<p>O efeito de borda é um dos impactos mais severos da fragmentação, pois reduz a área efetiva de “habitat de interior”, mesmo que a mancha pareça grande visualmente.</p>
+<blockquote class="blockquote">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://brasil.mapbiomas.org/wp-content/uploads/sites/4/2024/07/unnamed.png" class="img-fluid figure-img"></p>
+<figcaption><strong>FIGURA 1: Ilustração esquemática mostrando a diferença entre a área total de um fragmento e sua área de interior útil após descontar a faixa de borda</strong></figcaption>
+</figure>
+</div>
+</blockquote>
+<p>Fonte: <a href="https://brasil.mapbiomas.org/metodo-degradacao/">MapBiomas</a></p>
+</section>
+<section id="mudanças-abióticas-microclima" class="level2">
+<h2 class="anchored" data-anchor-id="mudanças-abióticas-microclima">Mudanças Abióticas (Microclima)</h2>
+<p>A interface entre a floresta e a matriz aberta provoca alterações físicas imediatas. As bordas sofrem com: * <strong>Maior incidência luminosa:</strong> Aumenta a temperatura e a dessecação do solo. * <strong>Alteração do regime de ventos:</strong> O vento penetra com mais força, aumentando a queda de árvores e alterando a umidade relativa. * <strong>Mudança no ciclo hidrológico:</strong> Há maior perda de água por evapotranspiração nas zonas periféricas.</p>
+</section>
+<section id="mudanças-bióticas-e-respostas-da-biodiversidade" class="level2">
+<h2 class="anchored" data-anchor-id="mudanças-bióticas-e-respostas-da-biodiversidade">Mudanças Bióticas e Respostas da Biodiversidade</h2>
+<p>As alterações microclimáticas desencadeiam uma cascata de efeitos biológicos. Espécies especialistas de interior costumam ser substituídas por espécies generalistas ou colonizadoras.</p>
+<ol type="1">
+<li><strong>Vegetação:</strong> Aumento da mortalidade de árvores de madeira densa e crescimento acelerado de lianas e espécies pioneiras.</li>
+<li><strong>Fauna de Interior:</strong> Aves de sub-bosque e pequenos mamíferos sensíveis perdem estabilidade e podem ser extintos localmente devido à predação ou falta de recursos específicos.</li>
+<li><strong>Invasão Biológica:</strong> As estradas e bordas agem como vetores para espécies invasoras (como capins exóticos) que competem com a flora nativa.</li>
+</ol>
+<blockquote class="blockquote">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../img/edge.png" class="img-fluid figure-img"></p>
+<figcaption>FIGURA 2: Gráfico comparativo mostrando a abundância de espécies de interior versus espécies de borda em relação à distância da interface</figcaption>
+</figure>
+</div>
+</blockquote>
+<p>fonte: <a href="https://onlinelibrary.wiley.com/doi/10.1111/brv.12343?utm_source=researchgate.net&amp;utm_medium=article">Laurance et al (2017)</a></p>
+</section>
+<section id="fatores-determinantes-forma-e-matriz" class="level2">
+<h2 class="anchored" data-anchor-id="fatores-determinantes-forma-e-matriz">Fatores Determinantes: Forma e Matriz</h2>
+<p>O impacto da borda não é uniforme em todas as paisagens. Ele depende de: * <strong>Geometria da Mancha:</strong> Fragmentos irregulares e alongados possuem uma proporção de borda muito maior que fragmentos circulares do mesmo tamanho. * <strong>Permeabilidade da Matriz:</strong> Uma matriz de silvicultura (eucalipto) pode “suavizar” o efeito de borda para algumas espécies em comparação com uma matriz de pastagem aberta, pois oferece mais sombra e proteção contra o vento. * <strong>Efeito Inverso:</strong> Recentemente, estuda-se o papel do fragmento sobre a matriz, como a capacidade de fornecer sementes para a regeneração natural em áreas adjacentes.</p>
+<hr>
+</section>
+<section id="sugestões-de-leitura" class="level2">
+<h2 class="anchored" data-anchor-id="sugestões-de-leitura">Sugestões de Leitura</h2>
+<ul>
+<li><a href="https://pt.wikipedia.org/wiki/Efeito_de_borda"><strong>Efeito de Borda Wikipedia</strong></a> - Wikipedia é sempre um bom começo.</li>
+<li><a href="https://revistapesquisa.fapesp.br/as-engrenagens-da-floresta/"><strong>As engrenagens da Floresta</strong></a> - Texto muito bom na Revista Pesquisa Fapesp</li>
+<li><a href="https://doi.org/10.1111/j.1523-1739.1991.tb00384.x"><strong>Saunders et al.&nbsp;(1991). Biological consequences of ecosystem fragmentation.</strong></a> - Artigo clássico sobre as mudanças nas interfaces.</li>
+<li><a href="https://www.annualreviews.org/doi/abs/10.1146/annurev.ecolsys.34.011802.132419"><strong>Fahrig (2003). Effects of habitat fragmentation on biodiversity.</strong></a> - Revisão sobre perda de habitat e configuração.</li>
+</ul>
 
 
+</section>
 
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1769104268494" data-listing-reading-time-sort="3" data-listing-word-count-sort="500">
-<a href="../sessions/week1/1-intro.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="../img/paisagem.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Semana 1: Origens e Conceitos de Escala
-</h5>
-<div class="card-text listing-description delink">
-Foto: Paisagem fragmentada na Usina Serra Grande, Ibateguara, Alagoas.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Felipe Melo
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1769189725000" data-listing-file-modified-sort="1769189725954" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="731">
-<a href="../sessions/week2/02_mcm.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="../img/corredor.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Semana 2: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade
-</h5>
-<div class="card-text listing-description delink">
-<strong>Objetivo Central:</strong> Capacitar o aluno a identificar e descrever a estrutura da paisagem através dos elementos do modelo clássico (PCM) e compreender as origens e consequências…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Felipe Melo
-</div>
-<div class="listing-date">
-Jan 23, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1772545469000" data-listing-file-modified-sort="1772545469606" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="482">
-<a href="../sessions/week3/aula3_perturbacoes.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="../img/wildfire.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Semana 3: Dinâmica de Perturbação
-</h5>
-<div class="card-text listing-description delink">
-Tela cheia CLIQUE AQUI e depois pressione ‘f’
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Felipe Melo
-</div>
-<div class="listing-date">
-Mar 3, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1772545469000" data-listing-file-modified-sort="1772545469606" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="586">
-<a href="../sessions/week4/aula4_tbi.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="../img/biogeo.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Semana 4: Teoria de Biogeografia de Ilhas e Fragmentação
-</h5>
-<div class="card-text listing-description delink">
-Tela cheia CLIQUE AQUI e depois pressione ‘f’
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Felipe Melo
-</div>
-<div class="listing-date">
-Mar 3, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1772550304679" data-listing-reading-time-sort="3" data-listing-word-count-sort="483">
-<a href="../sessions/week5/aula5.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="../img/edge.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Semana 5: Efeito de Borda
-</h5>
-<div class="card-text listing-description delink">
-Tela cheia CLIQUE AQUI e depois pressione ‘f’
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Felipe Melo
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -395,12 +296,12 @@ Felipe Melo
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiada");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiada");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
