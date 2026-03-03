@@ -2,12 +2,14 @@
 title: "Semana 5: Efeito de Borda"
 subtitle: "Mudanças bióticas e abióticas nas interfaces da paisagem"
 author: "Felipe Melo"
-format: 
+date-format: "long"
+filters:
+  - naquiz
+format:
   html:
     toc: true
-    theme: default
-    self-contained: false
-lang: pt-br
+    toc-expanded: 3
+    toc-title: "Nesta página"
 ---
 
 
