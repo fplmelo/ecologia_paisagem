@@ -5,7 +5,6 @@ author: "Felipe Melo"
 format: 
   html:
     toc: true
-    theme: default
 lang: pt-br
 ---
 
