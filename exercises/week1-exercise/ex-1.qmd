@@ -29,7 +29,7 @@ A paisagem pode ser definida como o espaço de terreno que se abrange em um "lan
 
 1.  **Ponto de Observação:** Escolha um local com vista ampla (janela, topo de morro ou varanda) 
 
-2.  **Desenho da Extensão:** Em sua folha, desenhe um retângulo que delimite o horizonte visível. Este limite representa a sua **extensão espacial** [1, 6].
+2.  **Desenho da Extensão:** Em sua folha, desenhe um retângulo que delimite o horizonte visível. Este limite representa a sua **extensão espacial** 
 
 3.  **Mapeamento Estrutural (Modelo PCM):** Identifique e desenhe os elementos presentes no mosaico utilizando as definições clássicas:
 
