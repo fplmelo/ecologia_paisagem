@@ -38,9 +38,11 @@ website:
             href: get-started/5-data.qmd
           - text: "6 - Seu próprio site"
             icon: "tools"
-            href: workbook.qmd
+            href: workbook/workbook.qmd
       - text: "Todas as Aulas"
         href: sessions/index.qmd
+      - text: "Exercícios"
+        href: exercises/index.qmd
       - text: "Recursos"
         href: resources/index.qmd
       - text: "Tipo de Avaliação"
