@@ -2,12 +2,11 @@
 title: "O Modelo Mancha-Corredor-Matriz e a Heterogeneidade"
 subtitle: "Semana 2 - Ecologia da Paisagem (UFPE)"
 author: "Felipe Melo"
-format: 
-  revealjs:
-    theme: default
-    transition: fade
-    slide-number: true
-    chalkboard: true
+format: revealjs
+theme: default
+transition: fade
+slide-number: true
+chalkboard: true
 lang: pt
 ---
 

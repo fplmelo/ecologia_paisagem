@@ -2,12 +2,11 @@
 title: "Dinâmica de Perturbação na Ecologia da Paisagem"
 subtitle: "Implicações para Conservação e Ecologia Política"
 author: "Felipe Melo - UFPE"
-format: 
-  revealjs:
-    theme: default
-    transition: slide
-    slide-number: true
-    self-contained: true
+format: revealjs
+theme: default
+transition: slide
+slide-number: true
+self-contained: true
 lang: pt
 ---
 

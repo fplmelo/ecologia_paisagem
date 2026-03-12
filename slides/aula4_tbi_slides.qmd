@@ -2,12 +2,11 @@
 title: "Teoria de Biogeografia de Ilhas e sua Aplicação"
 subtitle: "Semana 4 - Ecologia da Paisagem (UFPE)"
 author: "Felipe Melo"
-format: 
-  revealjs:
-    theme: default
-    chalkboard: true
-    slide-number: true
-    self-contained: false
+format: revealjs
+theme: default
+chalkboard: true
+slide-number: true
+self-contained: false
 lang: pt
 ---
 

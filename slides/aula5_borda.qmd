@@ -2,12 +2,11 @@
 title: "Efeito de Borda"
 subtitle: "Ecologia da Paisagem - Semana 5"
 author: "Felipe Melo"
-format: 
-  revealjs:
-    theme: default
-    slide-number: true
-    chalkboard: true
-    self-contained: false
+format: revealjs 
+theme: default
+slide-number: true
+chalkboard: true
+self-contained: false
 lang: pt-br
 ---
 
