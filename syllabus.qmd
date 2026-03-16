@@ -2,7 +2,7 @@
 title: "Programa do Curso"
 subtitle: "Sobre o quê vamos aprender?"
 description: ""
-title-block-banner: "#9e043d"
+title-block-banner: "#990000"
 format:
   html:
     toc: true

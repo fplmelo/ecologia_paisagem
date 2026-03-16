@@ -1,6 +1,6 @@
 ---
 title: "Cronograma de Aulas"
-title-block-banner: "#9e043d"
+title-block-banner: "#990000"
 format:
   html:
     toc: true
