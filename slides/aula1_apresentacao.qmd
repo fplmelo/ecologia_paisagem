@@ -2,14 +2,13 @@
 title: "Estrutura do Curso & Origens da Ecologia da Paisagem"
 subtitle: "Bacharelado em Ciências Biológicas - UFPE"
 author: "Felipe Melo"
-format: 
-  revealjs:
-    theme: default
-    transition: fade
-    slide-number: true
-    incremental: true
-    chalkboard: true
-    scrollable: true
+format: revealjs
+theme: default
+transition: fade
+slide-number: true
+incremental: true
+chalkboard: true
+scrollable: true
 lang: pt
 ---
 

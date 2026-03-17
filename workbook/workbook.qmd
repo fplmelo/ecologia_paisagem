@@ -2,7 +2,10 @@
 title: "Tutorial: Começando com uma página Web em Quarto"
 subtitle: "Configuração básica e Publicação"
 description: "Aprenda a criar seu caderno de estudos dinâmico e publicá-lo online."
+<<<<<<< HEAD
 title-block-banner: "#990000"
+=======
+>>>>>>> 39435c925338ea8384954eba345d35d5a49b48d6
 author: "Felipe Melo"
 date: "2026-03-01"
 lang: pt
@@ -21,7 +24,7 @@ Este tutorial oferece uma introdução à criação de uma página web básica u
 
 Enquanto aprende *estatística* e programação, você também aprenderá a construir e publicar **sites simples** usando R e RStudio. Este site é vital para o seu aprendizado durante este módulo. Ele será o seu livro de curso "vivo". 
 
-Veja alguns exemplos de como os alunos da NTU usaram isso para a avaliação somativa no ano passado:
+Veja alguns exemplos de como os alunos da uma universidade inglesa (NTU) usaram isso para a avaliação no ano passado:
 
 * [Exemplo 1](https://rpubs.com/katieprange/1265088)
 * [Exemplo 2](https://rpubs.com/Tbowne911/1226661)
