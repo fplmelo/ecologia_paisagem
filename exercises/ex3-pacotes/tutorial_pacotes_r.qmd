@@ -441,7 +441,7 @@ Veja como esses pacotes se conectam em uma análise típica de Ecologia de Paisa
 #| message: false
 #| warning: false
 #| echo: true
-#| eval: true
+<!-- #| eval: true -->
 
 library(terra)
 library(landscapemetrics)
