@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c53b967fd35b7266222f39950ae6bd4b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ff8232942f860c90e0ff5fbcff06b30d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -82,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-title","listing-author"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -273,6 +273,12 @@ window.Quarto = {
     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
+      <option value="listing-date-sort" data-direction="asc">
+        Date - Oldest
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        Date - Newest
+      </option>
       <option value="listing-title-sort" data-direction="asc">
         Title
       </option>
@@ -291,6 +297,10 @@ window.Quarto = {
 <tr>
 
 <th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+
+<th>
 <a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
 </th>
 
@@ -302,12 +312,41 @@ window.Quarto = {
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-file-modified-sort="1772714971989" data-listing-reading-time-sort="3" data-listing-word-count-sort="549" data-listing-title-sort="Exercício Prático: O Mosaico no Lance de Vista" data-listing-filename-sort="ex-1.qmd">
+<tr data-index="0" data-listing-date-sort="1773758041000" data-listing-file-modified-sort="1773758041750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="549" data-listing-title-sort="Exercício 1: O Mosaico no Lance de Vista" data-listing-filename-sort="ex-1.qmd">
 <td>
-<a href="../exercises/week1-exercise/ex-1.html" class="title listing-title">Exercício Prático: O Mosaico no Lance de Vista</a>
+<span class="listing-date">Mar 17, 2026</span>
+</td>
+<td>
+<a href="../exercises/ex1-paisagem/ex-1.html" class="title listing-title">Exercício 1: O Mosaico no Lance de Vista</a>
 </td>
 <td>
 <span class="listing-author">Felipe Melo</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-date-sort="1773758041000" data-listing-file-modified-sort="1773758041751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1598" data-listing-title-sort="Exercício 2 - Workbook de Ecologia de Paisagens" data-listing-filename-sort="ex2_quarto.qmd">
+<td>
+<span class="listing-date">Mar 17, 2026</span>
+</td>
+<td>
+<a href="../exercises/ex2-quarto_project/ex2_quarto.html" class="title listing-title">Exercício 2 - Workbook de Ecologia de Paisagens</a>
+</td>
+<td>
+<span class="listing-author">Felipe Melo</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-listing-date-sort="1773758166000" data-listing-file-modified-sort="1773758166378" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2693" data-listing-title-sort="Exercício 3 - Pacotes R para Ecologia de Paisagens" data-listing-filename-sort="tutorial_pacotes_r.qmd">
+<td>
+<span class="listing-date">Mar 17, 2026</span>
+</td>
+<td>
+<a href="../exercises/ex3-pacotes/tutorial_pacotes_r.html" class="title listing-title">Exercício 3 - Pacotes R para Ecologia de Paisagens</a>
+</td>
+<td>
+<span class="listing-author">Prof.&nbsp;Felipe Melo</span>
 </td>
 
 </tr>

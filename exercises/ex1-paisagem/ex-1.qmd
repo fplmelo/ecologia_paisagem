@@ -1,7 +1,8 @@
 ---
-title: "Exercício Prático: O Mosaico no Lance de Vista"
+title: "Exercício 1: O Mosaico no Lance de Vista"
 subtitle: "Semana 1: Fundamentos de Ecologia de Paisagem"
 author: "Felipe Melo"
+date: last-modified
 format: 
   html:
     toc: true
