@@ -2,6 +2,7 @@
 title: "Tutorial: Começando com uma página Web em Quarto"
 subtitle: "Configuração básica e Publicação"
 description: "Aprenda a criar seu caderno de estudos dinâmico e publicá-lo online."
+title-block-banner: "#990000"
 author: "Felipe Melo"
 date: "2026-03-01"
 lang: pt

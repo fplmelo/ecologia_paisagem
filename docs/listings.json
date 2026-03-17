@@ -10,7 +10,8 @@
   {
     "listing": "/exercises/index.html",
     "items": [
-      "/exercises/week1-exercise/ex-1.html"
+      "/exercises/ex2-quarto_project/ex2_quarto.html",
+      "/exercises/ex1-paisagem/ex-1.html"
     ]
   },
   {
@@ -20,7 +21,8 @@
       "/sessions/week2/02_mcm.html",
       "/sessions/week3/aula3_perturbacoes.html",
       "/sessions/week4/aula4_tbi.html",
-      "/sessions/week5/aula5.html"
+      "/sessions/week5/aula5.html",
+      "/sessions/week6/semana6_conectividade.html"
     ]
   }
 ]
