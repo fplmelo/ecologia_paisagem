@@ -4,13 +4,14 @@ subtitle: "Dois conceitos, duas naturezas, uma paisagem"
 author: "Prof. Felipe Melo"
 date: today
 lang: pt
+filters:
+  - naquiz
 format:
   html:
     toc: true
     toc-depth: 3
     toc-title: "Nesta página"
     number-sections: true
-    theme: default
     code-fold: true
     code-copy: true
     highlight-style: github
@@ -21,6 +22,12 @@ execute:
   warning: false
   message: false
 ---
+
+## Slides desta aula
+
+Tela cheia [CLIQUE AQUI](https://fplmelo.github.io/ecologia_paisagem/slides/semana6_conectividade.html#/title-slide) e depois pressione 'f'
+
+<iframe class="slide-deck" src="https://fplmelo.github.io/ecologia_paisagem/slides/semana6_conectividade.html#/title-slide" width="700px" height="500px"></iframe>
 
 # Introdução {#sec-intro}
 
@@ -140,8 +147,11 @@ A tabela abaixo sintetiza as diferenças fundamentais entre os dois conceitos:
 | **Pergunta que responde** | "Os fragmentos estão próximos/ligados?" | "Os organismos conseguem se mover entre os fragmentos?" |
 
 ::: {.callout-note}
-## Figura sugerida — F3
-**Inserir aqui:** figura clássica de quatro painéis mostrando as quatro combinações possíveis: (A) alta conexidade + alta conectividade; (B) alta conexidade + baixa conectividade (ex: corredor fisicamente presente mas com alta mortalidade); (C) baixa conexidade + alta conectividade (ex: fragmentos isolados mas com matriz permeável para a espécie); (D) baixa conexidade + baixa conectividade. Cada painel com uma paisagem esquemática e uma trajetória de movimento de organismo. Este tipo de figura é central para a aula.
+## Entendendo as conectividades
+
+![](fig3_quatro_quadrantes.svg)
+
+Figura clássica de quatro painéis mostrando as quatro combinações possíveis: (A) alta conexidade + alta conectividade; (B) alta conexidade + baixa conectividade (ex: corredor fisicamente presente mas com alta mortalidade); (C) baixa conexidade + alta conectividade (ex: fragmentos isolados mas com matriz permeável para a espécie); (D) baixa conexidade + baixa conectividade. Cada painel com uma paisagem esquemática e uma trajetória de movimento de organismo.
 :::
 
 ---
@@ -167,8 +177,10 @@ O mico-leão-dourado (*Leontopithecus rosalia*), espécie criticamente ameaçada
 Crucialmente, estradas de alta velocidade reduziram o relacionamento genético entre indivíduos mesmo quando a paisagem apresentava conexidade estrutural razoável. A barreira funcional de uma rodovia supera a conexidade física da vegetação que a margeia.
 
 ::: {.callout-note}
-## Figura sugerida — F4
-**Inserir aqui:** mapa da área de distribuição do mico-leão-dourado no estado do Rio de Janeiro, mostrando fragmentos de habitat, estradas e simulações de corredores com e sem stepping stones. Referência: Kierulff et al. ou Ribeiro et al. A figura ilustra como a conectividade funcional modelada diverge da conexidade estrutural.
+## Mico-leão na paisagem
+
+![](fig4_mico_leao.svg)
+Mapa da área de distribuição do mico-leão-dourado no estado do Rio de Janeiro, mostrando fragmentos de habitat, estradas e simulações de corredores com e sem stepping stones. Referência: Kierulff et al. ou Ribeiro et al. A figura ilustra como a conectividade funcional modelada diverge da conexidade estrutural.
 :::
 
 ---
@@ -283,10 +295,6 @@ Isso tem consequências diretas para a prática conservacionista:
 
 **4. Conexidade é necessária, mas não suficiente, para conectividade.** Um corredor estrutural é uma condição favorável, mas não garante conectividade funcional. A pergunta "existe corredor?" precisa sempre ser seguida por "quem usa esse corredor?" e "com que frequência e mortalidade?"
 
-::: {.callout-note}
-## Figura sugerida — F5
-**Inserir aqui:** figura-síntese com gradiente bidimensional: eixo X = conexidade estrutural (baixa → alta) e eixo Y = conectividade funcional (baixa → alta). Cada quadrante com um cenário ecológico e exemplo de paisagem real ou estilizada. Uma seta diagonal indicando que o objetivo da restauração é mover a paisagem para o quadrante de alta conexidade + alta conectividade. Este tipo de figura funciona bem como encerramento da aula.
-:::
 
 ---
 
