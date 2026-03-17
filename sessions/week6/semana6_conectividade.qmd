@@ -25,9 +25,9 @@ execute:
 
 ## Slides desta aula
 
-Tela cheia [CLIQUE AQUI](https://fplmelo.github.io/ecologia_paisagem/slides/semana6_conectividade.html#/title-slide) e depois pressione 'f'
+Tela cheia [CLIQUE AQUI](https://fplmelo.github.io/ecologia_paisagem/slides/slides_semana6.html#/title-slide) e depois pressione 'f'
 
-<iframe class="slide-deck" src="https://fplmelo.github.io/ecologia_paisagem/slides/semana6_conectividade.html#/title-slide" width="700px" height="500px"></iframe>
+<iframe class="slide-deck" src="https://fplmelo.github.io/ecologia_paisagem/slides/slides_semana6.html#/title-slide" width="700px" height="500px"></iframe>
 
 # Introdução {#sec-intro}
 
