@@ -42,7 +42,7 @@ Compreender a diferença entre eles não é apenas exercício teórico. É a bas
 
 ---
 
-# Conexidade Física: a geometria da paisagem {#sec-conexidade}
+# Conectividade (Conexidade) Física: a geometria da paisagem {#sec-conexidade}
 
 ## Definição
 
