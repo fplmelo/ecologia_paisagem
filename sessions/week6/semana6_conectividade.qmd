@@ -196,7 +196,7 @@ enn <- lsm_p_enn(paisagem)
 # 2. Número de fragmentos por classe
 np <- lsm_c_np(paisagem)
 
-# 3. Área total de habitat por classe
+# . Área total de habitat por classe
 ca <- lsm_c_ca(paisagem)
 
 # Organizar e visualizar ENN por classe
