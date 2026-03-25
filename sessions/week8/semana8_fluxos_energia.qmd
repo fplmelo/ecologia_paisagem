@@ -104,7 +104,7 @@ O estudo mais influente sobre fluxos de nutrientes em paisagens foi o **Experime
 
 O balanço simples **Entradas − Saídas = Acúmulo (ou perda) de nutrientes** permite quantificar como cada elemento do mosaico (floresta, área degradada, zona ripária) contribui para a retenção ou exportação de nutrientes.
 
-![Figura 3 — Abordagem de bacia hidrográfica: balanço entre entradas e saídas como método para quantificar fluxos em paisagens.](/img/s8_fig3_bacia_hidrografica.svg){width="100%"}
+![Figura 3 — Abordagem de bacia hidrográfica: balanço entre entradas e saídas como método para quantificar fluxos em paisagens.](https://i0.wp.com/matanativa.com.br/wp-content/uploads/2018/04/bacias-hidrogr%C3%A1ficas-modelo.png?w=800&ssl=1){width="100%"}
 
 ## O experimento de desmatamento de Hubbard Brook
 
