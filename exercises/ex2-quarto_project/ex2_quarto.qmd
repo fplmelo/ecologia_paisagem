@@ -381,18 +381,315 @@ Os arquivos gerados ficam na pasta `_site/` (ou `docs/`, dependendo da configura
 
 # Publicando no GitHub Pages {#sec-publicar}
 
-Esta é a etapa final: tornar seu site acessível na internet, gratuitamente, via **GitHub Pages**.
+Esta seção cobre **tudo** que você precisa para colocar seu site no ar, desde a criação da conta no GitHub até o fluxo de atualização contínua. Siga cada passo na ordem indicada — pular etapas é a causa mais comum de problemas.
 
-## Pré-requisitos
+::: {.callout-note}
+## O que é GitHub Pages?
+[GitHub Pages](https://pages.github.com/) é um serviço gratuito que transforma arquivos HTML armazenados em um repositório GitHub em um site publicamente acessível. Para nós, funciona assim: o Quarto gera os HTMLs localmente → você envia para o GitHub → o GitHub Pages publica automaticamente em um endereço `*.github.io`.
+:::
 
-- Ter uma conta no [GitHub](https://github.com) *(crie uma gratuitamente)*
-- Ter o [Git](https://git-scm.com/downloads) instalado
+## Pré-requisitos {#sec-prereqs-github}
 
-## Passo a passo
+Você precisará instalar e configurar três coisas antes de começar:
 
-### 1. Configurar o Quarto para publicar na pasta `docs/`
+### A. Criar uma conta no GitHub
 
-No seu `_quarto.yml`, adicione:
+1. Acesse [github.com](https://github.com) e clique em **Sign up**
+2. Escolha um nome de usuário profissional — ele aparecerá no URL do seu site (`seunome.github.io`)
+3. Confirme o e-mail e faça login
+
+### B. Instalar o Git
+
+O Git é o sistema de controle de versões que conecta seu computador ao GitHub.
+
+- **Windows**: baixe em [git-scm.com/download/win](https://git-scm.com/download/win) e instale com as opções padrão
+- **macOS**: abra o Terminal e execute `git --version` — se não estiver instalado, o sistema oferecerá instalar automaticamente
+- **Linux**: `sudo apt install git` (Ubuntu/Debian) ou `sudo dnf install git` (Fedora)
+
+Para verificar se o Git está instalado, abra o Terminal (ou o Shell do RStudio via **Tools → Shell...**) e execute:
+
+```bash
+git --version
+# Deve retornar algo como: git version 2.43.0
+```
+
+### C. Configurar sua identidade no Git
+
+O Git precisa saber quem você é para registrar os commits. Execute **uma única vez**:
+
+```bash
+git config --global user.name "Seu Nome Completo"
+git config --global user.email "seu.email@exemplo.com"
+```
+
+::: {.callout-important}
+## Use o mesmo e-mail do GitHub
+O e-mail informado aqui deve ser **idêntico** ao cadastrado no GitHub, para que seus commits fiquem vinculados ao seu perfil.
+:::
+
+Para verificar se a configuração foi salva:
+
+```bash
+git config --global --list
+# Deve mostrar user.name e user.email
+```
+
+---
+
+## Passo 1 — Configurar o Quarto para a pasta `docs/` {#sec-github-passo1}
+
+O GitHub Pages precisa que os arquivos HTML fiquem em uma pasta chamada `docs/` (ou na raiz do repositório). Vamos configurar o Quarto para gerar os arquivos lá.
+
+Abra o arquivo `_quarto.yml` e adicione a linha `output-dir: docs`:
+
+```yaml
+project:
+  type: website
+  output-dir: docs   # ← adicione esta linha
+
+website:
+  title: "Diário de Ecologia de Paisagens — João Silva"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Início
+      - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+```
+
+Agora renderize o site completo. No Console do RStudio:
+
+```r
+quarto::quarto_render()
+```
+
+Ou pressione **Ctrl+Shift+K** com qualquer `.qmd` aberto. Uma pasta `docs/` será criada contendo todos os arquivos HTML do site.
+
+::: {.callout-tip}
+## A pasta `_site/` sumiu?
+Ao adicionar `output-dir: docs`, o Quarto para de criar a pasta `_site/` e passa a usar `docs/`. Se a pasta `_site/` antiga ainda existir, pode apagá-la — ela não é mais usada.
+:::
+
+---
+
+## Passo 2 — Criar o arquivo `.gitignore` {#sec-github-passo2}
+
+O arquivo `.gitignore` instrui o Git a **ignorar** arquivos temporários e desnecessários. Na pasta raiz do seu projeto, crie um arquivo chamado `.gitignore` com o seguinte conteúdo:
+
+```bash
+# Arquivos temporários do R e RStudio
+.Rhistory
+.RData
+.Rproj.user/
+
+# Cache do Quarto
+.quarto/
+*_cache/
+*_files/
+
+# Pastas de sistema
+.DS_Store
+Thumbs.db
+```
+
+No RStudio, vá em **File → New File → Text File**, cole o conteúdo acima e salve como `.gitignore` (com o ponto no início) na raiz do projeto.
+
+---
+
+## Passo 3 — Criar o repositório no GitHub {#sec-github-passo3}
+
+1. Acesse [github.com](https://github.com) e faça login
+2. Clique no ícone **+** no canto superior direito → **New repository**
+3. Preencha os campos:
+   - **Repository name**: use o mesmo nome do seu projeto (ex: `diario-ecologia-paisagens`). Use hífens, não underscores — o nome vira parte do URL
+   - **Description** (opcional): "Diário de aprendizagem — Ecologia de Paisagens BO-304 UFPE"
+   - **Visibility**: selecione **Public** (necessário para o GitHub Pages gratuito)
+   - **NÃO** marque nenhuma das opções de inicialização (README, .gitignore, licença) — o repositório deve estar **completamente vazio**
+4. Clique em **Create repository**
+
+Após criar, o GitHub mostrará uma página com instruções. **Deixe essa página aberta** — você precisará do URL do repositório no próximo passo.
+
+---
+
+## Passo 4 — Inicializar o Git e conectar ao GitHub {#sec-github-passo4}
+
+No RStudio, abra o Shell em **Tools → Shell...** e execute os comandos abaixo, **um por vez**, substituindo os valores em maiúsculas pelos seus:
+
+```bash
+# 1. Inicializar o repositório Git local
+git init
+
+# 2. Adicionar todos os arquivos ao staging
+git add .
+
+# 3. Fazer o primeiro commit
+git commit -m "Primeiro commit — diário de Ecologia de Paisagens"
+
+# 4. Renomear o branch principal para 'main'
+git branch -M main
+
+# 5. Vincular ao repositório remoto no GitHub
+git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPO.git
+
+# 6. Enviar os arquivos para o GitHub
+git push -u origin main
+```
+
+::: {.callout-warning}
+## Substitua SEU_USUARIO e NOME_DO_REPO
+- `SEU_USUARIO` → seu nome de usuário do GitHub (ex: `joaosilva`)
+- `NOME_DO_REPO` → o nome exato do repositório que você criou (ex: `diario-ecologia-paisagens`)
+
+O URL completo ficará assim: `https://github.com/joaosilva/diario-ecologia-paisagens.git`
+:::
+
+### Autenticação: o que fazer quando o Git pede senha?
+
+O GitHub **não aceita mais senha** para operações via terminal desde agosto de 2021. Você precisará de um **Personal Access Token (PAT)**. Veja como gerar:
+
+1. No GitHub, clique na sua foto de perfil → **Settings**
+2. No menu lateral, vá até **Developer settings** (último item)
+3. Clique em **Personal access tokens → Tokens (classic)**
+4. Clique em **Generate new token (classic)**
+5. Em **Note**, escreva "Token RStudio BO-304"
+6. Em **Expiration**, selecione **90 days** (ou **No expiration** para uso permanente)
+7. Em **Select scopes**, marque **repo** (primeira opção, que inclui tudo relacionado a repositórios)
+8. Clique em **Generate token**
+9. **Copie o token imediatamente** — ele não será mostrado novamente
+
+Quando o terminal pedir sua senha ao executar `git push`, cole o token no lugar da senha.
+
+::: {.callout-tip}
+## Salvar o token para não digitar sempre
+Execute o comando abaixo para o Git memorizar suas credenciais por 8 horas:
+
+```bash
+git config --global credential.helper cache
+```
+
+Para memorizar permanentemente (recomendado):
+
+```bash
+git config --global credential.helper store
+```
+:::
+
+---
+
+## Passo 5 — Ativar o GitHub Pages {#sec-github-passo5}
+
+Com o repositório populado no GitHub, agora ativamos a publicação:
+
+1. No seu repositório no GitHub, clique na aba **Settings** (ícone de engrenagem)
+2. No menu lateral esquerdo, clique em **Pages**
+3. Em **Build and deployment → Source**, selecione **Deploy from a branch**
+4. Em **Branch**, selecione:
+   - Branch: `main`
+   - Pasta: `/docs`
+5. Clique em **Save**
+
+O GitHub iniciará a publicação. Aguarde **2 a 5 minutos**. Uma caixa verde aparecerá no topo da página de Pages com o endereço do seu site:
+
+```
+https://SEU_USUARIO.github.io/NOME_DO_REPO/
+```
+
+::: {.callout-note}
+## O site demora para aparecer na primeira vez
+É normal aguardar até 10 minutos no primeiro deploy. Se após 10 minutos nada aparecer, volte em **Settings → Pages** e verifique se o status mostra "Your site is live at...". Se mostrar um erro, veja a seção de solução de problemas abaixo.
+:::
+
+---
+
+## Passo 6 — Verificar e testar o site {#sec-github-passo6}
+
+Acesse o endereço `https://SEU_USUARIO.github.io/NOME_DO_REPO/` em uma aba anônima do navegador (para garantir que não está vendo uma versão em cache).
+
+Verifique:
+
+- [ ] A página inicial carrega corretamente
+- [ ] A barra de navegação funciona
+- [ ] Os gráficos R aparecem (se houver)
+- [ ] O URL na barra do navegador corresponde ao esperado
+
+---
+
+## Passo 7 — Atualizando o site {#sec-github-passo7}
+
+A cada nova aula ou análise, o fluxo de atualização é:
+
+```
+1. Edite seus arquivos .qmd no RStudio
+         ↓
+2. Renderize o site completo
+   quarto::quarto_render()
+         ↓
+3. No Shell (Tools → Shell...):
+   git add .
+   git commit -m "Descrição do que você adicionou"
+   git push
+         ↓
+4. Aguarde ~2 min e o site estará atualizado em *.github.io
+```
+
+### Boas mensagens de commit
+
+A mensagem do `git commit -m "..."` é o seu histórico. Seja descritivo:
+
+```bash
+# Bons exemplos:
+git commit -m "Adiciona relatório da aula 3 — fragmentação"
+git commit -m "Corrige erro no gráfico de espécie-área"
+git commit -m "Adiciona seção sobre mico-leão na aula 6"
+
+# Exemplos ruins:
+git commit -m "atualização"
+git commit -m "mudanças"
+git commit -m "aaaaaa"
+```
+
+---
+
+## Solução de problemas comuns {#sec-github-erros}
+
+### Erro: `remote origin already exists`
+
+```bash
+# Remove o remote antigo e adiciona o correto
+git remote remove origin
+git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPO.git
+```
+
+### Erro: `failed to push some refs` / `Updates were rejected`
+
+O repositório remoto tem commits que seu repositório local não tem. Isso acontece quando você adicionou um README ao criar o repositório (por isso instruímos a criar vazio). Solução:
+
+```bash
+git pull origin main --allow-unrelated-histories
+git push origin main
+```
+
+### O site publica mas mostra só texto, sem estilo (CSS)
+
+Verifique se o `_quarto.yml` tem `output-dir: docs` e se você renderizou **depois** de adicionar essa linha. A pasta `docs/` deve conter um arquivo `site_libs/` com os arquivos de CSS.
+
+### Erro: `src refspec main does not match any`
+
+O branch ainda se chama `master` (padrão antigo). Execute:
+
+```bash
+git branch -M main
+git push -u origin main
+```
+
+### A pasta `docs/` não foi criada após o render
+
+Confirme que o `_quarto.yml` contém exatamente:
 
 ```yaml
 project:
@@ -400,43 +697,28 @@ project:
   output-dir: docs
 ```
 
-Renderize novamente o projeto (`Ctrl+Shift+K`). Uma pasta `docs/` será criada.
+Salve o arquivo, feche e reabra o projeto RStudio, e renderize novamente.
 
-### 2. Criar um repositório no GitHub
+---
 
-1. Acesse [github.com](https://github.com) e faça login
-2. Clique no botão **+** → **New repository**
-3. Nomeie o repositório (ex: `diario-ecologia-paisagens`)
-4. Deixe como **Public** e clique em **Create repository**
+## Resumo visual do processo {#sec-github-resumo}
 
-### 3. Conectar o RStudio ao GitHub
-
-No menu do RStudio: **Tools → Shell...** e execute:
-
-```bash
-git init
-git add .
-git commit -m "Primeiro commit — meu diário de Ecologia de Paisagens"
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/diario-ecologia-paisagens.git
-git push -u origin main
 ```
-
-::: {.callout-warning}
-## Substitua `SEU_USUARIO`
-Lembre-se de substituir `SEU_USUARIO` pelo seu nome de usuário do GitHub no comando acima.
-:::
-
-### 4. Ativar o GitHub Pages
-
-1. No repositório do GitHub, clique em **Settings**
-2. No menu lateral, clique em **Pages**
-3. Em **Source**, selecione **Deploy from a branch**
-4. Em **Branch**, selecione `main` e a pasta `/docs`
-5. Clique em **Save**
-
-Após alguns minutos, seu site estará disponível em:  
-`https://SEU_USUARIO.github.io/diario-ecologia-paisagens/`
+[Seu computador]                    [GitHub]
+──────────────────                  ─────────────────────────────
+  Projeto Quarto                      Repositório (github.com)
+  ├── index.qmd                       ├── index.qmd
+  ├── about.qmd         git push      ├── about.qmd
+  ├── _quarto.yml  ────────────────►  ├── _quarto.yml
+  └── docs/                           └── docs/
+      ├── index.html                      ├── index.html   
+      └── about.html                      └── about.html
+                                               │
+                                               │ GitHub Pages
+                                               ▼
+                                    https://usuario.github.io/repo/
+                                    (site público na internet)
+```
 
 ---
 
@@ -453,24 +735,46 @@ Para cada aula ou atividade, siga este fluxo:
         ↓
 4. Adicione blocos de código R com suas análises
         ↓
-5. Renderize para verificar o resultado (Ctrl+Shift+K)
+5. Renderize o site completo (Ctrl+Shift+K ou quarto::quarto_render())
         ↓
-6. Faça commit e push para o GitHub
+6. No Shell do RStudio (Tools → Shell...):
+   git add .
+   git commit -m "Adiciona relatório da Semana X"
+   git push
         ↓
-7. Site atualizado automaticamente! 🎉
+7. Aguarde ~2 min → site atualizado em *.github.io 🎉
 ```
+
+::: {.callout-tip}
+## Atalho: painel Git do RStudio
+O RStudio tem um painel visual para Git. Após configurar o repositório, aparecerá uma aba **Git** no painel superior direito. Você pode fazer `add`, `commit` e `push` por lá sem usar o terminal — útil para quem prefere uma interface gráfica.
+:::
+
+Para acessar: após o `git init` e `git remote add`, feche e reabra o projeto no RStudio. O painel **Git** aparecerá automaticamente.
 
 ---
 
 # Recursos adicionais {#sec-recursos}
+
+**Quarto e publicação:**
 
 | Recurso | Link |
 |---|---|
 | Documentação oficial do Quarto | [quarto.org/docs](https://quarto.org/docs/guide/) |
 | Guia de Markdown | [quarto.org/docs/authoring/markdown-basics](https://quarto.org/docs/authoring/markdown-basics.html) |
 | Galeria de temas HTML | [quarto.org/docs/output-formats/html-themes](https://quarto.org/docs/output-formats/html-themes.html) |
+| Publicando com Quarto (guia oficial) | [quarto.org/docs/publishing/github-pages](https://quarto.org/docs/publishing/github-pages.html) |
 | Site da disciplina | [fplmelo.github.io/ecologia_paisagem](https://fplmelo.github.io/ecologia_paisagem/) |
 | Comunidade Quarto | [github.com/quarto-dev/quarto-cli/discussions](https://github.com/quarto-dev/quarto-cli/discussions) |
+
+**Git e GitHub:**
+
+| Recurso | Link |
+|---|---|
+| Git — instalação e guia inicial | [git-scm.com/book/pt-br](https://git-scm.com/book/pt-br/v2) |
+| GitHub Pages — documentação | [docs.github.com/pages](https://docs.github.com/pt/pages) |
+| Happy Git with R (livro gratuito) | [happygitwithr.com](https://happygitwithr.com/) |
+| Gerando Personal Access Token | [docs.github.com/authentication/tokens](https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) |
 
 ::: {.callout-tip}
 ## Dúvidas?

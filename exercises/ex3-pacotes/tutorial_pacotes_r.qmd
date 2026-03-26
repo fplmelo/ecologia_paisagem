@@ -101,7 +101,7 @@ pacotes <- c(
   "rgbif",          # Acesso ao GBIF (ocorrências de espécies)
   "rnaturalearth",  # Fronteiras e mapas-base do Natural Earth
   "rnaturalearthdata", # Dados complementares do Natural Earth
-  "geober" ,        # Shapefiles da geografia Brasileira
+  "geobr" ,        # Shapefiles da geografia Brasileira
   
   # Utilitários
   "remotes",        # Instalar pacotes do GitHub

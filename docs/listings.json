@@ -1,5 +1,13 @@
 [
   {
+    "listing": "/exercises/index.html",
+    "items": [
+      "/exercises/ex1-paisagem/ex-1.html",
+      "/exercises/ex2-quarto_project/ex2_quarto.html",
+      "/exercises/ex3-pacotes/tutorial_pacotes_r.html"
+    ]
+  },
+  {
     "listing": "/resources/index.html",
     "items": [
       "/resources/eco_pais.html",
@@ -18,14 +26,6 @@
       "/sessions/week6/semana6_conectividade.html",
       "/sessions/week7/aula7_metapopulacoes.html",
       "/sessions/week8/semana8_fluxos_energia.html"
-    ]
-  },
-  {
-    "listing": "/exercises/index.html",
-    "items": [
-      "/exercises/ex1-paisagem/ex-1.html",
-      "/exercises/ex2-quarto_project/ex2_quarto.html",
-      "/exercises/ex3-pacotes/tutorial_pacotes_r.html"
     ]
   }
 ]
