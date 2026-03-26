@@ -84,7 +84,7 @@ lang: pt
 
 ::: {.columns}
 ::: {.column width="50%"}
-![Figura: Geometria da biodiversidade (Tamanho x Distância)](figura_tbi_geometria.png)
+![Figura: Geometria da biodiversidade (Tamanho x Distância)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSPpYIxHhEcHJ8C6pKCeH21kmP8PyXCvZKyl6XT8FaI_EZjwTJybGQlvpLHvslGoHvKNoYMj4VHHDGiV8o95A2ZVU03V5B4nwfXxe5MkSbViFa1oyvWSLeE5nvDU0ynNSDQUWmZr75X76d/s1600/imagem2.jpg)
 :::
 
 ::: {.column width="50%"}
@@ -104,7 +104,8 @@ lang: pt
 :::
 
 ::: {.column width="50%"}
-<!-- Espaço para figura: Foto aérea de fragmento isolado em pastagem -->
+
+![](https://imgs.mongabay.com/wp-content/uploads/sites/29/2016/09/03203304/FEAT-1.jpg)
 :::
 :::
 
@@ -118,7 +119,7 @@ lang: pt
 :::
 
 ::: {.column width="50%"}
-<!-- Espaço para figura: Diagrama de bisseção e encolhimento de manchas -->
+![](https://www.ambientelegal.com.br/wp-content/uploads/01-amazon-slideshow.jpg)
 :::
 :::
 
@@ -132,7 +133,7 @@ lang: pt
 :::
 
 ::: {.column width="50%"}
-![Figura: Modelos de desenho de reservas (melhor vs. pior)](figura_reservas.png)
+![Figura: Modelos de desenho de reservas (melhor vs. pior)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_5Wo0mdKSvE4IvdQDRKpK4mxXHvD4B50E1KTnbEUxPKyo_7Hhdvsk55efC-6B8ufKg4UP-RpK1-LZCg8rGRPIh-s57jD1MwopL5SnwEo_Boi1eRSRE8oVE0N_8WMAwJzRA5ow8tmFKymjqW8UgXN-v2G7FbTdSKeMMSFxVZKEJIN5UCGHY66yRGAX/w498-h640/pa%20design%20graphic.jpg)
 :::
 :::
 
@@ -146,11 +147,11 @@ lang: pt
 :::
 
 ::: {.column width="50%"}
-<!-- Espaço para figura: Screenshot de software SIG calculando métricas -->
+![](https://bok-figures.s3.amazonaws.com/files/AM54_Fig1.png)
 :::
 :::
 
-## O Limiar de 30% de Cobertura
+## Hipótese da quantidade de hábitat
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -160,7 +161,7 @@ lang: pt
 :::
 
 ::: {.column width="50%"}
-<!-- Espaço para figura: Gráfico de limiar de extinção vs. % habitat -->
+![](/img/ha_hypoo.png)
 :::
 :::
 
@@ -168,7 +169,7 @@ lang: pt
 
 ::: {.columns}
 ::: {.column width="50%"}
-![Figura: Matriz permeável (agrofloresta) vs. Hostil (pasto)](figura_matriz.png)
+![Figura: Matriz permeável (agrofloresta) vs. Hostil (pasto)](/img/matrix_contrast.jpg)
 :::
 
 ::: {.column width="50%"}
@@ -178,47 +179,6 @@ lang: pt
 :::
 :::
 
-## Conectividade Estrutural vs. Funcional
-
-::: {.columns}
-::: {.column width="50%"}
-*   **Estrutural:** Disposição física e proximidade entre os fragmentos.
-*   **Funcional:** Capacidade real do organismo se mover pelo mosaico.
-*   A conectividade depende da interação espécie-paisagem.
-:::
-
-::: {.column width="50%"}
-<!-- Espaço para figura: Esquema de stepping stones facilitando fluxo -->
-:::
-:::
-
-## Escala de Percepção Biológica
-
-::: {.columns}
-::: {.column width="50%"}
-*   A paisagem não é definida por critérios humanos, mas pelo organismo.
-*   Gafanhotos percebem manchas em metros; onças, em quilômetros.
-*   O manejo deve considerar a "lente" da espécie de interesse.
-:::
-
-::: {.column width="50%"}
-<!-- Espaço para figura: Ilustração de águia vs. borboleta (escala de visão) -->
-:::
-:::
-
-## Contexto Regional: Mata Atlântica
-
-::: {.columns}
-::: {.column width="50%"}
-*   Bioma ultra-fragmentado com a maioria dos fragmentos < 50 ha.
-*   Aplicação da TBI para identificar áreas prioritárias para conexão.
-*   Uso de corredores ecológicos para mitigar o isolamento severo.
-:::
-
-::: {.column width="50%"}
-![Figura: Mapa de fragmentação da Mata Atlântica brasileira](mapa_ma.png)
-:::
-:::
 
 ## TBI e o Efeito de Borda
 
@@ -230,7 +190,7 @@ lang: pt
 :::
 
 ::: {.column width="50%"}
-<!-- Espaço para figura: Diagrama de penetração de luz e vento em bordas -->
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVj_i2Va1fDnZPrE_P84vK1bsRWy9XfruVJQ&s){width=200%}
 :::
 :::
 
@@ -252,7 +212,7 @@ lang: pt
 
 ::: {.columns}
 ::: {.column width="50%"}
-![Figura: Distribuição de remanescentes em fazendas particulares](figura_fazendas.png)
+![Figura: Distribuição de remanescentes em fazendas particulares](https://science.umd.edu/lries/EERC/EERCImages/edges1.jpg)
 :::
 
 ::: {.column width="50%"}
@@ -272,20 +232,13 @@ lang: pt
 :::
 
 ::: {.column width="50%"}
-<!-- Espaço para figura: Diagrama de dinâmica fonte-sumidouro -->
+![](https://kevintshoemaker.github.io/NRES-470/MP1.jpg)
 :::
 :::
 
 ## Conclusão e Visão Integrada
 
-::: {.columns}
-::: {.column width="50%"}
+
 *   A TBI revolucionou o entendimento da heterogeneidade espacial.
 *   Paisagens sustentáveis exigem planejamento em múltiplas escalas.
 *   Integrar o homem e a natureza no desenho de mosaicos funcionais.
-:::
-
-::: {.column width="50%"}
-
-:::
-:::
