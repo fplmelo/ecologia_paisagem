@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Felipe Melo">
+<meta name="author" content="Prof.&nbsp;Felipe Melo">
 
-<title>Teoria de Biogeografia de Ilhas e sua Aplicação</title>
+<title>Tipos de Métricas de Paisagem</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -41,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-bc540fe1884d80baefd8e259f3c8d7c9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ff8232942f860c90e0ff5fbcff06b30d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -72,6 +107,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -173,27 +237,40 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <div class="quarto-alternate-formats"><h2>Outros formatos</h2><ul><li><a href="aula4_tbi_slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></div>
+    <div class="quarto-alternate-formats"><h2>Outros formatos</h2><ul><li><a href="slides_semana9.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Teoria de Biogeografia de Ilhas e sua Aplicação</h1>
-<p class="subtitle lead">Semana 4 - Ecologia da Paisagem (UFPE)</p>
+<h1 class="title">Tipos de Métricas de Paisagem</h1>
+<p class="subtitle lead">Composição vs.&nbsp;Configuração — Semana 9 · BO-304</p>
 </div>
 
 
+<div class="quarto-title-meta-author column-page-left">
+  <div class="quarto-title-meta-heading">Autor</div>
+  <div class="quarto-title-meta-heading">Afiliação</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Prof.&nbsp;Felipe Melo </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Departamento de Botânica · UFPE
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta column-page-left">
 
+      
     <div>
-    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-             <p>Felipe Melo </p>
-          </div>
+      <p class="date">27 de março de 2026</p>
+    </div>
   </div>
-    
   
     
   </div>
@@ -203,262 +280,394 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introdução-à-tbi" class="level2">
-<h2 class="anchored" data-anchor-id="introdução-à-tbi">Introdução à TBI</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Proposta originalmente em 1967 por MacArthur e Wilson.</li>
-<li>Padrões de riqueza de espécies em sistemas isolados.</li>
-<li>Base fundamental para a Ecologia de Paisagens.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img src="https://o.quizlet.com/xATJzxqqwQfd0cAjIYJF7A.png" class="img-fluid"></p>
+<section id="section" class="level2" data-background-color="#2c1a5e">
+<h2 data-background-color="#2c1a5e" class="anchored" data-anchor-id="section"></h2>
+<div style="text-align: center; padding-top: 70px;">
+<p><span style="font-size: 2.3em; color: #EEEDFE; font-weight: 700;"><strong>Tipos de Métricas de Paisagem</strong></span></p>
+<p><span style="font-size: 1.8em; color: #AFA9EC; display: inline;"><strong>Composição</strong></span> <span style="font-size: 1.4em; color: #7F77DD; display: inline; margin: 0 0.4em;"><strong>vs.</strong></span> <span style="font-size: 1.8em; color: #AFA9EC; display: inline;"><strong>Configuração</strong></span></p>
+<p><span style="font-size: 1em; color: #7F77DD; display: block; margin-top: 1.4em;">O que há na paisagem · Como está arranjado</span></p>
+<p><span style="font-size: 0.85em; color: #7F77DD; display: block; margin-top: 0.5em;">Semana 9 · BO-304 · Prof.&nbsp;Felipe Melo · UFPE</span></p>
 </div>
-</div>
+<hr>
 </section>
-<section id="contexto-histórico-e-científico" class="level2">
-<h2 class="anchored" data-anchor-id="contexto-histórico-e-científico">Contexto histórico e científico</h2>
+<section id="o-paradoxo-que-motiva-esta-aula" class="level2">
+<h2 class="anchored" data-anchor-id="o-paradoxo-que-motiva-esta-aula">O paradoxo que motiva esta aula</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:48%;">
+<p><strong>Duas paisagens, composição idêntica:</strong></p>
 <ul>
-<li>Surgiu da observação de padrões biológicos em arquipélagos oceânicos.</li>
-<li>Busca explicar por que ilhas diferentes possuem números distintos de espécies.</li>
-<li>trouxe as “primeiras” evidências da relação espécie~área</li>
+<li>Floresta: <strong>50%</strong> em ambas</li>
+<li>Agricultura: <strong>50%</strong> em ambas</li>
+<li>SHDI: <strong>igual</strong> em ambas</li>
+<li>LPI: <strong>diferente</strong></li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img src="../img/sar.png" class="img-fluid" style="width:130.0%"></p>
+<p><strong>Ecologicamente são opostas:</strong></p>
+<ul>
+<li>Paisagem A: dezenas de fragmentos minúsculos, borda máxima, sem área de núcleo, isolamento elevado</li>
+<li>Paisagem B: dois grandes blocos, pouca borda, grande área de núcleo, baixo isolamento</li>
+</ul>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Métricas de composição sozinhas são <strong>insuficientes</strong> para descrever a estrutura ecológica de uma paisagem.</p>
 </div>
 </div>
+</div>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<p><img src="img/s9_fig1_composicao_vs_configuracao.svg" class="img-fluid"></p>
+</div>
+</div>
+<hr>
 </section>
-<section id="o-modelo-de-equilíbrio-dinâmico" class="level2">
-<h2 class="anchored" data-anchor-id="o-modelo-de-equilíbrio-dinâmico">O Modelo de Equilíbrio Dinâmico</h2>
+<section id="a-divisão-fundamental-mcgarigal-marks-1995" class="level2">
+<h2 class="anchored" data-anchor-id="a-divisão-fundamental-mcgarigal-marks-1995">A divisão fundamental (McGarigal &amp; Marks 1995)</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:48%;">
+<p><strong>Categoria 1 — Composição:</strong></p>
 <ul>
-<li>A riqueza de espécies (S) é o resultado do equilíbrio entre imigração e extinção.</li>
-<li><strong>Imigração:</strong> Chegada de novos propágulos vindos de uma fonte continental.</li>
-<li><strong>Extinção:</strong> Perda de espécies já estabelecidas no isolamento.</li>
+<li>Mede <em>o que está presente</em> e <em>em que quantidade</em></li>
+<li>Sem referência à posição espacial dos patches</li>
+<li>Calculável a partir de uma tabela de área por classe</li>
+<li>Aplicável apenas no <strong>nível de paisagem</strong></li>
 </ul>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figura_equilibrio.png" class="img-fluid figure-img"></p>
-<figcaption>Figura: Curvas de interseção de MacArthur-Wilson</figcaption>
-</figure>
+<p><strong>Categoria 2 — Configuração:</strong></p>
+<ul>
+<li>Mede <em>como os elementos estão dispostos</em></li>
+<li>Requer coordenadas e relações espaciais</li>
+<li>Exige operações sobre o raster (adjacência, distância, forma)</li>
+<li>Aplicável nos três níveis: patch, class, landscape</li>
+</ul>
+<p><strong>Regra prática:</strong></p>
+<blockquote class="blockquote">
+<p>Se você pode calcular a métrica sem saber onde cada pixel está, é composição. Se precisa das coordenadas, é configuração.</p>
+</blockquote>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<p><img src="img/s9_fig2_metricas_composicao.svg" class="img-fluid"></p>
 </div>
 </div>
-</div>
+<hr>
 </section>
-<section id="o-efeito-da-área" class="level2">
-<h2 class="anchored" data-anchor-id="o-efeito-da-área">O Efeito da Área</h2>
+<section id="métricas-de-composição-pland-e-pr" class="level2">
+<h2 class="anchored" data-anchor-id="métricas-de-composição-pland-e-pr">Métricas de composição: PLAND e PR</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:48%;">
+<p><strong>PLAND — Proporção da paisagem:</strong></p>
+<p><span class="math display">\[PLAND_i = \frac{\sum a_{ij}}{A} \times 100\]</span></p>
 <ul>
-<li>Áreas maiores sustentam populações maiores e mais estáveis.</li>
-<li>Menor probabilidade de extinção por eventos estocásticos (aleatórios).</li>
-<li>Oferecem maior diversidade de nichos e recursos.</li>
+<li>Primeira métrica de qualquer análise</li>
+<li>Informa quanto de cada tipo existe</li>
+<li>Intervalo: 0 &lt; PLAND ≤ 100</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<!-- Espaço para figura: Comparação de ilhas de diferentes tamanhos -->
+<p><strong>PR — Riqueza de tipos:</strong></p>
+<p><span class="math display">\[PR = m\]</span></p>
+<ul>
+<li>Número de tipos distintos de patch</li>
+<li>Análogo à riqueza de espécies</li>
+<li>PR = 1: monocultura total</li>
+<li>PR = 5: cinco tipos distintos</li>
+</ul>
+<p><strong>Limitação:</strong> PR não informa equitatividade — uma paisagem com 95% floresta e 5% água tem PR = 2, igual a uma paisagem com 50% de cada</p>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<p><img src="img/s9_fig2_metricas_composicao.svg" class="img-fluid"></p>
 </div>
 </div>
+<hr>
 </section>
-<section id="o-efeito-do-isolamento" class="level2">
-<h2 class="anchored" data-anchor-id="o-efeito-do-isolamento">O Efeito do Isolamento</h2>
+<section id="métricas-de-composição-shdi-e-lpi" class="level2">
+<h2 class="anchored" data-anchor-id="métricas-de-composição-shdi-e-lpi">Métricas de composição: SHDI e LPI</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:48%;">
+<p><strong>SHDI — Índice de Diversidade de Shannon:</strong></p>
+<p><span class="math display">\[SHDI = -\sum_{i=1}^{m} p_i \cdot \ln(p_i)\]</span></p>
 <ul>
-<li>A distância da fonte determina a taxa de chegada de novos colonizadores.</li>
-<li>Ilhas próximas recebem mais imigração do que ilhas distantes.</li>
-<li>O isolamento dificulta a recolonização após extinções locais.</li>
+<li>Integra riqueza + equitatividade</li>
+<li>SHDI = 0: apenas 1 tipo presente</li>
+<li>SHDI = ln(m): todos os tipos com mesma proporção</li>
+<li>Sensível a tipos raros (peso pelo logaritmo)</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<!-- Espaço para figura: Esquema de dispersão continente-ilha -->
+<p><strong>LPI — Maior Patch:</strong></p>
+<p><span class="math display">\[LPI = \frac{a_{max}}{A} \times 100\]</span></p>
+<ul>
+<li>Medida de <strong>dominância</strong></li>
+<li>LPI ≈ PLAND: paisagem intacta (um grande bloco)</li>
+<li>LPI &lt;&lt; PLAND: paisagem fragmentada (área distribuída em muitos patches pequenos)</li>
+<li>Detecta a diferença que PLAND não consegue</li>
+</ul>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<p><img src="img/s9_fig2_metricas_composicao.svg" class="img-fluid"></p>
 </div>
 </div>
+<hr>
 </section>
-<section id="síntese-o-equilíbrio-espacial" class="level2">
-<h2 class="anchored" data-anchor-id="síntese-o-equilíbrio-espacial">Síntese: O Equilíbrio Espacial</h2>
+<section id="métricas-de-configuração-np-e-ed" class="level2">
+<h2 class="anchored" data-anchor-id="métricas-de-configuração-np-e-ed">Métricas de configuração: NP e ED</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSPpYIxHhEcHJ8C6pKCeH21kmP8PyXCvZKyl6XT8FaI_EZjwTJybGQlvpLHvslGoHvKNoYMj4VHHDGiV8o95A2ZVU03V5B4nwfXxe5MkSbViFa1oyvWSLeE5nvDU0ynNSDQUWmZr75X76d/s1600/imagem2.jpg" class="img-fluid figure-img"></p>
-<figcaption>Figura: Geometria da biodiversidade (Tamanho x Distância)</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
+<div class="column" style="width:48%;">
+<p><strong>NP / PD — Fragmentação:</strong></p>
 <ul>
-<li>Grandes e próximas = Máxima riqueza biológica.</li>
-<li>Pequenas e distantes = Mínima riqueza biológica.</li>
-<li>Modelo permite previsões quantitativas para conservação.</li>
+<li>NP = número total de patches da classe</li>
+<li>PD = NP normalizado por área (patches/ha)</li>
+<li><strong>NP alto + PLAND alto</strong> = habitat presente mas fragmentado</li>
+<li><strong>NP = 1</strong> = um único bloco contíguo</li>
 </ul>
+<p><strong>ED — Densidade de borda:</strong></p>
+<p><span class="math display">\[ED = \frac{E_{total}}{A} \quad (m/ha)\]</span></p>
+<ul>
+<li>E = comprimento total de bordas entre classes</li>
+<li>Requer saber quais células são adjacentes → espacial</li>
+<li>ED alto = muito fracionamento e interface</li>
+<li>ED é a tradução métrica do efeito de borda (semana anterior)</li>
+<li>Proxy de: perda de área de núcleo, fluxos laterais de nutrientes, exposição a perturbações externas</li>
+</ul>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<p><img src="img/s9_fig3_metricas_configuracao.svg" class="img-fluid"></p>
 </div>
 </div>
+<hr>
 </section>
-<section id="a-transposição-para-o-continente" class="level2">
-<h2 class="anchored" data-anchor-id="a-transposição-para-o-continente">A Transposição para o Continente</h2>
+<section id="métricas-de-configuração-ai-e-enn" class="level2">
+<h2 class="anchored" data-anchor-id="métricas-de-configuração-ai-e-enn">Métricas de configuração: AI e ENN</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:48%;">
+<p><strong>AI — Índice de Agregação:</strong></p>
+<p><span class="math display">\[AI = \frac{g_{ii}}{g_{ii,max}} \times 100\]</span></p>
 <ul>
-<li>Fragmentos de vegetação nativa são tratados analogamente a ilhas.</li>
-<li>A matriz antrópica (pasto, agricultura) é comparada ao “mar” hostil.</li>
-<li>Consolida o foco no arranjo espacial dos remanescentes.</li>
+<li><span class="math inline">\(g_{ii}\)</span> = adjacências entre células da mesma classe</li>
+<li>AI = 0: maximamente disperso (xadrez perfeito)</li>
+<li>AI = 100: maximamente agregado (1 bloco compacto)</li>
+<li>Distingue xadrez de blocos com <strong>mesma composição</strong></li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img src="https://imgs.mongabay.com/wp-content/uploads/sites/29/2016/09/03203304/FEAT-1.jpg" class="img-fluid"></p>
+<p><strong>ENN — Distância ao vizinho mais próximo:</strong></p>
+<p><span class="math display">\[ENN = d_{ij} \quad (m)\]</span></p>
+<ul>
+<li>Distância borda a borda entre patches da mesma classe</li>
+<li>Mede <strong>isolamento espacial</strong></li>
+<li>Conectividade estrutural ↑ = ENN ↓</li>
+<li>Diretamente ligado a: taxa de colonização <span class="math inline">\(c\)</span> no modelo de Levins (semana 7), efeito resgate, dispersão</li>
+</ul>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<p><img src="img/s9_fig3_metricas_configuracao.svg" class="img-fluid"></p>
 </div>
 </div>
+<hr>
 </section>
-<section id="fragmentação-como-ilhamento" class="level2">
-<h2 class="anchored" data-anchor-id="fragmentação-como-ilhamento">Fragmentação como “Ilhamento”</h2>
+<section id="os-três-níveis-hierárquicos" class="level2">
+<h2 class="anchored" data-anchor-id="os-três-níveis-hierárquicos">Os três níveis hierárquicos</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:48%;">
+<p><strong>Nível Patch:</strong></p>
 <ul>
-<li>Processo de subdivisão de habitats contínuos em manchas menores.</li>
-<li>Resulta em perda de habitat e aumento do isolamento geográfico.</li>
-<li>Causa o declínio consistente de populações especialistas de interior.</li>
+<li>Uma métrica por patch individual</li>
+<li>Resulta em distribuição: média, SD, CV</li>
+<li>Exemplos: AREA, PERIM, SHAPE, ENN</li>
+<li>Uso: comparar patches dentro da paisagem</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img src="https://www.ambientelegal.com.br/wp-content/uploads/01-amazon-slideshow.jpg" class="img-fluid"></p>
+<p><strong>Nível Class:</strong></p>
+<ul>
+<li>Integrado sobre todos os patches de um tipo</li>
+<li>Um valor por tipo de cobertura</li>
+<li>Exemplos: CA, NP, PLAND, ED, ENN_MN</li>
+<li>Uso: comparar classes dentro ou entre paisagens</li>
+</ul>
+<p><strong>Nível Landscape:</strong></p>
+<ul>
+<li>Um único valor para a paisagem inteira</li>
+<li>Métricas de diversidade só existem aqui (SHDI, SHEI)</li>
+<li>Exemplos: SHDI, AI, ED, LPI</li>
+<li>Uso: comparar paisagens inteiras (gradiente de fragmentação)</li>
+</ul>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<p><img src="img/s9_fig4_niveis_hierarquicos.svg" class="img-fluid"></p>
 </div>
 </div>
+<hr>
 </section>
-<section id="tbi-e-o-planejamento-de-reservas" class="level2">
-<h2 class="anchored" data-anchor-id="tbi-e-o-planejamento-de-reservas">TBI e o Planejamento de Reservas</h2>
+<section id="o-que-cada-nível-responde" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-cada-nível-responde">O que cada nível responde</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Fundamentou o debate SLOSS (Single Large or Several Small).</li>
-<li>Defesa de grandes áreas conectadas para garantir a persistência.</li>
-<li>A configuração espacial dita a viabilidade da fauna a longo prazo.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_5Wo0mdKSvE4IvdQDRKpK4mxXHvD4B50E1KTnbEUxPKyo_7Hhdvsk55efC-6B8ufKg4UP-RpK1-LZCg8rGRPIh-s57jD1MwopL5SnwEo_Boi1eRSRE8oVE0N_8WMAwJzRA5ow8tmFKymjqW8UgXN-v2G7FbTdSKeMMSFxVZKEJIN5UCGHY66yRGAX/w498-h640/pa%20design%20graphic.jpg" class="img-fluid figure-img"></p>
-<figcaption>Figura: Modelos de desenho de reservas (melhor vs.&nbsp;pior)</figcaption>
-</figure>
+<div class="column" style="width:48%;">
+<p><strong>Pergunta: qual patch tem maior risco de extinção local?</strong></p>
+<p>→ Nível <strong>patch</strong> — AREA e ENN individuais para cada fragmento (conectar com semana 7: modelo de Levins)</p>
+<p><strong>Pergunta: qual classe de habitat está mais fragmentada?</strong></p>
+<p>→ Nível <strong>class</strong> — NP, PD, AI, ENN_MN da classe de interesse</p>
+<p><strong>Pergunta: qual bacia hidrográfica tem maior integridade de paisagem?</strong></p>
+<p>→ Nível <strong>landscape</strong> — SHDI, AI, ED, LPI de cada bacia (conectar com semana 8: biogeoquímica)</p>
+<p><strong>Pergunta: como a fragmentação mudou ao longo de 30 anos?</strong></p>
+<p>→ Séries temporais de métricas de <strong>landscape</strong> e <strong>class</strong></p>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<p><img src="img/s9_fig4_niveis_hierarquicos.svg" class="img-fluid"></p>
 </div>
 </div>
-</div>
+<hr>
 </section>
-<section id="métricas-derivadas-da-teoria" class="level2">
-<h2 class="anchored" data-anchor-id="métricas-derivadas-da-teoria">Métricas Derivadas da Teoria</h2>
+<section id="o-problema-da-redundância" class="level2">
+<h2 class="anchored" data-anchor-id="o-problema-da-redundância">O problema da redundância</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:48%;">
+<p><strong>O <code>landscapemetrics</code> oferece 130+ métricas</strong></p>
+<p><strong>Isso não significa que todas são independentes:</strong></p>
 <ul>
-<li><strong>Área da Mancha (Patch Area):</strong> Determinante da viabilidade populacional local.</li>
-<li><strong>Distância ao Vizinho Próximo (ENN):</strong> Proxy para o grau de isolamento.</li>
-<li><strong>Densidade de Manchas:</strong> Medida da fragmentação total do mosaico.</li>
+<li>CA e PLAND: correlação &gt; 0.95</li>
+<li>NP e PD: correlação = 1.0 (PD = NP/área)</li>
+<li>SHAPE_MN e FRAC_MN: r &gt; 0.90</li>
+<li>AI e CLUMPY: r &gt; 0.85</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img src="https://bok-figures.s3.amazonaws.com/files/AM54_Fig1.png" class="img-fluid"></p>
+<p><strong>Consequências de usar métricas redundantes:</strong></p>
+<ul>
+<li>Não adiciona informação ecológica</li>
+<li>Infla significância estatística em análises multivariadas</li>
+<li>Dificulta interpretação dos coeficientes</li>
+<li>Viola premissas de independência em modelos lineares</li>
+</ul>
+<p><strong>Solução:</strong> selecionar um conjunto <strong>mínimo e ortogonal</strong> (Cushman et al.&nbsp;2008)</p>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<p><img src="img/s9_fig5_redundancia_metricas.svg" class="img-fluid"></p>
 </div>
 </div>
+<hr>
 </section>
-<section id="hipótese-da-quantidade-de-hábitat" class="level2">
-<h2 class="anchored" data-anchor-id="hipótese-da-quantidade-de-hábitat">Hipótese da quantidade de hábitat</h2>
+<section id="o-conjunto-mínimo-recomendado" class="level2">
+<h2 class="anchored" data-anchor-id="o-conjunto-mínimo-recomendado">O conjunto mínimo recomendado</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:48%;">
+<p><strong>Princípio de parcimônia (Cushman et al.&nbsp;2008):</strong></p>
 <ul>
-<li>Abaixo de 30%, a configuração (isolamento) torna-se o fator crítico.</li>
-<li>Acima desse limite, a quantidade total de habitat domina a resposta biológica.</li>
-<li>Conceito vital para a aplicação do Código Florestal Brasileiro.</li>
+<li>Selecionar métricas <strong>ortogonais</strong> (não correlacionadas)</li>
+<li>Cobrir composição E configuração</li>
+<li>5–8 métricas são suficientes para a maioria das análises</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img src="../img/ha_hypoo.png" class="img-fluid"></p>
+<p><strong>Conjunto para análise de fragmentação:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">calculate_lsm</span>(paisagem, <span class="at">what =</span> <span class="fu">c</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"lsm_c_pland"</span>,    <span class="co"># composição</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"lsm_l_shdi"</span>,     <span class="co"># composição</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"lsm_c_np"</span>,       <span class="co"># fragmentação</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"lsm_c_ed"</span>,       <span class="co"># borda</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"lsm_c_ai"</span>,       <span class="co"># agregação</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"lsm_c_enn_mn"</span>    <span class="co"># isolamento</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>))</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<p><img src="img/s9_fig6_conjunto_minimo.svg" class="img-fluid"></p>
 </div>
 </div>
+<hr>
 </section>
-<section id="críticas-e-evolução-a-matriz-terrestre" class="level2">
-<h2 class="anchored" data-anchor-id="críticas-e-evolução-a-matriz-terrestre">Críticas e Evolução: A Matriz Terrestre</h2>
+<section id="calculando-no-r-o-paradoxo-visual" class="level2">
+<h2 class="anchored" data-anchor-id="calculando-no-r-o-paradoxo-visual">Calculando no R: o paradoxo visual</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/matrix_contrast.jpg" class="img-fluid figure-img"></p>
-<figcaption>Figura: Matriz permeável (agrofloresta) vs.&nbsp;Hostil (pasto)</figcaption>
-</figure>
+<div class="column" style="width:48%;">
+<p><strong>Duas paisagens simuladas:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Paisagem A: xadrez (fragmentada)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>r_A <span class="ot">&lt;-</span> <span class="fu">rast</span>(<span class="at">nrows=</span><span class="dv">20</span>, <span class="at">ncols=</span><span class="dv">20</span>,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">vals =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>L, <span class="dv">2</span>L), <span class="dv">200</span>))</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Paisagem B: dois blocos (agregada)</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>r_B <span class="ot">&lt;-</span> <span class="fu">rast</span>(<span class="at">nrows=</span><span class="dv">20</span>, <span class="at">ncols=</span><span class="dv">20</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">vals =</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">1</span>L,<span class="dv">200</span>), <span class="fu">rep</span>(<span class="dv">2</span>L,<span class="dv">200</span>)))</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Métricas: composição = IGUAL</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Métricas: configuração = DIFERENTE</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fu">calculate_lsm</span>(<span class="fu">list</span>(r_A, r_B), <span class="at">what =</span> <span class="fu">c</span>(</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="st">"lsm_l_shdi"</span>,  <span class="co"># composição: igual</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="st">"lsm_l_np"</span>,    <span class="co"># config: muito diferente</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="st">"lsm_l_ed"</span>,    <span class="co"># config: muito diferente</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="st">"lsm_l_ai"</span>     <span class="co"># config: muito diferente</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>))</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Resultado esperado:</strong> SHDI idêntico; NP, ED e AI opostos</p>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<p><img src="img/s9_fig1_composicao_vs_configuracao.svg" class="img-fluid"></p>
 </div>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>Diferente do oceano, a matriz terrestre pode ser permeável.</li>
-<li>Espécies percebem e utilizam a matriz de formas variadas.</li>
-<li>Necessidade de evoluir para modelos de conectividade funcional.</li>
-</ul>
 </div>
-</div>
+<hr>
 </section>
-<section id="tbi-e-o-efeito-de-borda" class="level2">
-<h2 class="anchored" data-anchor-id="tbi-e-o-efeito-de-borda">TBI e o Efeito de Borda</h2>
+<section id="integrando-com-as-semanas-anteriores" class="level2">
+<h2 class="anchored" data-anchor-id="integrando-com-as-semanas-anteriores">Integrando com as semanas anteriores</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:48%;">
+<p><strong>Composição e configuração conectam todos os temas:</strong></p>
 <ul>
-<li>A redução da área aumenta a proporção de bordas nos fragmentos.</li>
-<li>Bordas alteram o microclima e a estabilidade das comunidades de interior.</li>
-<li>Isolamento e bordas agem sinergicamente na perda de espécies.</li>
+<li><strong>Semana 6 — Conectividade:</strong>
+<ul>
+<li>ENN_MN e AI são métricas de conectividade estrutural</li>
+<li>ED é proxy da intensidade dos fluxos laterais</li>
+</ul></li>
+<li><strong>Semana 7 — Metapopulações:</strong>
+<ul>
+<li>NP e AREA informam sobre o número e tamanho de patches</li>
+<li>ENN informa sobre o isolamento (→ taxa <span class="math inline">\(c\)</span> de Levins)</li>
+<li>LPI identifica o maior patch como candidato a source</li>
+</ul></li>
+<li><strong>Semana 8 — Fluxos:</strong>
+<ul>
+<li>ED é proxy da quantidade de borda e das zonas de troca biogeoquímica</li>
+<li>PLAND de zona ripária = proxy de capacidade de tamponamento</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVj_i2Va1fDnZPrE_P84vK1bsRWy9XfruVJQ&amp;s.png" class="img-fluid" style="width:200.0%"></p>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<p><img src="img/s9_fig6_conjunto_minimo.svg" class="img-fluid"></p>
 </div>
 </div>
+<hr>
 </section>
-<section id="crise-da-biodiversidade-no-antropoceno" class="level2">
-<h2 class="anchored" data-anchor-id="crise-da-biodiversidade-no-antropoceno">Crise da Biodiversidade no Antropoceno</h2>
+<section id="síntese-quatro-regras-práticas" class="level2">
+<h2 class="anchored" data-anchor-id="síntese-quatro-regras-práticas">Síntese: quatro regras práticas</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>A TBI ajuda a prever o número de extinções futuras pós-desmatamento.</li>
-<li>Ação humana atua como força geológica transformadora.</li>
-<li>70% das populações de vertebrados declinaram desde 1970 mundialmente.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<!-- Espaço para figura: Gráfico do Relatório Planeta Vivo (WWF) -->
+<div class="column" style="width:48%;">
+<p><strong>Regra 1 — Sempre use ambas as categorias</strong> - Composição sem configuração é incompleto - Configuração sem composição é sem contexto</p>
+<p><strong>Regra 2 — Escolha o nível certo</strong> - Pergunta sobre espécie → métricas de class - Comparação de paisagens → métricas de landscape - Gestão de fragmento individual → métricas de patch</p>
+<p><strong>Regra 3 — Seja parcimonioso</strong> - 5–8 métricas ortogonais &gt; 30 métricas redundantes - Verifique correlações antes de qualquer análise multivariada</p>
+<p><strong>Regra 4 — Interprete no contexto ecológico</strong> - Um número isolado não tem significado - Compare com referência (paisagem intacta, histórico, outros biomas)</p>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<p><img src="img/s9_fig5_redundancia_metricas.svg" class="img-fluid"></p>
 </div>
 </div>
+<hr>
 </section>
-<section id="conservação-em-terras-privadas" class="level2">
-<h2 class="anchored" data-anchor-id="conservação-em-terras-privadas">Conservação em Terras Privadas</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://science.umd.edu/lries/EERC/EERCImages/edges1.jpg" class="img-fluid figure-img"></p>
-<figcaption>Figura: Distribuição de remanescentes em fazendas particulares</figcaption>
-</figure>
+<section id="section-1" class="level2" data-background-color="#2c1a5e">
+<h2 data-background-color="#2c1a5e" class="anchored" data-anchor-id="section-1"></h2>
+<div style="text-align: center; padding-top: 55px;">
+<p><span style="font-size: 1.8em; color: #EEEDFE; font-weight: 700;"><strong>Resumo</strong></span></p>
 </div>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>No Brasil, a maioria das “ilhas” de habitat está em mãos privadas.</li>
-<li>Compromisso da meta 30x30 exige o engajamento de proprietários rurais.</li>
-<li>Instrumentos como RPPNs e Reservas Legais são essenciais.</li>
-</ul>
+<div style="color: #AFA9EC; font-size: 1em; max-width: 700px; margin: 0 auto; line-height: 1.9;">
+<p>→ <strong>Composição</strong> = o que há e em que quantidade — sem referência espacial (PLAND, SHDI, PR, LPI)</p>
+<p>→ <strong>Configuração</strong> = como está disposto — requer coordenadas (NP, ED, AI, ENN)</p>
+<p>→ Mesma composição pode ter configurações opostas — e consequências ecológicas opostas</p>
+<p>→ Três níveis: <strong>patch</strong> (individual) · <strong>class</strong> (por tipo) · <strong>landscape</strong> (paisagem inteira)</p>
+<p>→ 130+ métricas disponíveis, mas muitas são redundantes — use conjunto mínimo ortogonal</p>
+<p>→ Cushman et al.&nbsp;(2008): PLAND + SHDI (composição) + NP + ED + AI + ENN (configuração)</p>
+<p>→ Métricas conectam: conectividade (semana 6), metapopulações (semana 7), biogeoquímica (semana 8)</p>
 </div>
+<div style="margin-top: 1.5em; color: #7F77DD; font-size: 0.82em; text-align: center;">
+<p>BO-304 Ecologia de Paisagens · Prof.&nbsp;Felipe Melo · UFPE 2026.1</p>
 </div>
-</section>
-<section id="transição-para-a-teoria-de-metapopulações" class="level2">
-<h2 class="anchored" data-anchor-id="transição-para-a-teoria-de-metapopulações">Transição para a Teoria de Metapopulações</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>TBI foca na riqueza (comunidade) de uma ilha ou mancha.</li>
-<li>Metapopulação foca na persistência de uma espécie em várias manchas.</li>
-<li>Ambas utilizam a estrutura espacial como variável chave para o manejo.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img src="https://kevintshoemaker.github.io/NRES-470/MP1.jpg" class="img-fluid"></p>
-</div>
-</div>
-</section>
-<section id="conclusão-e-visão-integrada" class="level2">
-<h2 class="anchored" data-anchor-id="conclusão-e-visão-integrada">Conclusão e Visão Integrada</h2>
-<ul>
-<li>A TBI revolucionou o entendimento da heterogeneidade espacial.</li>
-<li>Paisagens sustentáveis exigem planejamento em múltiplas escalas.</li>
-<li>Integrar o homem e a natureza no desenho de mosaicos funcionais.</li>
-</ul>
 
 
 </section>
