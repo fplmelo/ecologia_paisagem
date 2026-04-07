@@ -2377,7 +2377,7 @@
     "href": "sessions/index.html",
     "title": "Conteúdo",
     "section": "",
-    "text": "Semana 1: Origens e Conceitos de Escala\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\n\n\n\n\n\nSemana 2: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade\n\n\n\n\n\n\nFelipe Melo\n\n\nMar 17, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 3: Dinâmica de Perturbação\n\n\n\n\n\n\nFelipe Melo\n\n\nMar 17, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 4: Teoria de Biogeografia de Ilhas e Fragmentação\n\n\n\n\n\n\nFelipe Melo\n\n\nMar 17, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 5: Efeito de Borda\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\n\n\n\n\n\nSemana 6: Conectividade Ecológica vs. Conexidade Física\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nMar 27, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 7: Metapopulações e Dinâmica de Extinção-Colonização\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nMar 27, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 8: Fluxos de Energia e Ciclagem de Nutrientes no Nível de Paisagem\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nMar 27, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 9: Tipos de Métricas de Paisagem\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nMar 27, 2026\n\n\n\n\n\n\n\n\n\n\n\nTipos de Métricas de Paisagem\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nMar 27, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Semana 1: Origens e Conceitos de Escala\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\n\n\n\n\n\nSemana 2: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade\n\n\n\n\n\n\nFelipe Melo\n\n\nMar 17, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 3: Dinâmica de Perturbação\n\n\n\n\n\n\nFelipe Melo\n\n\nMar 17, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 4: Teoria de Biogeografia de Ilhas e Fragmentação\n\n\n\n\n\n\nFelipe Melo\n\n\nMar 17, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 5: Efeito de Borda\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\n\n\n\n\n\nSemana 6: Conectividade Ecológica vs. Conexidade Física\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nApr 7, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 7: Metapopulações e Dinâmica de Extinção-Colonização\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nApr 7, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 8: Fluxos de Energia e Ciclagem de Nutrientes no Nível de Paisagem\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nApr 7, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 9: Tipos de Métricas de Paisagem\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nApr 7, 2026\n\n\n\n\n\n\n\n\n\n\n\nTipos de Métricas de Paisagem\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nApr 7, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "sessions/week5/aula5.html",
@@ -2839,14 +2839,14 @@
     "href": "slides/slides_semana9.html#section",
     "title": "Tipos de Métricas de Paisagem",
     "section": "",
-    "text": "Tipos de Métricas de Paisagem\nComposição vs. Configuração\nO que há na paisagem · Como está arranjado\nSemana 9 · BO-304 · Prof. Felipe Melo · UFPE"
+    "text": "Resumo\n\n\n→ Composição = o que há e em que quantidade — sem referência espacial (PLAND, SHDI, PR, LPI)\n→ Configuração = como está disposto — requer coordenadas (NP, ED, AI, ENN)\n→ Mesma composição pode ter configurações opostas — e consequências ecológicas opostas\n→ Três níveis: patch (individual) · class (por tipo) · landscape (paisagem inteira)\n→ 130+ métricas disponíveis, mas muitas são redundantes — use conjunto mínimo ortogonal\n→ Cushman et al. (2008): PLAND + SHDI (composição) + NP + ED + AI + ENN (configuração)\n→ Métricas conectam: conectividade (semana 6), metapopulações (semana 7), biogeoquímica (semana 8)\n\n\nBO-304 Ecologia de Paisagens · Prof. Felipe Melo · UFPE 2026.1"
   },
   {
     "objectID": "slides/slides_semana9.html#o-paradoxo-que-motiva-esta-aula",
     "href": "slides/slides_semana9.html#o-paradoxo-que-motiva-esta-aula",
     "title": "Tipos de Métricas de Paisagem",
     "section": "O paradoxo que motiva esta aula",
-    "text": "O paradoxo que motiva esta aula\n\n\nDuas paisagens, composição idêntica:\n\nFloresta: 50% em ambas\nAgricultura: 50% em ambas\nSHDI: igual em ambas\nLPI: diferente\n\nEcologicamente são opostas:\n\nPaisagem A: dezenas de fragmentos minúsculos, borda máxima, sem área de núcleo, isolamento elevado\nPaisagem B: dois grandes blocos, pouca borda, grande área de núcleo, baixo isolamento\n\n\n\n\nMétricas de composição sozinhas são insuficientes para descrever a estrutura ecológica de uma paisagem."
+    "text": "O paradoxo que motiva esta aula"
   },
   {
     "objectID": "slides/slides_semana9.html#a-divisão-fundamental-mcgarigal-marks-1995",
@@ -2860,77 +2860,77 @@
     "href": "slides/slides_semana9.html#métricas-de-composição-pland-e-pr",
     "title": "Tipos de Métricas de Paisagem",
     "section": "Métricas de composição: PLAND e PR",
-    "text": "Métricas de composição: PLAND e PR\n\n\nPLAND — Proporção da paisagem:\n\\[PLAND_i = \\frac{\\sum a_{ij}}{A} \\times 100\\]\n\nPrimeira métrica de qualquer análise\nInforma quanto de cada tipo existe\nIntervalo: 0 &lt; PLAND ≤ 100\n\nPR — Riqueza de tipos:\n\\[PR = m\\]\n\nNúmero de tipos distintos de patch\nAnálogo à riqueza de espécies\nPR = 1: monocultura total\nPR = 5: cinco tipos distintos\n\nLimitação: PR não informa equitatividade — uma paisagem com 95% floresta e 5% água tem PR = 2, igual a uma paisagem com 50% de cada"
+    "text": "Métricas de composição: PLAND e PR\n\n\nPLAND — Proporção da paisagem:\n\\[PLAND_i = \\frac{\\sum a_{ij}}{A} \\times 100\\]\n\nPrimeira métrica de qualquer análise\nInforma quanto de cada tipo existe\nIntervalo: 0 &lt; PLAND ≤ 100\n\n\n\n\nPR — Riqueza de tipos:\n\\[PR = m\\]\n\nNúmero de tipos distintos de patch\nAnálogo à riqueza de espécies\nPR = 1: monocultura total\nPR = 5: cinco tipos distintos"
   },
   {
     "objectID": "slides/slides_semana9.html#métricas-de-composição-shdi-e-lpi",
     "href": "slides/slides_semana9.html#métricas-de-composição-shdi-e-lpi",
     "title": "Tipos de Métricas de Paisagem",
     "section": "Métricas de composição: SHDI e LPI",
-    "text": "Métricas de composição: SHDI e LPI\n\n\nSHDI — Índice de Diversidade de Shannon:\n\\[SHDI = -\\sum_{i=1}^{m} p_i \\cdot \\ln(p_i)\\]\n\nIntegra riqueza + equitatividade\nSHDI = 0: apenas 1 tipo presente\nSHDI = ln(m): todos os tipos com mesma proporção\nSensível a tipos raros (peso pelo logaritmo)\n\nLPI — Maior Patch:\n\\[LPI = \\frac{a_{max}}{A} \\times 100\\]\n\nMedida de dominância\nLPI ≈ PLAND: paisagem intacta (um grande bloco)\nLPI &lt;&lt; PLAND: paisagem fragmentada (área distribuída em muitos patches pequenos)\nDetecta a diferença que PLAND não consegue"
+    "text": "Métricas de composição: SHDI e LPI\n\n\nSHDI — Índice de Diversidade de Shannon:\n\\[SHDI = -\\sum_{i=1}^{m} p_i \\cdot \\ln(p_i)\\]\n\nIntegra riqueza + equitatividade\nSensível a tipos raros (peso pelo logaritmo)\n\n\n\n\nLPI — Maior Patch:\n\\[LPI = \\frac{a_{max}}{A} \\times 100\\]\n\nMedida de dominância\nLPI ≈ PLAND: paisagem intacta\nLPI &lt;&lt; PLAND: paisagem fragmentada"
   },
   {
     "objectID": "slides/slides_semana9.html#métricas-de-configuração-np-e-ed",
     "href": "slides/slides_semana9.html#métricas-de-configuração-np-e-ed",
     "title": "Tipos de Métricas de Paisagem",
     "section": "Métricas de configuração: NP e ED",
-    "text": "Métricas de configuração: NP e ED\n\n\nNP / PD — Fragmentação:\n\nNP = número total de patches da classe\nPD = NP normalizado por área (patches/ha)\nNP alto + PLAND alto = habitat presente mas fragmentado\nNP = 1 = um único bloco contíguo\n\nED — Densidade de borda:\n\\[ED = \\frac{E_{total}}{A} \\quad (m/ha)\\]\n\nE = comprimento total de bordas entre classes\nRequer saber quais células são adjacentes → espacial\nED alto = muito fracionamento e interface\nED é a tradução métrica do efeito de borda (semana anterior)\nProxy de: perda de área de núcleo, fluxos laterais de nutrientes, exposição a perturbações externas"
+    "text": "Métricas de configuração: NP e ED\n\n\nNP / PD — Fragmentação:\n\nNP = número total de patches da classe\nPD = NP normalizado por área (patches/ha)\nNP alto + PLAND alto = habitat presente mas fragmentado\nNP = 1 = um único bloco contíguo\n\n\n\n\nED — Densidade de borda:\n\\[ED = \\frac{E_{total}}{A} \\quad (m/ha)\\]\n\nE = comprimento total de bordas entre classes\nED alto = muito fracionamento e interface\nED é a tradução métrica do efeito de borda"
   },
   {
     "objectID": "slides/slides_semana9.html#métricas-de-configuração-ai-e-enn",
     "href": "slides/slides_semana9.html#métricas-de-configuração-ai-e-enn",
     "title": "Tipos de Métricas de Paisagem",
     "section": "Métricas de configuração: AI e ENN",
-    "text": "Métricas de configuração: AI e ENN\n\n\nAI — Índice de Agregação:\n\\[AI = \\frac{g_{ii}}{g_{ii,max}} \\times 100\\]\n\n\\(g_{ii}\\) = adjacências entre células da mesma classe\nAI = 0: maximamente disperso (xadrez perfeito)\nAI = 100: maximamente agregado (1 bloco compacto)\nDistingue xadrez de blocos com mesma composição\n\nENN — Distância ao vizinho mais próximo:\n\\[ENN = d_{ij} \\quad (m)\\]\n\nDistância borda a borda entre patches da mesma classe\nMede isolamento espacial\nConectividade estrutural ↑ = ENN ↓\nDiretamente ligado a: taxa de colonização \\(c\\) no modelo de Levins (semana 7), efeito resgate, dispersão"
+    "text": "Métricas de configuração: AI e ENN\n\n\nAI — Índice de Agregação:\n\\[AI = \\frac{g_{ii}}{g_{ii,max}} \\times 100\\]\n\n\\(g_{ii}\\) = adjacências entre células da mesma classe\nAI = 0: maximamente disperso (xadrez perfeito)\nAI = 100: maximamente agregado (1 bloco compacto)\nDistingue xadrez de blocos com mesma composição\n\n\n\n\nENN — Distância ao vizinho mais próximo:\n\\[ENN = d_{ij} \\quad (m)\\]\n\nDistância borda a borda entre patches da mesma classe\nMede isolamento espacial\nConectividade estrutural ↑ = ENN ↓"
   },
   {
     "objectID": "slides/slides_semana9.html#os-três-níveis-hierárquicos",
     "href": "slides/slides_semana9.html#os-três-níveis-hierárquicos",
     "title": "Tipos de Métricas de Paisagem",
     "section": "Os três níveis hierárquicos",
-    "text": "Os três níveis hierárquicos\n\n\nNível Patch:\n\nUma métrica por patch individual\nResulta em distribuição: média, SD, CV\nExemplos: AREA, PERIM, SHAPE, ENN\nUso: comparar patches dentro da paisagem\n\nNível Class:\n\nIntegrado sobre todos os patches de um tipo\nUm valor por tipo de cobertura\nExemplos: CA, NP, PLAND, ED, ENN_MN\nUso: comparar classes dentro ou entre paisagens\n\nNível Landscape:\n\nUm único valor para a paisagem inteira\nMétricas de diversidade só existem aqui (SHDI, SHEI)\nExemplos: SHDI, AI, ED, LPI\nUso: comparar paisagens inteiras (gradiente de fragmentação)"
+    "text": "Os três níveis hierárquicos"
   },
   {
     "objectID": "slides/slides_semana9.html#o-que-cada-nível-responde",
     "href": "slides/slides_semana9.html#o-que-cada-nível-responde",
     "title": "Tipos de Métricas de Paisagem",
     "section": "O que cada nível responde",
-    "text": "O que cada nível responde\n\n\nPergunta: qual patch tem maior risco de extinção local?\n→ Nível patch — AREA e ENN individuais para cada fragmento (conectar com semana 7: modelo de Levins)\nPergunta: qual classe de habitat está mais fragmentada?\n→ Nível class — NP, PD, AI, ENN_MN da classe de interesse\nPergunta: qual bacia hidrográfica tem maior integridade de paisagem?\n→ Nível landscape — SHDI, AI, ED, LPI de cada bacia (conectar com semana 8: biogeoquímica)\nPergunta: como a fragmentação mudou ao longo de 30 anos?\n→ Séries temporais de métricas de landscape e class"
+    "text": "O que cada nível responde\nQual patch tem maior risco de extinção local?\nQual classe de habitat está mais fragmentada?\nQual bacia hidrográfica tem maior integridade de paisagem?\nComo a fragmentação mudou ao longo de 30 anos?"
   },
   {
     "objectID": "slides/slides_semana9.html#o-problema-da-redundância",
     "href": "slides/slides_semana9.html#o-problema-da-redundância",
     "title": "Tipos de Métricas de Paisagem",
     "section": "O problema da redundância",
-    "text": "O problema da redundância\n\n\nO landscapemetrics oferece 130+ métricas\nIsso não significa que todas são independentes:\n\nCA e PLAND: correlação &gt; 0.95\nNP e PD: correlação = 1.0 (PD = NP/área)\nSHAPE_MN e FRAC_MN: r &gt; 0.90\nAI e CLUMPY: r &gt; 0.85\n\nConsequências de usar métricas redundantes:\n\nNão adiciona informação ecológica\nInfla significância estatística em análises multivariadas\nDificulta interpretação dos coeficientes\nViola premissas de independência em modelos lineares\n\nSolução: selecionar um conjunto mínimo e ortogonal (Cushman et al. 2008)"
+    "text": "O problema da redundância\nO landscapemetrics oferece 130+ métricas\nIsso não significa que todas são independentes:\n\nCA e PLAND: correlação &gt; 0.95\nNP e PD: correlação = 1.0 (PD = NP/área)\nSHAPE_MN e FRAC_MN: r &gt; 0.90\nAI e CLUMPY: r &gt; 0.85\n\nSolução: selecionar um conjunto mínimo e ortogonal"
   },
   {
     "objectID": "slides/slides_semana9.html#o-conjunto-mínimo-recomendado",
     "href": "slides/slides_semana9.html#o-conjunto-mínimo-recomendado",
     "title": "Tipos de Métricas de Paisagem",
     "section": "O conjunto mínimo recomendado",
-    "text": "O conjunto mínimo recomendado\n\n\nPrincípio de parcimônia (Cushman et al. 2008):\n\nSelecionar métricas ortogonais (não correlacionadas)\nCobrir composição E configuração\n5–8 métricas são suficientes para a maioria das análises\n\nConjunto para análise de fragmentação:\ncalculate_lsm(paisagem, what = c(\n  \"lsm_c_pland\",    # composição\n  \"lsm_l_shdi\",     # composição\n  \"lsm_c_np\",       # fragmentação\n  \"lsm_c_ed\",       # borda\n  \"lsm_c_ai\",       # agregação\n  \"lsm_c_enn_mn\"    # isolamento\n))"
+    "text": "O conjunto mínimo recomendado\n\n\nPrincípio de parcimônia:\n\nSelecionar métricas ortogonais (não correlacionadas)\nCobrir composição E configuração\n5–8 métricas são suficientes para a maioria das análises"
   },
   {
     "objectID": "slides/slides_semana9.html#calculando-no-r-o-paradoxo-visual",
     "href": "slides/slides_semana9.html#calculando-no-r-o-paradoxo-visual",
     "title": "Tipos de Métricas de Paisagem",
     "section": "Calculando no R: o paradoxo visual",
-    "text": "Calculando no R: o paradoxo visual\n\n\nDuas paisagens simuladas:\n# Paisagem A: xadrez (fragmentada)\nr_A &lt;- rast(nrows=20, ncols=20,\n  vals = rep(c(1L, 2L), 200))\n\n# Paisagem B: dois blocos (agregada)\nr_B &lt;- rast(nrows=20, ncols=20,\n  vals = c(rep(1L,200), rep(2L,200)))\n\n# Métricas: composição = IGUAL\n# Métricas: configuração = DIFERENTE\ncalculate_lsm(list(r_A, r_B), what = c(\n  \"lsm_l_shdi\",  # composição: igual\n  \"lsm_l_np\",    # config: muito diferente\n  \"lsm_l_ed\",    # config: muito diferente\n  \"lsm_l_ai\"     # config: muito diferente\n))\nResultado esperado: SHDI idêntico; NP, ED e AI opostos"
+    "text": "Calculando no R: o paradoxo visual\n\n\nDuas paisagens simuladas:\nlibrary(landscapemetrics)\nlibrary(terra)\n\n# Paisagem A: xadrez (fragmentada)\nr_A &lt;- rast(nrows=20, ncols=20,\n            vals = rep(c(1L, 2L), 200))\n\nplot(r_A)\n\n# Paisagem B: dois blocos (agregada)\nr_B &lt;- rast(nrows=20, ncols=20,\n            vals = c(rep(1L,200), rep(2L,200)))\n\nplot(r_B)\n\n# Métricas: composição = IGUAL\n# Métricas: configuração = DIFERENTE\ncalculate_lsm(list(r_A, r_B), what = c(\n  \"lsm_l_shdi\",  # composição: igual\n  \"lsm_l_np\",    # config: muito diferente\n  \"lsm_l_ed\",    # config: muito diferente\n  \"lsm_l_ai\"     # config: muito diferente\n))"
   },
   {
     "objectID": "slides/slides_semana9.html#integrando-com-as-semanas-anteriores",
     "href": "slides/slides_semana9.html#integrando-com-as-semanas-anteriores",
     "title": "Tipos de Métricas de Paisagem",
     "section": "Integrando com as semanas anteriores",
-    "text": "Integrando com as semanas anteriores\n\n\nComposição e configuração conectam todos os temas:\n\nSemana 6 — Conectividade:\n\nENN_MN e AI são métricas de conectividade estrutural\nED é proxy da intensidade dos fluxos laterais\n\nSemana 7 — Metapopulações:\n\nNP e AREA informam sobre o número e tamanho de patches\nENN informa sobre o isolamento (→ taxa \\(c\\) de Levins)\nLPI identifica o maior patch como candidato a source\n\nSemana 8 — Fluxos:\n\nED é proxy da quantidade de borda e das zonas de troca biogeoquímica\nPLAND de zona ripária = proxy de capacidade de tamponamento"
+    "text": "Integrando com as semanas anteriores\n\nSemana 6 — Conectividade:\n\nENN_MN e AI são métricas de conectividade estrutural\nED é proxy da intensidade dos fluxos laterais\n\nSemana 7 — Metapopulações:\n\nNP e AREA informam sobre o número e tamanho de patches\nENN informa sobre o isolamento\nLPI identifica o maior patch como candidato a “fonte”\n\nSemana 8 — Fluxos:\n\nED é proxy da quantidade de borda e das zonas de troca biogeoquímica\nPLAND de zona ripária = proxy de capacidade de tamponamento"
   },
   {
     "objectID": "slides/slides_semana9.html#síntese-quatro-regras-práticas",
     "href": "slides/slides_semana9.html#síntese-quatro-regras-práticas",
     "title": "Tipos de Métricas de Paisagem",
     "section": "Síntese: quatro regras práticas",
-    "text": "Síntese: quatro regras práticas\n\n\nRegra 1 — Sempre use ambas as categorias - Composição sem configuração é incompleto - Configuração sem composição é sem contexto\nRegra 2 — Escolha o nível certo - Pergunta sobre espécie → métricas de class - Comparação de paisagens → métricas de landscape - Gestão de fragmento individual → métricas de patch\nRegra 3 — Seja parcimonioso - 5–8 métricas ortogonais &gt; 30 métricas redundantes - Verifique correlações antes de qualquer análise multivariada\nRegra 4 — Interprete no contexto ecológico - Um número isolado não tem significado - Compare com referência (paisagem intacta, histórico, outros biomas)"
+    "text": "Síntese: quatro regras práticas\nRegra 1 — Sempre use ambas as categorias - Composição sem configuração é incompleto - Configuração sem composição é sem contexto\nRegra 2 — Escolha o nível certo - Pergunta sobre espécie → métricas de categoria - Comparação de paisagens → métricas de paisagem - Gestão de fragmento individual → métricas do fragmento\nRegra 3 — Seja parcimonioso - 5–8 métricas ortogonais - Verifique correlações\nRegra 4 — Interprete no contexto ecológico - Um número isolado não tem significado - Compare com referência (paisagem intacta, histórico, outros biomas)"
   },
   {
     "objectID": "slides/slides_semana9.html#section-1",
@@ -3092,5 +3092,40 @@
     "title": "Semana 9: Tipos de Métricas de Paisagem",
     "section": "7.4 Matriz de correlação entre métricas",
     "text": "7.4 Matriz de correlação entre métricas\n\n\nCódigo\n# Calcular conjunto amplo de métricas na paisagem exemplo\ntodas &lt;- calculate_lsm(\n  paisagem,\n  what = c(\n    \"lsm_c_pland\", \"lsm_c_np\", \"lsm_c_ed\",\n    \"lsm_c_ai\",    \"lsm_c_enn_mn\", \"lsm_c_shape_mn\",\n    \"lsm_c_lpi\",   \"lsm_c_pd\",    \"lsm_c_frac_mn\",\n    \"lsm_c_cohesion\"\n  )\n) |&gt;\n  filter(level == \"class\") |&gt;\n  select(class, metric, value) |&gt;\n  pivot_wider(names_from = metric, values_from = value, values_fn = mean) |&gt;\n  select(-class)\n\n# Correlação\nif (ncol(todas) &gt;= 4) {\n  cor_mat &lt;- cor(todas, use = \"pairwise.complete.obs\")\n\n  # Visualizar com corrplot (se disponível) ou heatmap simples\n  if (requireNamespace(\"corrplot\", quietly = TRUE)) {\n    corrplot::corrplot(cor_mat, method = \"color\",\n                       tl.cex = 0.8, number.cex = 0.7,\n                       addCoef.col = \"black\", type = \"upper\",\n                       col = colorRampPalette(c(\"#A32D2D\",\"white\",\"#27500A\"))(200),\n                       title = \"Correlação entre métricas (classe)\",\n                       mar = c(0,0,1,0))\n  } else {\n    # Alternativa: heatmap com ggplot2\n    cor_df &lt;- as.data.frame(cor_mat) |&gt;\n      tibble::rownames_to_column(\"m1\") |&gt;\n      pivot_longer(-m1, names_to = \"m2\", values_to = \"r\")\n\n    ggplot(cor_df, aes(x = m1, y = m2, fill = r)) +\n      geom_tile(color = \"white\") +\n      scale_fill_gradient2(\n        low = \"#A32D2D\", mid = \"white\", high = \"#27500A\",\n        midpoint = 0, limits = c(-1, 1),\n        name = \"r de\\nPearson\"\n      ) +\n      geom_text(aes(label = round(r, 2)), size = 2.8) +\n      labs(title = \"Matriz de correlação entre métricas de paisagem\",\n           x = NULL, y = NULL) +\n      theme_minimal(base_size = 11) +\n      theme(axis.text.x = element_text(angle = 45, hjust = 1))\n  }\n}\n\n\n\n\n\nCorrelação entre métricas de paisagem — base para seleção do conjunto mínimo"
+  },
+  {
+    "objectID": "slides/slides_semana9.html#a-divisão-fundamental",
+    "href": "slides/slides_semana9.html#a-divisão-fundamental",
+    "title": "Tipos de Métricas de Paisagem",
+    "section": "A divisão fundamental",
+    "text": "A divisão fundamental\n\n\nComposição:\n\nMede o que está presente e em que quantidade\nSem referência à posição espacial dos patches\nCalculável a partir de uma tabela de área por classe\nAplicável apenas no nível de paisagem\n\n\n\n\nConfiguração:\n\nMede como os elementos estão dispostos\nRequer coordenadas e relações espaciais\nExige operações sobre o raster (adjacência, distância, forma)\nAplicável nos três níveis: patch, class, landscape"
+  },
+  {
+    "objectID": "slides/slides_semana9.html#regra-prática",
+    "href": "slides/slides_semana9.html#regra-prática",
+    "title": "Tipos de Métricas de Paisagem",
+    "section": "Regra prática:",
+    "text": "Regra prática:\n\nSe você pode calcular a métrica sem saber onde cada pixel está, é composição. Se precisa das coordenadas, é configuração."
+  },
+  {
+    "objectID": "slides/slides_semana9.html#métricas-de-composição",
+    "href": "slides/slides_semana9.html#métricas-de-composição",
+    "title": "Tipos de Métricas de Paisagem",
+    "section": "Métricas de composição",
+    "text": "Métricas de composição"
+  },
+  {
+    "objectID": "slides/slides_semana9.html#o-problema-da-redundância-1",
+    "href": "slides/slides_semana9.html#o-problema-da-redundância-1",
+    "title": "Tipos de Métricas de Paisagem",
+    "section": "O problema da redundância",
+    "text": "O problema da redundância"
+  },
+  {
+    "objectID": "slides/slides_semana9.html#resumo",
+    "href": "slides/slides_semana9.html#resumo",
+    "title": "Tipos de Métricas de Paisagem",
+    "section": "Resumo",
+    "text": "Resumo\n→ Composição = o que há e em que quantidade\n→ Configuração = como está disposto\n→ Mesma composição pode ter configurações opostas — e consequências ecológicas opostas\n→ Três níveis: patch (individual) · class (por tipo) · landscape (paisagem inteira)"
   }
 ]

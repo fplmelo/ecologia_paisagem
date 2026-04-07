@@ -10,7 +10,6 @@ format:
     toc-depth: 3
     toc-title: "Nesta página"
     number-sections: true
-    theme: cosmo
     code-fold: true
     code-copy: true
     highlight-style: github
@@ -30,7 +29,7 @@ Use as setas ← → para navegar pelos slides. Pressione `F` para tela cheia e 
 
 ```{=html}
 <iframe
-  src="slides_semana9.html"
+  src="/slides/slides_semana9.html"
   width="100%"
   height="500px"
   style="border: 1px solid #ddd; border-radius: 8px; margin-bottom: 2rem;"

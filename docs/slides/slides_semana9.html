@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="Prof.&nbsp;Felipe Melo">
-  <meta name="dcterms.date" content="2026-03-27">
+  <meta name="dcterms.date" content="2026-04-07">
   <title>Tipos de Métricas de Paisagem</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -97,7 +97,6 @@
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
-  <link rel="stylesheet" href="slides_custom.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -209,73 +208,40 @@ Prof.&nbsp;Felipe Melo
     </div>
 </div>
 
-  <p class="date">2026-03-27</p>
-</section>
-<section id="section" class="slide level2" data-background-color="#2c1a5e">
-<h2></h2>
-<div style="text-align: center; padding-top: 70px;">
-<p><span style="font-size: 2.3em; color: #EEEDFE; font-weight: 700;"><strong>Tipos de Métricas de Paisagem</strong></span></p>
-<p><span style="font-size: 1.8em; color: #AFA9EC; display: inline;"><strong>Composição</strong></span> <span style="font-size: 1.4em; color: #7F77DD; display: inline; margin: 0 0.4em;"><strong>vs.</strong></span> <span style="font-size: 1.8em; color: #AFA9EC; display: inline;"><strong>Configuração</strong></span></p>
-<p><span style="font-size: 1em; color: #7F77DD; display: block; margin-top: 1.4em;">O que há na paisagem · Como está arranjado</span></p>
-<p><span style="font-size: 0.85em; color: #7F77DD; display: block; margin-top: 0.5em;">Semana 9 · BO-304 · Prof.&nbsp;Felipe Melo · UFPE</span></p>
-</div>
+  <p class="date">2026-04-07</p>
 </section>
 <section id="o-paradoxo-que-motiva-esta-aula" class="slide level2">
 <h2>O paradoxo que motiva esta aula</h2>
-<div class="columns">
-<div class="column" style="width:48%;">
-<p><strong>Duas paisagens, composição idêntica:</strong></p>
-<ul>
-<li>Floresta: <strong>50%</strong> em ambas</li>
-<li>Agricultura: <strong>50%</strong> em ambas</li>
-<li>SHDI: <strong>igual</strong> em ambas</li>
-<li>LPI: <strong>diferente</strong></li>
-</ul>
-<p><strong>Ecologicamente são opostas:</strong></p>
-<ul>
-<li>Paisagem A: dezenas de fragmentos minúsculos, borda máxima, sem área de núcleo, isolamento elevado</li>
-<li>Paisagem B: dois grandes blocos, pouca borda, grande área de núcleo, baixo isolamento</li>
-</ul>
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Métricas de composição sozinhas são <strong>insuficientes</strong> para descrever a estrutura ecológica de uma paisagem.</p>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:4%;">
 
-</div><div class="column" style="width:48%;">
-<p><img data-src="../img/s9_fig1_composicao_vs_configuracao.svg"></p>
-</div></div>
-</section>
-<section id="a-divisão-fundamental-mcgarigal-marks-1995" class="slide level2">
-<h2>A divisão fundamental (McGarigal &amp; Marks 1995)</h2>
+<img data-src="../img/s9_fig1_composicao_vs_configuracao.svg" class="r-stretch"></section>
+<section id="a-divisão-fundamental" class="slide level2">
+<h2>A divisão fundamental</h2>
 <div class="columns">
 <div class="column" style="width:48%;">
-<p><strong>Categoria 1 — Composição:</strong></p>
+<p><strong>Composição:</strong></p>
 <ul>
 <li>Mede <em>o que está presente</em> e <em>em que quantidade</em></li>
 <li>Sem referência à posição espacial dos patches</li>
 <li>Calculável a partir de uma tabela de área por classe</li>
 <li>Aplicável apenas no <strong>nível de paisagem</strong></li>
 </ul>
-<p><strong>Categoria 2 — Configuração:</strong></p>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<p><strong>Configuração:</strong></p>
 <ul>
 <li>Mede <em>como os elementos estão dispostos</em></li>
 <li>Requer coordenadas e relações espaciais</li>
 <li>Exige operações sobre o raster (adjacência, distância, forma)</li>
 <li>Aplicável nos três níveis: patch, class, landscape</li>
 </ul>
-<p><strong>Regra prática:</strong></p>
-<blockquote>
-<p>Se você pode calcular a métrica sem saber onde cada pixel está, é composição. Se precisa das coordenadas, é configuração.</p>
-</blockquote>
-</div><div class="column" style="width:4%;">
-
-</div><div class="column" style="width:48%;">
-<p><img data-src="../img/s9_fig2_metricas_composicao.svg"></p>
 </div></div>
+</section>
+<section id="regra-prática" class="slide level2">
+<h2><strong>Regra prática:</strong></h2>
+<blockquote>
+<p>Se você pode calcular a métrica sem saber onde cada pixel está, é <strong>composição.</strong> Se precisa das coordenadas, é <strong>configuração.</strong></p>
+</blockquote>
 </section>
 <section id="métricas-de-composição-pland-e-pr" class="slide level2">
 <h2>Métricas de composição: PLAND e PR</h2>
@@ -288,6 +254,9 @@ Prof.&nbsp;Felipe Melo
 <li>Informa quanto de cada tipo existe</li>
 <li>Intervalo: 0 &lt; PLAND ≤ 100</li>
 </ul>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
 <p><strong>PR — Riqueza de tipos:</strong></p>
 <p><span class="math display">\[PR = m\]</span></p>
 <ul>
@@ -296,11 +265,6 @@ Prof.&nbsp;Felipe Melo
 <li>PR = 1: monocultura total</li>
 <li>PR = 5: cinco tipos distintos</li>
 </ul>
-<p><strong>Limitação:</strong> PR não informa equitatividade — uma paisagem com 95% floresta e 5% água tem PR = 2, igual a uma paisagem com 50% de cada</p>
-</div><div class="column" style="width:4%;">
-
-</div><div class="column" style="width:48%;">
-<p><img data-src="../img/s9_fig2_metricas_composicao.svg"></p>
 </div></div>
 </section>
 <section id="métricas-de-composição-shdi-e-lpi" class="slide level2">
@@ -311,24 +275,24 @@ Prof.&nbsp;Felipe Melo
 <p><span class="math display">\[SHDI = -\sum_{i=1}^{m} p_i \cdot \ln(p_i)\]</span></p>
 <ul>
 <li>Integra riqueza + equitatividade</li>
-<li>SHDI = 0: apenas 1 tipo presente</li>
-<li>SHDI = ln(m): todos os tipos com mesma proporção</li>
 <li>Sensível a tipos raros (peso pelo logaritmo)</li>
-</ul>
-<p><strong>LPI — Maior Patch:</strong></p>
-<p><span class="math display">\[LPI = \frac{a_{max}}{A} \times 100\]</span></p>
-<ul>
-<li>Medida de <strong>dominância</strong></li>
-<li>LPI ≈ PLAND: paisagem intacta (um grande bloco)</li>
-<li>LPI &lt;&lt; PLAND: paisagem fragmentada (área distribuída em muitos patches pequenos)</li>
-<li>Detecta a diferença que PLAND não consegue</li>
 </ul>
 </div><div class="column" style="width:4%;">
 
 </div><div class="column" style="width:48%;">
-<p><img data-src="../img/s9_fig2_metricas_composicao.svg"></p>
+<p><strong>LPI — Maior Patch:</strong></p>
+<p><span class="math display">\[LPI = \frac{a_{max}}{A} \times 100\]</span></p>
+<ul>
+<li>Medida de <strong>dominância</strong></li>
+<li>LPI ≈ PLAND: paisagem intacta</li>
+<li>LPI &lt;&lt; PLAND: paisagem fragmentada</li>
+</ul>
 </div></div>
 </section>
+<section id="métricas-de-composição" class="slide level2">
+<h2>Métricas de composição</h2>
+
+<img data-src="https://www.mdpi.com/agriculture/agriculture-15-00186/article_deploy/html/images/agriculture-15-00186-g001.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="métricas-de-configuração-np-e-ed" class="slide level2">
 <h2>Métricas de configuração: NP e ED</h2>
 <div class="columns">
@@ -340,19 +304,16 @@ Prof.&nbsp;Felipe Melo
 <li><strong>NP alto + PLAND alto</strong> = habitat presente mas fragmentado</li>
 <li><strong>NP = 1</strong> = um único bloco contíguo</li>
 </ul>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
 <p><strong>ED — Densidade de borda:</strong></p>
 <p><span class="math display">\[ED = \frac{E_{total}}{A} \quad (m/ha)\]</span></p>
 <ul>
 <li>E = comprimento total de bordas entre classes</li>
-<li>Requer saber quais células são adjacentes → espacial</li>
 <li>ED alto = muito fracionamento e interface</li>
-<li>ED é a tradução métrica do efeito de borda (semana anterior)</li>
-<li>Proxy de: perda de área de núcleo, fluxos laterais de nutrientes, exposição a perturbações externas</li>
+<li>ED é a tradução métrica do efeito de borda</li>
 </ul>
-</div><div class="column" style="width:4%;">
-
-</div><div class="column" style="width:48%;">
-<p><img data-src="../img/s9_fig3_metricas_configuracao.svg"></p>
 </div></div>
 </section>
 <section id="métricas-de-configuração-ai-e-enn" class="slide level2">
@@ -367,73 +328,32 @@ Prof.&nbsp;Felipe Melo
 <li>AI = 100: maximamente agregado (1 bloco compacto)</li>
 <li>Distingue xadrez de blocos com <strong>mesma composição</strong></li>
 </ul>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
 <p><strong>ENN — Distância ao vizinho mais próximo:</strong></p>
 <p><span class="math display">\[ENN = d_{ij} \quad (m)\]</span></p>
 <ul>
 <li>Distância borda a borda entre patches da mesma classe</li>
 <li>Mede <strong>isolamento espacial</strong></li>
 <li>Conectividade estrutural ↑ = ENN ↓</li>
-<li>Diretamente ligado a: taxa de colonização <span class="math inline">\(c\)</span> no modelo de Levins (semana 7), efeito resgate, dispersão</li>
 </ul>
-</div><div class="column" style="width:4%;">
-
-</div><div class="column" style="width:48%;">
-<p><img data-src="../img/s9_fig3_metricas_configuracao.svg"></p>
 </div></div>
 </section>
 <section id="os-três-níveis-hierárquicos" class="slide level2">
 <h2>Os três níveis hierárquicos</h2>
-<div class="columns">
-<div class="column" style="width:48%;">
-<p><strong>Nível Patch:</strong></p>
-<ul>
-<li>Uma métrica por patch individual</li>
-<li>Resulta em distribuição: média, SD, CV</li>
-<li>Exemplos: AREA, PERIM, SHAPE, ENN</li>
-<li>Uso: comparar patches dentro da paisagem</li>
-</ul>
-<p><strong>Nível Class:</strong></p>
-<ul>
-<li>Integrado sobre todos os patches de um tipo</li>
-<li>Um valor por tipo de cobertura</li>
-<li>Exemplos: CA, NP, PLAND, ED, ENN_MN</li>
-<li>Uso: comparar classes dentro ou entre paisagens</li>
-</ul>
-<p><strong>Nível Landscape:</strong></p>
-<ul>
-<li>Um único valor para a paisagem inteira</li>
-<li>Métricas de diversidade só existem aqui (SHDI, SHEI)</li>
-<li>Exemplos: SHDI, AI, ED, LPI</li>
-<li>Uso: comparar paisagens inteiras (gradiente de fragmentação)</li>
-</ul>
-</div><div class="column" style="width:4%;">
 
-</div><div class="column" style="width:48%;">
-<p><img data-src="../img/s9_fig4_niveis_hierarquicos.svg"></p>
-</div></div>
-</section>
+<img data-src="../img/niveis_hierar.png" class="r-stretch"></section>
 <section id="o-que-cada-nível-responde" class="slide level2">
 <h2>O que cada nível responde</h2>
-<div class="columns">
-<div class="column" style="width:48%;">
-<p><strong>Pergunta: qual patch tem maior risco de extinção local?</strong></p>
-<p>→ Nível <strong>patch</strong> — AREA e ENN individuais para cada fragmento (conectar com semana 7: modelo de Levins)</p>
-<p><strong>Pergunta: qual classe de habitat está mais fragmentada?</strong></p>
-<p>→ Nível <strong>class</strong> — NP, PD, AI, ENN_MN da classe de interesse</p>
-<p><strong>Pergunta: qual bacia hidrográfica tem maior integridade de paisagem?</strong></p>
-<p>→ Nível <strong>landscape</strong> — SHDI, AI, ED, LPI de cada bacia (conectar com semana 8: biogeoquímica)</p>
-<p><strong>Pergunta: como a fragmentação mudou ao longo de 30 anos?</strong></p>
-<p>→ Séries temporais de métricas de <strong>landscape</strong> e <strong>class</strong></p>
-</div><div class="column" style="width:4%;">
+<p><strong>Qual patch tem maior risco de extinção local?</strong></p>
+<p><strong>Qual classe de habitat está mais fragmentada?</strong></p>
+<p><strong>Qual bacia hidrográfica tem maior integridade de paisagem?</strong></p>
+<p><strong>Como a fragmentação mudou ao longo de 30 anos?</strong></p>
 
-</div><div class="column" style="width:48%;">
-<p><img data-src="../img/s9_fig4_niveis_hierarquicos.svg"></p>
-</div></div>
-</section>
+<img data-src="../img/niveis_hierar.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="o-problema-da-redundância" class="slide level2">
 <h2>O problema da redundância</h2>
-<div class="columns">
-<div class="column" style="width:48%;">
 <p><strong>O <code>landscapemetrics</code> oferece 130+ métricas</strong></p>
 <p><strong>Isso não significa que todas são independentes:</strong></p>
 <ul>
@@ -442,39 +362,22 @@ Prof.&nbsp;Felipe Melo
 <li>SHAPE_MN e FRAC_MN: r &gt; 0.90</li>
 <li>AI e CLUMPY: r &gt; 0.85</li>
 </ul>
-<p><strong>Consequências de usar métricas redundantes:</strong></p>
-<ul>
-<li>Não adiciona informação ecológica</li>
-<li>Infla significância estatística em análises multivariadas</li>
-<li>Dificulta interpretação dos coeficientes</li>
-<li>Viola premissas de independência em modelos lineares</li>
-</ul>
-<p><strong>Solução:</strong> selecionar um conjunto <strong>mínimo e ortogonal</strong> (Cushman et al.&nbsp;2008)</p>
-</div><div class="column" style="width:4%;">
-
-</div><div class="column" style="width:48%;">
-<p><img data-src="../img/s9_fig5_redundancia_metricas.svg"></p>
-</div></div>
+<p><strong>Solução:</strong> selecionar um conjunto <strong>mínimo e ortogonal</strong></p>
 </section>
+<section id="o-problema-da-redundância-1" class="slide level2">
+<h2>O problema da redundância</h2>
+
+<img data-src="../img/s9_fig5_redundancia_metricas.svg" class="r-stretch"></section>
 <section id="o-conjunto-mínimo-recomendado" class="slide level2">
 <h2>O conjunto mínimo recomendado</h2>
 <div class="columns">
 <div class="column" style="width:48%;">
-<p><strong>Princípio de parcimônia (Cushman et al.&nbsp;2008):</strong></p>
+<p><strong>Princípio de parcimônia:</strong></p>
 <ul>
 <li>Selecionar métricas <strong>ortogonais</strong> (não correlacionadas)</li>
 <li>Cobrir composição E configuração</li>
 <li>5–8 métricas são suficientes para a maioria das análises</li>
 </ul>
-<p><strong>Conjunto para análise de fragmentação:</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">calculate_lsm</span>(paisagem, <span class="at">what =</span> <span class="fu">c</span>(</span>
-<span id="cb1-2"><a></a>  <span class="st">"lsm_c_pland"</span>,    <span class="co"># composição</span></span>
-<span id="cb1-3"><a></a>  <span class="st">"lsm_l_shdi"</span>,     <span class="co"># composição</span></span>
-<span id="cb1-4"><a></a>  <span class="st">"lsm_c_np"</span>,       <span class="co"># fragmentação</span></span>
-<span id="cb1-5"><a></a>  <span class="st">"lsm_c_ed"</span>,       <span class="co"># borda</span></span>
-<span id="cb1-6"><a></a>  <span class="st">"lsm_c_ai"</span>,       <span class="co"># agregação</span></span>
-<span id="cb1-7"><a></a>  <span class="st">"lsm_c_enn_mn"</span>    <span class="co"># isolamento</span></span>
-<span id="cb1-8"><a></a>))</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:4%;">
 
 </div><div class="column" style="width:48%;">
@@ -486,23 +389,29 @@ Prof.&nbsp;Felipe Melo
 <div class="columns">
 <div class="column" style="width:48%;">
 <p><strong>Duas paisagens simuladas:</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="co"># Paisagem A: xadrez (fragmentada)</span></span>
-<span id="cb2-2"><a></a>r_A <span class="ot">&lt;-</span> <span class="fu">rast</span>(<span class="at">nrows=</span><span class="dv">20</span>, <span class="at">ncols=</span><span class="dv">20</span>,</span>
-<span id="cb2-3"><a></a>  <span class="at">vals =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>L, <span class="dv">2</span>L), <span class="dv">200</span>))</span>
-<span id="cb2-4"><a></a></span>
-<span id="cb2-5"><a></a><span class="co"># Paisagem B: dois blocos (agregada)</span></span>
-<span id="cb2-6"><a></a>r_B <span class="ot">&lt;-</span> <span class="fu">rast</span>(<span class="at">nrows=</span><span class="dv">20</span>, <span class="at">ncols=</span><span class="dv">20</span>,</span>
-<span id="cb2-7"><a></a>  <span class="at">vals =</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">1</span>L,<span class="dv">200</span>), <span class="fu">rep</span>(<span class="dv">2</span>L,<span class="dv">200</span>)))</span>
-<span id="cb2-8"><a></a></span>
-<span id="cb2-9"><a></a><span class="co"># Métricas: composição = IGUAL</span></span>
-<span id="cb2-10"><a></a><span class="co"># Métricas: configuração = DIFERENTE</span></span>
-<span id="cb2-11"><a></a><span class="fu">calculate_lsm</span>(<span class="fu">list</span>(r_A, r_B), <span class="at">what =</span> <span class="fu">c</span>(</span>
-<span id="cb2-12"><a></a>  <span class="st">"lsm_l_shdi"</span>,  <span class="co"># composição: igual</span></span>
-<span id="cb2-13"><a></a>  <span class="st">"lsm_l_np"</span>,    <span class="co"># config: muito diferente</span></span>
-<span id="cb2-14"><a></a>  <span class="st">"lsm_l_ed"</span>,    <span class="co"># config: muito diferente</span></span>
-<span id="cb2-15"><a></a>  <span class="st">"lsm_l_ai"</span>     <span class="co"># config: muito diferente</span></span>
-<span id="cb2-16"><a></a>))</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Resultado esperado:</strong> SHDI idêntico; NP, ED e AI opostos</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(landscapemetrics)</span>
+<span id="cb1-2"><a></a><span class="fu">library</span>(terra)</span>
+<span id="cb1-3"><a></a></span>
+<span id="cb1-4"><a></a><span class="co"># Paisagem A: xadrez (fragmentada)</span></span>
+<span id="cb1-5"><a></a>r_A <span class="ot">&lt;-</span> <span class="fu">rast</span>(<span class="at">nrows=</span><span class="dv">20</span>, <span class="at">ncols=</span><span class="dv">20</span>,</span>
+<span id="cb1-6"><a></a>            <span class="at">vals =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>L, <span class="dv">2</span>L), <span class="dv">200</span>))</span>
+<span id="cb1-7"><a></a></span>
+<span id="cb1-8"><a></a><span class="fu">plot</span>(r_A)</span>
+<span id="cb1-9"><a></a></span>
+<span id="cb1-10"><a></a><span class="co"># Paisagem B: dois blocos (agregada)</span></span>
+<span id="cb1-11"><a></a>r_B <span class="ot">&lt;-</span> <span class="fu">rast</span>(<span class="at">nrows=</span><span class="dv">20</span>, <span class="at">ncols=</span><span class="dv">20</span>,</span>
+<span id="cb1-12"><a></a>            <span class="at">vals =</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">1</span>L,<span class="dv">200</span>), <span class="fu">rep</span>(<span class="dv">2</span>L,<span class="dv">200</span>)))</span>
+<span id="cb1-13"><a></a></span>
+<span id="cb1-14"><a></a><span class="fu">plot</span>(r_B)</span>
+<span id="cb1-15"><a></a></span>
+<span id="cb1-16"><a></a><span class="co"># Métricas: composição = IGUAL</span></span>
+<span id="cb1-17"><a></a><span class="co"># Métricas: configuração = DIFERENTE</span></span>
+<span id="cb1-18"><a></a><span class="fu">calculate_lsm</span>(<span class="fu">list</span>(r_A, r_B), <span class="at">what =</span> <span class="fu">c</span>(</span>
+<span id="cb1-19"><a></a>  <span class="st">"lsm_l_shdi"</span>,  <span class="co"># composição: igual</span></span>
+<span id="cb1-20"><a></a>  <span class="st">"lsm_l_np"</span>,    <span class="co"># config: muito diferente</span></span>
+<span id="cb1-21"><a></a>  <span class="st">"lsm_l_ed"</span>,    <span class="co"># config: muito diferente</span></span>
+<span id="cb1-22"><a></a>  <span class="st">"lsm_l_ai"</span>     <span class="co"># config: muito diferente</span></span>
+<span id="cb1-23"><a></a>))</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:4%;">
 
 </div><div class="column" style="width:48%;">
@@ -511,9 +420,6 @@ Prof.&nbsp;Felipe Melo
 </section>
 <section id="integrando-com-as-semanas-anteriores" class="slide level2">
 <h2>Integrando com as semanas anteriores</h2>
-<div class="columns">
-<div class="column" style="width:48%;">
-<p><strong>Composição e configuração conectam todos os temas:</strong></p>
 <ul>
 <li><strong>Semana 6 — Conectividade:</strong>
 <ul>
@@ -523,8 +429,8 @@ Prof.&nbsp;Felipe Melo
 <li><strong>Semana 7 — Metapopulações:</strong>
 <ul>
 <li>NP e AREA informam sobre o número e tamanho de patches</li>
-<li>ENN informa sobre o isolamento (→ taxa <span class="math inline">\(c\)</span> de Levins)</li>
-<li>LPI identifica o maior patch como candidato a source</li>
+<li>ENN informa sobre o isolamento</li>
+<li>LPI identifica o maior patch como candidato a “fonte”</li>
 </ul></li>
 <li><strong>Semana 8 — Fluxos:</strong>
 <ul>
@@ -532,43 +438,20 @@ Prof.&nbsp;Felipe Melo
 <li>PLAND de zona ripária = proxy de capacidade de tamponamento</li>
 </ul></li>
 </ul>
-</div><div class="column" style="width:4%;">
-
-</div><div class="column" style="width:48%;">
-<p><img data-src="../img/s9_fig6_conjunto_minimo.svg"></p>
-</div></div>
 </section>
 <section id="síntese-quatro-regras-práticas" class="slide level2">
 <h2>Síntese: quatro regras práticas</h2>
-<div class="columns">
-<div class="column" style="width:48%;">
 <p><strong>Regra 1 — Sempre use ambas as categorias</strong> - Composição sem configuração é incompleto - Configuração sem composição é sem contexto</p>
-<p><strong>Regra 2 — Escolha o nível certo</strong> - Pergunta sobre espécie → métricas de class - Comparação de paisagens → métricas de landscape - Gestão de fragmento individual → métricas de patch</p>
-<p><strong>Regra 3 — Seja parcimonioso</strong> - 5–8 métricas ortogonais &gt; 30 métricas redundantes - Verifique correlações antes de qualquer análise multivariada</p>
+<p><strong>Regra 2 — Escolha o nível certo</strong> - Pergunta sobre espécie → métricas de categoria - Comparação de paisagens → métricas de paisagem - Gestão de fragmento individual → métricas do fragmento</p>
+<p><strong>Regra 3 — Seja parcimonioso</strong> - 5–8 métricas ortogonais - Verifique correlações</p>
 <p><strong>Regra 4 — Interprete no contexto ecológico</strong> - Um número isolado não tem significado - Compare com referência (paisagem intacta, histórico, outros biomas)</p>
-</div><div class="column" style="width:4%;">
-
-</div><div class="column" style="width:48%;">
-<p><img data-src="../img/s9_fig5_redundancia_metricas.svg"></p>
-</div></div>
 </section>
-<section id="section-1" class="slide level2" data-background-color="#2c1a5e">
-<h2></h2>
-<div style="text-align: center; padding-top: 55px;">
-<p><span style="font-size: 1.8em; color: #EEEDFE; font-weight: 700;"><strong>Resumo</strong></span></p>
-</div>
-<div style="color: #AFA9EC; font-size: 1em; max-width: 700px; margin: 0 auto; line-height: 1.9;">
-<p>→ <strong>Composição</strong> = o que há e em que quantidade — sem referência espacial (PLAND, SHDI, PR, LPI)</p>
-<p>→ <strong>Configuração</strong> = como está disposto — requer coordenadas (NP, ED, AI, ENN)</p>
+<section id="resumo" class="slide level2">
+<h2>Resumo</h2>
+<p>→ <strong>Composição</strong> = o que há e em que quantidade</p>
+<p>→ <strong>Configuração</strong> = como está disposto</p>
 <p>→ Mesma composição pode ter configurações opostas — e consequências ecológicas opostas</p>
 <p>→ Três níveis: <strong>patch</strong> (individual) · <strong>class</strong> (por tipo) · <strong>landscape</strong> (paisagem inteira)</p>
-<p>→ 130+ métricas disponíveis, mas muitas são redundantes — use conjunto mínimo ortogonal</p>
-<p>→ Cushman et al.&nbsp;(2008): PLAND + SHDI (composição) + NP + ED + AI + ENN (configuração)</p>
-<p>→ Métricas conectam: conectividade (semana 6), metapopulações (semana 7), biogeoquímica (semana 8)</p>
-</div>
-<div style="margin-top: 1.5em; color: #7F77DD; font-size: 0.82em; text-align: center;">
-<p>BO-304 Ecologia de Paisagens · Prof.&nbsp;Felipe Melo · UFPE 2026.1</p>
-</div>
 
 
 </section>
@@ -576,7 +459,7 @@ Prof.&nbsp;Felipe Melo
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="https://fplmelo.github.io//img/logo_branco_ufpe.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>BO-304 Ecologia de Paisagens · UFPE · 2026.1</p>
+
 </div>
 </div></div>
 
