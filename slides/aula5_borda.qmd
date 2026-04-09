@@ -28,7 +28,9 @@ lang: pt-br
 
 ::: {.columns}
 ::: {.column width="50%"}
-![](https://journals.sagepub.com/cms/10.1177/194008291000300404/asset/102cb7cb-e320-4178-930c-bfe2a7ae4a2f/assets/images/large/10.1177_194008291000300404-fig4.jpg)
+
+![](/img/borda_biu.png)
+
 :::
 
 ::: {.column width="50%"}
