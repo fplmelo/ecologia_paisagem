@@ -2293,7 +2293,7 @@
     "href": "exercises/index.html",
     "title": "Lista de exercícios",
     "section": "",
-    "text": "Confira abaixo a lista de exercícios e seus tutoriais\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nMar 17, 2026\n\n\nExercício 1: O Mosaico no Lance de Vista\n\n\nFelipe Melo\n\n\n\n\n\n\nMar 26, 2026\n\n\nExercício 2 - Workbook de Ecologia de Paisagens\n\n\nFelipe Melo\n\n\n\n\n\n\nMar 26, 2026\n\n\nExercício 3 - Pacotes R para Ecologia de Paisagens\n\n\nProf. Felipe Melo\n\n\n\n\n\n\nNo matching items"
+    "text": "Confira abaixo a lista de exercícios e seus tutoriais\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nMar 17, 2026\n\n\nExercício 1: O Mosaico no Lance de Vista\n\n\nFelipe Melo\n\n\n\n\n\n\nMar 27, 2026\n\n\nExercício 2 - Workbook de Ecologia de Paisagens\n\n\nFelipe Melo\n\n\n\n\n\n\nMar 27, 2026\n\n\nExercício 3 - Pacotes R para Ecologia de Paisagens\n\n\nProf. Felipe Melo\n\n\n\n\n\n\nApr 13, 2026\n\n\nExercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL\n\n\nDisciplina de Ecologia de Paisagem\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "exercises/ex3-pacotes/tutorial_pacotes_r.html",
@@ -2977,7 +2977,7 @@
   {
     "objectID": "exercises/ex4-analises/exer_4.html",
     "href": "exercises/ex4-analises/exer_4.html",
-    "title": "Exercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
+    "title": "Exercício 4: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
     "section": "",
     "text": "Neste exercício você trabalhará com um mapa de uso e cobertura da terra do município de Murici (AL), obtido por classificação de imagens de satélite. O objetivo é selecionar 15 pontos amostrais no interior de remanescentes florestais que estejam a pelo menos 2 km da borda do mapa (para evitar efeitos de borda não controlados). Em cada ponto será extraído um buffer circular de 500 m de raio e calculada a composição percentual de cada classe de uso do solo.\nAdicionalmente, usaremos o pacote landscapemetrics para calcular métricas de diversidade (Shannon), proporção de floresta e densidade de borda para cada uma das 15 paisagens amostrais.\n\n\n\n\n\n\nNotaArquivo necessário\n\n\n\nVocê precisará do arquivo raster 2024_murici.tif (disponível no material da disciplina). Coloque-o no diretório de trabalho antes de executar o código.\n\n\n\n\n\nCompreender a importância da projeção cartográfica para análises métricas.\nAplicar buffer negativo para restrição de borda de mapa.\nRealizar amostragem aleatória com distância mínima entre pontos.\nExtrair e quantificar a composição da paisagem em buffers circulares.\nCalcular métricas de paisagem com landscapemetrics.\nProduzir um painel de visualização das paisagens amostrais."
   },
@@ -3047,28 +3047,28 @@
   {
     "objectID": "exercises/ex4-analises/exer_4.html#objetivos-específicos",
     "href": "exercises/ex4-analises/exer_4.html#objetivos-específicos",
-    "title": "Exercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
+    "title": "Exercício 4: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
     "section": "",
     "text": "Compreender a importância da projeção cartográfica para análises métricas.\nAplicar buffer negativo para restrição de borda de mapa.\nRealizar amostragem aleatória com distância mínima entre pontos.\nExtrair e quantificar a composição da paisagem em buffers circulares.\nCalcular métricas de paisagem com landscapemetrics.\nProduzir um painel de visualização das paisagens amostrais."
   },
   {
     "objectID": "exercises/ex4-analises/exer_4.html#por-que-projetar",
     "href": "exercises/ex4-analises/exer_4.html#por-que-projetar",
-    "title": "Exercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
+    "title": "Exercício 4: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
     "section": "3.1 1.1 Por que projetar?",
     "text": "3.1 1.1 Por que projetar?\nO arquivo original está em coordenadas geográficas (lat/long). Para trabalhar com distâncias em metros (ex.: 2000 m, 500 m) é obrigatório projetá-lo para um sistema de coordenadas planas (UTM). Usaremos o fuso 25S (EPSG:31985), adequado para Alagoas.\n\nr_utm &lt;- project(r_murici, \"EPSG:31985\", method = \"near\")"
   },
   {
     "objectID": "exercises/ex4-analises/exer_4.html#atribuir-legenda",
     "href": "exercises/ex4-analises/exer_4.html#atribuir-legenda",
-    "title": "Exercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
+    "title": "Exercício 4: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
     "section": "3.2 1.2 Atribuir legenda",
     "text": "3.2 1.2 Atribuir legenda\nAs classes originais estão codificadas por números. Associe os rótulos e cores conforme a tabela abaixo.\n\n\n\nid\nCategoria\nCor\n\n\n\n\n3\nFormação Florestal\n#006400\n\n\n4\nFormação Savânica\n#7cfc00\n\n\n11\nCampo Alagado\n#00ffff\n\n\n15\nPastagem\n#ffff00\n\n\n20\nCana\n#ff4500\n\n\n21\nMosaico de Usos\n#f4a460\n\n\n24\nÁrea Urbanizada\n#ff0000\n\n\n25\nOutras Áreas não Vegetadas\n#d3d3d3\n\n\n33\nCorpo d’Água\n#0000ff\n\n\n\n\nlegenda &lt;- data.frame(\n  id = c(3, 4, 11, 15, 20, 21, 24, 25, 33),\n  Categoria = c(\"Formação Florestal\", \"Formação Savânica\", \"Campo Alagado\", \n                \"Pastagem\", \"Cana\", \"Mosaico de Usos\", \"Área Urbanizada\", \n                \"Outras Áreas não Vegetadas\", \"Corpo d'Água\"),\n  Cores = c(\"#006400\", \"#7cfc00\", \"#00ffff\", \"#ffff00\", \"#ff4500\", \n            \"#f4a460\", \"#ff0000\", \"#d3d3d3\", \"#0000ff\")\n)\n\nlevels(r_utm) &lt;- legenda[,1:2]"
   },
   {
     "objectID": "exercises/ex4-analises/exer_4.html#entrega",
     "href": "exercises/ex4-analises/exer_4.html#entrega",
-    "title": "Exercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
+    "title": "Exercício 4: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
     "section": "9.1 Entrega",
     "text": "9.1 Entrega\nRenderize este arquivo .qmd para HTML e envie o arquivo gerado, juntamente com as respostas às perguntas."
   },

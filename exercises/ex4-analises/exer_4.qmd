@@ -1,7 +1,7 @@
 ---
-title: "Exercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL"
+title: "Exercício 4: Amostragem de Paisagens com Restrição de Borda — Murici-AL"
 subtitle: "Análise espacial com terra, tidyverse e landscapemetrics"
-author: "Disciplina de Ecologia de Paisagem"
+author: "Felipe Melo"
 date: last-modified
 lang: pt
 format:
