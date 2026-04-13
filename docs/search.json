@@ -1620,8 +1620,8 @@
     "objectID": "slides/aula5_borda.html#interface-e-transição",
     "href": "slides/aula5_borda.html#interface-e-transição",
     "title": "Efeito de Borda",
-    "section": "Interface e Transição",
-    "text": "Interface e Transição\n\n\n\nA borda é a zona de contato entre duas unidades de paisagem.\nResulta (com frequência) da fragmentação de habitats contínuos.\nRepresenta uma quebra na homogeneidade ecológica."
+    "section": "",
+    "text": "A borda é a zona de contato entre duas unidades de paisagem.\nResulta (com frequência) da fragmentação de habitats contínuos.\nRepresenta uma quebra na homogeneidade ecológica."
   },
   {
     "objectID": "slides/aula5_borda.html#componentes-abióticos",
@@ -2973,5 +2973,124 @@
     "title": "Semana 7: Metapopulações e Dinâmica de Extinção-Colonização",
     "section": "9.3 Simulando o modelo de Levins",
     "text": "9.3 Simulando o modelo de Levins\n\n\nCódigo\n# Modelo de Levins simples: dp/dt = c*p*(1-p) - e*p\nlevins_model &lt;- function(p0, c, e, t_max = 100) {\n  p  &lt;- numeric(t_max)\n  p[1] &lt;- p0\n  dt &lt;- 0.1\n  steps &lt;- t_max / dt\n\n  p_cont &lt;- p0\n  traj   &lt;- data.frame(t = 0, p = p0)\n  for (i in seq_len(steps)) {\n    dp       &lt;- (c * p_cont * (1 - p_cont) - e * p_cont) * dt\n    p_cont   &lt;- max(0, min(1, p_cont + dp))\n    if (i %% 10 == 0)\n      traj &lt;- rbind(traj, data.frame(t = i * dt, p = p_cont))\n  }\n  traj$cenario &lt;- paste0(\"c=\", c, \" / e=\", e)\n  traj$equilibrio &lt;- if (c &gt; e) round(1 - e / c, 2) else 0\n  traj\n}\n\n# Simular diferentes cenários\nsims &lt;- bind_rows(\n  levins_model(p0 = 0.5, c = 0.4, e = 0.1),  # c &gt;&gt; e — persiste\n  levins_model(p0 = 0.5, c = 0.3, e = 0.25), # c &gt; e  — persiste fraco\n  levins_model(p0 = 0.5, c = 0.15, e = 0.3)  # c &lt; e  — colapso\n)\n\nggplot(sims, aes(x = t, y = p, color = cenario)) +\n  geom_line(linewidth = 1.2) +\n  geom_hline(aes(yintercept = equilibrio, color = cenario),\n             linetype = \"dashed\", linewidth = 0.6, alpha = 0.6) +\n  scale_color_manual(values = c(\"#0F6E56\", \"#BA7517\", \"#A32D2D\")) +\n  scale_y_continuous(limits = c(0, 1),\n                     labels = scales::percent_format()) +\n  labs(\n    title    = \"Simulação do Modelo de Levins\",\n    subtitle = \"Linhas tracejadas = equilíbrio p* = 1 – e/c\",\n    x        = \"Tempo\",\n    y        = \"Proporção de patches ocupados (p)\",\n    color    = \"Parâmetros\",\n    caption  = \"Persistência apenas quando c &gt; e\"\n  ) +\n  theme_classic(base_size = 12)\n\n\n\n\n\nSimulação do modelo de Levins: dinâmica da proporção de patches ocupados com diferentes razões c/e"
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html",
+    "href": "exercises/ex4-analises/exer_4.html",
+    "title": "Exercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
+    "section": "",
+    "text": "Neste exercício você trabalhará com um mapa de uso e cobertura da terra do município de Murici (AL), obtido por classificação de imagens de satélite. O objetivo é selecionar 15 pontos amostrais no interior de remanescentes florestais que estejam a pelo menos 2 km da borda do mapa (para evitar efeitos de borda não controlados). Em cada ponto será extraído um buffer circular de 500 m de raio e calculada a composição percentual de cada classe de uso do solo.\nAdicionalmente, usaremos o pacote landscapemetrics para calcular métricas de diversidade (Shannon), proporção de floresta e densidade de borda para cada uma das 15 paisagens amostrais.\n\n\n\n\n\n\nNotaArquivo necessário\n\n\n\nVocê precisará do arquivo raster 2024_murici.tif (disponível no material da disciplina). Coloque-o no diretório de trabalho antes de executar o código.\n\n\n\n\n\nCompreender a importância da projeção cartográfica para análises métricas.\nAplicar buffer negativo para restrição de borda de mapa.\nRealizar amostragem aleatória com distância mínima entre pontos.\nExtrair e quantificar a composição da paisagem em buffers circulares.\nCalcular métricas de paisagem com landscapemetrics.\nProduzir um painel de visualização das paisagens amostrais."
+  },
+  {
+    "objectID": "slides/aula5_borda.html",
+    "href": "slides/aula5_borda.html",
+    "title": "Efeito de Borda",
+    "section": "",
+    "text": "A borda é a zona de contato entre duas unidades de paisagem.\nResulta (com frequência) da fragmentação de habitats contínuos.\nRepresenta uma quebra na homogeneidade ecológica."
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html#configuração-e-dependências",
+    "href": "exercises/ex4-analises/exer_4.html#configuração-e-dependências",
+    "title": "Protocolo de Amostragem Espacial Robusta",
+    "section": "",
+    "text": "O uso do pacote terra é preferível ao antigo raster por sua eficiência em lidar com grandes conjuntos de dados vetoriais e matriciais.\n\nlibrary(terra)\nlibrary(tidyverse)\nlibrary(tidyterra)"
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html#preparação-dos-dados-geoespaciais",
+    "href": "exercises/ex4-analises/exer_4.html#preparação-dos-dados-geoespaciais",
+    "title": "Protocolo de Amostragem Espacial Robusta",
+    "section": "2. Preparação dos Dados Geoespaciais",
+    "text": "2. Preparação dos Dados Geoespaciais\nUm erro comum é tentar amostrar sem garantir que o objeto seja um SpatVector. Aqui, forçamos a limpeza da topologia.\n\n# Importação e Projeção (Crucial para cálculos de distância em metros)\nr_murici &lt;- rast(\"2024_murici.tif\")\nr_utm &lt;- project(r_murici, \"EPSG:31985\", method = \"near\")\n\n# Configuração da Legenda Oficial\nlegenda &lt;- data.frame(\n  id = c(3, 4, 11, 15, 20, 21, 24, 25, 33),\n  Categoria = c(\"Formação Florestal\", \"Formação Savânica\", \"Campo Alagado\", \n                \"Pastagem\", \"Cana\", \"Mosaico de Usos\", \"Área Urbanizada\", \n                \"Outras Áreas não Vegetadas\", \"Corpo d'Água\"),\n  Cores = c(\"#006400\", \"#7cfc00\", \"#00ffff\", \"#ffff00\", \"#ff4500\", \n            \"#f4a460\", \"#ff0000\", \"#d3d3d3\", \"#0000ff\")\n)\nlevels(r_utm) &lt;- legenda[,1:2]"
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html#definição-da-área-amostrável-filtros-espaciais",
+    "href": "exercises/ex4-analises/exer_4.html#definição-da-área-amostrável-filtros-espaciais",
+    "title": "Protocolo de Amostragem Espacial Robusta",
+    "section": "3. Definição da Área Amostrável (Filtros Espaciais)",
+    "text": "3. Definição da Área Amostrável (Filtros Espaciais)\nAqui corrigimos o erro de assinatura x = \"list\". Quando fazemos a interseção de florestas com a zona segura, o terra pode retornar uma lista se houver múltiplos polígonos. Usamos vect() para garantir a conversão em um único SpatVector.\n\n# 1. Criar Polígono do Município e Buffer Negativo (2km)\nlimite_total &lt;- as.polygons(r_utm, dissolve = TRUE) %&gt;% aggregate()\nzona_segura &lt;- buffer(limite_total, width = -2000)\n\n# 2. Isolar Florestas\nfloresta_poly &lt;- as.polygons(r_utm)\nfloresta_poly &lt;- floresta_poly[floresta_poly$Categoria == \"Formação Florestal\", ]\n\n# 3. Interseção Robusta (A correção para o erro de 'list' está aqui)\n# Usamos vect() para garantir que o resultado seja um SpatVector único\narea_amostravel &lt;- intersect(floresta_poly, zona_segura)\n\nif (inherits(area_amostravel, \"list\")) {\n  area_amostravel &lt;- vect(area_amostravel)\n}\n\n# Verificação de segurança: Se ainda houver geometrias nulas ou vazias\narea_amostravel &lt;- area_amostravel[!is.na(area_amostravel$Categoria)]"
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html#algoritmo-de-amostragem-estocástica",
+    "href": "exercises/ex4-analises/exer_4.html#algoritmo-de-amostragem-estocástica",
+    "title": "Protocolo de Amostragem Espacial Robusta",
+    "section": "4. Algoritmo de Amostragem Estocástica",
+    "text": "4. Algoritmo de Amostragem Estocástica\nEste loop garante que os 15 pontos respeitem a distância mínima de 1 km, evitando sobreposição de buffers (pseudo-repetição).\n\nset.seed(123) # Reprodutibilidade\nn_alvo &lt;- 15\ndist_min &lt;- 1000\npontos_finais &lt;- NULL\n\n# Tentativa de sorteio condicional\nwhile(is.null(pontos_finais) || nrow(pontos_finais) &lt; n_alvo) {\n  \n  # Sorteia um ponto candidato dentro da área válida\n  cand &lt;- spatSample(area_amostravel, size = 1, method = \"random\")\n  \n  if (nrow(cand) &gt; 0) {\n    if (is.null(pontos_finais)) {\n      pontos_finais &lt;- cand\n    } else {\n      # Calcula distância para os pontos já aceitos\n      dists &lt;- distance(cand, pontos_finais)\n      if (min(dists) &gt;= dist_min) {\n        pontos_finais &lt;- rbind(pontos_finais, cand)\n      }\n    }\n  }\n}\n\n# Adicionar Identificador único\npontos_finais$id_amostra &lt;- paste0(\"Ponto_\", 1:n_alvo)"
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html#extração-de-dados-e-geração-de-buffers",
+    "href": "exercises/ex4-analises/exer_4.html#extração-de-dados-e-geração-de-buffers",
+    "title": "Protocolo de Amostragem Espacial Robusta",
+    "section": "5. Extração de Dados e Geração de Buffers",
+    "text": "5. Extração de Dados e Geração de Buffers\nCriamos buffers de 500m de raio para definir a “paisagem local”.\n\nbuffers_500m &lt;- buffer(pontos_finais, width = 500)\n\n# Extração tabular\nextracao_raw &lt;- terra::extract(r_utm, buffers_500m)\n\ntabela_metricas &lt;- extracao_raw %&gt;%\n  rename(ponto_id = 1, cat_id = 2) %&gt;%\n  group_by(ponto_id, cat_id) %&gt;%\n  summarise(pixels = n(), .groups = \"drop_last\") %&gt;%\n  mutate(percent = (pixels / sum(pixels)) * 100) %&gt;%\n  left_join(legenda, by = c(\"cat_id\" = \"Categoria\"))"
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html#visualização-das-unidades-amostrais-grid-5x3",
+    "href": "exercises/ex4-analises/exer_4.html#visualização-das-unidades-amostrais-grid-5x3",
+    "title": "Protocolo de Amostragem Espacial Robusta",
+    "section": "6. Visualização das Unidades Amostrais (Grid 5x3)",
+    "text": "6. Visualização das Unidades Amostrais (Grid 5x3)\nVisualizar os recortes garante que não há erros de máscara ou áreas sem dados.\n\nrecortes_df &lt;- map_dfr(1:nrow(buffers_500m), function(i) {\n  crop(r_utm, buffers_500m[i]) %&gt;% \n    mask(buffers_500m[i]) %&gt;% \n    as.data.frame(xy = TRUE) %&gt;% \n    mutate(id_amostra = pontos_finais$id_amostra[i])\n})\n\nggplot(recortes_df) +\n  geom_raster(aes(x = x, y = y, fill = Categoria)) +\n  scale_fill_manual(values = setNames(legenda$Cores, legenda$Categoria)) +\n  facet_wrap(~id_amostra, ncol = 3, scales = \"free\") +\n  theme_void() +\n  labs(title = \"Paisagens Amostrais em Murici-AL (Raio de 500m)\") +\n  theme(legend.position = \"bottom\", strip.text = element_text(face=\"bold\"))\n\nWarning: Raster pixels are placed at uneven horizontal intervals and will be shifted\nℹ Consider using `geom_tile()` instead.\nRaster pixels are placed at uneven horizontal intervals and will be shifted\nℹ Consider using `geom_tile()` instead."
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html#exportação-final",
+    "href": "exercises/ex4-analises/exer_4.html#exportação-final",
+    "title": "Protocolo de Amostragem Espacial Robusta",
+    "section": "7. Exportação Final",
+    "text": "7. Exportação Final\n\nwriteVector(pontos_finais, \"pontos_final.shp\", overwrite = TRUE)\nwrite_csv(tabela_metricas, \"metricas_paisagem.csv\")"
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html#perguntas-para-interpretação",
+    "href": "exercises/ex4-analises/exer_4.html#perguntas-para-interpretação",
+    "title": "Protocolo de Amostragem Espacial Robusta",
+    "section": "Perguntas para interpretação",
+    "text": "Perguntas para interpretação\nResponda as questões abaixo com base na execução do código e nos resultados obtidos.\n\nPor que foi necessário projetar o raster para UTM antes de usar buffer()?\nO que significa o buffer negativo (width = -2000) e qual o seu papel no exercício?\nExplique a lógica do loop while usado para sortear os 15 pontos. Qual a finalidade da variável tentativas e do limite de 5000?\nComo o código garante que os pontos sorteados tenham distância mínima de 1000 m entre si?\nAnalise a tabela tabela_final. Em quantos buffers a classe “Formação Florestal” representa 100% da paisagem? Em quais buffers aparecem outras classes? O que isso indica sobre a eficácia da restrição de borda?"
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html#objetivos-específicos",
+    "href": "exercises/ex4-analises/exer_4.html#objetivos-específicos",
+    "title": "Exercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
+    "section": "",
+    "text": "Compreender a importância da projeção cartográfica para análises métricas.\nAplicar buffer negativo para restrição de borda de mapa.\nRealizar amostragem aleatória com distância mínima entre pontos.\nExtrair e quantificar a composição da paisagem em buffers circulares.\nCalcular métricas de paisagem com landscapemetrics.\nProduzir um painel de visualização das paisagens amostrais."
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html#por-que-projetar",
+    "href": "exercises/ex4-analises/exer_4.html#por-que-projetar",
+    "title": "Exercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
+    "section": "3.1 1.1 Por que projetar?",
+    "text": "3.1 1.1 Por que projetar?\nO arquivo original está em coordenadas geográficas (lat/long). Para trabalhar com distâncias em metros (ex.: 2000 m, 500 m) é obrigatório projetá-lo para um sistema de coordenadas planas (UTM). Usaremos o fuso 25S (EPSG:31985), adequado para Alagoas.\n\nr_utm &lt;- project(r_murici, \"EPSG:31985\", method = \"near\")"
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html#atribuir-legenda",
+    "href": "exercises/ex4-analises/exer_4.html#atribuir-legenda",
+    "title": "Exercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
+    "section": "3.2 1.2 Atribuir legenda",
+    "text": "3.2 1.2 Atribuir legenda\nAs classes originais estão codificadas por números. Associe os rótulos e cores conforme a tabela abaixo.\n\n\n\nid\nCategoria\nCor\n\n\n\n\n3\nFormação Florestal\n#006400\n\n\n4\nFormação Savânica\n#7cfc00\n\n\n11\nCampo Alagado\n#00ffff\n\n\n15\nPastagem\n#ffff00\n\n\n20\nCana\n#ff4500\n\n\n21\nMosaico de Usos\n#f4a460\n\n\n24\nÁrea Urbanizada\n#ff0000\n\n\n25\nOutras Áreas não Vegetadas\n#d3d3d3\n\n\n33\nCorpo d’Água\n#0000ff\n\n\n\n\nlegenda &lt;- data.frame(\n  id = c(3, 4, 11, 15, 20, 21, 24, 25, 33),\n  Categoria = c(\"Formação Florestal\", \"Formação Savânica\", \"Campo Alagado\", \n                \"Pastagem\", \"Cana\", \"Mosaico de Usos\", \"Área Urbanizada\", \n                \"Outras Áreas não Vegetadas\", \"Corpo d'Água\"),\n  Cores = c(\"#006400\", \"#7cfc00\", \"#00ffff\", \"#ffff00\", \"#ff4500\", \n            \"#f4a460\", \"#ff0000\", \"#d3d3d3\", \"#0000ff\")\n)\n\nlevels(r_utm) &lt;- legenda[,1:2]"
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html#entrega",
+    "href": "exercises/ex4-analises/exer_4.html#entrega",
+    "title": "Exercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
+    "section": "9.1 Entrega",
+    "text": "9.1 Entrega\nRenderize este arquivo .qmd para HTML e envie o arquivo gerado, juntamente com as respostas às perguntas."
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html#visualização-da-área-de-sorteio",
+    "href": "exercises/ex4-analises/exer_4.html#visualização-da-área-de-sorteio",
+    "title": "Exercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
+    "section": "4.1 Visualização da área de sorteio",
+    "text": "4.1 Visualização da área de sorteio\n\n\nCódigo\nggplot() +\n  geom_spatraster(data = r_utm) +\n  scale_fill_manual(values = legenda$Cores, na.value = \"white\", name = \"Uso do Solo\") +\n  geom_spatvector(data = municipio_limite, fill = NA, color = \"black\", linewidth = 1) +\n  geom_spatvector(data = limite_seguro, fill = NA, color = \"red\", linetype = \"dashed\", linewidth = 1) +\n  geom_spatvector(data = floresta, fill = \"darkgreen\", alpha = 0.3, color = NA) +\n  geom_spatvector(data = area_sorteio, fill = \"forestgreen\", alpha = 0.5, color = NA) +\n  labs(title = \"Área de sorteio (floresta &gt; 2 km da borda)\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\nFigura 1: Área de sorteio segura: florestas a mais de 2 km da borda"
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html#visualização-dos-pontos-e-buffers",
+    "href": "exercises/ex4-analises/exer_4.html#visualização-dos-pontos-e-buffers",
+    "title": "Exercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
+    "section": "Visualização dos pontos e buffers",
+    "text": "Visualização dos pontos e buffers\n\n\nCódigo\nggplot() +\n  geom_spatraster(data = r_utm) +\n  scale_fill_manual(values = legenda$Cores, na.value = \"white\") +\n  geom_spatvector(data = buffers, fill = NA, color = \"black\", linewidth = 1) +\n  geom_spatvector(data = pontos_finais, color = \"red\", size = 1, shape = 19) +\n  geom_spatvector_text(data = pontos_finais, aes(label = 1:15), color = \"white\", size = 3, vjust = -0.8) +\n  labs(title = \"Pontos amostrais e buffers de 500 m\") +\n  theme_minimal() +\n  theme(legend.position = \"bottom\")"
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html#visualização-da-área-segura",
+    "href": "exercises/ex4-analises/exer_4.html#visualização-da-área-segura",
+    "title": "Exercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
+    "section": "Visualização da área segura",
+    "text": "Visualização da área segura\n\n\nCódigo\nggplot() +\n  geom_spatraster(data = r_utm) +\n  scale_fill_manual(values = legenda$Cores, na.value = \"white\") +\n  geom_spatvector(data = municipio_limite, fill = NA, color = \"black\", linewidth = 1) +\n  geom_spatvector(data = limite_seguro, fill = NA, color = \"red\", linetype = \"dashed\") +\n  geom_spatvector(data = floresta, fill = \"darkgreen\", alpha = 0.3) +\n  geom_spatvector(data = area_sorteio, fill = \"forestgreen\", alpha = 0.5) +\n  labs(title = \"Área de sorteio (floresta &gt; 2 km da borda)\") +\n  theme_minimal()"
   }
 ]
