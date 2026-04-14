@@ -76,7 +76,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-e85ba51730373dc525c042902c84aad0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-375d88a8e40c6acf41b05f3815447583.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -226,10 +226,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#sorteio-de-pontos-com-distância-mínima" id="toc-sorteio-de-pontos-com-distância-mínima" class="nav-link" data-scroll-target="#sorteio-de-pontos-com-distância-mínima"><span class="header-section-number">5</span> 3. Sorteio de pontos com distância mínima</a></li>
   <li><a href="#buffers-e-extração-da-composição-da-paisagem" id="toc-buffers-e-extração-da-composição-da-paisagem" class="nav-link" data-scroll-target="#buffers-e-extração-da-composição-da-paisagem"><span class="header-section-number">6</span> 4. Buffers e extração da composição da paisagem</a></li>
   <li><a href="#análise-com-landscapemetrics" id="toc-análise-com-landscapemetrics" class="nav-link" data-scroll-target="#análise-com-landscapemetrics"><span class="header-section-number">7</span> 5. Análise com landscapemetrics</a></li>
-  <li><a href="#painel-de-paisagens" id="toc-painel-de-paisagens" class="nav-link" data-scroll-target="#painel-de-paisagens"><span class="header-section-number">8</span> 6. Painel de paisagens</a></li>
-  <li><a href="#perguntas-para-interpretação" id="toc-perguntas-para-interpretação" class="nav-link" data-scroll-target="#perguntas-para-interpretação"><span class="header-section-number">9</span> Perguntas para interpretação</a>
+  <li><a href="#painel-de-paisagens" id="toc-painel-de-paisagens" class="nav-link" data-scroll-target="#painel-de-paisagens"><span class="header-section-number">8</span> 6. Painel de paisagens</a>
   <ul class="collapse">
-  <li><a href="#entrega" id="toc-entrega" class="nav-link" data-scroll-target="#entrega"><span class="header-section-number">9.1</span> Entrega</a></li>
+  <li><a href="#fim" id="toc-fim" class="nav-link" data-scroll-target="#fim"><span class="header-section-number">8.1</span> FIM</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -257,7 +256,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">13 de abril de 2026</p>
+      <p class="date">14 de abril de 2026</p>
     </div>
   </div>
   
@@ -283,7 +282,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Você precisará do arquivo raster <code>2024_murici.tif</code> (disponível no material da disciplina). Coloque-o no diretório de trabalho antes de executar o código.</p>
+<p>Você precisará do arquivo raster <code>2024_murici.tif</code> (disponível <a href="https://github.com/fplmelo/ecologia_paisagem/raw/refs/heads/main/exercises/ex4-analises/2024_murici.tif">neste link</a>). Coloque-o no diretório de trabalho antes de executar o código.</p>
 </div>
 </div>
 <section id="objetivos-específicos" class="level2" data-number="1.1">
@@ -305,12 +304,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(terra)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>terra 1.9.1</code></pre>
+<pre><code>terra 1.9.11</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.0     ✔ readr     2.2.0
+✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
 ✔ ggplot2   4.0.2     ✔ tibble    3.3.1
 ✔ lubridate 1.9.5     ✔ tidyr     1.3.2
@@ -326,9 +325,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyterra)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
-Anexando pacote: 'tidyterra'
+Attaching package: 'tidyterra'
 
-O seguinte objeto é mascarado por 'package:stats':
+The following object is masked from 'package:stats':
 
     filter</code></pre>
 </div>
@@ -534,8 +533,18 @@ O seguinte objeto é mascarado por 'package:stats':
 <span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(legenda <span class="sc">%&gt;%</span> <span class="fu">select</span>(Categoria, Cores), <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"Categoria_Limpa"</span> <span class="ot">=</span> <span class="st">"Categoria"</span>))</span>
 <span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(tabela_final, <span class="st">"uso_solo_murici_final.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a><span class="fu">writeVector</span>(pontos_finais, <span class="st">"pontos_final.shp"</span>, <span class="at">overwrite=</span><span class="cn">TRUE</span>)</span>
-<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a><span class="fu">writeVector</span>(buffers, <span class="st">"buffers_500m.shp"</span>, <span class="at">overwrite=</span><span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a><span class="fu">writeVector</span>(pontos_finais, <span class="st">"pontos_final.shp"</span>, <span class="at">overwrite=</span><span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in x@pntr$write(filename, layer, filetype, insert[1], overwrite[1], :
+GDAL Message 6: dataset pontos_final.shp does not support layer creation option
+OVERWRITE</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">writeVector</span>(buffers, <span class="st">"buffers_500m.shp"</span>, <span class="at">overwrite=</span><span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in x@pntr$write(filename, layer, filetype, insert[1], overwrite[1], :
+GDAL Message 6: dataset buffers_500m.shp does not support layer creation option
+OVERWRITE</code></pre>
+</div>
 </div>
 <div class="callout callout-style-simple callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -549,16 +558,16 @@ O seguinte objeto é mascarado por 'package:stats':
 <div class="callout-body-container callout-body">
 <p>Para ver os pontos e buffers sobre o mapa com <strong>ggplot2 + tidyterra</strong>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_spatraster</span>(<span class="at">data =</span> r_utm) <span class="sc">+</span></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> legenda<span class="sc">$</span>Cores, <span class="at">na.value =</span> <span class="st">"white"</span>, <span class="at">name =</span> <span class="st">"Uso do Solo"</span>) <span class="sc">+</span></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_spatvector</span>(<span class="at">data =</span> buffers, <span class="at">fill =</span> <span class="cn">NA</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_spatvector</span>(<span class="at">data =</span> pontos_finais, <span class="at">color =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">shape =</span> <span class="dv">19</span>) <span class="sc">+</span></span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_spatvector_text</span>(<span class="at">data =</span> pontos_finais, <span class="fu">aes</span>(<span class="at">label =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">15</span>), </span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>                       <span class="at">color =</span> <span class="st">"white"</span>, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Pontos amostrais e buffers de 500 m"</span>) <span class="sc">+</span></span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_spatraster</span>(<span class="at">data =</span> r_utm) <span class="sc">+</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> legenda<span class="sc">$</span>Cores, <span class="at">na.value =</span> <span class="st">"white"</span>, <span class="at">name =</span> <span class="st">"Uso do Solo"</span>) <span class="sc">+</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_spatvector</span>(<span class="at">data =</span> buffers, <span class="at">fill =</span> <span class="cn">NA</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_spatvector</span>(<span class="at">data =</span> pontos_finais, <span class="at">color =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">shape =</span> <span class="dv">19</span>) <span class="sc">+</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_spatvector_text</span>(<span class="at">data =</span> pontos_finais, <span class="fu">aes</span>(<span class="at">label =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">15</span>), </span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>                       <span class="at">color =</span> <span class="st">"white"</span>, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Pontos amostrais e buffers de 500 m"</span>) <span class="sc">+</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>&lt;SpatRaster&gt; resampled to 500736 cells.</code></pre>
 </div>
@@ -584,46 +593,46 @@ O seguinte objeto é mascarado por 'package:stats':
 <li><strong>Densidade de borda</strong> da classe floresta – <code>lsm_c_ed</code> (edge density, em m/ha)</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Identificar o valor numérico da classe Floresta</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>id_floresta <span class="ot">&lt;-</span> legenda<span class="sc">$</span>id[legenda<span class="sc">$</span>Categoria <span class="sc">==</span> <span class="st">"Formação Florestal"</span>]</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Lista para armazenar métricas de cada buffer</span></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>metricas_lista <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(buffers)) {</span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Recortar o raster para o buffer i</span></span>
-<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>  crop_i <span class="ot">&lt;-</span> <span class="fu">crop</span>(r_utm, buffers[i,])</span>
-<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>  mask_i <span class="ot">&lt;-</span> <span class="fu">mask</span>(crop_i, buffers[i,])</span>
-<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calcular Shannon diversity (nível da paisagem)</span></span>
-<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>  shannon <span class="ot">&lt;-</span> <span class="fu">lsm_l_shdi</span>(mask_i)</span>
-<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calcular métricas de classe para todas as classes</span></span>
-<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>  pland_all <span class="ot">&lt;-</span> <span class="fu">lsm_c_pland</span>(mask_i)   <span class="co"># percentual de cada classe</span></span>
-<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>  ed_all <span class="ot">&lt;-</span> <span class="fu">lsm_c_ed</span>(mask_i)         <span class="co"># densidade de borda por classe</span></span>
-<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Filtrar apenas a classe floresta</span></span>
-<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a>  pland_floresta <span class="ot">&lt;-</span> pland_all <span class="sc">%&gt;%</span> <span class="fu">filter</span>(class <span class="sc">==</span> id_floresta)</span>
-<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a>  ed_floresta <span class="ot">&lt;-</span> ed_all <span class="sc">%&gt;%</span> <span class="fu">filter</span>(class <span class="sc">==</span> id_floresta)</span>
-<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Extrair valores (se não houver floresta, colocar NA ou 0)</span></span>
-<span id="cb18-24"><a href="#cb18-24" aria-hidden="true" tabindex="-1"></a>  div_shannon <span class="ot">&lt;-</span> shannon<span class="sc">$</span>value</span>
-<span id="cb18-25"><a href="#cb18-25" aria-hidden="true" tabindex="-1"></a>  perc_floresta <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(<span class="fu">nrow</span>(pland_floresta) <span class="sc">&gt;</span> <span class="dv">0</span>, pland_floresta<span class="sc">$</span>value, <span class="dv">0</span>)</span>
-<span id="cb18-26"><a href="#cb18-26" aria-hidden="true" tabindex="-1"></a>  dens_borda <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(<span class="fu">nrow</span>(ed_floresta) <span class="sc">&gt;</span> <span class="dv">0</span>, ed_floresta<span class="sc">$</span>value, <span class="cn">NA</span>)</span>
-<span id="cb18-27"><a href="#cb18-27" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-28"><a href="#cb18-28" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Guardar</span></span>
-<span id="cb18-29"><a href="#cb18-29" aria-hidden="true" tabindex="-1"></a>  metricas_lista[[i]] <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb18-30"><a href="#cb18-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">id_buffer =</span> i,</span>
-<span id="cb18-31"><a href="#cb18-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">diversidade_shannon =</span> div_shannon,</span>
-<span id="cb18-32"><a href="#cb18-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">perc_floresta =</span> perc_floresta,</span>
-<span id="cb18-33"><a href="#cb18-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">densidade_borda_m_ha =</span> dens_borda</span>
-<span id="cb18-34"><a href="#cb18-34" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb18-35"><a href="#cb18-35" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb18-36"><a href="#cb18-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-37"><a href="#cb18-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Combinar tudo</span></span>
-<span id="cb18-38"><a href="#cb18-38" aria-hidden="true" tabindex="-1"></a>metricas_paisagem <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(metricas_lista)</span>
-<span id="cb18-39"><a href="#cb18-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-40"><a href="#cb18-40" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(metricas_paisagem)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Identificar o valor numérico da classe Floresta</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>id_floresta <span class="ot">&lt;-</span> legenda<span class="sc">$</span>id[legenda<span class="sc">$</span>Categoria <span class="sc">==</span> <span class="st">"Formação Florestal"</span>]</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Lista para armazenar métricas de cada buffer</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>metricas_lista <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(buffers)) {</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Recortar o raster para o buffer i</span></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>  crop_i <span class="ot">&lt;-</span> <span class="fu">crop</span>(r_utm, buffers[i,])</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>  mask_i <span class="ot">&lt;-</span> <span class="fu">mask</span>(crop_i, buffers[i,])</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calcular Shannon diversity (nível da paisagem)</span></span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>  shannon <span class="ot">&lt;-</span> <span class="fu">lsm_l_shdi</span>(mask_i)</span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calcular métricas de classe para todas as classes</span></span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>  pland_all <span class="ot">&lt;-</span> <span class="fu">lsm_c_pland</span>(mask_i)   <span class="co"># percentual de cada classe</span></span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>  ed_all <span class="ot">&lt;-</span> <span class="fu">lsm_c_ed</span>(mask_i)         <span class="co"># densidade de borda por classe</span></span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Filtrar apenas a classe floresta</span></span>
+<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>  pland_floresta <span class="ot">&lt;-</span> pland_all <span class="sc">%&gt;%</span> <span class="fu">filter</span>(class <span class="sc">==</span> id_floresta)</span>
+<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>  ed_floresta <span class="ot">&lt;-</span> ed_all <span class="sc">%&gt;%</span> <span class="fu">filter</span>(class <span class="sc">==</span> id_floresta)</span>
+<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb21-23"><a href="#cb21-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Extrair valores (se não houver floresta, colocar NA ou 0)</span></span>
+<span id="cb21-24"><a href="#cb21-24" aria-hidden="true" tabindex="-1"></a>  div_shannon <span class="ot">&lt;-</span> shannon<span class="sc">$</span>value</span>
+<span id="cb21-25"><a href="#cb21-25" aria-hidden="true" tabindex="-1"></a>  perc_floresta <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(<span class="fu">nrow</span>(pland_floresta) <span class="sc">&gt;</span> <span class="dv">0</span>, pland_floresta<span class="sc">$</span>value, <span class="dv">0</span>)</span>
+<span id="cb21-26"><a href="#cb21-26" aria-hidden="true" tabindex="-1"></a>  dens_borda <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(<span class="fu">nrow</span>(ed_floresta) <span class="sc">&gt;</span> <span class="dv">0</span>, ed_floresta<span class="sc">$</span>value, <span class="cn">NA</span>)</span>
+<span id="cb21-27"><a href="#cb21-27" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb21-28"><a href="#cb21-28" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Guardar</span></span>
+<span id="cb21-29"><a href="#cb21-29" aria-hidden="true" tabindex="-1"></a>  metricas_lista[[i]] <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb21-30"><a href="#cb21-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">id_buffer =</span> i,</span>
+<span id="cb21-31"><a href="#cb21-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">diversidade_shannon =</span> div_shannon,</span>
+<span id="cb21-32"><a href="#cb21-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">perc_floresta =</span> perc_floresta,</span>
+<span id="cb21-33"><a href="#cb21-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">densidade_borda_m_ha =</span> dens_borda</span>
+<span id="cb21-34"><a href="#cb21-34" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb21-35"><a href="#cb21-35" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb21-36"><a href="#cb21-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-37"><a href="#cb21-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Combinar tudo</span></span>
+<span id="cb21-38"><a href="#cb21-38" aria-hidden="true" tabindex="-1"></a>metricas_paisagem <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(metricas_lista)</span>
+<span id="cb21-39"><a href="#cb21-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-40"><a href="#cb21-40" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(metricas_paisagem)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   id_buffer diversidade_shannon perc_floresta densidade_borda_m_ha
 1          1          0.86221768      11.37088            36.791188
@@ -645,7 +654,7 @@ O seguinte objeto é mascarado por 'package:stats':
 </div>
 <p>A tabela <code>metricas_paisagem</code> contém os valores para cada uma das 15 paisagens. Você pode salvá-la como CSV:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(metricas_paisagem, <span class="st">"metricas_landscapemetrics.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(metricas_paisagem, <span class="st">"metricas_landscapemetrics.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="callout callout-style-simple callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -670,28 +679,28 @@ O seguinte objeto é mascarado por 'package:stats':
 <h1 data-number="8"><span class="header-section-number">8</span> 6. Painel de paisagens</h1>
 <p>Gerar um painel 5x3 com os recortes circulares de cada ponto. <strong>Use <code>geom_tile()</code> em vez de <code>geom_raster()</code> para evitar avisos de desalinhamento.</strong></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>lista_recortes <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(buffers)) {</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  crop_i <span class="ot">&lt;-</span> <span class="fu">crop</span>(r_utm, buffers[i, ])</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  mask_i <span class="ot">&lt;-</span> <span class="fu">mask</span>(crop_i, buffers[i, ])</span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>  df_i <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(mask_i, <span class="at">xy =</span> <span class="cn">TRUE</span>, <span class="at">cells =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>  df_i<span class="sc">$</span>id_buffer <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">"Paisagem"</span>, i)</span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>  lista_recortes[[i]] <span class="ot">&lt;-</span> df_i</span>
-<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>df_painel <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(lista_recortes)</span>
-<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(df_painel) <span class="sc">+</span></span>
-<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y, <span class="at">fill =</span> Categoria)) <span class="sc">+</span></span>
-<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">setNames</span>(legenda<span class="sc">$</span>Cores, legenda<span class="sc">$</span>Categoria)) <span class="sc">+</span></span>
-<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>id_buffer, <span class="at">nrow =</span> <span class="dv">3</span>, <span class="at">ncol =</span> <span class="dv">5</span>, <span class="at">scales =</span> <span class="st">"free"</span>) <span class="sc">+</span></span>
-<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Painel de Amostragem: 15 Paisagens de Murici-AL"</span>,</span>
-<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Recortes circulares de 500m de raio (Interior de Floresta)"</span>,</span>
-<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>       <span class="at">fill =</span> <span class="st">"Uso do Solo"</span>) <span class="sc">+</span></span>
-<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.ticks =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>lista_recortes <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(buffers)) {</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  crop_i <span class="ot">&lt;-</span> <span class="fu">crop</span>(r_utm, buffers[i, ])</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  mask_i <span class="ot">&lt;-</span> <span class="fu">mask</span>(crop_i, buffers[i, ])</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  df_i <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(mask_i, <span class="at">xy =</span> <span class="cn">TRUE</span>, <span class="at">cells =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>  df_i<span class="sc">$</span>id_buffer <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">"Paisagem"</span>, i)</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>  lista_recortes[[i]] <span class="ot">&lt;-</span> df_i</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>df_painel <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(lista_recortes)</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(df_painel) <span class="sc">+</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y, <span class="at">fill =</span> Categoria)) <span class="sc">+</span></span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">setNames</span>(legenda<span class="sc">$</span>Cores, legenda<span class="sc">$</span>Categoria)) <span class="sc">+</span></span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>id_buffer, <span class="at">nrow =</span> <span class="dv">3</span>, <span class="at">ncol =</span> <span class="dv">5</span>, <span class="at">scales =</span> <span class="st">"free"</span>) <span class="sc">+</span></span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Painel de Amostragem: 15 Paisagens de Murici-AL"</span>,</span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Recortes circulares de 500m de raio (Interior de Floresta)"</span>,</span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>       <span class="at">fill =</span> <span class="st">"Uso do Solo"</span>) <span class="sc">+</span></span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.ticks =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -701,33 +710,8 @@ O seguinte objeto é mascarado por 'package:stats':
 </div>
 </div>
 <hr>
-</section>
-<section id="perguntas-para-interpretação" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Perguntas para interpretação</h1>
-<p>Responda as questões abaixo com base na execução do código e nos resultados obtidos.</p>
-<ol type="1">
-<li><p><strong>Por que foi necessário projetar o raster para UTM antes de usar <code>buffer()</code>?</strong><br>
-_________________________________________________________________</p></li>
-<li><p><strong>O que significa o buffer negativo (<code>width = -2000</code>) e qual o seu papel no exercício?</strong><br>
-_________________________________________________________________</p></li>
-<li><p><strong>Explique a lógica do loop <code>while</code> usado para sortear os 15 pontos. Qual a finalidade da variável <code>tentativas</code> e do limite de 5000?</strong><br>
-_________________________________________________________________</p></li>
-<li><p><strong>Como o código garante que os pontos sorteados tenham distância mínima de 1000 m entre si?</strong><br>
-_________________________________________________________________</p></li>
-<li><p><strong>Analise a tabela <code>metricas_paisagem</code>. Qual buffer apresentou a maior diversidade de Shannon? E a menor? O que isso significa ecologicamente?</strong><br>
-_________________________________________________________________</p></li>
-<li><p><strong>Compare a porcentagem de floresta obtida pela extração manual (<code>tabela_final</code>) com a obtida pelo <code>landscapemetrics</code> (<code>perc_floresta</code>). Os valores são idênticos? Por que?</strong><br>
-_________________________________________________________________</p></li>
-<li><p><strong>Qual a relação entre densidade de borda e forma do fragmento florestal dentro do buffer? O que uma alta densidade de borda indica sobre a paisagem?</strong><br>
-_________________________________________________________________</p></li>
-<li><p><strong>Desafio:</strong> Como você modificaria o código para amostrar apenas paisagens com <strong>no mínimo 80% de floresta</strong> e pelo menos duas outras classes? Escreva as alterações necessárias.<br>
-_________________________________________________________________</p></li>
-<li><p><strong>Suponha que o arquivo raster não estivesse projetado e você usasse coordenadas geográficas (graus). O que aconteceria com os buffers de 500 m?</strong><br>
-_________________________________________________________________</p></li>
-</ol>
-<section id="entrega" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="entrega"><span class="header-section-number">9.1</span> Entrega</h2>
-<p>Renderize este arquivo <code>.qmd</code> para HTML e envie o arquivo gerado, juntamente com as respostas às perguntas.</p>
+<section id="fim" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="fim"><span class="header-section-number">8.1</span> FIM</h2>
 <hr>
 
 

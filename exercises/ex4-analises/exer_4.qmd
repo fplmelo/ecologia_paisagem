@@ -27,7 +27,7 @@ Adicionalmente, usaremos o pacote `landscapemetrics` para calcular métricas de 
 
 ::: {.callout-note}
 ## Arquivo necessário
-Você precisará do arquivo raster `2024_murici.tif` (disponível no material da disciplina). Coloque-o no diretório de trabalho antes de executar o código.
+Você precisará do arquivo raster `2024_murici.tif` (disponível [neste link](https://github.com/fplmelo/ecologia_paisagem/raw/refs/heads/main/exercises/ex4-analises/2024_murici.tif)). Coloque-o no diretório de trabalho antes de executar o código.
 :::
 
 ## Objetivos específicos
@@ -339,39 +339,6 @@ ggplot(df_painel) +
 
 ---
 
-# Perguntas para interpretação
-
-Responda as questões abaixo com base na execução do código e nos resultados obtidos.
-
-1. **Por que foi necessário projetar o raster para UTM antes de usar `buffer()`?**  
-   _________________________________________________________________
-
-2. **O que significa o buffer negativo (`width = -2000`) e qual o seu papel no exercício?**  
-   _________________________________________________________________
-
-3. **Explique a lógica do loop `while` usado para sortear os 15 pontos. Qual a finalidade da variável `tentativas` e do limite de 5000?**  
-   _________________________________________________________________
-
-4. **Como o código garante que os pontos sorteados tenham distância mínima de 1000 m entre si?**  
-   _________________________________________________________________
-
-5. **Analise a tabela `metricas_paisagem`. Qual buffer apresentou a maior diversidade de Shannon? E a menor? O que isso significa ecologicamente?**  
-   _________________________________________________________________
-
-6. **Compare a porcentagem de floresta obtida pela extração manual (`tabela_final`) com a obtida pelo `landscapemetrics` (`perc_floresta`). Os valores são idênticos? Por que?**  
-   _________________________________________________________________
-
-7. **Qual a relação entre densidade de borda e forma do fragmento florestal dentro do buffer? O que uma alta densidade de borda indica sobre a paisagem?**  
-   _________________________________________________________________
-
-8. **Desafio:** Como você modificaria o código para amostrar apenas paisagens com **no mínimo 80% de floresta** e pelo menos duas outras classes? Escreva as alterações necessárias.  
-   _________________________________________________________________
-
-9. **Suponha que o arquivo raster não estivesse projetado e você usasse coordenadas geográficas (graus). O que aconteceria com os buffers de 500 m?**  
-   _________________________________________________________________
-
-## Entrega
-
-Renderize este arquivo `.qmd` para HTML e envie o arquivo gerado, juntamente com as respostas às perguntas.
+## FIM
 
 ---

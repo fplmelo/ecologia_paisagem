@@ -2979,7 +2979,7 @@
     "href": "exercises/ex4-analises/exer_4.html",
     "title": "Exercício 4: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
     "section": "",
-    "text": "Neste exercício você trabalhará com um mapa de uso e cobertura da terra do município de Murici (AL), obtido por classificação de imagens de satélite. O objetivo é selecionar 15 pontos amostrais no interior de remanescentes florestais que estejam a pelo menos 2 km da borda do mapa (para evitar efeitos de borda não controlados). Em cada ponto será extraído um buffer circular de 500 m de raio e calculada a composição percentual de cada classe de uso do solo.\nAdicionalmente, usaremos o pacote landscapemetrics para calcular métricas de diversidade (Shannon), proporção de floresta e densidade de borda para cada uma das 15 paisagens amostrais.\n\n\n\n\n\n\nNotaArquivo necessário\n\n\n\nVocê precisará do arquivo raster 2024_murici.tif (disponível no material da disciplina). Coloque-o no diretório de trabalho antes de executar o código.\n\n\n\n\n\nCompreender a importância da projeção cartográfica para análises métricas.\nAplicar buffer negativo para restrição de borda de mapa.\nRealizar amostragem aleatória com distância mínima entre pontos.\nExtrair e quantificar a composição da paisagem em buffers circulares.\nCalcular métricas de paisagem com landscapemetrics.\nProduzir um painel de visualização das paisagens amostrais."
+    "text": "Neste exercício você trabalhará com um mapa de uso e cobertura da terra do município de Murici (AL), obtido por classificação de imagens de satélite. O objetivo é selecionar 15 pontos amostrais no interior de remanescentes florestais que estejam a pelo menos 2 km da borda do mapa (para evitar efeitos de borda não controlados). Em cada ponto será extraído um buffer circular de 500 m de raio e calculada a composição percentual de cada classe de uso do solo.\nAdicionalmente, usaremos o pacote landscapemetrics para calcular métricas de diversidade (Shannon), proporção de floresta e densidade de borda para cada uma das 15 paisagens amostrais.\n\n\n\n\n\n\nNotaArquivo necessário\n\n\n\nVocê precisará do arquivo raster 2024_murici.tif (disponível neste link). Coloque-o no diretório de trabalho antes de executar o código.\n\n\n\n\n\nCompreender a importância da projeção cartográfica para análises métricas.\nAplicar buffer negativo para restrição de borda de mapa.\nRealizar amostragem aleatória com distância mínima entre pontos.\nExtrair e quantificar a composição da paisagem em buffers circulares.\nCalcular métricas de paisagem com landscapemetrics.\nProduzir um painel de visualização das paisagens amostrais."
   },
   {
     "objectID": "slides/aula5_borda.html",
@@ -3092,5 +3092,12 @@
     "title": "Exercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
     "section": "Visualização da área segura",
     "text": "Visualização da área segura\n\n\nCódigo\nggplot() +\n  geom_spatraster(data = r_utm) +\n  scale_fill_manual(values = legenda$Cores, na.value = \"white\") +\n  geom_spatvector(data = municipio_limite, fill = NA, color = \"black\", linewidth = 1) +\n  geom_spatvector(data = limite_seguro, fill = NA, color = \"red\", linetype = \"dashed\") +\n  geom_spatvector(data = floresta, fill = \"darkgreen\", alpha = 0.3) +\n  geom_spatvector(data = area_sorteio, fill = \"forestgreen\", alpha = 0.5) +\n  labs(title = \"Área de sorteio (floresta &gt; 2 km da borda)\") +\n  theme_minimal()"
+  },
+  {
+    "objectID": "exercises/ex4-analises/exer_4.html#fim",
+    "href": "exercises/ex4-analises/exer_4.html#fim",
+    "title": "Exercício 4: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
+    "section": "8.1 FIM",
+    "text": "8.1 FIM"
   }
 ]
