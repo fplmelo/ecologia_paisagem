@@ -53,6 +53,8 @@ library(tidyverse)
 library(tidyterra)
 library(landscapemetrics)
 
+setwd("~/ecologia_paisagem/exercises/ex4-analises") # mude para o seu próprio diretório
+
 r_murici <- rast("2024_murici.tif")
 ```
 
@@ -115,7 +117,7 @@ municipio_limite <- aggregate(vetor_total)
 limite_seguro <- buffer(municipio_limite, width = -2000)
 
 floresta <- vetor_total[vetor_total$Categoria == "Formação Florestal", ]
-area_sorteio <- intersect(floresta, limite_seguro)
+area_sorteio <- crop(floresta, limite_seguro)
 
 if (is.list(area_sorteio)) {
   area_sorteio <- do.call(rbind, area_sorteio)

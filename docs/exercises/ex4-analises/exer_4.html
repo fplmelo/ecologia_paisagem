@@ -333,7 +333,9 @@ The following object is masked from 'package:stats':
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(landscapemetrics)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>r_murici <span class="ot">&lt;-</span> <span class="fu">rast</span>(<span class="st">"2024_murici.tif"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"~/ecologia_paisagem/exercises/ex4-analises"</span>) <span class="co"># mude para o seu próprio diretório</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>r_murici <span class="ot">&lt;-</span> <span class="fu">rast</span>(<span class="st">"2024_murici.tif"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <hr>
 </section>
@@ -429,7 +431,7 @@ The following object is masked from 'package:stats':
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>limite_seguro <span class="ot">&lt;-</span> <span class="fu">buffer</span>(municipio_limite, <span class="at">width =</span> <span class="sc">-</span><span class="dv">2000</span>)</span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>floresta <span class="ot">&lt;-</span> vetor_total[vetor_total<span class="sc">$</span>Categoria <span class="sc">==</span> <span class="st">"Formação Florestal"</span>, ]</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>area_sorteio <span class="ot">&lt;-</span> <span class="fu">intersect</span>(floresta, limite_seguro)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>area_sorteio <span class="ot">&lt;-</span> <span class="fu">crop</span>(floresta, limite_seguro)</span>
 <span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">is.list</span>(area_sorteio)) {</span>
 <span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  area_sorteio <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind, area_sorteio)</span>
@@ -635,21 +637,21 @@ OVERWRITE</code></pre>
 <span id="cb21-40"><a href="#cb21-40" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(metricas_paisagem)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   id_buffer diversidade_shannon perc_floresta densidade_borda_m_ha
-1          1          0.86221768      11.37088            36.791188
-2          2          1.20198579      18.71036            30.556494
-3          3          0.69045453      78.16826            41.522989
-4          4          0.19563877      95.56025            16.344171
-5          5          1.09262730      58.99894            73.381145
-6          6          0.98150274      35.61047            26.381625
-7          7          0.06395442      98.94180             4.979577
-8          8          0.06888814      98.93730             4.286352
-9          9          1.08470940      62.47335            43.000611
-10        10          1.37117196      21.29925            61.568570
-11        11          0.07189974      98.64130             5.936928
-12        12          1.36081318      17.59062            51.959071
-13        13          0.08012715      98.62288             4.272730
-14        14          0.26590112      94.58023            13.930644
-15        15          0.98953391      63.68477            59.420829</code></pre>
+1          1           0.7507504      78.22410             44.41351
+2          2           0.7551841      75.62028             53.66340
+3          3           1.2318169      49.41922             53.94980
+4          4           0.8906418      71.73679             33.35833
+5          5           1.0747283      57.00326             63.86672
+6          6           0.0000000     100.00000              0.00000
+7          7           1.3336246      31.62939             74.45502
+8          8           0.8789672      70.95745             25.38790
+9          9           1.3141271      23.73247             48.22454
+10        10           0.7153538      69.32907             24.34106
+11        11           1.0003162      44.07684             58.11278
+12        12           1.2808703      13.84452             44.74460
+13        13           0.6093134      83.75527             24.81909
+14        14           0.0000000     100.00000              0.00000
+15        15           1.0722640      23.58591             53.09069</code></pre>
 </div>
 </div>
 <p>A tabela <code>metricas_paisagem</code> contém os valores para cada uma das 15 paisagens. Você pode salvá-la como CSV:</p>
