@@ -135,7 +135,7 @@ ggplot() +
   geom_spatraster(data = r_utm) +
   scale_fill_manual(values = legenda$Cores, na.value = "white", name = "Uso do Solo") +
   geom_spatvector(data = municipio_limite, fill = NA, color = "black", linewidth = 1) +
-  geom_spatvector(data = limite_seguro, fill = NA, color = "red", linetype = "dashed", linewidth = 1) +
+  geom_spatvector(data = limite_seguro, fill = NA, color = "black", linetype = "dashed", linewidth = 1) +
   geom_spatvector(data = floresta, fill = "darkgreen", alpha = 0.3, color = NA) +
   geom_spatvector(data = area_sorteio, fill = "forestgreen", alpha = 0.5, color = NA) +
   labs(title = "Área de sorteio (floresta > 2 km da borda)") +
