@@ -58,9 +58,9 @@ r_murici <- rast("2024_murici.tif")
 
 ---
 
-# 1. Projeção e legenda
+# Projeção e legenda
 
-## 1.1 Por que projetar?
+## Por que projetar?
 
 O arquivo original está em coordenadas geográficas (lat/long). Para trabalhar com distâncias em metros (ex.: 2000 m, 500 m) é obrigatório projetá-lo para um sistema de coordenadas planas (UTM). Usaremos o fuso **25S (EPSG:31985)**, adequado para Alagoas.
 
@@ -70,7 +70,7 @@ O arquivo original está em coordenadas geográficas (lat/long). Para trabalhar 
 r_utm <- project(r_murici, "EPSG:31985", method = "near")
 ```
 
-## 1.2 Atribuir legenda
+## Atribuir legenda
 
 As classes originais estão codificadas por números. Associe os rótulos e cores conforme a tabela abaixo.
 
@@ -103,7 +103,7 @@ levels(r_utm) <- legenda[,1:2]
 
 ---
 
-# 2. Definição da área de sorteio segura
+# Definição da área de sorteio segura
 
 Para evitar pontos muito próximos à borda do mapa, criamos um buffer negativo de 2000 m a partir do limite total do município. A área de sorteio será a interseção entre as florestas e essa região interna.
 
@@ -145,7 +145,7 @@ ggplot() +
 
 ---
 
-# 3. Sorteio de pontos com distância mínima
+# Sorteio de pontos com distância mínima
 
 Sortear 15 pontos dentro da área segura, garantindo distância mínima de 1000 m entre eles.
 
@@ -177,7 +177,7 @@ while(is.null(pontos_finais) || nrow(pontos_finais) < 15) {
 
 ---
 
-# 4. Buffers e extração da composição da paisagem
+# Buffers e extração da composição da paisagem
 
 **Atenção:** Antes de criar os buffers, verificamos se o CRS dos pontos é compatível com o raster.
 
@@ -234,7 +234,7 @@ ggplot() +
 
 ---
 
-# 5. Análise com landscapemetrics
+# Análise com landscapemetrics
 
 Agora vamos calcular para cada um dos 15 buffers as seguintes métricas:
 
@@ -292,7 +292,7 @@ print(metricas_paisagem)
 A tabela `metricas_paisagem` contém os valores para cada uma das 15 paisagens. Você pode salvá-la como CSV:
 
 ```{r}
-#| eval: true
+#| eval: false
 
 write.csv(metricas_paisagem, "metricas_landscapemetrics.csv", row.names = FALSE)
 ```
@@ -306,7 +306,7 @@ write.csv(metricas_paisagem, "metricas_landscapemetrics.csv", row.names = FALSE)
 
 ---
 
-# 6. Painel de paisagens
+# Painel de paisagens
 
 Gerar um painel 5x3 com os recortes circulares de cada ponto. **Use `geom_tile()` em vez de `geom_raster()` para evitar avisos de desalinhamento.**
 

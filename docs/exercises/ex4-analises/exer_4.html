@@ -217,16 +217,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#objetivos-específicos" id="toc-objetivos-específicos" class="nav-link" data-scroll-target="#objetivos-específicos"><span class="header-section-number">1.1</span> Objetivos específicos</a></li>
   </ul></li>
   <li><a href="#preparação-do-ambiente" id="toc-preparação-do-ambiente" class="nav-link" data-scroll-target="#preparação-do-ambiente"><span class="header-section-number">2</span> Preparação do ambiente</a></li>
-  <li><a href="#projeção-e-legenda" id="toc-projeção-e-legenda" class="nav-link" data-scroll-target="#projeção-e-legenda"><span class="header-section-number">3</span> 1. Projeção e legenda</a>
+  <li><a href="#projeção-e-legenda" id="toc-projeção-e-legenda" class="nav-link" data-scroll-target="#projeção-e-legenda"><span class="header-section-number">3</span> Projeção e legenda</a>
   <ul class="collapse">
-  <li><a href="#por-que-projetar" id="toc-por-que-projetar" class="nav-link" data-scroll-target="#por-que-projetar"><span class="header-section-number">3.1</span> 1.1 Por que projetar?</a></li>
-  <li><a href="#atribuir-legenda" id="toc-atribuir-legenda" class="nav-link" data-scroll-target="#atribuir-legenda"><span class="header-section-number">3.2</span> 1.2 Atribuir legenda</a></li>
+  <li><a href="#por-que-projetar" id="toc-por-que-projetar" class="nav-link" data-scroll-target="#por-que-projetar"><span class="header-section-number">3.1</span> Por que projetar?</a></li>
+  <li><a href="#atribuir-legenda" id="toc-atribuir-legenda" class="nav-link" data-scroll-target="#atribuir-legenda"><span class="header-section-number">3.2</span> Atribuir legenda</a></li>
   </ul></li>
-  <li><a href="#definição-da-área-de-sorteio-segura" id="toc-definição-da-área-de-sorteio-segura" class="nav-link" data-scroll-target="#definição-da-área-de-sorteio-segura"><span class="header-section-number">4</span> 2. Definição da área de sorteio segura</a></li>
-  <li><a href="#sorteio-de-pontos-com-distância-mínima" id="toc-sorteio-de-pontos-com-distância-mínima" class="nav-link" data-scroll-target="#sorteio-de-pontos-com-distância-mínima"><span class="header-section-number">5</span> 3. Sorteio de pontos com distância mínima</a></li>
-  <li><a href="#buffers-e-extração-da-composição-da-paisagem" id="toc-buffers-e-extração-da-composição-da-paisagem" class="nav-link" data-scroll-target="#buffers-e-extração-da-composição-da-paisagem"><span class="header-section-number">6</span> 4. Buffers e extração da composição da paisagem</a></li>
-  <li><a href="#análise-com-landscapemetrics" id="toc-análise-com-landscapemetrics" class="nav-link" data-scroll-target="#análise-com-landscapemetrics"><span class="header-section-number">7</span> 5. Análise com landscapemetrics</a></li>
-  <li><a href="#painel-de-paisagens" id="toc-painel-de-paisagens" class="nav-link" data-scroll-target="#painel-de-paisagens"><span class="header-section-number">8</span> 6. Painel de paisagens</a>
+  <li><a href="#definição-da-área-de-sorteio-segura" id="toc-definição-da-área-de-sorteio-segura" class="nav-link" data-scroll-target="#definição-da-área-de-sorteio-segura"><span class="header-section-number">4</span> Definição da área de sorteio segura</a></li>
+  <li><a href="#sorteio-de-pontos-com-distância-mínima" id="toc-sorteio-de-pontos-com-distância-mínima" class="nav-link" data-scroll-target="#sorteio-de-pontos-com-distância-mínima"><span class="header-section-number">5</span> Sorteio de pontos com distância mínima</a></li>
+  <li><a href="#buffers-e-extração-da-composição-da-paisagem" id="toc-buffers-e-extração-da-composição-da-paisagem" class="nav-link" data-scroll-target="#buffers-e-extração-da-composição-da-paisagem"><span class="header-section-number">6</span> Buffers e extração da composição da paisagem</a></li>
+  <li><a href="#análise-com-landscapemetrics" id="toc-análise-com-landscapemetrics" class="nav-link" data-scroll-target="#análise-com-landscapemetrics"><span class="header-section-number">7</span> Análise com landscapemetrics</a></li>
+  <li><a href="#painel-de-paisagens" id="toc-painel-de-paisagens" class="nav-link" data-scroll-target="#painel-de-paisagens"><span class="header-section-number">8</span> Painel de paisagens</a>
   <ul class="collapse">
   <li><a href="#fim" id="toc-fim" class="nav-link" data-scroll-target="#fim"><span class="header-section-number">8.1</span> FIM</a></li>
   </ul></li>
@@ -338,16 +338,16 @@ The following object is masked from 'package:stats':
 <hr>
 </section>
 <section id="projeção-e-legenda" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> 1. Projeção e legenda</h1>
+<h1 data-number="3"><span class="header-section-number">3</span> Projeção e legenda</h1>
 <section id="por-que-projetar" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="por-que-projetar"><span class="header-section-number">3.1</span> 1.1 Por que projetar?</h2>
+<h2 data-number="3.1" class="anchored" data-anchor-id="por-que-projetar"><span class="header-section-number">3.1</span> Por que projetar?</h2>
 <p>O arquivo original está em coordenadas geográficas (lat/long). Para trabalhar com distâncias em metros (ex.: 2000 m, 500 m) é obrigatório projetá-lo para um sistema de coordenadas planas (UTM). Usaremos o fuso <strong>25S (EPSG:31985)</strong>, adequado para Alagoas.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>r_utm <span class="ot">&lt;-</span> <span class="fu">project</span>(r_murici, <span class="st">"EPSG:31985"</span>, <span class="at">method =</span> <span class="st">"near"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="atribuir-legenda" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="atribuir-legenda"><span class="header-section-number">3.2</span> 1.2 Atribuir legenda</h2>
+<h2 data-number="3.2" class="anchored" data-anchor-id="atribuir-legenda"><span class="header-section-number">3.2</span> Atribuir legenda</h2>
 <p>As classes originais estão codificadas por números. Associe os rótulos e cores conforme a tabela abaixo.</p>
 <table class="caption-top table">
 <thead>
@@ -421,7 +421,7 @@ The following object is masked from 'package:stats':
 </section>
 </section>
 <section id="definição-da-área-de-sorteio-segura" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> 2. Definição da área de sorteio segura</h1>
+<h1 data-number="4"><span class="header-section-number">4</span> Definição da área de sorteio segura</h1>
 <p>Para evitar pontos muito próximos à borda do mapa, criamos um buffer negativo de 2000 m a partir do limite total do município. A área de sorteio será a interseção entre as florestas e essa região interna.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>vetor_total <span class="ot">&lt;-</span> <span class="fu">as.polygons</span>(r_utm, <span class="at">dissolve =</span> <span class="cn">TRUE</span>)</span>
@@ -476,7 +476,7 @@ The following object is masked from 'package:stats':
 <hr>
 </section>
 <section id="sorteio-de-pontos-com-distância-mínima" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> 3. Sorteio de pontos com distância mínima</h1>
+<h1 data-number="5"><span class="header-section-number">5</span> Sorteio de pontos com distância mínima</h1>
 <p>Sortear 15 pontos dentro da área segura, garantindo distância mínima de 1000 m entre eles.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1234</span>)</span>
@@ -504,7 +504,7 @@ The following object is masked from 'package:stats':
 <hr>
 </section>
 <section id="buffers-e-extração-da-composição-da-paisagem" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> 4. Buffers e extração da composição da paisagem</h1>
+<h1 data-number="6"><span class="header-section-number">6</span> Buffers e extração da composição da paisagem</h1>
 <p><strong>Atenção:</strong> Antes de criar os buffers, verificamos se o CRS dos pontos é compatível com o raster.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificar CRS</span></span>
@@ -584,7 +584,7 @@ OVERWRITE</code></pre>
 <hr>
 </section>
 <section id="análise-com-landscapemetrics" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> 5. Análise com landscapemetrics</h1>
+<h1 data-number="7"><span class="header-section-number">7</span> Análise com landscapemetrics</h1>
 <p>Agora vamos calcular para cada um dos 15 buffers as seguintes métricas:</p>
 <ul>
 <li><strong>Diversidade da paisagem</strong> – Índice de Shannon (<code>lsm_l_shdi</code>)</li>
@@ -676,7 +676,7 @@ OVERWRITE</code></pre>
 <hr>
 </section>
 <section id="painel-de-paisagens" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> 6. Painel de paisagens</h1>
+<h1 data-number="8"><span class="header-section-number">8</span> Painel de paisagens</h1>
 <p>Gerar um painel 5x3 com os recortes circulares de cada ponto. <strong>Use <code>geom_tile()</code> em vez de <code>geom_raster()</code> para evitar avisos de desalinhamento.</strong></p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>lista_recortes <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
