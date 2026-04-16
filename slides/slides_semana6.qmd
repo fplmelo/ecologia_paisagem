@@ -2,7 +2,7 @@
 title: "Conectividade Ecológica vs. Conectividade Física"
 subtitle: "Semana 6 — Ecologia de Paisagens BO-304"
 author: "Prof. Felipe Melo"
-institute: "Departamento de Botânica · UFPE"
+institute: ""
 date: today
 lang: pt
 format:
