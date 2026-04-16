@@ -12,8 +12,8 @@ format:
     transition: fade
     transition-speed: fast
     chalkboard: true
-    logo: "https://fplmelo.github.io/img/logo_branco_ufpe.png"
-    footer: "BO-304 Ecologia de Paisagens · UFPE · 2026.1"
+    #logo: "https://fplmelo.github.io/img/logo_branco_ufpe.png"
+    #footer: "BO-304 Ecologia de Paisagens · UFPE · 2026.1"
     incremental: false
     fig-align: center
    # css: slides_custom.css
