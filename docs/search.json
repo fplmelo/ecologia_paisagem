@@ -235,7 +235,7 @@
     "href": "sessions/index.html",
     "title": "Conteúdo",
     "section": "",
-    "text": "Semana 1: Origens e Conceitos de Escala\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\n\n\n\n\n\nSemana 2: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade\n\n\n\n\n\n\nFelipe Melo\n\n\nMar 12, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 3: Dinâmica de Perturbação\n\n\n\n\n\n\nFelipe Melo\n\n\nMar 3, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 4: Teoria de Biogeografia de Ilhas e Fragmentação\n\n\n\n\n\n\nFelipe Melo\n\n\nMar 3, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 5: Efeito de Borda\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\n\n\n\n\n\nSemana 6: Conectividade Ecológica vs. Conexidade Física\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nApr 8, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 7: Metapopulações e Dinâmica de Extinção-Colonização\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nApr 8, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 8: Fluxos de Energia e Ciclagem de Nutrientes no Nível de Paisagem\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nApr 8, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 9: Tipos de Métricas de Paisagem\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nApr 8, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Semana 1: Origens e Conceitos de Escala\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\n\n\n\n\n\nSemana 2: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade\n\n\n\n\n\n\nFelipe Melo\n\n\nMar 19, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 3: Dinâmica de Perturbação\n\n\n\n\n\n\nFelipe Melo\n\n\nMar 5, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 4: Teoria de Biogeografia de Ilhas e Fragmentação\n\n\n\n\n\n\nFelipe Melo\n\n\nMar 5, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 5: Efeito de Borda\n\n\n\n\n\n\nFelipe Melo\n\n\n\n\n\n\n\n\n\n\n\nSemana 6: Conectividade Ecológica vs. Conexidade Física\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nApr 16, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 7: Metapopulações e Dinâmica de Extinção-Colonização\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nApr 16, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 8: Fluxos de Energia e Ciclagem de Nutrientes no Nível de Paisagem\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nApr 16, 2026\n\n\n\n\n\n\n\n\n\n\n\nSemana 9: Tipos de Métricas de Paisagem\n\n\n\n\n\n\nProf. Felipe Melo\n\n\nApr 16, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "sessions/week6/semana6_conectividade.html",
@@ -2391,7 +2391,7 @@
     "href": "img/slides_semana9.html#o-paradoxo-que-motiva-esta-aula",
     "title": "Tipos de Métricas de Paisagem",
     "section": "O paradoxo que motiva esta aula",
-    "text": "O paradoxo que motiva esta aula\n\n\nDuas paisagens, composição idêntica:\n\nFloresta: 50% em ambas\nAgricultura: 50% em ambas\nSHDI: igual em ambas\nLPI: diferente\n\nEcologicamente são opostas:\n\nPaisagem A: dezenas de fragmentos minúsculos, borda máxima, sem área de núcleo, isolamento elevado\nPaisagem B: dois grandes blocos, pouca borda, grande área de núcleo, baixo isolamento\n\n\n\n\nMétricas de composição sozinhas são insuficientes para descrever a estrutura ecológica de uma paisagem."
+    "text": "O paradoxo que motiva esta aula\n\n\nDuas paisagens, composição idêntica:\n\nFloresta: 50% em ambas\nAgricultura: 50% em ambas\nSHDI: igual em ambas\nLPI: diferente\n\nEcologicamente são opostas:\n\nPaisagem A: dezenas de fragmentos minúsculos, borda máxima, sem área de núcleo, isolamento elevado\nPaisagem B: dois grandes blocos, pouca borda, grande área de núcleo, baixo isolamento\n\n\n\n\n\n\n\nMétricas de composição sozinhas são insuficientes para descrever a estrutura ecológica de uma paisagem."
   },
   {
     "objectID": "img/slides_semana9.html#a-divisão-fundamental-mcgarigal-marks-1995",
@@ -3099,5 +3099,68 @@
     "title": "Exercício 4: Amostragem de Paisagens com Restrição de Borda — Murici-AL",
     "section": "8.1 FIM",
     "text": "8.1 FIM"
+  },
+  {
+    "objectID": "exercises/demo].html",
+    "href": "exercises/demo].html",
+    "title": "Exercicio 3",
+    "section": "",
+    "text": "Nesste exercíco eu tenho que instalar os pacotes necesaŕios para análises de paiagem\n\n# Vetor com todos os pacotes necessários\npacotes &lt;- c(\n  # Dados espaciais\n  \"terra\",          # Análise de dados raster (sucessor moderno do 'raster')\n  \"sf\",             # Dados vetoriais em formato tidy (Simple Features)\n  \n  # Métricas de paisagem\n  \"landscapemetrics\", # &gt;130 métricas de padrão de paisagem (substitui FRAGSTATS)\n  \n  # Visualização\n  \"tmap\",           # Mapas temáticos estáticos e interativos\n  \"ggplot2\",        # Gráficos e visualizações gerais\n  \"tidyterra\",      # Integração do terra com ggplot2\n  \n  # Ecologia\n  \"vegan\",          # Diversidade, ordenação, análises multivariadas\n  \"iNEXT\",          # Rarefação e extrapolação de diversidade\n  \n  # Manipulação de dados (Tidyverse)\n  \"dplyr\",          # Manipulação de tabelas (filter, select, mutate...)\n  \"tidyr\",          # Organização de dados (pivot_longer, pivot_wider...)\n  \"readr\",          # Leitura de arquivos CSV e similares\n  \"tibble\",         # Tabelas melhoradas (alternativa ao data.frame)\n  \"purrr\",          # Programação funcional (map, walk...)\n  \n  # Acesso a dados abertos\n  \"geodata\",        # Download de dados climáticos, elevação, etc.\n  \"rgbif\",          # Acesso ao GBIF (ocorrências de espécies)\n  \"rnaturalearth\",  # Fronteiras e mapas-base do Natural Earth\n  \"rnaturalearthdata\", # Dados complementares do Natural Earth\n  \"geobr\" ,        # Shapefiles da geografia Brasileira\n  \n  # Utilitários\n  \"remotes\",        # Instalar pacotes do GitHub\n  \"here\"            # Gerenciamento de caminhos de arquivo\n)\n\n# Instalar apenas os que ainda não estão instalados\nnovos &lt;- pacotes[!(pacotes %in% installed.packages()[, \"Package\"])]\n\nif (length(novos) &gt; 0) {\n  cat(\"Instalando\", length(novos), \"pacote(s)...\\n\")\n  install.packages(novos)\n} else {\n  cat(\"Todos os pacotes já estão instalados!\\n\")\n}"
+  },
+  {
+    "objectID": "img/slides_semana9.html",
+    "href": "img/slides_semana9.html",
+    "title": "Tipos de Métricas de Paisagem",
+    "section": "",
+    "text": "Tipos de Métricas de Paisagem\nComposição vs. Configuração\nO que há na paisagem · Como está arranjado\nSemana 9 · BO-304 · Prof. Felipe Melo · UFPE"
+  },
+  {
+    "objectID": "exercises/demo].html#introdução",
+    "href": "exercises/demo].html#introdução",
+    "title": "Exercicio 3",
+    "section": "",
+    "text": "Nesste exercíco eu tenho que instalar os pacotes necesaŕios para análises de paiagem\n\n# Vetor com todos os pacotes necessários\npacotes &lt;- c(\n  # Dados espaciais\n  \"terra\",          # Análise de dados raster (sucessor moderno do 'raster')\n  \"sf\",             # Dados vetoriais em formato tidy (Simple Features)\n  \n  # Métricas de paisagem\n  \"landscapemetrics\", # &gt;130 métricas de padrão de paisagem (substitui FRAGSTATS)\n  \n  # Visualização\n  \"tmap\",           # Mapas temáticos estáticos e interativos\n  \"ggplot2\",        # Gráficos e visualizações gerais\n  \"tidyterra\",      # Integração do terra com ggplot2\n  \n  # Ecologia\n  \"vegan\",          # Diversidade, ordenação, análises multivariadas\n  \"iNEXT\",          # Rarefação e extrapolação de diversidade\n  \n  # Manipulação de dados (Tidyverse)\n  \"dplyr\",          # Manipulação de tabelas (filter, select, mutate...)\n  \"tidyr\",          # Organização de dados (pivot_longer, pivot_wider...)\n  \"readr\",          # Leitura de arquivos CSV e similares\n  \"tibble\",         # Tabelas melhoradas (alternativa ao data.frame)\n  \"purrr\",          # Programação funcional (map, walk...)\n  \n  # Acesso a dados abertos\n  \"geodata\",        # Download de dados climáticos, elevação, etc.\n  \"rgbif\",          # Acesso ao GBIF (ocorrências de espécies)\n  \"rnaturalearth\",  # Fronteiras e mapas-base do Natural Earth\n  \"rnaturalearthdata\", # Dados complementares do Natural Earth\n  \"geobr\" ,        # Shapefiles da geografia Brasileira\n  \n  # Utilitários\n  \"remotes\",        # Instalar pacotes do GitHub\n  \"here\"            # Gerenciamento de caminhos de arquivo\n)\n\n# Instalar apenas os que ainda não estão instalados\nnovos &lt;- pacotes[!(pacotes %in% installed.packages()[, \"Package\"])]\n\nif (length(novos) &gt; 0) {\n  cat(\"Instalando\", length(novos), \"pacote(s)...\\n\")\n  install.packages(novos)\n} else {\n  cat(\"Todos os pacotes já estão instalados!\\n\")\n}"
+  },
+  {
+    "objectID": "exercises/demo].html#verifacando-a-insrtalaão",
+    "href": "exercises/demo].html#verifacando-a-insrtalaão",
+    "title": "Exercicio 3",
+    "section": "Verifacando a insrtalaão",
+    "text": "Verifacando a insrtalaão\n\nlibrary(terra)\nlibrary(sf)\nlibrary(landscapemetrics)\nlibrary(tmap)\nlibrary(vegan)\nlibrary(tidyverse)\n\ncat(\"✓ Todos os pacotes carregados com sucesso!\\n\")"
+  },
+  {
+    "objectID": "workbook/demo4.html",
+    "href": "workbook/demo4.html",
+    "title": "Demo ex 4",
+    "section": "",
+    "text": "Compreender a importância da projeção cartográfica para análises métricas. Aplicar buffer negativo para restrição de borda de mapa. Realizar amostragem aleatória com distância mínima entre pontos. Extrair e quantificar a composição da paisagem em buffers circulares. Calcular métricas de paisagem com landscapemetrics. Produzir um painel de visualização das paisagens amostrais.\n\nlibrary(terra)\n\nterra 1.9.11\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.2.1     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.2\n✔ ggplot2   4.0.2     ✔ tibble    3.3.0\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.1.0     \n\n\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ tidyr::extract() masks terra::extract()\n✖ dplyr::filter()  masks stats::filter()\n✖ dplyr::lag()     masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(landscapemetrics)\n\nsetwd(\"/home/felipe/ecologia_paisagem/exercises/ex4-analises\") # mude para o seu próprio diretório\n\nr_murici &lt;- rast(\"/home/felipe/ecologia_paisagem/exercises/ex4-analises/2024_murici.tif\")"
+  },
+  {
+    "objectID": "workbook/demo4.html#objetivos-específicos",
+    "href": "workbook/demo4.html#objetivos-específicos",
+    "title": "Demo ex 4",
+    "section": "",
+    "text": "Compreender a importância da projeção cartográfica para análises métricas. Aplicar buffer negativo para restrição de borda de mapa. Realizar amostragem aleatória com distância mínima entre pontos. Extrair e quantificar a composição da paisagem em buffers circulares. Calcular métricas de paisagem com landscapemetrics. Produzir um painel de visualização das paisagens amostrais.\n\nlibrary(terra)\n\nterra 1.9.11\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.2.1     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.2\n✔ ggplot2   4.0.2     ✔ tibble    3.3.0\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.1.0     \n\n\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ tidyr::extract() masks terra::extract()\n✖ dplyr::filter()  masks stats::filter()\n✖ dplyr::lag()     masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(landscapemetrics)\n\nsetwd(\"/home/felipe/ecologia_paisagem/exercises/ex4-analises\") # mude para o seu próprio diretório\n\nr_murici &lt;- rast(\"/home/felipe/ecologia_paisagem/exercises/ex4-analises/2024_murici.tif\")"
+  },
+  {
+    "objectID": "workbook/demo4.html#projetar",
+    "href": "workbook/demo4.html#projetar",
+    "title": "Demo ex 4",
+    "section": "Projetar",
+    "text": "Projetar\n\nr_utm &lt;- project(r_murici, \"EPSG:31985\", method = \"near\")"
+  },
+  {
+    "objectID": "workbook/demo4.html#legenda",
+    "href": "workbook/demo4.html#legenda",
+    "title": "Demo ex 4",
+    "section": "Legenda",
+    "text": "Legenda\n\nlegenda &lt;- data.frame(\n  id = c(3, 4, 11, 15, 20, 21, 24, 25, 33),\n  Categoria = c(\"Formação Florestal\", \"Formação Savânica\", \"Campo Alagado\", \n                \"Pastagem\", \"Cana\", \"Mosaico de Usos\", \"Área Urbanizada\", \n                \"Outras Áreas não Vegetadas\", \"Corpo d'Água\"),\n  Cores = c(\"#006400\", \"#7cfc00\", \"#00ffff\", \"#ffff00\", \"#ff4500\", \n            \"#f4a460\", \"#ff0000\", \"#d3d3d3\", \"#0000ff\")\n)\n\nlevels(r_utm) &lt;- legenda[,1:2]"
+  },
+  {
+    "objectID": "workbook/demo4.html#definirarea",
+    "href": "workbook/demo4.html#definirarea",
+    "title": "Demo ex 4",
+    "section": "Definirarea",
+    "text": "Definirarea\n\nvetor_total &lt;- as.polygons(r_utm, dissolve = TRUE)\nmunicipio_limite &lt;- aggregate(vetor_total)\nlimite_seguro &lt;- buffer(municipio_limite, width = -2000)\n\nfloresta &lt;- vetor_total[vetor_total$Categoria == \"Formação Florestal\", ]\narea_sorteio &lt;- crop(floresta, limite_seguro)\n\nif (is.list(area_sorteio)) {\n  area_sorteio &lt;- do.call(rbind, area_sorteio)\n}\n\nif (nrow(area_sorteio) == 0) {\n  stop(\"Erro: Nenhuma floresta encontrada a mais de 2km da borda.\")\n}"
   }
 ]

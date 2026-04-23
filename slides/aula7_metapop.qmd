@@ -16,6 +16,7 @@ format:
     incremental: false
     fig-align: center
     css: slides_custom.css
+    scrollable: true
 ---
 
 ## {background-color="#173404"}
