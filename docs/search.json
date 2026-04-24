@@ -1739,8 +1739,8 @@
     "objectID": "slides/slides_semana6.html#o-problema-central",
     "href": "slides/slides_semana6.html#o-problema-central",
     "title": "Conectividade Ecológica vs. Conectividade Física",
-    "section": "O problema central",
-    "text": "O problema central\n\n\n\nA mesma estrutura física pode ser:\n\nUma passagem funcional para uns\nUma barreira intransponível para outros\n\nA resposta depende sempre da espécie"
+    "section": "",
+    "text": "A mesma estrutura física pode ser:\n\nUma passagem funcional para uns\nUma barreira intransponível para outros\n\nA resposta depende sempre da espécie"
   },
   {
     "objectID": "slides/slides_semana6.html#o-que-é-conectividade-física",
@@ -2146,7 +2146,7 @@
     "href": "slides/aula7_metapop.html#a-pergunta-desta-semana",
     "title": "Metapopulações e Dinâmica de Extinção-Colonização",
     "section": "A pergunta desta semana",
-    "text": "A pergunta desta semana\n\n\nO problema central:\n\nPopulações locais em fragmentos são inerentemente transitórias\nExtinções estocásticas são inevitáveis em fragmentos pequenos\nComo a espécie persiste em escala regional se populações locais se extinguem?\nA resposta depende de dois processos opostos:\n\nExtinções locais — empurram para colapso\nRecolonizações — garantem persistência regional\n\n\n\n\n\nA unidade de conservação relevante não é a população local — é a rede de populações."
+    "text": "A pergunta desta semana\n\n\nO problema central:\n\nPopulações locais em fragmentos são inerentemente transitórias\nExtinções estocásticas são inevitáveis em fragmentos pequenos\nComo a espécie persiste em escala regional se populações locais se extinguem?\nA resposta depende de dois processos opostos:\n\nExtinções locais — empurram para colapso\nRecolonizações — garantem persistência regional\n\n\n\n\n\n\n\n\nA unidade de conservação relevante não é a população local — é a rede de populações."
   },
   {
     "objectID": "slides/aula7_metapop.html#o-que-é-uma-metapopulação",
@@ -2293,7 +2293,7 @@
     "href": "exercises/index.html",
     "title": "Lista de exercícios",
     "section": "",
-    "text": "Confira abaixo a lista de exercícios e seus tutoriais\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nMar 17, 2026\n\n\nExercício 1: O Mosaico no Lance de Vista\n\n\nFelipe Melo\n\n\n\n\n\n\nMar 27, 2026\n\n\nExercício 2 - Workbook de Ecologia de Paisagens\n\n\nFelipe Melo\n\n\n\n\n\n\nMar 27, 2026\n\n\nExercício 3 - Pacotes R para Ecologia de Paisagens\n\n\nProf. Felipe Melo\n\n\n\n\n\n\nApr 13, 2026\n\n\nExercício: Amostragem de Paisagens com Restrição de Borda — Murici-AL\n\n\nDisciplina de Ecologia de Paisagem\n\n\n\n\n\n\nNo matching items"
+    "text": "Confira abaixo a lista de exercícios e seus tutoriais\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n \n\n\nExercicio 3\n\n\n \n\n\n\n\n\n\nMar 17, 2026\n\n\nExercício 1: O Mosaico no Lance de Vista\n\n\nFelipe Melo\n\n\n\n\n\n\nMar 27, 2026\n\n\nExercício 2 - Workbook de Ecologia de Paisagens\n\n\nFelipe Melo\n\n\n\n\n\n\nMar 27, 2026\n\n\nExercício 3 - Pacotes R para Ecologia de Paisagens\n\n\nProf. Felipe Melo\n\n\n\n\n\n\nApr 24, 2026\n\n\nExercício 4: Amostragem de Paisagens com Restrição de Borda — Murici-AL\n\n\nFelipe Melo\n\n\n\n\n\n\n \n\n\nExercício Prático 5: Descrevendo uma pasiagem\n\n\nFelipe Melo\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "exercises/ex3-pacotes/tutorial_pacotes_r.html",
@@ -3162,5 +3162,61 @@
     "title": "Demo ex 4",
     "section": "Definirarea",
     "text": "Definirarea\n\nvetor_total &lt;- as.polygons(r_utm, dissolve = TRUE)\nmunicipio_limite &lt;- aggregate(vetor_total)\nlimite_seguro &lt;- buffer(municipio_limite, width = -2000)\n\nfloresta &lt;- vetor_total[vetor_total$Categoria == \"Formação Florestal\", ]\narea_sorteio &lt;- crop(floresta, limite_seguro)\n\nif (is.list(area_sorteio)) {\n  area_sorteio &lt;- do.call(rbind, area_sorteio)\n}\n\nif (nrow(area_sorteio) == 0) {\n  stop(\"Erro: Nenhuma floresta encontrada a mais de 2km da borda.\")\n}"
+  },
+  {
+    "objectID": "exercises/ex5/ex5.html",
+    "href": "exercises/ex5/ex5.html",
+    "title": "Exercício Prático 5: Descrevendo uma paisagem",
+    "section": "",
+    "text": "Vocês foram contratados pela Secretaria de Meio Ambiente de um estado brasileiro para realizar um diagnóstico da estrutura da paisagem de um município estratégico. O objetivo da consultoria é fundamentar tecnicamente a criação de novas Unidades de Conservação, identificando áreas que possuam características espaciais favoráveis à manutenção da biodiversidade e à integridade dos processos ecológicos.\n\n\n\n\n\nQuantificar a estrutura da paisagem utilizando o modelo Mancha-Corredor-Matriz.\nAnalisar a composição e a configuração espacial de fragmentos florestais.\nPropor áreas prioritárias para conservação com base em métricas de paisagem.\n\n\n\n\n\n\n\n\nSelecione um município brasileiro e faça o download do mapa de uso e cobertura da terra mais recente da plataforma MapBiomas.\nAqui tem um tutorial para baixar dados do MapBiomas direto da plataforma, mas lembre-se que a plataforma é intuitiva.\nUtilize o ambiente R para o processamento dos dados raster (Exercício #4).\nCertifique-se de que o sistema de coordenadas está projetado (em metros) para garantir o cálculo correto das áreas e distâncias.\n\n\n\n\nA análise não será feita no município inteiro de uma vez, mas sim através de “janelas” ou pontos-paisagem:\n\nGere um conjunto de pontos aleatórios restritos à classe de uso definida como “Floresta” (ou formação natural predominante).\nPara cada ponto, estabeleça um buffer (zona de amortecimento) de 500 metros de raio.\nRestrição Crítica: Os buffers não podem se tocar ou se sobrepor. Caso ocorra sobreposição, descarte os pontos excedentes para garantir a independência das amostras.\n\n\n\n\nUtilizando pacotes específicos no R (como o landscapemetrics), você deve calcular métricas que ajudem a entender a saúde ecológica dessas manchas florestais. Vocês são livres para escolher as métricas, mas recomenda-se considerar:\n\nMétricas de Área e Borda: Para entender o efeito de borda e a disponibilidade de habitat de interior.\nMétricas de Forma: Para avaliar a complexidade dos fragmentos e sua vulnerabilidade a pressões externas.\nMétricas de Isolamento/Proximidade: Para inferir a conectividade estrutural entre as manchas.\n\n\n\n\nCom os resultados das métricas em mãos, elabore o relatório de consultoria respondendo:\n\nQuais pontos-paisagem apresentam a melhor integridade ecológica?\nExistem áreas que funcionam como trampolins ecológicos (stepping stones) ou que facilitam a conectividade funcional?\nOnde o governo deve instalar a nova UC? Justifique com base em conceitos como o limiar crítico de habitat (ex: regra dos 30%) e a viabilidade populacional das manchas.\n\n\n\n\n\n\nUm relatório técnico (no seu workbook) contendo:\n\nDescrição da metodologia de amostragem.\nMapas das paisagens amostradas (buffers de 500m).\nTabelas comparativas com as métricas calculadas.\nParecer Técnico Resumido: Indicação clara de qual área deve ser protegida e por quais razões ecológicas espaciais.\n\n\n\n\n\n\nMetzger, J. P. (2001). O que é ecologia de paisagens? Biota Neotropica.\nHesselbarth, M. H. K., et al. (2019). landscapemetrics: an open-source R tool to calculate landscape metrics. Ecography.\nMapBiomas. Mapas anuais de cobertura e uso da terra do Brasil."
+  },
+  {
+    "objectID": "exercises/ex5/ex5.html#contexto",
+    "href": "exercises/ex5/ex5.html#contexto",
+    "title": "Exercício Prático 5: Descrevendo uma paisagem",
+    "section": "",
+    "text": "Vocês foram contratados pela Secretaria de Meio Ambiente de um estado brasileiro para realizar um diagnóstico da estrutura da paisagem de um município estratégico. O objetivo da consultoria é fundamentar tecnicamente a criação de novas Unidades de Conservação, identificando áreas que possuam características espaciais favoráveis à manutenção da biodiversidade e à integridade dos processos ecológicos."
+  },
+  {
+    "objectID": "exercises/ex5/ex5.html#objetivos-do-exercício",
+    "href": "exercises/ex5/ex5.html#objetivos-do-exercício",
+    "title": "Exercício Prático 5: Descrevendo uma paisagem",
+    "section": "",
+    "text": "Quantificar a estrutura da paisagem utilizando o modelo Mancha-Corredor-Matriz.\nAnalisar a composição e a configuração espacial de fragmentos florestais.\nPropor áreas prioritárias para conservação com base em métricas de paisagem."
+  },
+  {
+    "objectID": "exercises/ex5/ex5.html#procedimentos-técnicos",
+    "href": "exercises/ex5/ex5.html#procedimentos-técnicos",
+    "title": "Exercício Prático 5: Descrevendo uma paisagem",
+    "section": "",
+    "text": "Selecione um município brasileiro e faça o download do mapa de uso e cobertura da terra mais recente da plataforma MapBiomas.\nAqui tem um tutorial para baixar dados do MapBiomas direto da plataforma, mas lembre-se que a plataforma é intuitiva.\nUtilize o ambiente R para o processamento dos dados raster (Exercício #4).\nCertifique-se de que o sistema de coordenadas está projetado (em metros) para garantir o cálculo correto das áreas e distâncias.\n\n\n\n\nA análise não será feita no município inteiro de uma vez, mas sim através de “janelas” ou pontos-paisagem:\n\nGere um conjunto de pontos aleatórios restritos à classe de uso definida como “Floresta” (ou formação natural predominante).\nPara cada ponto, estabeleça um buffer (zona de amortecimento) de 500 metros de raio.\nRestrição Crítica: Os buffers não podem se tocar ou se sobrepor. Caso ocorra sobreposição, descarte os pontos excedentes para garantir a independência das amostras.\n\n\n\n\nUtilizando pacotes específicos no R (como o landscapemetrics), você deve calcular métricas que ajudem a entender a saúde ecológica dessas manchas florestais. Vocês são livres para escolher as métricas, mas recomenda-se considerar:\n\nMétricas de Área e Borda: Para entender o efeito de borda e a disponibilidade de habitat de interior.\nMétricas de Forma: Para avaliar a complexidade dos fragmentos e sua vulnerabilidade a pressões externas.\nMétricas de Isolamento/Proximidade: Para inferir a conectividade estrutural entre as manchas.\n\n\n\n\nCom os resultados das métricas em mãos, elabore o relatório de consultoria respondendo:\n\nQuais pontos-paisagem apresentam a melhor integridade ecológica?\nExistem áreas que funcionam como trampolins ecológicos (stepping stones) ou que facilitam a conectividade funcional?\nOnde o governo deve instalar a nova UC? Justifique com base em conceitos como o limiar crítico de habitat (ex: regra dos 30%) e a viabilidade populacional das manchas."
+  },
+  {
+    "objectID": "exercises/ex5/ex5.html#entregável",
+    "href": "exercises/ex5/ex5.html#entregável",
+    "title": "Exercício Prático 5: Descrevendo uma paisagem",
+    "section": "",
+    "text": "Um relatório técnico (no seu workbook) contendo:\n\nDescrição da metodologia de amostragem.\nMapas das paisagens amostradas (buffers de 500m).\nTabelas comparativas com as métricas calculadas.\nParecer Técnico Resumido: Indicação clara de qual área deve ser protegida e por quais razões ecológicas espaciais."
+  },
+  {
+    "objectID": "exercises/ex5/ex5.html#referências-de-apoio",
+    "href": "exercises/ex5/ex5.html#referências-de-apoio",
+    "title": "Exercício Prático 5: Descrevendo uma paisagem",
+    "section": "",
+    "text": "Metzger, J. P. (2001). O que é ecologia de paisagens? Biota Neotropica.\nHesselbarth, M. H. K., et al. (2019). landscapemetrics: an open-source R tool to calculate landscape metrics. Ecography.\nMapBiomas. Mapas anuais de cobertura e uso da terra do Brasil."
+  },
+  {
+    "objectID": "slides/aula7_metapop.html",
+    "href": "slides/aula7_metapop.html",
+    "title": "Metapopulações e Dinâmica de Extinção-Colonização",
+    "section": "",
+    "text": "Metapopulações\ne Dinâmica de Extinção-Colonização\nDa população local à persistência regional\nSemana 7 · BO-304 · Prof. Felipe Melo · UFPE"
+  },
+  {
+    "objectID": "slides/slides_semana6.html",
+    "href": "slides/slides_semana6.html",
+    "title": "Conectividade Ecológica vs. Conectividade Física",
+    "section": "",
+    "text": "A mesma estrutura física pode ser:\n\nUma passagem funcional para uns\nUma barreira intransponível para outros\n\nA resposta depende sempre da espécie"
   }
 ]
