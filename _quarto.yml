@@ -39,9 +39,6 @@ website:
           - text: "6 - Seu próprio site"
             icon: "tools"
             href: workbook/workbook.qmd
-          - text: "7 - Demo Exercico 4"
-            icon: "tools"
-            href: workbook/demo4.qmd
       - text: "Todas as Aulas"
         href: sessions/index.qmd
       - text: "Exercícios"
