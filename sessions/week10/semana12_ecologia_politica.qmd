@@ -10,7 +10,7 @@ format:
     toc-depth: 3
     toc-title: "Nesta página"
     number-sections: true
-    theme: cosmo
+    #theme: cosmo
     code-fold: true
     code-copy: true
     highlight-style: github
@@ -30,7 +30,7 @@ Use as setas ← → para navegar pelos slides. Pressione `F` para tela cheia e 
 
 ```{=html}
 <iframe
-  src="slides_semana12.html"
+  src="/slides/slides_semana12.html"
   width="100%"
   height="500px"
   style="border: 1px solid #ddd; border-radius: 8px; margin-bottom: 2rem;"
@@ -63,7 +63,7 @@ A obra fundadora de Piers Blaikie e Harold Brookfield, *Land Degradation and Soc
 
 Isso não significa que o agricultor não tem agência — significa que sua agência é estruturada por forças que ele frequentemente não controla: o preço das commodities no mercado global, a política de crédito agrícola do governo federal, a estrutura fundiária herdada do regime colonial, as condições de acesso à terra e ao trabalho.
 
-![Figura 1 — A cadeia de explicação multinível: como forças políticas e econômicas se materializam na paisagem.](img/s12_fig1_cadeia_explicacao.svg){width="100%"}
+![Figura 1 — A cadeia de explicação multinível: como forças políticas e econômicas se materializam na paisagem.](/img/s12_fig1_cadeia_explicacao.svg){width="100%"}
 
 ## A globalização da natureza
 
@@ -83,7 +83,7 @@ Isso significa que diferentes atores *veem* e *constroem* a mesma paisagem de fo
 
 Não se trata de relativismo — as métricas ecológicas são reais e importantes. Trata-se de reconhecer que sobre a mesma realidade biofísica operam múltiplas construções sociais com consequências políticas e ecológicas distintas.
 
-![Figura 2 — A paisagem como arena de disputa: múltiplos atores com interesses e poderes desiguais.](img/s12_fig2_arena_poder.svg){width="100%"}
+![Figura 2 — A paisagem como arena de disputa: múltiplos atores com interesses e poderes desiguais.](/img/s12_fig2_arena_poder.svg){width="100%"}
 
 ## Territórios em disputa
 
@@ -97,7 +97,7 @@ Arturo Escobar (2008), em *Territories of Difference*, mostra como as comunidade
 
 A Ecologia Política não é abstrata — ela se materializa em paisagens concretas. No Brasil, quatro tipos de paisagem concentram a maior parte dos conflitos territoriais:
 
-![Figura 3 — Tipologia de paisagens politicamente contestadas no Brasil.](img/s12_fig3_tipologia_paisagens.svg){width="100%"}
+![Figura 3 — Tipologia de paisagens politicamente contestadas no Brasil.](/img/s12_fig3_tipologia_paisagens.svg){width="100%"}
 
 ## Terras Indígenas
 
@@ -129,7 +129,7 @@ No Cerrado, os dados do Atlas dos Conflitos do Campo apontam para um acirramento
 
 A mesma paisagem física pode ser *vista* e *valorada* de formas radicalmente distintas, dependendo do sistema de conhecimento, dos interesses materiais e da posição social de quem olha.
 
-![Figura 4 — A mesma paisagem, três construções sociais distintas.](img/s12_fig4_construcao_social.svg){width="100%"}
+![Figura 4 — A mesma paisagem, três construções sociais distintas.](/img/s12_fig4_construcao_social.svg){width="100%"}
 
 ## A visão ecológica
 
@@ -156,7 +156,7 @@ Um dos achados mais robustos e politicamente incômodos da ecologia política em
 
 Isso não é acidente. É o resultado de milênios de co-evolução entre sociedades e florestas, de sistemas de manejo baseados em conhecimento ecológico profundo e de uma relação de dependência material direta com o território que cria incentivos para sua conservação.
 
-![Figura 5 — Eficácia comparada de diferentes formas de proteção territorial sobre o desmatamento.](img/s12_fig5_protecao_desmatamento.svg){width="100%"}
+![Figura 5 — Eficácia comparada de diferentes formas de proteção territorial sobre o desmatamento.](/img/s12_fig5_protecao_desmatamento.svg){width="100%"}
 
 Esse dado tem implicações políticas diretas e perturbadoras: a forma mais eficaz de conservar florestas tropicais no Brasil pode ser **garantir direitos territoriais aos povos que nelas habitam**, e não construir mais parques sem gente. A Ecologia Política não afirma que proteção formal não é necessária — afirma que ela é insuficiente sem justiça territorial.
 
@@ -245,4 +245,3 @@ Seu texto deve: (1) usar pelo menos dois conceitos da Ecologia Política, (2) ci
 
 ---
 
-*Semana 12 — Ecologia de Paisagens BO-304, UFPE, 2026.1. Material em desenvolvimento contínuo.*
