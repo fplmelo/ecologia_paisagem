@@ -1,5 +1,5 @@
 ---
-title: "Semana 9: Tipos de Métricas de Paisagem"
+title: "Semana 09: Tipos de Métricas de Paisagem"
 subtitle: "Composição (o que há) vs. Configuração (como está arranjado)"
 author: "Prof. Felipe Melo"
 date: today

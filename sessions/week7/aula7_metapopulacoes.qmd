@@ -1,5 +1,5 @@
 ---
-title: "Semana 7: Metapopulações e Dinâmica de Extinção-Colonização"
+title: "Semana 07: Metapopulações e Dinâmica de Extinção-Colonização"
 subtitle: "Da população local à persistência regional"
 author: "Prof. Felipe Melo"
 date: today

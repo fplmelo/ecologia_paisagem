@@ -1,5 +1,5 @@
 ---
-title: "Semana 3: Dinâmica de Perturbação"
+title: "Semana 03: Dinâmica de Perturbação"
 subtitle: "Como eventos naturais e antrópicos moldam o mosaico"
 author: "Felipe Melo"
 date: "last-modified"

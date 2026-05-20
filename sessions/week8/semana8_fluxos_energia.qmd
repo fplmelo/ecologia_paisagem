@@ -1,5 +1,5 @@
 ---
-title: "Semana 8: Fluxos de Energia e Ciclagem de Nutrientes no Nível de Paisagem"
+title: "Semana 08: Fluxos de Energia e Ciclagem de Nutrientes no Nível de Paisagem"
 subtitle: "Padrão espacial, heterogeneidade e fluxos biogeoquímicos"
 author: "Prof. Felipe Melo"
 date: today

@@ -1,5 +1,5 @@
 ---
-title: "Semana 6: Conectividade Ecológica vs. Conexidade Física"
+title: "Semana 06: Conectividade Ecológica vs. Conexidade Física"
 subtitle: "Dois conceitos, duas naturezas, uma paisagem"
 author: "Prof. Felipe Melo"
 date: today

@@ -4,5 +4,6 @@ title-block-banner: "#990000"
 listing:
   contents: /
   type: grid
+  sort: "title asc"
 ---
 

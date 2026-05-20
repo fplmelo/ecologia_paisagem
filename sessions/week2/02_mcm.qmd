@@ -1,5 +1,5 @@
 ---
-title: "Semana 2: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade"
+title: "Semana 02: O Modelo Mancha-Corredor-Matriz e a Heterogeneidade"
 subtitle: "Ecologia da Paisagem - Bacharelado em Ciências Biológicas (UFPE)"
 author: "Felipe Melo"
 date: "last-modified"
