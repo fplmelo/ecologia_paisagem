@@ -10,7 +10,7 @@ format:
     toc-depth: 3
     toc-title: "Navegação"
     number-sections: false
-    theme: cosmo
+    #theme: cosmo
     code-fold: true
     code-copy: true
     highlight-style: github
