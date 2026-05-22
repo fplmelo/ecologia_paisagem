@@ -47,6 +47,9 @@ website:
         href: resources/index.qmd
       - text: "Tipo de Avaliação"
         href: assessment.qmd
+      - text: "Prova Final"
+        href: avaliacao_final.qmd
+        
     tools:
       - icon: twitter
         href: https://twitter.com/quarto_pub
