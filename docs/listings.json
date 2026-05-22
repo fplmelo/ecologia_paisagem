@@ -1,5 +1,13 @@
 [
   {
+    "listing": "/resources/index.html",
+    "items": [
+      "/resources/eco_pais.html",
+      "/resources/r.html",
+      "/resources/quarto.html"
+    ]
+  },
+  {
     "listing": "/exercises/index.html",
     "items": [
       "/exercises/ex1-paisagem/ex-1.html",
@@ -7,14 +15,6 @@
       "/exercises/ex3-pacotes/tutorial_pacotes_r.html",
       "/exercises/ex4-analises/exer_4.html",
       "/exercises/ex5/ex5.html"
-    ]
-  },
-  {
-    "listing": "/resources/index.html",
-    "items": [
-      "/resources/eco_pais.html",
-      "/resources/r.html",
-      "/resources/quarto.html"
     ]
   },
   {
