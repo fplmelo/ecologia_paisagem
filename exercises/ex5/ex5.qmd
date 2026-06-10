@@ -27,7 +27,7 @@ Vocês foram contratados pela Secretaria de Meio Ambiente de um estado brasileir
 
 ### 1. Obtenção e Preparo dos Dados
 *   Selecione um município brasileiro e faça o download do mapa de uso e cobertura da terra mais recente da plataforma **MapBiomas**.
-  * [Aqui tem](chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/https://brasil.mapbiomas.org/wp-content/uploads/sites/4/2025/10/how_to_download_maps_MapBiomas_platform_PT_EN_v4.pdf) um tutorial para baixar dados do MapBiomas direto da plataforma, mas lembre-se que a plataforma é intuitiva.
+  * [Aqui tem](https://brasil.mapbiomas.org/wp-content/uploads/sites/4/2025/10/how_to_download_maps_MapBiomas_platform_PT_EN_v4.pdf) um tutorial para baixar dados do MapBiomas direto da plataforma, mas lembre-se que a plataforma é intuitiva.
 *   Utilize o ambiente **R** para o processamento dos dados raster (Exercício #4).
 *   Certifique-se de que o sistema de coordenadas está projetado (em metros) para garantir o cálculo correto das áreas e distâncias.
 
